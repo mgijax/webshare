@@ -1,15 +1,15 @@
 # Entries with a URL ending in ".css" are treated as style sheets.  At
-#	present, all other extensions are assumed to be for images.
+#   present, all other extensions are assumed to be for images.
 # All entries must define "name" and "url".  If one violates this, then an
-#	error will occur.
+#   error will occur.
 # Images may also define "width", "height", "alt", and "alias".
 # Stylesheets may also define "alias".
 # Each "name" and "alias" in the file must be unique, and must contain no
-#	spaces.  In case of a duplicate, an error will occur.
+#   spaces.  In case of a duplicate, an error will occur.
 # For the sake of consistency, all names comprised of more than one word
-#	should have words separated by an underscore.
+#   should have words separated by an underscore.
 
-TOPURL = http://devwww.informatics.jax.org/~jsb/webshare/images/
+TOPURL = http://devwww.informatics.jax.org/usrlocalmgi/live/webshare/images/
 
 [
 name = black_ball
@@ -113,4 +113,9 @@ url = ${TOPURL}warning.gif
 width = 40
 height = 40
 alt = warning
+]
+
+[
+name = mgicss
+url = ${TOPURL}mgi.css
 ]
