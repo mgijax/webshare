@@ -1,0 +1,14 @@
+div.GO
+{font-family: Verdana;
+line-height:1.8;
+font-size:small;
+text-decoration:none}
+
+a.GO:link
+{color:#000099;text-decoration:none}
+a.GO:active
+{color:#000099;text-decoration:none}
+a.GO:visited
+{color:#660099;text-decoration:none}
+a.GO:hover
+{color:#CC0000;text-decoration:none}
