@@ -1,3 +1,71 @@
+/* Defaults */
+body {background-color:#ffffff;color:#000000;font-family:Verdana,Arial,Helvetica;font-size:12px;}
+td {font-family:Verdana,Arial,Helvetica;font-size:12px;}
+
+/* Form Elements */
+input {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
+select {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
+
+/* Index Page */
+.text {font-size:15px;font-family:Verdana,Arial,Helvetica;color:#000001}
+.indexTitle {font-size:20px;font-family:Arial,Helvetica;vertical-align:middle;color:#000001;font-weight:bold;text-align:center;background-color:#D0E0F0}
+
+/* Headers */
+.pageTitle {font-size:20px;font-family:Arial,Helvetica;vertical-align:middle;color:#000001;font-weight:bold;text-align:center;background-color:#D0E0F0}
+.label {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:bottom}
+td.headerLabel {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;background-color:#dddddd}
+td.headerLabelSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;width:50;background-color:#dddddd}
+
+/* Anchor Tags */
+a:visited {color: #2222FF;} 
+a:link {color: #2222FF;} 
+a:hover {text-decoration: none;color: #FF2222;} 
+a:active {color: #2222FF;} 
+a.help {cursor:help}
+
+/* Tool Bar */
+.toolBar {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;background-color:#ffffff}
+.toolBarSearch {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;color:#000000;background-color:#D0E0F0}
+.toolBarSearchTitle {font-weight:bold}
+.toolBarSmall {font-size:11px;font-weight:normal;}
+.toolBarTitle {font-weight:bold;font-family:Arial,Helvetica;font-size:16px}
+.toolBarRev {font-family:Arial,Helvetica;vertical-align:middle;background-color:#0000FF;color:#FFFFFF}
+
+/* Striping */
+/* Complete Rows */
+tr.stripe1 {background-color:#ffffff}
+tr.stripe2 {background-color:#F0F0F0}
+/* TableData Label Categories (Left Side)*/
+td.cat1 {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#DFEFFF;font-weight:bold;width:120;padding:8px}
+td.cat2 {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#D0E0F0;font-weight:bold;width:120;padding:8px}
+/* TableData Data (Right Side)*/
+td.data1 {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:top;color:#000001;background-color:#ffffff;}
+td.data2 {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:top;color:#000001;background-color:#eeeeee;}
+
+/* Search Results */
+tr.summary {background-color:#ffffff}
+td.resultsHeader {font-size:12px;font-family:Arial,Helvetica;vertical-align:middle;color:#000001;background-color:#D0E0F0;font-weight:bold;text-align:center}
+td.resultsHeaderYellow {font-size:12px;font-family:Arial,Helvetica;vertical-align:middle;color:#000001;background-color:#FFFFCC;font-weight:bold;text-align:center}
+td.resultsHeaderSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;width:50;background-color:#D0E0F0}
+
+/* Miscellaneous */ 
+table.results {background-color:#777777}
+tr.buttons {vertical-align:middle;text-align:left;background-color:#ffffff}
+tr.pageInfo {vertical-align:middle;text-align:left;background-color:#ffffff}
+td.hilite {background-color:#FDFDDD}
+.enhance {font-size:14px;font-weight:bold;vertical-align:middle}
+.error {color:red}
+.nowrap {white-space: nowrap;} 
+.larger {font-size:14px;font-weight:bold}
+.normal {font-size:14px;font-weight:normal}
+.quickSearch {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;color:#000000;background-color:#D0E0F0}
+.small {font-size:10px;font-weight:normal;}
+.spaced {line-height:135%}
+
+/*  ToolBar / Main Data Seperator */
+td.separator {background-color:#888888;width:1px} 
+
+/* needed for textual summary of GO annotations, for MarkerGO.jsp */
 div.GO
 {font-family: Verdana;
 line-height:1.8;
