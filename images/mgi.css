@@ -18,7 +18,7 @@ td.headerLabelSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:to
 th  {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:left;color:#000001;font-weight:bold;}
 
 /* Anchor Tags */
-a:visited {color: #2222FF;} 
+a:visited {color: purple;} 
 a:link {color: #2222FF;} 
 a:hover {text-decoration: none;color: #FF2222;} 
 a:active {color: #2222FF;} 
