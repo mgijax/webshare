@@ -116,6 +116,22 @@ alt = warning
 ]
 
 [
+name = man_icon
+url = ${TOPURL}man_icon.gif
+width = 11
+height = 20
+alt = human
+]
+
+[
+name = small_mouse_icon
+url = ${TOPURL}black_mouse_small.gif
+width = 23
+height = 11
+alt = mouse
+]
+
+[
 name = mgicss
 url = ${TOPURL}mgi.css
 ]
