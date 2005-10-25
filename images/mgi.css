@@ -16,6 +16,8 @@ select {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
 td.headerLabel {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;background-color:#dddddd}
 td.headerLabelSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;width:50;background-color:#dddddd}
 th  {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:left;color:#000001;font-weight:bold;}
+th.centerMiddle  {font-size:12px;font-family:Arial,Helvetica;vertical-align:middle;text-align:center;color:#000001;font-weight:bold;}
+th.centerBottom {font-size:12px;font-family:Arial,Helvetica;vertical-align:bottom;text-align:center;color:#000001;font-weight:bold;}
 
 /* Anchor Tags */
 a:hover {text-decoration: none;color: #FF2222;} 
@@ -39,6 +41,10 @@ td.cat2 {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-alig
 /* TableData Data (Right Side)*/
 td.data1 {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:top;color:#000001;background-color:#ffffff;}
 td.data2 {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:top;color:#000001;background-color:#eeeeee;}
+td.data1centerMiddle {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;text-align:center;color:#000001;background-color:#ffffff;}
+td.data2centerMiddle {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;text-align:center;color:#000001;background-color:#eeeeee;}
+td.data1leftMiddle {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;text-align:left;color:#000001;background-color:#ffffff;}
+td.data2leftMiddle {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;text-align:left;color:#000001;background-color:#eeeeee;}
 
 /* Search Results */
 tr.summary {background-color:#ffffff}
