@@ -85,4 +85,48 @@ a.GO:visited
 a.GO:hover
 {color:#CC0000;text-decoration:none}
 
+# STYLESHEET ADDITIONS BY KLF FOR DELTAGEN
+.pageTitleKLF {
+	font-size:20px;
+	font-family:Arial,Helvetica;
+	vertical-align:middle;
+	color:#660000;
+	font-weight:bold;
+	text-align:center;
+	background-color:#D0E0F0;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+div#TitleBar {
+	position: fixed;
+	top:0px;
+	z-index:15;
+	background-color: #FFFFFF;
+	width: 100%;
+	height:auto;
+}
+* html div#TitleBar {
+	position: fixed;
+	top:0px;
+	z-index: 15;
+	background-color: #FFFFFF;
+	width: 100%;
+	height:auto;
+}
+div#DataContent {
+	position: relative;
+	top:180px;
+	left: 0px;
+}	
+* html div#DataContent {
+	position: relative;
+	top:180px;
+	left: 0px;
+}
+.disclaimer {
+	color: #555555;
+	font-size: 10px;
+}
 
