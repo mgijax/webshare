@@ -1,3 +1,18 @@
+TAG: webshare-3-4-2-0
+DATE: 01/13/2006
+STAFF: jsb
+RELEASE: beta
+CHANGES:
+1) merged tr7193 branch to trunk
+
+TAG: webshare-tr7193-1
+DATE: 12/07/2005
+STAFF: jsb
+RELEASE: alpha
+CHANGES:
+1) updated components.cgi to ignore any deprecation warnings
+2) updated config files to use public server's settings
+
 TAG: webshare-tr7193-BP
 DATE: 12/07/2005
 STAFF: jsb
