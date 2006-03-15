@@ -13,6 +13,7 @@ select {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
 /* Headers */
 .pageTitle {font-size:20px;font-family:Arial,Helvetica;vertical-align:middle;color:#000001;font-weight:bold;text-align:center;background-color:#D0E0F0}
 .label {font-size:12px;font-family:Arial,Helvetica;text-align:right;color:#000001;font-weight:bold;}
+.qfLabel {font-size:12px;font-family:Arial,Helvetica;color:#000001;font-weight:bold;}
 td.headerLabel {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;background-color:#dddddd}
 td.headerLabelSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;width:50;background-color:#dddddd}
 th  {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:left;color:#000001;font-weight:bold;}
@@ -59,6 +60,8 @@ tr.pageInfo {vertical-align:middle;text-align:left;background-color:#ffffff}
 td.hilite {background-color:#FDFDDD}
 .enhance {font-size:14px;font-weight:bold;vertical-align:middle}
 .error {color:red}
+.example {font-size:10px;font-weight:normal;text-decoration:italic;}
+.grayBackground {background-color:#eeeeee;}
 .nowrap {white-space: nowrap;} 
 .larger {font-size:14px;font-weight:bold}
 .normal {font-size:14px;font-weight:normal}
