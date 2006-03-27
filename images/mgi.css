@@ -35,6 +35,8 @@ a.help {cursor:help}
 /* Complete Rows */
 tr.stripe1 {background-color:#ffffff}
 tr.stripe2 {background-color:#F0F0F0}
+tr.stripe3 {background-color:#D0E0F0}
+tr.stripe4 {background-color:#DFEFFF}
 /* TableData Label Categories (Left Side)*/
 td.cat1 {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#DFEFFF;font-weight:bold;width:120;padding:8px}
 td.cat2 {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#D0E0F0;font-weight:bold;width:120;padding:8px}
@@ -56,6 +58,11 @@ td.resultsHeaderSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:
 table.results {background-color:#777777}
 tr.buttons {vertical-align:middle;text-align:left;background-color:#ffffff}
 tr.pageInfo {vertical-align:middle;text-align:left;background-color:#ffffff}
+td.centerMiddleBold {font-weight:bold;vertical-align:middle;text-align:center}
+td.leftMiddleBold {font-weight:bold;vertical-align:middle;text-align:left}
+td.rightMiddle {vertical-align:middle;text-align:right}
+td.centerMiddle {vertical-align:middle;text-align:center}
+td.leftMiddle {vertical-align:middle;text-align:left}
 td.hilite {background-color:#FDFDDD}
 .enhance {font-size:14px;font-weight:bold;vertical-align:middle}
 .error {color:red}
