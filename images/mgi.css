@@ -13,11 +13,13 @@ select {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
 /* Headers */
 .pageTitle {font-size:20px;font-family:Arial,Helvetica;vertical-align:middle;color:#000001;font-weight:bold;text-align:center;background-color:#D0E0F0}
 .label {font-size:12px;font-family:Arial,Helvetica;text-align:right;color:#000001;font-weight:bold;}
+.qfLabel {font-size:12px;font-family:Arial,Helvetica;color:#000001;font-weight:bold;}
 td.headerLabel {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;background-color:#dddddd}
 td.headerLabelSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;width:50;background-color:#dddddd}
 th  {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:left;color:#000001;font-weight:bold;}
 th.centerMiddle  {font-size:12px;font-family:Arial,Helvetica;vertical-align:middle;text-align:center;color:#000001;font-weight:bold;}
 th.centerBottom {font-size:12px;font-family:Arial,Helvetica;vertical-align:bottom;text-align:center;color:#000001;font-weight:bold;}
+th.leftMiddle  {font-size:12px;font-family:Arial,Helvetica;vertical-align:middle;text-align:left;color:#000001;font-weight:bold;}
 
 /* Anchor Tags */
 a:hover {text-decoration: none;color: #FF2222;} 
@@ -47,6 +49,8 @@ td.data1centerMiddle {font-size:12px;font-family:Verdana,Arial,Helvetica;vertica
 td.data2centerMiddle {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;text-align:center;color:#000001;background-color:#eeeeee;}
 td.data1leftMiddle {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;text-align:left;color:#000001;background-color:#ffffff;}
 td.data2leftMiddle {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;text-align:left;color:#000001;background-color:#eeeeee;}
+td.data1rightMiddle {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;text-align:right;color:#000001;background-color:#ffffff;}
+td.data2rightMiddle {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;text-align:right;color:#000001;background-color:#eeeeee;}
 
 /* Search Results */
 tr.summary {background-color:#ffffff}
@@ -66,6 +70,8 @@ td.leftMiddle {vertical-align:middle;text-align:left}
 td.hilite {background-color:#FDFDDD}
 .enhance {font-size:14px;font-weight:bold;vertical-align:middle}
 .error {color:red}
+.example {font-size:10px;font-weight:normal;text-decoration:italic;}
+.grayBackground {background-color:#eeeeee;}
 .nowrap {white-space: nowrap;} 
 .larger {font-size:14px;font-weight:bold}
 .normal {font-size:14px;font-weight:normal}
