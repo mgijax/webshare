@@ -60,6 +60,7 @@ td.resultsHeaderSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:
 
 /* Miscellaneous */ 
 table.results {background-color:#777777}
+.buttonLabel {font-size:12px;font-family:Arial,Helvetica;text-align:center;color:#000001;font-weight:bold;}
 tr.buttons {vertical-align:middle;text-align:left;background-color:#ffffff}
 tr.pageInfo {vertical-align:middle;text-align:left;background-color:#ffffff}
 td.centerMiddleBold {font-weight:bold;vertical-align:middle;text-align:center}
