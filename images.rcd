@@ -9,7 +9,7 @@
 # For the sake of consistency, all names comprised of more than one word
 #   should have words separated by an underscore.
 
-TOPURL = http://www.informatics.jax.org/webshare/images/
+TOPURL = http://devwww.informatics.jax.org/~jsb/webshare/images/
 
 [
 name = black_ball

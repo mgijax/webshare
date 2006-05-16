@@ -71,7 +71,7 @@ td.leftMiddle {vertical-align:middle;text-align:left}
 td.hilite {background-color:#FDFDDD}
 .enhance {font-size:14px;font-weight:bold;vertical-align:middle}
 .error {color:red}
-.example {font-size:10px;font-weight:normal;text-decoration:italic;}
+.example {font-size:10px;font-weight:normal;font-style:italic;}
 .grayBackground {background-color:#eeeeee;}
 .nowrap {white-space: nowrap;} 
 .larger {font-size:14px;font-weight:bold}
