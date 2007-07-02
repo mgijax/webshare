@@ -1,0 +1,122 @@
+/* HORIZONTAL FREESTYLE MENU LAYOUT */
+
+
+/* 
+ All <ul> tags 
+*/
+.menulist, .menulist  ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+/* 
+ Submenu <ul> tags 
+*/
+.menulist ul {
+ display: none;
+ position: absolute;
+ top: 1.0em; margin-top: 13px; 
+ width: 150px;
+}
+
+/* 
+ Second and third etc. level submenus - position across from parent instead 
+*/
+.menulist ul ul {
+ left: 150px;
+}
+
+/*
+ All menu items (<li> tags). 
+*/
+.menulist li {
+ float: left;
+ display: block;
+ font-size: 12px;
+ position: relative;
+ background: #002255;
+ border: 1px;
+ margin-right: -1px;
+}
+
+/* 
+ Items in submenus - override float/border/margin from above, restoring default vertical style 
+*/
+.menulist ul li {
+ float: none;
+ margin: 0;
+ margin-bottom: -1px;
+ border-bottom: 2px solid white;
+}
+.menulist ul>li:last-child {
+ margin-bottom: 1px; /* Mozilla fix */
+}
+
+/* 
+ Links inside the menu 
+*/
+.menulist a {
+ display: block;
+ padding: 3px;
+ color: #FFF;
+ text-decoration: none;
+}
+
+/* 
+ Lit items: 'hover' is mouseover, 'highlighted' are parent items to visible menus 
+*/
+.menulist a:hover, .menulist a.highlighted:hover, .menulist a:focus {
+ color: #002244;
+ font-size: 12px;
+ background-color: #E3EDF7;
+}
+.menulist a.highlighted {
+ color: #002244;
+ font-size: 12px;
+ background-color: #E3EDF7;
+}
+
+
+/* Only style submenu indicators within submenus. */
+.menulist a .subind {
+ display: none;
+}
+.menulist ul a .subind {
+ display: block;
+ float: right;
+}
+
+/* 'Escaped Comment' hack for horizontal menubar width in IE5/Mac */
+.menulist a {
+ float: left;
+}
+.menulist ul a {
+ float: none;
+}
+/* \*/
+.menulist a {
+ float: none;
+}
+/* */
+
+
+/*
+ HACKS: IE/Win:
+ A small height on <li> and <a> tags and floating prevents gaps in menu.
+ * html affects <=IE6 and *:first-child+html affects IE7.
+ You may want to move these to browser-specific style sheets.
+*/
+*:first-child+html .menulist ul li {
+ float: left;
+ width: 100%;
+}
+
+* html .menulist ul li {
+ float: left;
+ height: 1%;
+}
+* html .menulist ul a {
+ height: 1%;
+}
+/* End Hacks */
