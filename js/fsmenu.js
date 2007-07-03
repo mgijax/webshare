@@ -48,18 +48,10 @@ listMenu.animOutSpeed = 0.5;
 
 
 // Now the fun part... animation! This script supports animation plugins you
-// can add to each menu object you create. I have provided 3 to get you started.
-// To enable animation, add one or more functions to the menuObject.animations
-// array; available animations are:
-//  * FSMenu.animSwipeDown is a "swipe" animation that sweeps the menu down.
-//  * FSMenu.animFade is an alpha fading animation using tranparency.
-//  * FSMenu.animClipDown is a "blind" animation similar to 'Swipe'.
-// They are listed inside the "fsmenu.js" file for you to modify and extend :).
-
-// I'm applying two at once to listMenu. Delete this to disable!
+// can add to each menu object you create. 
+// To enable animation, add one or more functions to the menuObject.
 listMenu.animations[listMenu.animations.length] = FSMenu.animFade;
 listMenu.animations[listMenu.animations.length] = FSMenu.animSwipeDown;
-//listMenu.animations[listMenu.animations.length] = FSMenu.animClipDown;
 
 
 // Finally, on page load you have to activate the menu by calling its 'activateMenu()' method.
@@ -75,9 +67,9 @@ if (document.createElement && document.documentElement)
  arrow = document.createElement('span');
  arrow.appendChild(document.createTextNode('>>'));
  // Feel free to replace the above two lines with these for a small arrow image...
- //arrow = document.createElement('img');
- //arrow.src = 'arrow.gif';
- //arrow.style.borderWidth = '0';
+ arrow = document.createElement('img');
+ arrow.src = 'http://rohan.informatics.jax.org/~pf/webshare_dev/images/menuArrowRight.gif';
+ arrow.style.borderWidth = '0';
  arrow.className = 'subind';
 }
 addEvent(window, 'load', new Function('listMenu.activateMenu("listMenuRoot", arrow)'));
