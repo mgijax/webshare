@@ -21,15 +21,15 @@ MOUSEBLAST_HOST         firien.informatics.jax.org
 
 JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
-WI_URL                  http://${PY_HOST}/wi/www/
+WI_URL                  http://${PY_HOST}wi/www/
 
-MOUSEBLAST_URL           http://${MOUSEBLAST_HOST}/usrlocalmgi/3.5/mblast_wi/www/
+MOUSEBLAST_URL           http://${MOUSEBLAST_HOST}/usrlocalmgi/live/mblast_wi/www/
 
-MGIHOME_URL             http://${PY_HOST}/mgihome/
+MGIHOME_URL             http://${PY_HOST}mgihome/www/
 
-USERDOCS_URL            http://${PY_HOST}/userdocs/
+USERDOCS_URL            http://${PY_HOST}userdocs/
 
-WEBSHARE_URL            http://${PY_HOST}/webshare/
+WEBSHARE_URL            http://${PY_HOST}webshare/
 
 FTP_URL                 ftp://ftp.informatics.jax.org/pub/reports/
 
