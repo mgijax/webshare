@@ -6,30 +6,34 @@
 ###--- MGI Host Servers ---###
 ###------------------------###
 
+# Python host and directory where standard MGI python products are installed
+PY_HOST                 firien.informatics.jax.org/usrlocalmgi/live
+
+# Host of tomcat servlet container; non-public installs include port # 
 JAVA_HOST               firien.informatics.jax.org:8080
 
-PY_HOST                 firien.informatics.jax.org/usrlocalmgi/live/
-
+# Host of the sequence retrieval tool
 SEQFETCH_HOST           firien.informatics.jax.org
 
+#Host of the mouse blast tool
 MOUSEBLAST_HOST         firien.informatics.jax.org
 
 
 ###---------------------###
-###--- MGI BASE URLs ---###
+###--- MGI BASE URLs ---### be aware some server aliases will include the '/www/'
 ###---------------------###
 
 JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
-WI_URL                  http://${PY_HOST}wi/www/
+WI_URL                  http://${PY_HOST}/wi/www/
 
-MOUSEBLAST_URL           http://${MOUSEBLAST_HOST}/usrlocalmgi/live/mblast_wi/www/
+MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/usrlocalmgi/live/mblast_wi/www/
 
-MGIHOME_URL             http://${PY_HOST}mgihome/www/
+MGIHOME_URL             http://${PY_HOST}/mgihome/www/
 
-USERDOCS_URL            http://${PY_HOST}userdocs/
+USERDOCS_URL            http://${PY_HOST}/userdocs/
 
-WEBSHARE_URL            http://${PY_HOST}webshare/
+WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FTP_URL                 ftp://ftp.informatics.jax.org/pub/reports/
 
