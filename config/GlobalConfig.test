@@ -31,7 +31,7 @@ MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/usrlocalmgi/live/mblast_wi/www
 
 MGIHOME_URL             http://${PY_HOST}/mgihome/www/
 
-USERDOCS_URL            http://${PY_HOST}/userdocs/
+USERDOCS_URL            http://${PY_HOST}/userdocs/www/
 
 WEBSHARE_URL            http://${PY_HOST}/webshare/
 
