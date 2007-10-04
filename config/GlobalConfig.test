@@ -42,13 +42,13 @@ IS_PRODUCTION   0
 
 JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
-WI_URL                  http://${PY_HOST}/wi_dev/
+WI_URL                  http://${PY_HOST}/wi/
 
 MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/
 
-MGIHOME_URL             http://${PY_HOST}/mgihome_dev/
+MGIHOME_URL             http://${PY_HOST}/mgihome/
 
-USERDOCS_URL            http://${PY_HOST}/userdoc_dev/
+USERDOCS_URL            http://${PY_HOST}/userdocs/
 
 WEBSHARE_URL            http://${PY_HOST}/webshare/
 
