@@ -2,6 +2,28 @@
 body {background-color:#ffffff;color:#000000;font-family:Verdana,Arial,Helvetica;font-size:12px;}
 td {font-family:Verdana,Arial,Helvetica;font-size:12px;}
 
+/* Template Styles */
+#titleBar {
+    font-size: 18px;
+    font-family: Arial,Helvetica;
+    vertical-align: middle;
+    color: #000001;
+    font-weight: bold;
+    text-align: center;
+    background-color: #BBBBBB;
+    height: 30px;
+    border:2px;
+    outline:1px;
+}
+
+#titleBar img {
+    border:none;
+}
+
+a.titleBarHelpIcon{
+    float:left;
+}
+
 /* Form Elements */
 input {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
 select {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
@@ -10,7 +32,6 @@ select {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
 .text {font-size:15px;font-family:Verdana,Arial,Helvetica;color:#000001}
 .indexTitle {font-size:20px;font-family:Arial,Helvetica;vertical-align:middle;color:#000001;font-weight:bold;text-align:center;background-color:#D0E0F0}
 
-/* Headers */
 .pageTitle {font-size:20px;font-family:Arial,Helvetica;vertical-align:middle;color:#000001;font-weight:bold;text-align:center;background-color:#D0E0F0}
 .label {font-size:12px;font-family:Arial,Helvetica;text-align:right;color:#000001;font-weight:bold;}
 .qfLabel {font-size:12px;font-family:Arial,Helvetica;color:#000001;font-weight:bold;}
@@ -103,46 +124,46 @@ a.GO:hover
 
 # STYLESHEET ADDITIONS BY KLF FOR DELTAGEN
 .pageTitleKLF {
-	font-size:20px;
-	font-family:Arial,Helvetica;
-	vertical-align:middle;
-	color:#660000;
-	font-weight:bold;
-	text-align:center;
-	background-color:#D0E0F0;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
+    font-size:20px;
+    font-family:Arial,Helvetica;
+    vertical-align:middle;
+    color:#660000;
+    font-weight:bold;
+    text-align:center;
+    background-color:#D0E0F0;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
 }
 div#TitleBar {
-	position: fixed;
-	top:0px;
-	z-index:15;
-	background-color: #FFFFFF;
-	width: 100%;
-	height:auto;
+    position: fixed;
+    top:0px;
+    z-index:15;
+    background-color: #FFFFFF;
+    width: 100%;
+    height:auto;
 }
 * html div#TitleBar {
-	position: fixed;
-	top:0px;
-	z-index: 15;
-	background-color: #FFFFFF;
-	width: 100%;
-	height:auto;
+    position: fixed;
+    top:0px;
+    z-index: 15;
+    background-color: #FFFFFF;
+    width: 100%;
+    height:auto;
 }
 div#DataContent {
-	position: relative;
-	top:180px;
-	left: 0px;
-}	
+    position: relative;
+    top:180px;
+    left: 0px;
+}   
 * html div#DataContent {
-	position: relative;
-	top:180px;
-	left: 0px;
+    position: relative;
+    top:180px;
+    left: 0px;
 }
 .disclaimer {
-	color: #555555;
-	font-size: 10px;
+    color: #555555;
+    font-size: 10px;
 }
 

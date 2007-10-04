@@ -82,6 +82,9 @@ JAXRH_URL               http://www.jax.org/resources/documents/cmdata/rhmap/%sda
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
+TUTORIAL_URL            http://www.informatics.jax.org/tutorials/
+
+
 ###-------------------------###
 ###--- Common Parameters ---###
 ###-------------------------###
