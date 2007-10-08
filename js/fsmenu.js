@@ -37,14 +37,14 @@ var listMenu = new FSMenu('listMenu', true, 'display', 'block', 'none');
 //  * animInSpeed and animOutSpeed set the animation speed. Set to a number
 //    between 0 and 1 where higher = faster. Setting both to 1 disables animation.
 
-//listMenu.showDelay = 1000;
+listMenu.showDelay = 150;
 //listMenu.switchDelay = 125;
-//listMenu.hideDelay = 500;
+listMenu.hideDelay = 650;
 //listMenu.cssLitClass = 'highlighted';
 //listMenu.showOnClick = 0;
 //listMenu.hideOnClick = true;
-listMenu.animInSpeed = 0.5;
-listMenu.animOutSpeed = 0.5;
+listMenu.animInSpeed = 1;
+listMenu.animOutSpeed = 1;
 
 
 // Now the fun part... animation! This script supports animation plugins you
@@ -68,7 +68,7 @@ if (document.createElement && document.documentElement)
  arrow.appendChild(document.createTextNode('>>'));
  // Feel free to replace the above two lines with these for a small arrow image...
  arrow = document.createElement('img');
- arrow.src = 'http://rohan.informatics.jax.org/~pf/webshare_dev/images/menuArrowRight.gif';
+ arrow.src = 'http://rohan.informatics.jax.org/~pf/webshare_dev/images/arrow_right.gif';
  arrow.style.borderWidth = '0';
  arrow.className = 'subind';
 }
