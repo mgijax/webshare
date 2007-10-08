@@ -139,3 +139,12 @@ alt = mouse
 name = mgicss
 url = ${CSS_URL}mgi.css
 ]
+
+[
+name = arrow_right
+url = ${IMAGES_URL}arror_right.gif
+]
+[
+name = arrow_down
+url = ${IMAGES_URL}arror_down.gif
+]
