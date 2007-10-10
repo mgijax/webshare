@@ -48,6 +48,13 @@ alt = help icon
 ]
 
 [
+name = help_small_transp
+url = ${IMAGES_URL}help_small_transp.gif
+width = 21
+height = 20
+alt = help icon
+
+[
 name = is-a
 url = ${IMAGES_URL}is-a.gif
 width = 10
