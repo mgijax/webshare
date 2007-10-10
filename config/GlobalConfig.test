@@ -54,6 +54,8 @@ WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FTP_URL                 ftp://devftp.informatics.jax.org/pub/reports/
 
+FAQ_URL                 http://${PY_HOST}/faq/
+
 ###---------------------###
 ###--- MGI FULL URLs ---###
 ###---------------------###
