@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!--  <meta name="description" content="MGI description">  -->
+<!--  <meta name="keywords" CONTENT="MGI content">  -->
+
+<!-- CSS -->
+<link href="http://rohan.informatics.jax.org/~pf/webshare_dev/css/mgi.css" rel="stylesheet" type="text/css"/>
+
+
+<!-- Menubar -->
+<link rel="stylesheet" type="text/css" href="http://rohan.informatics.jax.org/~pf/webshare_dev/css/template.css"/>
+<script type="text/javascript" src="http://rohan.informatics.jax.org/~pf/webshare_dev/js/fsmenu.js"></script>
+
+
+<!-- Mini Homepage Tabs -->
+<link rel="stylesheet" type="text/css" href="http://rohan.informatics.jax.org/~pf/webshare_dev/css/ddcolortabs.css"/>
+<script type="text/javascript" src="http://rohan.informatics.jax.org/~pf/webshare_dev/js/ddtabmenu.js"></script>
+
+<!-- Overlib -->
+<script type="text/javascript" src="http://rohan.informatics.jax.org/~pf/webshare_dev/js/overlibHomepage.js"></script>
+<script type="text/javascript" src="http://rohan.informatics.jax.org/~pf/webshare_dev/js/overlib_cssstyle.js"></script>
+<script type="text/javascript" src="http://rohan.informatics.jax.org/~pf/webshare_dev/js/overlib_anchor.js"></script>
+
+<script>
+function addTitleBarIcon()
+{
+    // pull in the title bar, and gather needed information
+    var titleBar = document.getElementById("titleBar");
+    var userdoc = titleBar.getAttribute("userdoc");
+    var currentHTML = titleBar.innerHTML;
+    var helpIcon = '<img class="noBorder" src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/help_large.jpg">';
+    var helpLink = '';
+
+    if (userdoc != null & userdoc !="") {
+        helpLink = "<a class='titleBarHelpIcon' href='http://rohan.informatics.jax.org/~pf/userdocs_dev/" + userdoc + "'>" + helpIcon + "</a>";
+        titleBar.innerHTML = helpLink + currentHTML;
+    }
+};
+
+</script>
+<!--===================== End Template Head  ===========================-->

@@ -1,0 +1,639 @@
+<!--===================== Body Start ===========================-->
+</head>
+<body class="mainBody" onload="addTitleBarIcon()" >
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:#DFEFFF;">
+<tr>
+
+  <!-- logo -->
+  <td width="%1">
+    <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/">
+      <img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/mgi_logo.gif" width="120" height="60" border=0 alt="help">
+    </a>
+    <BR><span style="font-size:10px; color:#002255;">
+    <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/">&nbsp;Home</a> | <a href="***help.html">Help</a> | <a href="***future_faq_HELP.html">FAQ</a>
+  </td>
+
+  <!-- searchtool and mini-home navigation -->
+  <td>
+  <div style="position:absolute; top:2px; right:0px; clear:right; width:700px;" nowrap="nowrap">
+    <div id="searchNoTabs"
+    style="float:right; clear:right; display:inline; top:5px; right:5px; position:absolute; max-width:400px;">
+
+      <div id="searchForm"
+      style="top:5px; float:right; clear:right;" align="left">
+
+        <div id="helpButton" style="top:5px; float:left;" align="left">
+         <a href="javascript:void(0);"
+         onMouseOver="return overlib('You may search for genes and markers by name or symbol, or any form of accession ID.<BR/><BR/>Use * for wildcard. Use quotation marks around phrases. Use angle brackets around superscript.<BR/>Examples:<BR/>&nbsp;&nbsp;&nbsp;&nbsp;Pax*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;paired box&quot;<BR/> &nbsp;&nbsp;&nbsp;&nbsp;OST128284 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MGI:97485<BR/> &nbsp;&nbsp;&nbsp;&nbsp;Pax6&lt;10Neu&gt;<BR/>Advanced searches are listed under the Search menu.<BR/><center><a href=\'http://www.informatics.jax.org/userdocs/searchtool_help.shtml\'>More searching help.</a></center><BR/>', STICKY, CAPTION, 'Search Tips', CENTER, BELOW, WIDTH, 265, DELAY, 600);" onMouseOut="nd();">
+         <img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/help_small_transp.gif" border="0" width="21" height="20"></a>&nbsp;
+        </div>
+
+      <FORM action="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch" method="get"
+      style="vertical-align:bottom;">
+
+      <INPUT TYPE="hidden" NAME="page" VALUE="searchTool">
+      <input name="query" id="query"
+      style="color:#002255; background-color:#FFFFFF; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:9px;"
+      value="ID, symbol, or name" onFocus="if(this.defaultValue==this.value) this.value='';" size="40">&nbsp;
+      <INPUT TYPE="hidden" NAME="selectedQuery" VALUE="Genes and Markers">
+      <INPUT name="submit" type="submit" class="templateButton" VALUE="SEARCH">
+      </form>
+    </div><!-- end of div "searchForm" -->
+  </div><!-- end of "searchNoTabs" div -->
+  </div>
+
+    <!------------------------------- Tabbed menu from Dynamic Drive ----------->
+    <!-- Somehow, changing the canned css from "float:left" to "float:right"
+    ---- reverses the tab order, so list them in reverse here -->
+    <div id="ddtabs1" class="ddcolortabs"
+      style="position:absolute; top:33px; right:0px; clear:right; width:700px;" nowrap="nowrap">
+      <ul class="ddcolortabs">
+        <li><a href="http://tumor.informatics.jax.org/mtbwi/index.do" rel="ct9">
+          <span>&nbsp;&nbsp;Mouse&nbsp;&nbsp;<br/>&nbsp;&nbsp;Tumor&nbsp;&nbsp;<br/>&nbsp;&nbsp;Biology&nbsp;&nbsp;</span></a></li>
+        <li><a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_Ortho.shtml" rel="ct8">
+          <span><br/>Mammalian <br/>Orthology</span></a></li>
+        <li><a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_Strain.shtml" rel="ct6">
+          <span><br/>Strains, SNPs &amp;<br/>Polymorphisms</span></a></li>
+        <li><a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/***dummy_tabs.shtml" rel="ct5">
+          <span><br/>Biochemical<br/>Pathways</span></a></li>
+        <li><a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_GO.shtml" rel="ct4">
+          <span>GO<br/>Functional<br/>Annotations</span></a></li>
+        <li><a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_GXD.shtml" rel="ct3">
+          <span><br/>Gene <br/>Expression</span></a></li>
+        <li><a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_PAD.shtml" rel="ct2">
+          <span>Phenotypes,<br/>Alleles &amp;<br/>Diseases</span></a></li>
+        <li><a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_Genes.shtml" rel="ct1">
+          <span><br/>Genes &amp;<br/>Markers</span></a></li>
+     </ul>
+    </div>
+<!-- end of Tabbed Menu -->
+  </td>
+</tr>
+</table>
+
+
+<!--------------------------- Menu Bar Start -------------------------->
+<div class="menubarContainer">
+<table><tr><td>
+<ul class="menulist" id="listMenuRoot">
+
+<!---------- Searches Start ---------->
+<li> <a href="***AllSearches.html"> &nbsp; Search&nbsp;<img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
+  <ul>
+  <li> <a href="***AllSearches.html"
+       onMouseOver="return overlib('Go to a menu page listing all query forms and browsers available to access MGI data.',ANCHOR, 'SearchesHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+       All Searches </a>
+       <div id="SearchesHelp"></div>
+  </li>
+
+  <!-- Marker Submenu -->
+  <li><a>Genes & Markers</a>
+  <ul>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=markerQF"
+      onMouseOver="return overlib('Search for genes and other markers by symbol, name, position, GO<br/> terms, protein domains, phenotypes, human diseases, and more.',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');" onMouseOut="nd();">
+      Marker Query Form </a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="MarkerHelp"></div>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=batchQF"
+      onMouseOver="return overlib('Download gene/marker data for a batch of IDs or symbols. <br/>Results may be in web or tab-delimited format.',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      MGI Batch Query Form</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/GO_form.shtml"
+      onMouseOver="return overlib('Search or browse for Gene Ontology (GO) terms describing molecular functions, biological processes, or cellular components associated with genes. Results are linked to the associated genes.',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Gene Ontology (GO) Browser</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=pirsfVocab&subset=A"
+      onMouseOver="return overlib('Search or browse for Protein Information Resource SuperFamily (PIRSF) classification names associated with genes. Classifications reflect evolutionary relationships of full-length proteins. Results are linked to the associated genes.',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Protein Superfamily (PIRSF) Browser</a>
+    </li>
+    <li>
+      <a href="http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current"
+      onMouseOver="return overlib('Interactive genome map browser. View tracks for QTLs, SNP density, SNPs, various types of alleles, and/or mammalian phenotype (MP) annotated alleles.',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse GBrowse</a>
+    </li>
+    <li>
+      <div align="right" >
+        <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_Genes.shtml"
+        onMouseOver="return overlib('Go to the MGI Genes & Markers page for more detailed information and more options.',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+  <!-- Pheno Submenu -->
+  <li><a>Phenotypes, Alleles & Disease Models</a>
+  <ul>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/allele_form.shtml"
+      onMouseOver="return overlib('Search for alleles based on phenotype, human disease, mutation type, gene, or chromosome location.',ANCHOR, 'AlleleHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Phenotypes, Alleles &amp; Disease Models Query Form </a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="AlleleHelp"></div>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/MP_form.shtml"
+      onMouseOver="return overlib('Search for phenotype terms and associated genotypes using terms, synonyms, or IDs.',ANCHOR, 'AlleleHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mammalian Phenotype (MP) Ontology Browser</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=omimVocab&subset=A"
+      onMouseOver="return overlib('Search for human diseases and associated mouse models using terms, synonyms, or IDs.',ANCHOR, 'AlleleHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Human Disease (OMIM) Vocabulary Browser</a>
+    </li>
+    <li>
+      <div align="right" style="display:list-item;">
+        <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_PAD.shtml"
+        onMouseOver="return overlib('Go to the MGI Phenotypes, Alleles & Disease Models page for more detailed information and more options.',ANCHOR, 'AlleleHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+  <!-- Gene Expression Submenu -->
+  <li><a>Gene Expression</a>
+  <ul>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/gxdindex_form.shtml"
+      onMouseOver="return overlib('Search for references on gene expression during development.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Gene Expression Literature Index Query Form </a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="ExpressionHelp"></div>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=expressionQF"
+      onMouseOver="return overlib('Search for detailed gene expression assay results.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Gene Expression Data Query Form</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=expressionQFexpanded"
+      onMouseOver="return overlib('Search for  genes expressed in some anatomical structures and/or developmental stages but not in others.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Gene Expression Data Expanded Query Form</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/anatdict_form.shtml"
+      onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse Anatomical Dictionary Browser</a>
+    </li>
+    <li>
+      <a href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html"
+      onMouseOver="return overlib('Search the Edinburgh Mouse Atlas for anatomical terms and query for associated expression data.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      EMAGE Anatomical Section Browser</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=cDNAQF"
+      onMouseOver="return overlib('Search for expression information based on tissue or cell-line origin of cDNAs.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      cDNA Clone Query Form</a>
+    </li>
+    <li>
+      <div align="right" style="display:list-item;">
+        <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_GXD.shtml"
+        onMouseOver="return overlib('Go to the MGI Gene Expression Database (GXD) page for more detailed information and more options.',ANCHOR, 'ExpressionHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+  <!-- GO Functional Annotations Submenu -->
+  <li><a>GO Functional Annotations</a>
+  <ul>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=markerQF"
+      onMouseOver="return overlib('Search for genes and other markers by symbol, name, position, GO<br/> terms, protein domains, phenotypes, human diseases, and more.',ANCHOR, 'GOHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Marker Query Form</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="GOHelp"></div>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/GO_form.shtml"
+      onMouseOver="return overlib('Search or browse for Gene Ontology (GO) terms describing molecular functions, biological processes, or cellular components associated with genes. Results are linked to the associated genes.',ANCHOR, 'GOHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Gene Ontology (GO) Browser</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=batchQF"
+      onMouseOver="return overlib('Download gene/marker data for a batch of IDs or symbols. <br/>Results may be in web or tab-delimited format.',ANCHOR, 'GOHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      MGI Batch Query Form</a>
+    </li>
+    <li>
+      <div align="right" style="display:list-item;">
+        <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_GO.shtml"
+        onMouseOver="return overlib('Go to the MGI GO Functional Annotation page for more detailed information and more options.',ANCHOR, 'GOHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+
+  <!-- Strains Submenu -->
+  <li><a> Strains, SNPs & Polymorphisms</a>
+  <ul>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=snpQF"
+      onMouseOver="return overlib('Search for SNPs by strains, strain comparisons, SNP attributes, map position, marker range, or associated genes.',ANCHOR, 'StrainHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      SNP Query Form</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="StrainHelp"></div>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/polymorphism_form.shtml"
+      onMouseOver="return overlib('Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position.',ANCHOR, 'StrainHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      RFLP/PCR Polymorphism Query Form</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/reports/snpSummary.shtml"
+      onMouseOver="return overlib('Report listing number of assays by submitter, and number of refSNPs per chromosome for each strain.',ANCHOR, 'StrainHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      SNP Summary Report</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/external/festing/search_form.cgi"
+      onMouseOver="return overlib('Search the Listing of Inbred Strains of Mice and Rats by M. Festing.',ANCHOR, 'StrainHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Inbred Strain Characteristics (Festing's)</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/genealogy/"
+      onMouseOver="return overlib('Download the genealogy chart showing the relationships among the inbred strains (PDF, 4.4Mbytes).',ANCHOR, 'StrainHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Genealogy Chart of Inbred Strains</a>
+    </li>
+    <li>
+      <div align="right" style="display:list-item;"> <
+        a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_Strain.shtml"
+        onMouseOver="return overlib('Go the MGI Strain, SNPs, and Polymorphisms page.',ANCHOR, 'StrainHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+        More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+
+  <!-- Orthology Submenu -->
+  <li><a>Mammalian Orthology</a>
+  <ul>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/homology_form.shtml"
+      onMouseOver="return overlib('Search for orthologous genes by species, gene symbol, name, or map position.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Orthology Query Form
+      <!-- anchor div for overlib tooltips-->
+      <div id="OrthoHelp"></div></a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=pirsfVocab&subset=A"
+      onMouseOver="return overlib('Search or browse PIRSF Superfamilies mapped to mouse, human, and rat genes.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Protein Superfamily (PIRSF) Browser</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/oxfordgrid_form.shtml"
+      onMouseOver="return overlib('Display a two-species orthology comparison, including links to comparative maps.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Oxford Grid</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/reports/homologymap/mouse_human.shtml"
+      onMouseOver="return overlib('View orthologies between mouse and human at the whole genome level.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse-Human Orthology Map </a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/reports/homologymap/mouse_rat.shtml"
+      onMouseOver="return overlib('View orthologies between mouse and rat at the whole genome level.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse-Rat Orthology Map </a>
+    </li>
+    <li>
+      <a href="http://www.informatics.jax.org/searches/linkmap_form.shtml"
+      onMouseOver="return overlib('Build a comparative map using the Linkage Map tool.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Comparative Map </a>
+    </li>
+    <li>
+      <div align="right" style="display:list-item;">
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_Ortho.shtml"
+      onMouseOver="return overlib('Go to the MGI Orthology page for detailed information and more options.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      More</a>
+      </div>
+    </li>
+  </ul>
+  </li>
+
+
+  <!-- MTB - link only; has no submenu -->
+  <li>
+    <a href="http://tumor.informatics.jax.org/mtbwi/index.do"
+    onMouseOver="return overlib('MTB supports using the mouse as a model system of hereditary cancer. MTB includes information about endogenous and spontaneous tumors, genetically defined mice in which tumors arise, genetic factors associated with tumor susceptibility, pathology reports and images, and more.',ANCHOR, 'MTBHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    Mouse Tumor Biology (MTB)
+    <div id="MTBHelp"></div></a>
+  </li>
+
+
+  <!-- Sequence Submenu -->
+  <li><a> Sequences</a>
+  <ul>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/sequence_form.shtml"
+      onMouseOver="return overlib('Search for mouse sequences by sequence attributes, sources, and/or properties of associated genes and markers in MGI.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Sequence Query Form</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="SeqHelp"></div>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/accession_form.shtml"
+      onMouseOver="return overlib('Search MGI using sequence accession IDs to find all of the sequences, genes, markers, probes and clones that are associated with those accession IDs.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Accession ID Query Form</a>
+    </li>
+    <li>
+      <a href="http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current"
+      onMouseOver="return overlib('Interactive visual genome map browser for C57BL/6J genes and markers, QTLs, alleles and SNPs.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse GBrowse</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=batchQF"
+      onMouseOver="return overlib('Download gene/marker data for a batch of IDs or symbols. Results may be in web or tab-delimited format.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      MGI Batch Query Form</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mblast_wi/www/"
+      onMouseOver="return overlib('Search mouse, human, rat, and other sequence data. MouseBLAST returns sequence similarity results that are hypertext linked to curated data on genes and markers in the MGI database.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      MouseBLAST</a>
+    </li>
+  </ul>
+  </li>
+
+
+  <!-- Mapping Data Submenu -->
+  <li><a>Maps &amp; Mapping Data</a>
+  <ul>
+    <li>
+      <a href="http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current"
+      onMouseOver="return overlib('Interactive visual genome map browser for C57BL/6J genes and markers, QTLs, alleles and SNPs.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse GBrowse</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="MapsHelp"></div>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/linkmap_form.shtml"
+      onMouseOver="return overlib('Help for the Linkage Maps option.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Linkage Maps</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/cytomap_form.shtml"
+      onMouseOver="return overlib('Cytogenetic Maps option help text.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Cytogenetic Maps</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/reports/mitmap/"
+      onMouseOver="return overlib('Help for the Physical Maps option.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Physical Maps</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/mapdata_form.shtml"
+      onMouseOver="return overlib('Search by experiment type, marker symbol, chromosome, or reference.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mapping Data Query Form</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/riset_form.shtml"
+      onMouseOver="return overlib('Search by RI set or chromosome.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      RI Strain Distribution Patterns</a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/rcset_form.shtml"
+      onMouseOver="return overlib('Search by RC set or chromosome.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      RC Strain Distribution Patterns </a>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/crossdata_form.shtml"
+      onMouseOver="return overlib('Search by Mapping Panel and chromosome.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      DNA Mapping Panel Data Sets </a>
+    </li>
+  </ul>
+  </li>
+
+  <!-- Probes & Clones -->
+  <li><a>Probes &amp; Clones </a>
+  <ul>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=probeQF"
+      onMouseOver="return overlib('Search by probe/clone name, sequence type, vector type, marker symbol, origin, or reference.',ANCHOR, 'ProbesHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Molecular Probes and Clones Query Form</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="ProbesHelp"></div>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=cDNAQF"
+      onMouseOver="return overlib('Search for expression information based on tissue or cell-line source.',ANCHOR, 'ProbesHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      cDNA Clones Query Form</a>
+    </li>
+  </ul>
+  </li>
+
+
+  <!-- References Submenu -->
+  <li><a> References</a>
+  <ul>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/reference_form.shtml"
+      onMouseOver="return overlib('Search for references (with abstracts) by title, author, journal, year, or abstract.',ANCHOR, 'RefHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Reference Query Form</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="RefHelp"></div>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/gxdindex_form.shtml"
+      onMouseOver="return overlib('Search for references on gene expression during development; includes genes, ages analyzed and assays used.',ANCHOR, 'RefHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Gene Expression Literature</a>
+    </li>
+  </ul>
+  </li>
+
+
+  <!--- Vocabularies Submenu --->
+  <li><a> Vocabularies</a>
+  <ul>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/GO_form.shtml"
+      onMouseOver="return overlib('Search or browse for Gene Ontology (GO) terms describing molecular functions, biological processes, or cellular components associated with genes. Results are linked to the associated genes.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Gene Ontology (GO) Browser</a>
+      <!-- anchor div for overlib tooltips-->
+      <div id="VocabHelp"></div>
+    </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=omimVocab&subset=A"
+      onMouseOver="return overlib('Search or browse for a Human Disease term; includes links to detail pages showing genotypes annotated with each term and links to the Online Mendelian Inheritance in Man (OMIM) web pages.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Human Disease (OMIM) Browser</a> </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/MP_form.shtml"
+      onMouseOver="return overlib('Search or browse for a Mammalian Phenotype term to view term details and relationships among terms; includes links to genotypes annotated with each term or any sub terms.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mammalian Phenotype Ontology (MP) Browser</a> </li>
+    <li>
+      <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=pirsfVocab&subset=A"
+      onMouseOver="return overlib('Search or browse for Protein Information Resource SuperFamily (PIRSF) classification names associated with genes. Results are linked to the associated genes.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Protein Superfamily (PIRSF) Browser</a> </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/anatdict_form.shtml"
+      onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Mouse Anatomical Dictionary</a> </li>
+    <li>
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/AMA_form.shtml"
+      onMouseOver="return overlib('An extensive Stage 28 dictionary; not yet in use for annotation of expression data.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      Adult Mouse Anatomy Browser</a> </li>
+  </ul>
+  </li>
+
+
+
+  <!-- Non-Drop-Downs -->
+  <li>
+    <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/accession_form.shtml"
+    onMouseOver="return overlib('Search MGI using sequence accession IDs to find all of the sequences, genes, markers, probes and clones that are associated with those accession IDs.',ANCHOR, 'AccHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    Accession ID Search</a>
+    <div id="AccHelp"></div>
+  </li>
+  <li>
+    <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=batchQF"
+    onMouseOver="return overlib('Download gene/marker data for a batch of IDs or symbols. Results may be in web or tab-delimited format.',ANCHOR, 'BatchHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    MGI Batch Queries</a>
+    <div id="BatchHelp"></div>
+    </li>
+  <li>
+    <a href="http://firien.informatics.jax.org/usrlocalmgi/3.5/mblast_wi/www/"
+    onMouseOver="return overlib('Search mouse, human, rat, and other sequence data. MouseBLAST returns sequence similarity results that are hypertext linked to curated data on genes and markers in the MGI database.',ANCHOR, 'BlastHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    MouseBLAST</a>
+    <div id="BlastHelp"></div>
+  </li>
+  <li>
+    <a href="http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current"
+    onMouseOver="return overlib('Interactive genome map browser. View tracks for QTLs, SNP density, SNPs, various types of alleles, and/or mammalian phenotype (MP) annotated alleles.',ANCHOR, 'GBrowseHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    Mouse GBrowse</a>
+    <div id="GBrowseHelp"></div>
+  </li>
+
+  </ul>
+</li>
+<!---------- Searches Dropmenu End ---------->
+
+
+<!---------- Download Dropmenu Start ----------->
+<li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html">
+    &nbsp; Download&nbsp;<img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
+  <ul>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html"> All Downloadable Data Reports</a> </li>
+    <li> <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=batchQF"> MGI Batch Queries</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#marker"> Genes &amp; Markers</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#seq"> Sequence Data</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#orthology"> Mammalian Orthology</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#go"> Gene Ontology Data</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#strain"> Strains &amp; Polymorphisms</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#expression"> Gene Expression</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#pheno"> Phenotypic Data</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#statistics"> General Statistics</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#nomen"> Nomenclature</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#refs"> References</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#clonecoll"> Clone Collections</a> </li>
+  </ul>
+</li>
+<!---------- Download Dropmenu End ----------->
+
+
+<!---------- Submit Dropmenu Start ----------->
+<li> <a href="***AllSubmitForms.html"> &nbsp; Submit&nbsp;<img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
+  <ul>
+  <li> <a> Nomenclature &amp; Lab Codes</a>
+    <ul>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/nomen/nomen_submit_form.shtml"> Request gene/locus nomenclature</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/nomen/allmut_form.shtml"> Request allele nomenclature</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/submissions/strains/index.shtml"> Submit proposed strain nomenclature</a> </li>
+      <li> <a href="http://dels.nas.edu/ilar_n/ilarhome/labcode.shtml"> Search or apply for a Laboratory Registration Code with ILAR</a> </li>
+    </ul>
+  </li>
+  <li> <a> Data To MGI</a>
+    <ul>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/submissions/submit.shtml"> Mapping, homology, and polymorphisms (rework existing Mouse Genome Data page)</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/nomen/allmut_form.shtml"> Mutations and phenotypes</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/GXD/GEN/gxd_submission_guidelines.shtml"> Guidelines for submitting expression data</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/GO/annotating.shtml"> Functional annotations for a gene using the Gene Ontology (GO)</a> </li>
+    </ul>
+  </li>
+  <li> <a> Your Opinion</a>
+    <ul>
+      <li> <a href="***"> Nominate knockouts for public repositories</a></li>
+      <li> <a href="***"> Submit knockout data for repatriation</a> </li>
+      <li> <a href="***"> NIH KOMP gene nomination</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/support/tjl_inbox.shtml"> Feedback to MGI</a> </li>
+    </ul>
+  </li>
+  </ul>
+</li>
+<!---------- Submit Dropmenu End ----------->
+
+
+<!---------- Resources Dropmenu Start ----------->
+<li>
+  <a href="***AllOtherResources.html">
+    &nbsp; More Resources &nbsp;<img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+  <ul>
+  <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/lists/lists.shtml"> Research Community E-mail Lists</a> </li>
+  <li> <a>Online Books</a>
+    <ul>
+      <li> <a href="http://www.informatics.jax.org/silver/"> <em>Mouse Genetics</em> by Lee Silver</a> </li>
+      <li> <a href="http://www.informatics.jax.org/morsebook/"> <em>Origins of Inbred Mice</em> edited by Herbert C. Morse III</a> </li>
+      <li> <a href="http://www.informatics.jax.org/cookbook/"> <em>The Anatomy of the Laboratory Mouse</em> by Margaret J. Cook</a> </li>
+      <li> <a href="http://www.informatics.jax.org/wksilvers/"> <em>The Coat Colors of Mice</em> by Willys K. Silvers</a> </li>
+    </ul>
+  </li>
+  <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/nomen/index.shtml"> Nomenclature</a> </li>
+  <li> <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=glossaryIndex&printFormat=footer"> MGI Glossary</a> </li>
+  <li> <a href="http://proto.informatics.jax.org/"> Prototype Tools</a> </li>
+  <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/GXD/GEN/"> Gene Expression Notebook (GEN)</a> </li>
+  <li> <a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home"> Mouse Phenome Database (MPD)</a> </li>
+  <li> <a href="http://www.informatics.jax.org/external/ko/"> Deltagen and Lexicon Knockout Mice</a> </li>
+  <li> <a>Knockout Mouse Projects </a>
+    <ul>
+      <li> <a href="http://www.knockoutmouse.org/">NIH Knockout Mouse Project (KOMP) Data Coordination Center </a> </li>
+      <li> <a href="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiatives</a> </li>
+      <li> <a href="http://www.eucomm.org/">European Conditional Mouse Mutagenesis Program (EUCOMM)</a> </li>
+      <li> <a href="http://www.norcomm.org/">North American Conditional Mouse Mutagenesis project (NORCOMM)</a> </li>
+    </ul>
+  </li>
+  <li> <a href="ftp://ftp.informatics.jax.org/pub/datasets/index.html"> Contributed Data Sets</a> </li>
+  <li> <a>Community Links</a>
+    <ul>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/other/mouse_facts4.shtml"> Mouse, Mammalian, &amp; Model Organism Resources</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/other/phenoallele_commun_resource.shtml"> Phenotypes &amp; Mutants Community Resources</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/other/mouse_facts1.shtml#MolecRes"> Sources for clones</a> </li>
+    </ul>
+  </li>
+  <li> <a>Software &amp; Developers</a>
+    <ul>
+    <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/other/link_instructions.shtml"> How to link to MGI</a> </li>
+    <li> <a href="***"> Get a database querying account</a> </li>
+    <li> <a href="http://www.informatics.jax.org/schema/"> MGI Database Schema</a> </li>
+    <li> <a href="ftp://ftp.informatics.jax.org/"> FTP Reports Server</a> </li>
+    <li> <a href="***"> Web Services/API</a> </li>
+    <li> <a href="***AllSoftware.html"> All Software &amp; Developers Links</a> </li>
+    </ul>
+  </li>
+  </ul>
+</li>
+<!---------- Resources Dropmenu End ----------->
+
+
+<!------- Direct Links  ------->
+<li>
+  <a href="http://www.informatics.jax.org/imsr/index.jsp"
+  title="International Mouse Strain Resource (IMSR)">
+  Find Mice (IMSR) &nbsp;&nbsp;&nbsp;&nbsp;</a>
+</li>
+<li>
+  <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/support/tjl_inbox.shtml"
+  title="Contact user support">
+  Ask&nbsp;Us</a>
+</li>
+
+</ul>
+
+</td></tr></table>
+</div> <!-- class="menubarContainer" -->
+<!--------------------------- Menu Bar End ------------------------------>
