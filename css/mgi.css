@@ -1,6 +1,17 @@
 /* Defaults */
-body {background-color:#ffffff;color:#000000;font-family:Verdana,Arial,Helvetica;font-size:12px;}
-td {font-family:Verdana,Arial,Helvetica;font-size:12px;}
+body {
+    background-color:#ffffff;
+    color:#000000;
+    font-family:Verdana,Arial,Helvetica;
+    font-size:12px;
+    margin: 0px;
+    padding:0px;
+}
+
+td {
+    font-family:Verdana,Arial,Helvetica;
+    font-size:12px;
+}
 
 /* Template Styles */
 #titleBar {
@@ -10,16 +21,14 @@ td {font-family:Verdana,Arial,Helvetica;font-size:12px;}
     color: #000001;
     font-weight: bold;
     text-align: center;
-    background-color: #BBBBBB;
+    background-color: #FFFFFF;
     height: 30px;
     border:2px;
     outline:1px;
 }
-
 #titleBar img {
     border:none;
 }
-
 a.titleBarHelpIcon{
     float:left;
 }
