@@ -7,22 +7,22 @@
   </tr>
   <tr>
     <TD width="33%" style="font-size:9px;">
-      <A HREF="${MGIHOME_URL}other/citation.shtml">
+      <A HREF="http://firien.informatics.jax.org/usrlocalmgi/mgihome/www/other/citation.shtml">
         Citing These Resources</A> <BR>
-      <A HREF="http://www.informatics.jax.org/mgihome/other/mgi_funding.shtml">
+      <A HREF="http://firien.informatics.jax.org/usrlocalmgi/mgihome/www/other/mgi_funding.shtml">
         Funding Information</A> <BR>
-      <A HREF="http://www.informatics.jax.org/mgihome/other/copyright.shtml">
+      <A HREF="http://firien.informatics.jax.org/usrlocalmgi/mgihome/www/other/copyright.shtml">
         Warranty Disclaimer &amp; Copyright Notice</A> <BR>
       Send questions and comments to
-      <A HREF="http://www.informatics.jax.org/mgihome/support/tjl_inbox.shtml">
+      <A HREF="http://firien.informatics.jax.org/usrlocalmgi/mgihome/www/support/tjl_inbox.shtml">
         User Support</A>.    </TD>
     <TD WIDTH="34%" ALIGN=center style="font-size:9px;">
       last database update<BR>
       8/27/2007<BR>
       MGI 4.0<BR>
-        <a href="homepage_080607_Compat.html" class="homePageBody">Web browser compatibility</a>          </TD>
+        <a href="http://firien.informatics.jax.org/usrlocalmgi/mgihome/www/homepages/browser_compatability.shtml" class="homePageBody">Web browser compatibility</a>          </TD>
     <TD WIDTH="33%" ALIGN=right style="font-size:9px;">
-      <A HREF="http://www.jax.org/" border=0> <IMG SRC="http://rohan.informatics.jax.org/~pf/webshare_dev/images/jax_logo.gif" BORDER=0 ALT="The Jackson Laboratory"></A>    </TD>
+      <A HREF="http://www.jax.org/" border=0> <IMG SRC="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/jax_logo.gif" BORDER=0 ALT="The Jackson Laboratory"></A>    </TD>
         </tr>
   </table>
 
