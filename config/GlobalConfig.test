@@ -42,19 +42,19 @@ IS_PRODUCTION   0
 
 JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
-WI_URL                  http://${PY_HOST}/wi/
+WI_URL                  http://${PY_HOST}/wi/www/
 
-MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/
+MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/www/
 
-MGIHOME_URL             http://${PY_HOST}/mgihome/
+MGIHOME_URL             http://${PY_HOST}/mgihome/www/
 
-USERDOCS_URL            http://${PY_HOST}/userdocs/
+USERDOCS_URL            http://${PY_HOST}/userdocs/www/
 
 WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FTP_URL                 ftp://devftp.informatics.jax.org/pub/reports/
 
-FAQ_URL                 http://${PY_HOST}/faq/
+FAQ_URL                 http://${PY_HOST}/faq/www/
 
 ###---------------------###
 ###--- MGI FULL URLs ---###
