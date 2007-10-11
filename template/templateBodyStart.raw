@@ -8,10 +8,10 @@
   <!-- logo -->
   <td width="%1">
     <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/">
-      <img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/mgi_logo.gif" width="120" height="60" border=0 alt="help">
+      <img src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/mgi_logo.gif" width="120" height="60" border=0 alt="help">
     </a>
     <BR><span style="font-size:10px; color:#002255;">
-    <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/">&nbsp;Home</a> | <a href="***help.html">Help</a> | <a href="***future_faq_HELP.html">FAQ</a>
+    <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/">&nbsp;Home</a> | <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/help.shtml">Help</a> | <a href="http://firien.informatics.jax.org/usrlocalmgi/live/faq/www/faq.shtml">FAQ</a>
   </td>
 
   <!-- searchtool and mini-home navigation -->
@@ -25,8 +25,8 @@
 
         <div id="helpButton" style="top:5px; float:left;" align="left">
          <a href="javascript:void(0);"
-         onMouseOver="return overlib('You may search for genes and markers by name or symbol, or any form of accession ID.<BR/><BR/>Use * for wildcard. Use quotation marks around phrases. Use angle brackets around superscript.<BR/>Examples:<BR/>&nbsp;&nbsp;&nbsp;&nbsp;Pax*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;paired box&quot;<BR/> &nbsp;&nbsp;&nbsp;&nbsp;OST128284 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MGI:97485<BR/> &nbsp;&nbsp;&nbsp;&nbsp;Pax6&lt;10Neu&gt;<BR/>Advanced searches are listed under the Search menu.<BR/><center><a href=\'http://www.informatics.jax.org/userdocs/searchtool_help.shtml\'>More searching help.</a></center><BR/>', STICKY, CAPTION, 'Search Tips', CENTER, BELOW, WIDTH, 265, DELAY, 600);" onMouseOut="nd();">
-         <img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/help_small_transp.gif" border="0" width="21" height="20"></a>&nbsp;
+         onMouseOver="return overlib('You may search for genes and markers by name or symbol, or any form of accession ID.<BR/><BR/>Use * for wildcard. Use quotation marks around phrases. Use angle brackets around superscript.<BR/>Examples:<BR/>&nbsp;&nbsp;&nbsp;&nbsp;Pax*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;paired box&quot;<BR/> &nbsp;&nbsp;&nbsp;&nbsp;OST128284 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MGI:97485<BR/> &nbsp;&nbsp;&nbsp;&nbsp;Pax6&lt;10Neu&gt;<BR/>Advanced searches are listed under the Search menu.<BR/><center><a href=\'http://firien.informatics.jax.org/usrlocalmgi/live/userdocs/searchtool_help.shtml\'>More searching help.</a></center><BR/>', STICKY, CAPTION, 'Search Tips', CENTER, BELOW, WIDTH, 265, DELAY, 600);" onMouseOut="nd();">
+         <img src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/help_small_transp.gif" border="0" width="21" height="20"></a>&nbsp;
         </div>
 
       <FORM action="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch" method="get"
@@ -55,7 +55,7 @@
           <span><br/>Mammalian <br/>Orthology</span></a></li>
         <li><a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_Strain.shtml" rel="ct6">
           <span><br/>Strains, SNPs &amp;<br/>Polymorphisms</span></a></li>
-        <li><a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/***dummy_tabs.shtml" rel="ct5">
+        <li><a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/underConstruction.shtml" rel="ct5">
           <span><br/>Biochemical<br/>Pathways</span></a></li>
         <li><a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/homepages/homepage_mini_GO.shtml" rel="ct4">
           <span>GO<br/>Functional<br/>Annotations</span></a></li>
@@ -79,9 +79,9 @@
 <ul class="menulist" id="listMenuRoot">
 
 <!---------- Searches Start ---------->
-<li> <a href="***AllSearches.html"> &nbsp; Search&nbsp;<img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
+<li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/menus/allsearch_menu.shtml"> &nbsp; Search&nbsp;<img src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
   <ul>
-  <li> <a href="***AllSearches.html"
+  <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/menus/allsearch_menu.shtml"
        onMouseOver="return overlib('Go to a menu page listing all query forms and browsers available to access MGI data.',ANCHOR, 'SearchesHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
        All Searches </a>
        <div id="SearchesHelp"></div>
@@ -305,7 +305,7 @@
       Mouse-Rat Orthology Map </a>
     </li>
     <li>
-      <a href="http://www.informatics.jax.org/searches/linkmap_form.shtml"
+      <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/searches/linkmap_form.shtml"
       onMouseOver="return overlib('Build a comparative map using the Linkage Map tool.',ANCHOR, 'OrthoHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
       Comparative Map </a>
     </li>
@@ -517,7 +517,7 @@
 
 <!---------- Download Dropmenu Start ----------->
 <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html">
-    &nbsp; Download&nbsp;<img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
+    &nbsp; Download&nbsp;<img src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
   <ul>
     <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html"> All Downloadable Data Reports</a> </li>
     <li> <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/WIFetch?page=batchQF"> MGI Batch Queries</a> </li>
@@ -538,7 +538,7 @@
 
 
 <!---------- Submit Dropmenu Start ----------->
-<li> <a href="***AllSubmitForms.html"> &nbsp; Submit&nbsp;<img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
+<li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/menus/allsubmitforms_menu.shtml"> &nbsp; Submit&nbsp;<img src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
   <ul>
   <li> <a> Nomenclature &amp; Lab Codes</a>
     <ul>
@@ -571,24 +571,24 @@
 
 <!---------- Resources Dropmenu Start ----------->
 <li>
-  <a href="***AllOtherResources.html">
-    &nbsp; More Resources &nbsp;<img src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+  <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/menus/allotherresources_menu.shtml">
+    &nbsp; More Resources &nbsp;<img src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
   <ul>
   <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/lists/lists.shtml"> Research Community E-mail Lists</a> </li>
   <li> <a>Online Books</a>
     <ul>
-      <li> <a href="http://www.informatics.jax.org/silver/"> <em>Mouse Genetics</em> by Lee Silver</a> </li>
-      <li> <a href="http://www.informatics.jax.org/morsebook/"> <em>Origins of Inbred Mice</em> edited by Herbert C. Morse III</a> </li>
-      <li> <a href="http://www.informatics.jax.org/cookbook/"> <em>The Anatomy of the Laboratory Mouse</em> by Margaret J. Cook</a> </li>
-      <li> <a href="http://www.informatics.jax.org/wksilvers/"> <em>The Coat Colors of Mice</em> by Willys K. Silvers</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/silver/"> <em>Mouse Genetics</em> by Lee Silver</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/morsebook/"> <em>Origins of Inbred Mice</em> edited by Herbert C. Morse III</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/cookbook/"> <em>The Anatomy of the Laboratory Mouse</em> by Margaret J. Cook</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wksilvers/"> <em>The Coat Colors of Mice</em> by Willys K. Silvers</a> </li>
     </ul>
   </li>
   <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/nomen/index.shtml"> Nomenclature</a> </li>
-  <li> <a href="http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=glossaryIndex&printFormat=footer"> MGI Glossary</a> </li>
+  <li> <a href="http://firien.informatics.jax.org:8080/javawi2/servlet/5WIFetch?page=glossaryIndex&printFormat=footer"> MGI Glossary</a> </li>
   <li> <a href="http://proto.informatics.jax.org/"> Prototype Tools</a> </li>
   <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/GXD/GEN/"> Gene Expression Notebook (GEN)</a> </li>
   <li> <a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home"> Mouse Phenome Database (MPD)</a> </li>
-  <li> <a href="http://www.informatics.jax.org/external/ko/"> Deltagen and Lexicon Knockout Mice</a> </li>
+  <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wi/www/external/ko/"> Deltagen and Lexicon Knockout Mice</a> </li>
   <li> <a>Knockout Mouse Projects </a>
     <ul>
       <li> <a href="http://www.knockoutmouse.org/">NIH Knockout Mouse Project (KOMP) Data Coordination Center </a> </li>
@@ -609,7 +609,7 @@
     <ul>
     <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/other/link_instructions.shtml"> How to link to MGI</a> </li>
     <li> <a href="***"> Get a database querying account</a> </li>
-    <li> <a href="http://www.informatics.jax.org/schema/"> MGI Database Schema</a> </li>
+    <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/schema/"> MGI Database Schema</a> </li>
     <li> <a href="ftp://ftp.informatics.jax.org/"> FTP Reports Server</a> </li>
     <li> <a href="***"> Web Services/API</a> </li>
     <li> <a href="***AllSoftware.html"> All Software &amp; Developers Links</a> </li>

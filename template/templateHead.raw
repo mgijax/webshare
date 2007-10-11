@@ -5,22 +5,22 @@
 <!--  <meta name="keywords" CONTENT="MGI content">  -->
 
 <!-- CSS -->
-<link href="http://rohan.informatics.jax.org/~pf/webshare_dev/css/mgi.css" rel="stylesheet" type="text/css"/>
+<link href="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/css/mgi.css" rel="stylesheet" type="text/css"/>
 
 
 <!-- Menubar -->
-<link rel="stylesheet" type="text/css" href="http://rohan.informatics.jax.org/~pf/webshare_dev/css/template.css"/>
-<script type="text/javascript" src="http://rohan.informatics.jax.org/~pf/webshare_dev/js/fsmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="firien.informatics.jax.org/usrlocalmgi/live/webshare/css/template.css"/>
+<script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/fsmenu.js"></script>
 
 
 <!-- Mini Homepage Tabs -->
-<link rel="stylesheet" type="text/css" href="http://rohan.informatics.jax.org/~pf/webshare_dev/css/ddcolortabs.css"/>
-<script type="text/javascript" src="http://rohan.informatics.jax.org/~pf/webshare_dev/js/ddtabmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="firien.informatics.jax.org/usrlocalmgi/live/webshare/css/ddcolortabs.css"/>
+<script type="text/javascript" src="firien.informatics.jax.org/usrlocalmgi/live/webshare/js/ddtabmenu.js"></script>
 
 <!-- Overlib -->
-<script type="text/javascript" src="http://rohan.informatics.jax.org/~pf/webshare_dev/js/overlibHomepage.js"></script>
-<script type="text/javascript" src="http://rohan.informatics.jax.org/~pf/webshare_dev/js/overlib_cssstyle.js"></script>
-<script type="text/javascript" src="http://rohan.informatics.jax.org/~pf/webshare_dev/js/overlib_anchor.js"></script>
+<script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/overlibHomepage.js"></script>
+<script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/overlib_cssstyle.js"></script>
+<script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/overlib_anchor.js"></script>
 
 <script>
 function addTitleBarIcon()
@@ -29,11 +29,11 @@ function addTitleBarIcon()
     var titleBar = document.getElementById("titleBar");
     var userdoc = titleBar.getAttribute("userdoc");
     var currentHTML = titleBar.innerHTML;
-    var helpIcon = '<img class="noBorder" src="http://rohan.informatics.jax.org/~pf/webshare_dev/images/help_large.jpg">';
+    var helpIcon = '<img class="noBorder" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/help_large.jpg">';
     var helpLink = '';
 
     if (userdoc != null & userdoc !="") {
-        helpLink = "<a class='titleBarHelpIcon' href='http://rohan.informatics.jax.org/~pf/userdocs_dev/" + userdoc + "'>" + helpIcon + "</a>";
+        helpLink = "<a class='titleBarHelpIcon' href='http://firien.informatics.jax.org/usrlocalmgi/live/userdocs/" + userdoc + "'>" + helpIcon + "</a>";
         titleBar.innerHTML = helpLink + currentHTML;
     }
 };
