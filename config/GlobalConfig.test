@@ -105,7 +105,7 @@ ENTREZ_URL              http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cm
 # URL to NCBI's Entrez for Genbank sequence IDs
 GB_URL                  http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=
 
-RC_KO_URL               http://www.mmrrc.org/catalog/StrainCatalogSearchForm.jsp?gene_search=Gene/Allele+Symbol&symName=contains&LowerCaseSymbol=%s&numName==&MmrrcId=&SourceCollection=%s&InitialMaintenanceLevel=Both&Status=AVD&Status=Importation&Status=Accepted&pageSize=25&jboEventVo=StrainCatalogMasterView&jboEvent=Search
+MMRRC_KO_URL               http://www.mmrrc.org/catalog/StrainCatalogSearchForm.jsp?gene_search=Gene/Allele+Symbol&symName=contains&LowerCaseSymbol=%s&numName==&MmrrcId=&SourceCollection=%s&InitialMaintenanceLevel=Both&Status=AVD&Status=Importation&Status=Accepted&pageSize=25&jboEventVo=StrainCatalogMasterView&jboEvent=Search
 
 JAX_KO_URL              http://jaxmice.jax.org/strain/%s.html
 
