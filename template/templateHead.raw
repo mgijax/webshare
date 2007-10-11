@@ -14,8 +14,8 @@
 
 
 <!-- Mini Homepage Tabs -->
-<link rel="stylesheet" type="text/css" href="firien.informatics.jax.org/usrlocalmgi/live/webshare/css/ddcolortabs.css"/>
-<script type="text/javascript" src="firien.informatics.jax.org/usrlocalmgi/live/webshare/js/ddtabmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/css/ddcolortabs.css"/>
+<script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/ddtabmenu.js"></script>
 
 <!-- Overlib -->
 <script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/overlibHomepage.js"></script>
