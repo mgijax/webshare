@@ -70,9 +70,9 @@ COOKBOOK_URL            http://${PY_HOST}/cookbook/
 
 MORSEBOOK_URL           http://${PY_HOST}/morsebook/
 
-SILVER_URL              http://${PY_HOST}/silver/
+SILVER_URL              http://${PY_HOST}/silverbook/www/
 
-WKSILVERS_URL           http://${PY_HOST}/wksilvers/
+WKSILVERS_URL           http://${PY_HOST}/wksilvers/www/
 
 SCHEMA                  http://firien.informatics.jax.org/schema/
 
