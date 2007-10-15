@@ -33,7 +33,7 @@ alt = black ball
 
 [
 name = help
-url = ${IMAGES_URL}help_large.jpg
+url = ${IMAGES_URL}help_large_transp.gif
 width = 32
 height = 30
 alt = help icon
