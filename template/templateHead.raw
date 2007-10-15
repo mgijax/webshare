@@ -28,11 +28,11 @@ function addTitleBarIcon()
     var titleBar = document.getElementById("titleBar");
     var userdoc = titleBar.getAttribute("userdoc");
     var currentHTML = titleBar.innerHTML;
-    var helpIcon = '<img class="noBorder" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/help_large.jpg">';
+    var helpIcon = '<img class="noBorder" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/help_large_transp.gif">';
     var helpLink = '';
 
     if (userdoc != null & userdoc !="") {
-        helpLink = "<a class='titleBarHelpIcon' href='http://firien.informatics.jax.org/usrlocalmgi/live/userdocs/" + userdoc + "'>" + helpIcon + "</a>";
+        helpLink = "<a class='titleBarHelpIcon' href='http://firien.informatics.jax.org/usrlocalmgi/live/userdocs/www/" + userdoc + "'>" + helpIcon + "</a>";
         titleBar.innerHTML = helpLink + currentHTML;
     }
 };
