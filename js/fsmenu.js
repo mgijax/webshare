@@ -74,6 +74,9 @@ if (document.createElement && document.documentElement)
 }
 addEvent(window, 'load', new Function('listMenu.activateMenu("listMenuRoot", arrow)'));
 
+function startMenu() {
+listMenu.activateMenu("listMenuRoot", arrow);
+}
 
 // To create more menus, duplicate this section and make sure you rename your
 // menu object to something different; also, activate another <ul> list with a
