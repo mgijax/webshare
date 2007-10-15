@@ -7,7 +7,6 @@
 <!-- CSS -->
 <link href="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/css/mgi.css" rel="stylesheet" type="text/css"/>
 
-
 <!-- Menubar -->
 <link rel="stylesheet" type="text/css" href="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/css/template.css"/>
 <script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/fsmenu.js"></script>
@@ -40,3 +39,4 @@ function addTitleBarIcon()
 
 </script>
 <!--===================== End Template Head  ===========================-->
+
