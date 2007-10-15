@@ -14,8 +14,13 @@ td {
 }
 
 /* Template Styles */
+.bodyInsert{
+    padding-left:3px;
+
+}
+
 #titleBar {
-    font-size: 18px;
+    font-size: 22px;
     font-family: Arial,Helvetica;
     vertical-align: middle;
     color: #000001;
@@ -23,14 +28,19 @@ td {
     text-align: center;
     background-color: #FFFFFF;
     height: 30px;
-    border:2px;
-    outline:1px;
+    border:0px;
+    outline:0px;
+    padding:0px
 }
 #titleBar img {
     border:none;
 }
 a.titleBarHelpIcon{
     float:left;
+}
+
+a.logoFooter{
+    text-decoration:none;
 }
 
 /* Form Elements */
@@ -131,7 +141,7 @@ a.GO:visited
 a.GO:hover
 {color:#CC0000;text-decoration:none}
 
-# STYLESHEET ADDITIONS BY KLF FOR DELTAGEN
+/* STYLESHEET ADDITIONS BY KLF FOR DELTAGEN */
 .pageTitleKLF {
     font-size:20px;
     font-family:Arial,Helvetica;
