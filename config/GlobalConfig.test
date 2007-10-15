@@ -94,6 +94,7 @@ TUTORIAL_URL            http://www.informatics.jax.org/tutorials/
 PYTHON                  /usr/local/bin/python
 SYBASE                  /opt/sybase/12.5/
 GROUP                   www
+NAME                    MGI
 
 ###---------------------###
 ###--- External Urls ---###
