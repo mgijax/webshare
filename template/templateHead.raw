@@ -22,7 +22,7 @@
 <script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/overlib_anchor.js"></script>
 
 <script>
-function addTitleBarIcon()
+function loadPage()
 {
     // pull in the title bar, and gather needed information
     var titleBar = document.getElementById("titleBar");
