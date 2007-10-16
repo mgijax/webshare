@@ -68,7 +68,7 @@ if (document.createElement && document.documentElement)
  arrow.appendChild(document.createTextNode('>>'));
  // Feel free to replace the above two lines with these for a small arrow image...
  arrow = document.createElement('img');
- arrow.src = 'http://rohan.informatics.jax.org/~pf/webshare_dev/images/arrow_right.gif';
+ arrow.src = 'http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/arrow_right.gif';
  arrow.style.borderWidth = '0';
  arrow.className = 'subind';
 }
