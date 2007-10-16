@@ -45,7 +45,7 @@
     <!-- Somehow, changing the canned css from "float:left" to "float:right"
     ---- reverses the tab order, so list them in reverse here -->
     <div id="ddtabs1" class="ddcolortabs"
-      style="position:absolute; top:33px; right:0px; clear:right; width:700px;" nowrap="nowrap">
+      style="position:absolute; top:31px; right:0px; clear:right; width:700px;" nowrap="nowrap">
       <ul class="ddcolortabs">
         <li><a href="http://tumor.informatics.jax.org/mtbwi/index.do" rel="ct9">
           <span>&nbsp;&nbsp;Mouse&nbsp;&nbsp;<br/>&nbsp;&nbsp;Tumor&nbsp;&nbsp;<br/>&nbsp;&nbsp;Biology&nbsp;&nbsp;</span></a></li>
@@ -548,7 +548,7 @@
   </li>
   <li> <a> Data To MGI</a>
     <ul>
-      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/submissions/submit.shtml"> Mapping, homology, and polymorphisms (rework existing Mouse Genome Data page)</a> </li>
+      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/submissions/submit.shtml"> Mapping, homology, and polymorphisms</a> </li>
       <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/nomen/allmut_form.shtml"> Mutations and phenotypes</a> </li>
       <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/GXD/GEN/gxd_submission_guidelines.shtml"> Guidelines for submitting expression data</a> </li>
       <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/mgihome/www/GO/annotating.shtml"> Functional annotations for a gene using the Gene Ontology (GO)</a> </li>
