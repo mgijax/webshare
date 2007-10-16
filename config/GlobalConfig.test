@@ -44,17 +44,18 @@ JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
 WI_URL                  http://${PY_HOST}/wi/www/
 
-MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/www/
-
 MGIHOME_URL             http://${PY_HOST}/mgihome/www/
 
 USERDOCS_URL            http://${PY_HOST}/userdocs/www/
 
 WEBSHARE_URL            http://${PY_HOST}/webshare/
 
+FAQ_URL                 http://${PY_HOST}/faq/www/
+
+MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/www/
+
 FTP_URL                 ftp://devftp.informatics.jax.org/pub/reports/
 
-FAQ_URL                 http://${PY_HOST}/faq/www/
 
 ###---------------------###
 ###--- MGI FULL URLs ---###
@@ -78,9 +79,9 @@ SCHEMA                  http://firien.informatics.jax.org/schema/
 
 GBROWSE_URL             http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/h_mouse_36
 
-IMSRURL                 http://www.informatics.jax.org/imsr/
-
 JAXRH_URL               http://www.jax.org/resources/documents/cmdata/rhmap/%sdata.html
+
+IMSRURL                 http://www.informatics.jax.org/imsr/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
@@ -94,7 +95,7 @@ TUTORIAL_URL            http://www.informatics.jax.org/tutorials/
 PYTHON                  /usr/local/bin/python
 SYBASE                  /opt/sybase/12.5/
 GROUP                   www
-NAME                    MGI
+NAME                    MGI 4.0
 
 ###---------------------###
 ###--- External Urls ---###
