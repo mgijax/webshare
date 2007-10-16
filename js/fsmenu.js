@@ -72,7 +72,10 @@ if (document.createElement && document.documentElement)
  arrow.style.borderWidth = '0';
  arrow.className = 'subind';
 }
-addEvent(window, 'load', new Function('listMenu.activateMenu("listMenuRoot", arrow)'));
+
+//Moving call to activateMenu to a function, and calling from elsewhere
+//in the template
+//addEvent(window, 'load', new Function('listMenu.activateMenu("listMenuRoot", arrow)'));
 
 function startMenu() {
 listMenu.activateMenu("listMenuRoot", arrow);
