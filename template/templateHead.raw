@@ -5,21 +5,21 @@
 <!--  <meta name="keywords" CONTENT="MGI content">  -->
 
 <!-- CSS -->
-<link href="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/css/mgi.css" rel="stylesheet" type="text/css"/>
+<link href="${WEBSHARE_URL}css/mgi.css" rel="stylesheet" type="text/css"/>
 
 <!-- Menubar -->
-<link rel="stylesheet" type="text/css" href="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/css/template.css"/>
-<script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/fsmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="${WEBSHARE_URL}css/template.css"/>
+<script type="text/javascript" src="${WEBSHARE_URL}js/fsmenu.js"></script>
 
 
 <!-- Mini Homepage Tabs -->
-<link rel="stylesheet" type="text/css" href="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/css/ddcolortabs.css"/>
-<script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/ddtabmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="${WEBSHARE_URL}css/ddcolortabs.css"/>
+<script type="text/javascript" src="${WEBSHARE_URL}js/ddtabmenu.js"></script>
 
 <!-- Overlib -->
-<script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/overlibHomepage.js"></script>
-<script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/overlib_cssstyle.js"></script>
-<script type="text/javascript" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/js/overlib_anchor.js"></script>
+<script type="text/javascript" src="${WEBSHARE_URL}js/overlibHomepage.js"></script>
+<script type="text/javascript" src="${WEBSHARE_URL}js/overlib_cssstyle.js"></script>
+<script type="text/javascript" src="${WEBSHARE_URL}js/overlib_anchor.js"></script>
 
 <script>
 function loadPage()
@@ -28,11 +28,11 @@ function loadPage()
     var titleBar = document.getElementById("titleBar");
     var userdoc = titleBar.getAttribute("userdoc");
     var currentHTML = titleBar.innerHTML;
-    var helpIcon = '<img class="noBorder" src="http://firien.informatics.jax.org/usrlocalmgi/live/webshare/images/help_large_transp.gif">';
+    var helpIcon = '<img class="noBorder" src="${WEBSHARE_URL}images/help_large_transp.gif">';
     var helpLink = '';
 
     if (userdoc != null & userdoc !="") {
-        helpLink = "<a class='titleBarHelpIcon' href='http://firien.informatics.jax.org/usrlocalmgi/live/userdocs/www/" + userdoc + "'>" + helpIcon + "</a>";
+        helpLink = "<a class='titleBarHelpIcon' href='${USERDOCS_URL}" + userdoc + "'>" + helpIcon + "</a>";
         titleBar.innerHTML = helpLink + currentHTML;
     }
 };
