@@ -24,14 +24,13 @@
 <script>
 function loadPage()
 {
-    // pull in the title bar, and gather needed information
+    // if we have a title bar, add help-linked logo
     var titleBar = document.getElementById("titleBar");
-    var userdoc = titleBar.getAttribute("userdoc");
-    var currentHTML = titleBar.innerHTML;
-    var helpIcon = '<img class="noBorder" src="${WEBSHARE_URL}images/help_large_transp.gif">';
-    var helpLink = '';
-
-    if (userdoc != null & userdoc !="") {
+    if (titleBar != null) {
+        var userdoc = titleBar.getAttribute("userdoc");
+        var currentHTML = titleBar.innerHTML;
+        var helpIcon = '<img class="noBorder" src="${WEBSHARE_URL}images/help_large_transp.gif">';
+        var helpLink = '';
         helpLink = "<a class='titleBarHelpIcon' href='${USERDOCS_URL}" + userdoc + "'>" + helpIcon + "</a>";
         titleBar.innerHTML = helpLink + currentHTML;
     }
@@ -40,6 +39,7 @@ function loadPage()
     winLoc = new String(window.location);
     winLocArray = winLoc.split("/");
     winLocArray.reverse();
+
     switch (winLocArray[0]) 
     { 
            case "homepage_mini_Genes.shtml" : 
