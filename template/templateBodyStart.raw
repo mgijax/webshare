@@ -16,7 +16,7 @@
   <td>
   <div style="position:absolute; top:2px; right:0px; clear:right; width:700px;" nowrap="nowrap">
     <div id="searchNoTabs"
-    style="float:right; clear:right; display:inline; top:5px; right:5px; position:absolute; max-width:400px;">
+    style="float:right; clear:right; display:inline; top:5px; right:5px; position:absolute;">
 
       <div id="searchForm"
       style="top:5px; float:right; clear:right;" align="left">
