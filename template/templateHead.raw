@@ -28,11 +28,13 @@ function loadPage()
     var titleBar = document.getElementById("titleBar");
     if (titleBar != null) {
         var userdoc = titleBar.getAttribute("userdoc");
-        var currentHTML = titleBar.innerHTML;
-        var helpIcon = '<img class="noBorder" src="${WEBSHARE_URL}images/help_large_transp.gif">';
-        var helpLink = '';
-        helpLink = "<a class='titleBarHelpIcon' href='${USERDOCS_URL}" + userdoc + "'>" + helpIcon + "</a>";
-        titleBar.innerHTML = helpLink + currentHTML;
+        if (userdoc != null) {
+          var currentHTML = titleBar.innerHTML;
+          var helpIcon = '<img class="noBorder" src="${WEBSHARE_URL}images/help_large_transp.gif">';
+          var helpLink = '';
+          helpLink = "<a class='titleBarHelpIcon' href='${USERDOCS_URL}" + userdoc + "'>" + helpIcon + "</a>";
+          titleBar.innerHTML = helpLink + currentHTML;
+        }
     }
 
     //shade tabs when we're on a mini homepage

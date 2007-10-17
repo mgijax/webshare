@@ -591,10 +591,10 @@
   <li> <a href="${MGIHOME_URL}lists/lists.shtml"> Research Community E-mail Lists</a> </li>
   <li> <a>Online Books</a>
     <ul>
-      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/silverbook/"> <em>Mouse Genetics</em> by Lee Silver</a> </li>
-      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/morsebook/"> <em>Origins of Inbred Mice</em> edited by Herbert C. Morse III</a> </li>
-      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/cookbook/"> <em>The Anatomy of the Laboratory Mouse</em> by Margaret J. Cook</a> </li>
-      <li> <a href="http://firien.informatics.jax.org/usrlocalmgi/live/wksilvers/www/"> <em>The Coat Colors of Mice</em> by Willys K. Silvers</a> </li>
+      <li> <a href="${SILVER_URL}"> <em>Mouse Genetics</em> by Lee Silver</a> </li>
+      <li> <a href="${MORSEBOOK_URL}"> <em>Origins of Inbred Mice</em> edited by Herbert C. Morse III</a> </li>
+      <li> <a href="${COOKBOOK_URL}"> <em>The Anatomy of the Laboratory Mouse</em> by Margaret J. Cook</a> </li>
+      <li> <a href="${WKSILVERS_URL}"> <em>The Coat Colors of Mice</em> by Willys K. Silvers</a> </li>
     </ul>
   </li>
   <li> <a href="${MGIHOME_URL}nomen/index.shtml"> Nomenclature</a> </li>
