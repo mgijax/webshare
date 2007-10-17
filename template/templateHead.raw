@@ -35,6 +35,32 @@ function loadPage()
         helpLink = "<a class='titleBarHelpIcon' href='${USERDOCS_URL}" + userdoc + "'>" + helpIcon + "</a>";
         titleBar.innerHTML = helpLink + currentHTML;
     }
+
+    //shade tabs when we're on a mini homepage
+    winLoc = new String(window.location);
+    winLocArray = winLoc.split("/");
+    winLocArray.reverse();
+    switch (winLocArray[0]) 
+    { 
+           case "homepage_mini_Genes.shtml" : 
+              document.getElementById("minitab_Genes").style.backgroundColor="#002255"
+              break; 
+           case "homepage_mini_PAD.shtml" : 
+              document.getElementById("minitab_PAD").style.backgroundColor="#002255"
+              break; 
+           case "homepage_mini_GXD.shtml" : 
+              document.getElementById("minitab_GXD").style.backgroundColor="#002255"
+              break; 
+           case "homepage_mini_GO.shtml" : 
+              document.getElementById("minitab_GO").style.backgroundColor="#002255"
+              break; 
+           case "homepage_mini_Strain.shtml" : 
+              document.getElementById("minitab_Strain").style.backgroundColor="#002255"
+              break; 
+           case "homepage_mini_Ortho.shtml" : 
+              document.getElementById("minitab_Ortho").style.backgroundColor="#002255"
+              break; 
+    } 
 };
 
 </script>
