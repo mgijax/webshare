@@ -53,6 +53,7 @@ url = ${IMAGES_URL}help_small_transp.gif
 width = 21
 height = 20
 alt = help icon
+]
 
 [
 name = is-a
