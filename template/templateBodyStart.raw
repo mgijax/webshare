@@ -35,7 +35,7 @@
       style="color:#002255; background-color:#FFFFFF; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:9px;"
       value="ID, symbol, or name" onFocus="if(this.defaultValue==this.value) this.value='';" size="40">&nbsp;
       <INPUT TYPE="hidden" NAME="selectedQuery" VALUE="Genes and Markers">
-      <INPUT name="submit" type="submit" class="templateButton" VALUE="SEARCH">
+      <INPUT name="submit" type="submit" class="searchToolButton" VALUE="SEARCH">
       </form>
     </div><!-- end of div "searchForm" -->
   </div><!-- end of "searchNoTabs" div -->
@@ -88,7 +88,7 @@
 
 
 <!--------------------------- Menu Bar Start -------------------------->
-<div class="menubarContainer">
+<div class="menubarWrapper">
 <table width="%100"><tr><td>
 <ul class="menulist" id="listMenuRoot">
 
@@ -648,7 +648,7 @@
 
 </ul>
 </td></tr></table>
-</div> <!-- class="menubarContainer" -->
+</div> <!-- class="menubarWrapper" -->
 
 <div class="bodyInsert"> <!-- wrapper around inserted page body -->
 
