@@ -13,36 +13,6 @@ td {
     font-size:12px;
 }
 
-/* Template Styles */
-.bodyInsert{
-    padding-left:3px;
-
-}
-
-#titleBar {
-    font-size: 22px;
-    font-family: Arial,Helvetica;
-    vertical-align: middle;
-    color: #000001;
-    font-weight: bold;
-    text-align: center;
-    background-color: #FFFFFF;
-    height: 30px;
-    border:0px;
-    outline:0px;
-    padding:0px
-}
-#titleBar img {
-    border:none;
-}
-a.titleBarHelpIcon{
-    float:left;
-}
-
-a.logoFooter{
-    text-decoration:none;
-}
-
 /* Form Elements */
 input {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
 select {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}

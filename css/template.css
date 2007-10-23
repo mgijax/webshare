@@ -1,17 +1,63 @@
-/************************************/
-/* HORIZONTAL FREESTYLE MENU LAYOUT */
-/************************************/
+/************************************************************************
+* TEMPLATE CSS
+*
+* This style sheet contains those styles used by/in the generation
+* of the mgi site-wide templates
+*
+************************************************************************/
 
-.templateButton 
+/*************************************************************************
+* Miscellaneous styles for the template
+*************************************************************************/
+
+a.logoFooter{
+    text-decoration:none;
+}
+
+.searchToolButton 
     {font-size:10px;
     font-family:Arial,Helvetica;
     color:#002255;
     font-weight:bolder;
 }
 
+/*************************************************************************
+*  Title Bar - Page Title appearing within the body of a page
+*************************************************************************/
 
+#titleBarWrapper {
+    font-family: Arial,Helvetica;
+    vertical-align: middle;
+    color: #000001;
+    text-align: center;
+    background-color: #FFFFFF;
+}
 
-.menubarContainer {
+#titleBarWrapper img {
+    border:none;
+}
+
+.titleBarMainTitle {
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.titleBarSubTitle {
+    font-size: 14px;
+}
+
+a.titleBarHelpIcon{
+    border:none;
+    float:left;
+}
+
+/*************************************************************************
+*  MENUBAR - Navagation menu droplist styling
+*************************************************************************/
+
+/* Block-level <div> wrapping the menubar */
+.menubarWrapper {
     background:#002255; 
     width:100%;
     margin: 0px;
@@ -32,7 +78,6 @@ menulist, .menulist  ul {
     display: block;
     position: relative;
     background: #002255;
-    /* border: 1px solid #330; */
     margin-right: -1px;
     font-weight:bold;
     font-size:11px;
@@ -44,16 +89,14 @@ menulist, .menulist  ul {
     text-decoration: none;
 }
 
-
 /* 
- * Tier 2 (first vertical drop list) cascading -- over-rites Tier 1 values
+ * Tier 2 (first vertical drop list)
  */
-
-/* Submenus (<ul> tags) are hidden and absolutely positioned downwards from their parent */
 .menulist ul {
     display: none;
     position: absolute;
-    top: 1.0em; margin-top: 13px; 
+    top: 1.0em; 
+    margin-top: 13px; 
     left: -1px;
     width: 200px;
 }
@@ -61,8 +104,7 @@ menulist, .menulist  ul {
     float: none;
     margin: 0;
     margin-bottom: -1px;
-    background: #CAD7E5; /* darkish pale blue */
-    /* border: 1px solid #002255;*/
+    background: #CAD7E5; 
     border: 1.2px solid #FFFFFF;
 
 }
@@ -75,7 +117,6 @@ menulist, .menulist  ul {
     color: #002255;
 }
 
-
 /* 
  * Tier 3 cascading
  */
@@ -85,28 +126,17 @@ menulist, .menulist  ul {
  left: 190px;
 }
 
-
 /* 
  * Special handling 
  */
-
-/* Lit  items: 'hover' is mouseover, 'highlighted' are parent items to visible menus */
 .menulist a:hover, .menulist a.highlighted:hover, .menulist a:focus {
-/*    color: #DDD;
-    background: #002255; /* dark blue */
-/* try the reverse? */
-    color: #002255;  /* dark blue text */
-    background: #DDD;  /* pale gray background */
+    color: #002255;
+    background: #DDD;
 }
 .menulist a.highlighted {
-/* color: #002255;
- background-color: #D0E0F0; /* MGI medium blue */
-/* try dark blue bg with pale gray letters for highlighted item */
  color: #002255;
- background-color: #DDD; /* pale gray */
+ background-color: #DDD; 
 }
-
-/* Only style submenu indicators within submenus. */
 .menulist a .subind {
  display: none;
 }
@@ -115,9 +145,8 @@ menulist, .menulist  ul {
  float: right;
 }
 
-
 /*
- * HACKS - Taming the different browsers..
+ * HACKS - Taming the different browsers...
  */
 .menulist a {
  float: left;
@@ -139,4 +168,93 @@ menulist, .menulist  ul {
 * html .menulist ul a {
  height: 1%;
 }
-/* End Hacks */
+
+
+/*************************************************************************
+*  Mini-home page tabs
+*************************************************************************/
+
+.ddcolortabs{ /* default state */
+padding: 0;
+background: transparent;
+voice-family: "\"}\"";
+voice-family: inherit;
+text-align:center;
+}
+
+.ddcolortabs ul{
+font: normal 9px Verdana, Arial, sans-serif;
+font-weight:normal;
+margin:0;
+padding:0;
+list-style:none;
+text-align:center;
+}
+
+.ddcolortabs li{
+display:inline;
+margin:0 2px 0 0;
+padding:0;
+text-align:center;
+vertical-align:middle;
+}
+
+
+.ddcolortabs a{
+float:right;
+color:#DFEFFF;
+background: #54709B url(../images/color_tabs_left.gif) no-repeat left top; 
+margin:0 2px 0 0;
+padding:0 0 1px 3px;
+text-decoration:none;
+letter-spacing: 0px;
+text-align:center;
+}
+
+.ddcolortabs a span{
+float:right;
+display:block;
+background: transparent url(../images/color_tabs_right.gif) no-repeat right top; 
+padding: 2px 4px 2px 3px;
+text-align:center;
+}
+
+.ddcolortabs a span{
+float:none;
+text-align:center;
+}
+
+.ddcolortabs a:hover{     
+background-color: #00173C;
+color:white;
+font-weight:normal;
+}
+
+.ddcolortabs a:hover span{
+background-color: #00173C;
+}
+
+.ddcolortabs a.current, #ddcolortabs a.current span{ 
+background-color: #002255;
+font-weight:bold;
+color:white;
+}
+
+.ddcolortabsline{
+clear: both;
+padding: 0;
+width: 100%;
+height: 12px;
+line-height: 12px;
+background: #7089B3;
+}
+
+.tabcontainer{
+clear: right;
+width:95%; 
+height:1.5em; 
+}
+
+.tabcontent{
+display:none;
+}
