@@ -650,7 +650,7 @@
 </td></tr></table>
 </div> <!-- class="menubarWrapper" -->
 
-<div class="bodyInsert"> <!-- wrapper around inserted page body -->
+<div id="bodyInsert"> <!-- wrapper around inserted page body -->
 
 <!--------------------------- Menu Bar End ------------------------------>
 

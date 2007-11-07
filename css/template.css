@@ -10,47 +10,84 @@
 * Miscellaneous styles for the template
 *************************************************************************/
 
-a.logoFooter{
-    text-decoration:none;
+/*
+* Wrapper around client-supplied page body. In terms of our templates,
+* this wraps content between templateBodyStart and templateBodyStop
+*/
+#bodyInsert { 
+    padding:3px;
 }
 
-.searchToolButton 
-    {font-size:10px;
+.searchToolButton {
+    font-size:10px;
     font-family:Arial,Helvetica;
     color:#002255;
     font-weight:bolder;
 }
 
 /*************************************************************************
-*  Title Bar - Page Title appearing within the body of a page
+*  Standard Title Bar - Page Title appearing within the body of a page
 *************************************************************************/
 
 #titleBarWrapper {
     font-family: Arial,Helvetica;
     vertical-align: middle;
     color: #000001;
-    text-align: center;
     background-color: #FFFFFF;
+    position:relative;
+    text-align: center;
+    margin-top:1;
+    margin-left:1;
+    margin-bottom:2;
+    width: 100%;
 }
 
-#titleBarWrapper img {
+#titleBarWrapper img.titleBarHelpIcon {
     border:none;
+    position:absolute;
+    left:0;
+    top:0;
 }
+
+#titleBarWrapper .yourInputButton {
+    position:absolute;
+    right:0;
+    top:0;
+}
+
 
 .titleBarMainTitle {
     font-size: 22px;
     font-weight: bold;
-
 }
 
 .titleBarSubTitle {
     font-size: 14px;
+    text-align: center;
 }
 
-a.titleBarHelpIcon{
-    border:none;
-    float:left;
+/*************************************************************************
+*  FAQ Header Bar - Header on FAQ pages
+*************************************************************************/
+
+#faqPageHeader {
+    background-color:#DFEFFF;    
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    border:thin solid #002255;
+    margin-bottom: 5px;
 }
+
+.faqHeaderText {
+    font-family:Verdana,Arial,Helvetica;
+    font-weight:bold;
+    font-size:20px;
+    vertical-align: bottom;
+    color:#002255;
+}
+
 
 /*************************************************************************
 *  MENUBAR - Navagation menu droplist styling
