@@ -1,8 +1,0 @@
-<!--===================== Body Start ===========================-->
-</head>
-<body class="mainBody" onload="loadPage()" >
-
-<div class="bodyInsert"> <!-- wrapper around inserted page body -->
-<!--================= End of Body Start ========================-->
-
-
