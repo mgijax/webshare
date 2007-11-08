@@ -623,7 +623,7 @@
     <ul>
     <li> <a href="${MGIHOME_URL}other/link_instructions.shtml"> How to link to MGI</a> </li>
     <li> <a href="${MGIHOME_URL}homepages/underConstruction.shtml"> Get a database querying account</a> </li>
-    <li> <a href="http://www.informatics.jax.org/schema/"> MGI Database Schema</a> </li>
+    <li> <a href="${SCHEMA}"> MGI Database Schema</a> </li>
     <li> <a href="ftp://ftp.informatics.jax.org/"> FTP Reports Server</a> </li>
     <li> <a href="${MGIHOME_URL}homepages/underConstruction.shtml"> Web Services/API</a> </li>
     <li> <a href="${MGIHOME_URL}homepages/underConstruction.shtml"> All Software &amp; Developers Links</a> </li>
