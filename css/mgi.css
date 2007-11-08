@@ -169,3 +169,10 @@ div#DataContent {
     padding-bottom: 2px;
     margin-bottom: 0px;
 }
+.mgiFrameHeaderText{
+    width: 100%;
+    font-size:20px;
+    text-align:center;
+    vertical-align:middle;
+
+}
