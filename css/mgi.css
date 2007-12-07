@@ -34,9 +34,6 @@ th.leftMiddle  {font-size:12px;font-family:Arial,Helvetica;vertical-align:middle
 /* Anchor Tags */
 a:hover {text-decoration: none;color: #FF2222;} 
 a.help {cursor:help}
-a.logoFooter{
-    text-decoration:none;
-}
 
 /* Tool Bar */
 .toolBar {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;background-color:#ffffff}
@@ -159,6 +156,7 @@ div#DataContent {
     font-size: 10px;
 }
 
+/* ID and Class to emulate mgi template look/feel for usage within frames */
 #mgiFrameHeader {
     background-color:#DFEFFF;    
     position:relative;
