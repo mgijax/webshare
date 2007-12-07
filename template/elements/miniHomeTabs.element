@@ -1,0 +1,40 @@
+
+<!-- mini home tabs start -->
+<!-- reversed order due to the list being floated right, sequentially stacking
+  -- to the right edge of the containing positioned element
+  -->
+<ul>
+  <li>
+    <a href="http://tumor.informatics.jax.org/mtbwi/index.do" rel="ct9">
+    <span>&nbsp;&nbsp;Mouse&nbsp;&nbsp;<br/>&nbsp;&nbsp;Tumor&nbsp;&nbsp;<br/>&nbsp;&nbsp;Biology&nbsp;&nbsp;</span></a>
+  </li>
+  <li>
+    <a id="minitab_Ortho" href="${MGIHOME_URL}homepages/homepage_mini_Ortho.shtml" rel="ct8">
+    <span><br/>Mammalian <br/>Orthology</span></a>
+  </li>
+  <li>
+    <a id="minitab_Strain" href="${MGIHOME_URL}homepages/homepage_mini_Strain.shtml" rel="ct6">
+    <span><br/>Strains, SNPs &amp;<br/>Polymorphisms</span></a>
+  </li>
+  <li>
+    <a href="${MGIHOME_URL}homepages/underConstruction.shtml" rel="ct5">
+    <span><br/>Biochemical<br/>Pathways</span></a>
+  </li>
+  <li>
+    <a id="minitab_GO" href="${MGIHOME_URL}homepages/homepage_mini_GO.shtml" rel="ct4">
+    <span>GO<br/>Functional<br/>Annotations</span></a>
+  </li>
+  <li>
+    <a id="minitab_GXD" href="${MGIHOME_URL}homepages/homepage_mini_GXD.shtml" rel="ct3">
+    <span><br/>Gene <br/>Expression</span></a>
+  </li>
+  <li>
+    <a id="minitab_PAD" href="${MGIHOME_URL}homepages/homepage_mini_PAD.shtml" rel="ct2">
+    <span>Phenotypes,<br/>Alleles &amp;<br/>Diseases</span></a>
+  </li>
+  <li>
+    <a id="minitab_Genes" href="${MGIHOME_URL}homepages/homepage_mini_Genes.shtml" rel="ct1">
+    <span><br/>Genes, Genome<br/>Features &amp; Maps</span></a>
+  </li>
+</ul>
+<!----- mini home tabs end ----------->
