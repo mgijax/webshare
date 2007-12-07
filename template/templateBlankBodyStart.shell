@@ -2,7 +2,7 @@
 </head>
 <body class="mainBody" onload="loadPage()" >
 
-<div id="bodyInsert"> <!-- wrapper around inserted page body -->
+<div id="templateBodyInsert"> <!-- wrapper around inserted page body -->
 <!--================= End of Body Start ========================-->
 
 
