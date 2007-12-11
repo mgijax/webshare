@@ -20,7 +20,7 @@ SEQFETCH_HOST           firien.informatics.jax.org
 MOUSEBLAST_HOST         firien.informatics.jax.org/usrlocalmgi/live
 
 #Host of the gbrowse tool
-GBROWSE_HOST         	gbrowse.informatics.jax.org/cgi-bin/
+GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
 
 
 ###-----------------------------###
@@ -40,16 +40,16 @@ SNP_DATABASE     snp
 ###------------------------------###
 
 # is this WI part of a production installation?  (so no page caching)
-IS_PRODUCTION   		0
+IS_PRODUCTION           0
 
 # are SNP and marker coordinates drawn from the same genome assembly? (0/1)
-BUILDS_IN_SYNC			1
+BUILDS_IN_SYNC          1
 
 # genome assembly version for marker coordinates
-ASSEMBLY_VERSION 		36
+ASSEMBLY_VERSION        36
 
 # genome assembly version for SNP coordinates
-SNP_ASSEMBLY_VERSION 	36
+SNP_ASSEMBLY_VERSION    36
 
 
 ###---------------------###
@@ -77,11 +77,11 @@ FTP_URL                 ftp://devftp.informatics.jax.org/pub/reports/
 ###--- MGI FULL URLs ---###
 ###---------------------###
 
-SELECT_A_SEQ_URL        http://${MOUSEBLAST_URL}seqSelect.cgi
+SELECT_A_SEQ_URL        ${MOUSEBLAST_URL}seqSelect.cgi
 
 SEQFETCH_URL            http://${SEQFETCH_HOST}/usrlocalmgi/live/seqfetch/www/tofasta.cgi?
 
-GLOSSARY_URL            http://${JAVAWI_URL}/WIFetch?page=glossaryIndex&printFormat=footer
+GLOSSARY_URL            {JAVAWI_URL}/WIFetch?page=glossaryIndex&printFormat=footer
 
 COOKBOOK_URL            http://${PY_HOST}/cookbook/
 
@@ -95,7 +95,7 @@ SCHEMA                  http://firien.informatics.jax.org/schema/
 
 GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
-GBROWSE_THUMB_URL		http://${GBROWSE_HOST}gbrowse_img/thumbs_current
+GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
 
 JAXRH_URL               http://www.jax.org/resources/documents/cmdata/rhmap/%sdata.html
 
