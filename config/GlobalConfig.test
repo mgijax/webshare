@@ -119,8 +119,8 @@ NAME                    MGI 4.0
 ###--- Other Paths ---###
 ###-------------------------###
 
-GENOMIC_PATH /net/hobbiton/data/research/
-NIBDBS /net/hobbiton/data/research/dna/mouse_build_36_nib
+GENOMIC_PATH /net/orodruin-g/vol/hobbiton/data/research/
+NIBDBS /net/orodruin-g/vol/hobbiton/data/research/dna/mouse_build_36_nib
 
 ###---------------------###
 ###--- External Urls ---###
