@@ -309,7 +309,8 @@
       Mouse GBrowse</a>
     </li>
     <li>
-      <a href="${JAVAWI_URL}WIFetch?page=batchQF">
+      <a href="${JAVAWI_URL}WIFetch?page=batchQF"
+      onMouseOver="return overlib('Download gene/marker data for a batch of IDs or symbols.',ANCHOR, 'SeqHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
       Batch Query</a>
     </li>
   </ul>
