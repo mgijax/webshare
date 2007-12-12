@@ -17,7 +17,7 @@
     <span><br/>Strains, SNPs &amp;<br/>Polymorphisms</span></a>
   </li>
   <li>
-    <a href="${MGIHOME_URL}homepages/underConstruction.shtml" rel="ct5">
+    <a id="minitab_BioPath"href="${MGIHOME_URL}homepages/minihome_BioPath.shtml" rel="ct5">
     <span><br/>Biochemical<br/>Pathways</span></a>
   </li>
   <li>

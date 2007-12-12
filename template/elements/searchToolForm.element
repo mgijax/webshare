@@ -10,12 +10,14 @@
  </td>
 
  <td>
-    <input name="query" class="searchToolTextArea"
+    <input name="query" id="searchToolTextArea"
     value="ID or symbol or name" onFocus="if(this.defaultValue==this.value) this.value='';" size="40">
  </td>
 
  <td>
-    <input name="submit" type="submit" class="searchToolButton" value="SEARCH" >
+    <input name="submit" type="submit" class="searchToolButton" value="SEARCH" onclick="return verifySearchToolParms();">
+    <input name="page" type="hidden" value="searchTool">
+    <input name="selectedQuery" type="hidden" value="Genes and Markers">
  </td>
 
 </tr>
