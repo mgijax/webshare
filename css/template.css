@@ -21,7 +21,7 @@ body {
     background-color: #DFEFFF;
     height: 80px;
     width: 100%;
-	position:relative;
+    position:relative;
 }
 /* <div> wrapping mgi logo and links below it; bound for easier placement */
 #logoContainer {
@@ -34,8 +34,8 @@ body {
     font-family:Verdana,Arial,Helvetica;
     height: 1.9em;
     width:100%;
-	position:relative;
-	min-height:20px;
+    position:relative;
+    min-height:20px;
 }
 /* Block-level <div> wrapping the nav bar; see nav bar styles below */
 #templateSearchTool {
@@ -50,7 +50,7 @@ body {
     padding:3px;
 }
 
-.searchToolTextArea {
+#searchToolTextArea {
     font-size:12px;
     font-family:Verdana,Arial,Helvetica,sans-serif;
     color:#002255;
@@ -80,18 +80,18 @@ a.logoFooterAnchor{
 *  Styles specific to the homepage template
 *************************************************************************/
 #homePageTitle { 
-	font-family:Book Antiqua, Palatino Linotype, Palatino, serif;
-	font-size:44px; 
-	font-weight:bold;
-	color: #002255;
-	background-color: #dfefff;
+    font-family:Book Antiqua, Palatino Linotype, Palatino, serif;
+    font-size:44px; 
+    font-weight:bold;
+    color: #002255;
+    background-color: #dfefff;
 }
 #homePageBodyInsert {
-	width:786px;
-	height: auto;
-	margin-left: auto; 
-	margin-right: auto;
-	position:relative;
+    width:786px;
+    height: auto;
+    margin-left: auto; 
+    margin-right: auto;
+    position:relative;
 }
 
 
@@ -113,13 +113,11 @@ a.logoFooterAnchor{
 
 #titleBarWrapper img.titleBarHelpIcon {
     border:none;
-	float:left;
+    float:left;
 }
 
 #titleBarWrapper .yourInputButton {
-    position:absolute;
-    right:0;
-    top:0;
+    float:right;
 }
 
 
