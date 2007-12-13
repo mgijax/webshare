@@ -474,7 +474,7 @@
   <li> <a href="${MGIHOME_URL}lists/lists.shtml">Research Community E-mail Lists</a> </li>
   <li> <a>Online Books</a>
     <ul>
-      <li> <a href=""> <em>Biology of the Laboratory Mouse</em>edited by Earl L. Green</a> </li>
+      <li> <a href=""> <em>Biology of the Laboratory Mouse</em> edited by Earl L. Green</a> </li>
       <li> <a href="${SILVER_URL}"> <em>Mouse Genetics</em> by Lee Silver</a> </li>
       <li> <a href="${COOKBOOK_URL}"> <em>The Anatomy of the Laboratory Mouse</em> by Margaret J. Cook</a> </li>
       <li> <a href="${WKSILVERS_URL}"> <em>The Coat Colors of Mice</em> by Willys K. Silvers</a> </li>
