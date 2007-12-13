@@ -72,6 +72,8 @@ MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/www/
 
 FTP_URL                 ftp://devftp.informatics.jax.org/pub/reports/
 
+PIXELDB_URL             http://${PY_HOST}/pix/fetch_pixels.cgi?id=
+
 
 ###---------------------###
 ###--- MGI FULL URLs ---###
@@ -105,6 +107,7 @@ MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
 TUTORIAL_URL            http://www.informatics.jax.org/tutorials/
 
+WEBIMAGEMAP_URL         ${WEBSHARE_URL}components.cgi
 
 ###-------------------------###
 ###--- Common Parameters ---###
