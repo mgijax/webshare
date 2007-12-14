@@ -2,6 +2,7 @@
 # Global Config
 ############################################################################
 
+NAME                    MGI 4.0
 
 ###------------------------###
 ###--- MGI Host Servers ---###
@@ -116,7 +117,6 @@ WEBIMAGEMAP_URL         ${WEBSHARE_URL}components.cgi
 PYTHON                  /usr/local/bin/python
 SYBASE                  /opt/sybase/12.5/
 GROUP                   www
-NAME                    MGI 4.0
 
 ###-------------------------###
 ###--- Other Paths ---###
