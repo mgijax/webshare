@@ -75,6 +75,7 @@ FTP_URL                 ftp://devftp.informatics.jax.org/pub/reports/
 
 PIXELDB_URL             http://${PY_HOST}/pix/fetch_pixels.cgi?id=
 
+GO_GRAPH_URL            http://www.informatics.jax.org
 
 ###---------------------###
 ###--- MGI FULL URLs ---###
