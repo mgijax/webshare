@@ -29,6 +29,7 @@ except:
 import CGI
 import string
 import regex
+import db
 
 class getTemplateCGI (CGI.CGI):
 
@@ -67,6 +68,34 @@ class getTemplateCGI (CGI.CGI):
             s = s[:start] + self.resolve(parm, steps-1) + s[stop:]
     return s
 
+  def getDbDate (self):
+    # Purpose: return value of latest db update
+    # Returns: string
+    # Assumes: nothing
+    # Effects: nothing
+    # Throws: db module may throw DB exceptions
+    # pull the MGI:ID and geneSymbol from the database
+
+    db.useOneConnection(1)
+    db.set_sqlUser(config["DB_USER"])
+    db.set_sqlPassword(config["DB_PASSWORD"])
+    db.set_sqlServer(config["DB_SERVER"])
+    db.set_sqlDatabase(config["DB_DATABASE"])
+    cmds = [] # SQL command list
+    cmds.append(string.join([
+        'SELECT CONVERT(varchar, lastdump_date, 101) as dbDate, '
+        'public_version '
+        'FROM MGI_dbInfo '
+    ]))
+
+    #  Excecute queries
+    results = db.sql(cmds, 'auto')
+    db.useOneConnection(0)
+    dbDateInfo = results[0][0]
+
+    return dbDateInfo["dbDate"]
+
+
   def main (self):
 
     requestedTemplate = ''
@@ -75,6 +104,9 @@ class getTemplateCGI (CGI.CGI):
  
     # gather form parameters
     self.parms = self.get_parms()
+    
+    # gather date of most recent DB load
+    config['dbDate'] = self.getDbDate()
 
     # get the requested template parameter
     if self.parms.has_key('template'):
