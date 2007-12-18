@@ -1,6 +1,6 @@
 /*
 
-FREESTYLE MENUS v1.0 RC (c) 2001-2006 Angus Turnbull, http://www.twinhelix.com
+FREESTYLE MENUS v1.0 RC (c) 2001-2007 Angus Turnbull, http://www.twinhelix.com
 Altering this notice or redistributing this file is prohibited.
 
 */
@@ -56,22 +56,23 @@ if (typeof addEvent != 'function')
 {
  var addEvent = function(o, t, f, l)
  {
-  var d = 'addEventListener', n = 'on' + t, rO = o, rT = t, rF = f, rL = l;
+  var d = 'addEventListener', n = 'on' + t;
   if (o[d] && !l) return o[d](t, f, false);
   if (!o._evts) o._evts = {};
   if (!o._evts[t])
   {
-   o._evts[t] = o[n] ? { b: o[n] } : {};
+   o._evts[t] = {};
+   if (o[n]) addEvent(o, t, o[n], l);
    o[n] = new Function('e',
     'var r = true, o = this, a = o._evts["' + t + '"], i; for (i in a) {' +
-     'o._f = a[i]; r = o._f(e||window.event) != false && r; o._f = null;' +
-     '} return r');
-   if (t != 'unload') addEvent(window, 'unload', function() {
-    removeEvent(rO, rT, rF, rL);
-   });
+    'o._f = a[i]; if (o._f._i) r = o._f(e||window.event) != false && r;' +
+    '} o._f = null; return r');
   }
   if (!f._i) f._i = addEvent._i++;
   o._evts[t][f._i] = f;
+  if (t != 'unload') addEvent(window, 'unload', function() {
+   removeEvent(o, t, f, l);
+  });
  };
  addEvent._i = 1;
  var removeEvent = function(o, t, f, l)
@@ -103,7 +104,7 @@ function FSMenu(myName, nested, cssProp, cssVis, cssHid)
  this.cssLitClass = 'highlighted';
  // The 'root' menu only exists for list menus, and is created in the activation function.
  // For non-nested menus, here's an imaginary node that acts as a parent to other nodes.
- this.menus = { root: new FSMenuNode('root', true, this) };
+ this.menus = nested ? {} : { root: new FSMenuNode('root', true, this) };
  this.menuToShow = [];
  this.mtsTimer = null;
  // Other configurable defaults.
@@ -214,7 +215,7 @@ function FSMenuNode(id, isRoot, obj)
     // Again, try and avoid memory leaks, but copy over the a/menuToShow arguments.
     c.args.length = a.length;
     for (var i = 0; i < a.length; i++) c.args[i] = a[i];
-    // Decide which delay to use -- switchDelay if we already have a child menu, showDelay otherwise.
+    // Decide which delay to use: switchDelay if we already have a child menu, showDelay otherwise.
     var delay = child ? switchDelay : showDelay;
     c.timer = setTimeout('with(' + myName + ') { menus["' + c.id + '"].par = menus["' +
      node.id + '"]; menus["' + c.id + '"].show() }', delay ? delay : 1);
@@ -245,7 +246,7 @@ function FSMenuNode(id, isRoot, obj)
  // Finally, now we have created our menu node, get a layer object for the right ID'd element
  // in the page, and assign it onmouseout/onmouseover events.
  // Don't do for virtual root node (in the case of non-nested menus).
- if (this.id != 'root') with (this) with (lyr = getLyr(id)) if (ref)
+ if (id != 'root') with (this) with (lyr = getLyr(id)) if (ref)
  {
   if (isNS4) ref.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT);
   addEvent(ref, 'mouseover', this.over);
@@ -340,7 +341,7 @@ FSMenuNode.prototype.lightParent = function(elm, lit) { with (this) with (obj)
 FSMenuNode.prototype.setVis = function(sh, forced) { with (this) with (obj)
 {
  // This is passed two parameteres: whether its menu is shown (boolean), and
- // whether its a "forced" animation (can't be interrupted by an unforced one).
+ // whether it's a "forced" animation (can't be interrupted by an unforced one).
  // It sets the chosen CSS property of the menu element, and repeatedly calls itself if
  // one or more animations have been specified in the animations property.
 
@@ -351,17 +352,20 @@ FSMenuNode.prototype.setVis = function(sh, forced) { with (this) with (obj)
  with (lyr)
  {
   clearTimeout(timer);
-  if (sh && !counter) sty[cssProp] = cssVis;
   var speed = sh ? animInSpeed : animOutSpeed;
 
-  if (isDOM && speed < 1)
+  if (!counter) sty[cssProp] = sh ? cssVis : cssHid;
+
+  if (isDOM && (speed < 1))
    for (var a = 0; a < animations.length; a++) animations[a](ref, counter, sh);
 
-  counter += speed*(sh?1:-1);
-  if (counter>1) { counter = 1; lyr.forced = false }
-  else if (counter<0) { counter = 0; sty[cssProp] = cssHid; lyr.forced = false }
-  else if (isDOM) { timer = setTimeout(myName + '.menus["' + id + '"].setVis(' +
-   sh + ',' + forced + ')', 50) }
+  if (isDOM && (sh ? counter < 1 : counter > 0))
+   timer = setTimeout(myName + '.menus["' + id + '"].setVis(' + sh + ',' + forced + ')', 50);
+  else lyr.forced = false;
+
+  counter = counter + speed*(sh?1:-1);
+  if (counter < 0.001) counter = 0;
+  if (counter > 0.999) counter = 1;
  }
 }};
 
@@ -413,7 +417,7 @@ FSMenu.animFade = function(ref, counter, show)
   if (ref.style.filter.indexOf("alpha") == -1) ref.style.filter += alpha;
   else ref.style.filter = ref.style.filter.replace(/\s*alpha\([^\)]*\)/i, alpha);
  }
- else ref.style.opacity = ref.style.MozOpacity = counter / 1.001;
+ else ref.style.opacity = ref.style.MozOpacity = counter / (isOp ? 1  : 1.001);
 };
 
 FSMenu.animClipDown = function(ref, counter, show)
@@ -469,6 +473,12 @@ FSMenu.prototype.activateMenu = function(id, subInd) { with (this)
  // References to menu elements for a given level.
  var a, ul, li, parUL, mRoot = getRef(id), nodes, count = 1;
 
+ // The property of the event object to pass click information up the tree.
+ // Safari 1.x is buggy and crashes when you access "returnValue".
+ // Also Opera defaults to "false" so use something different there.
+ var evtProp = navigator.userAgent.indexOf('Safari') > -1 || isOp ?
+  'safRtnVal' : 'returnValue';
+
  // Loop through all sub-lists under the given menu.
  var lists = mRoot.getElementsByTagName('ul');
  for (var i = 0; i < lists.length; i++)
@@ -490,30 +500,28 @@ FSMenu.prototype.activateMenu = function(id, subInd) { with (this)
   }
 
   // Now, find the anchor tag that triggers this menu; it should be a child of the LI.
-  a = null;
-  for (var j = 0; j < li.childNodes.length; j++)
-   if (li.childNodes[j].nodeName.toLowerCase() == 'a') a = li.childNodes[j];
+  a = li.getElementsByTagName('a');
   if (!a) continue;
+  a = a.item(0);
 
   // We've found a menu node by now, so give it an ID and event handlers.
   var menuID = myName + '-id-' + count++;
   // Only assign a new ID if it doesn't have one already.
   if (ul.id) menuID = ul.id;
   else ul.setAttribute('id', menuID);
+  // If already activated, no need to proceed.
+  if (menus[menuID] && menus[menuID].lyr.ref == ul) continue;
 
   // Attach focus/mouse events to the triggering anchor tag.
   // Check if this link will be triggered onclick instead of onmouseover.
   // If so, we only respect mouseovers/focuses when the menu is visible from a click.
-  var sOC = (showOnClick == 1 && li.parentNode == mRoot) || (showOnClick == 2);
-  // Safari 1.x is buggy and crashes when you access "returnValue". Joy.
-  // Also Opera defaults to "false" so use something different there.
-  var evtProp = navigator.userAgent.indexOf('Safari') > -1 || isOp ?
-   'safRtnVal' : 'returnValue';
+  var rootItem = (li.parentNode == mRoot) ? 1 : 0;
   // Create the functions that handle show & hide events.
   var eShow = new Function('with (' + myName + ') { ' +
-   'var m = menus["'+menuID+'"], pM = menus["' + parUL.id + '"];' +
-   (sOC ? 'if ((pM && pM.child) || (m && m.visible))' : '') +
-   ' show("' + menuID + '", this) }');
+   'var m = menus["' + menuID + '"], pM = menus["' + parUL.id + '"];' +
+   'if (!showOnClick || (showOnClick == 1 && !' + rootItem + ') || ' +
+       '((showOnClick <= 2) && ((pM && pM.child) || (m && m.visible))))' +
+   'show("' + menuID + '", this) }');
   var eHide = new Function('e', 'if (e.' + evtProp + ' != false) ' +
    myName + '.hide("' + menuID + '")');
   // Assign them to the <a> element.
@@ -521,8 +529,11 @@ FSMenu.prototype.activateMenu = function(id, subInd) { with (this)
   addEvent(a, 'focus', eShow);
   addEvent(a, 'mouseout', eHide);
   addEvent(a, 'blur', eHide);
-  if (sOC) addEvent(a, 'click', new Function('e', myName + '.show("' + menuID +
-   '", this); if (e.cancelable && e.preventDefault) e.preventDefault(); ' +
+  addEvent(a, 'click', new Function('e', 'var s = ' + myName + '.showOnClick, ' +
+   'm = ' + myName + '.menus["' + menuID + '"]; ' +
+   'if (!((s == 1 && ' + rootItem + ') || s >= 2)) return; ' +
+   myName + '[m && m.visible ? "hide" : "show"]("' + menuID + '", this); ' +
+   'if (e.cancelable && e.preventDefault) e.preventDefault(); ' +
    'e.' + evtProp + ' = false; return false'));
 
   // Prepend an arrow indicator to the anchor tag content if given.
@@ -546,9 +557,10 @@ FSMenu.prototype.activateMenu = function(id, subInd) { with (this)
  }
 
  // If this menu hides its children onclick, setup that now.
- if (hideOnClick) addEvent(mRoot, 'click', new Function(myName + '.hideAll()')); 
+ if (hideOnClick) addEvent(mRoot, 'click', new Function('e', 'if (e.' + evtProp +
+  ' != false) ' + myName + '.hideAll()'));
 
- // Finally, create/activate the root node.
+ // Create an instance for the root menu data node.
  menus[id] = new FSMenuNode(id, true, this);
 }};
 
