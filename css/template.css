@@ -47,7 +47,7 @@ body {
 * this wraps content between a templateBodyStart and templateBodyStop
 */
 #templateBodyInsert { 
-    padding:3px;
+    padding:6px;
 }
 
 #searchToolTextArea {
@@ -73,7 +73,7 @@ body {
 }
 a.logoFooterAnchor{
     font-size:9px; 
-    text-decoration:none;
+    /*text-decoration:none;*/
     color:#002255;
 }
 /*************************************************************************
