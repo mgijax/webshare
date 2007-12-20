@@ -383,7 +383,7 @@
       Mouse Anatomical Dictionary</a> </li>
     <li>
       <a href="${WI_URL}searches/AMA_form.shtml"
-      onMouseOver="return overlib('An extensive Stage 28 dictionary; not yet in use for annotation of expression data.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      onMouseOver="return overlib('An extensive ontology of anatomical structures for the postnatal mouse.',ANCHOR, 'VocabHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
       Adult Mouse Anatomy Browser</a> </li>
   </ul>
   </li>
@@ -443,28 +443,6 @@
 <!---------- Download Dropmenu End ----------->
 
 
-<!---------- Submit Dropmenu Start ----------->
-<li> <a href="${WI_URL}menus/allsubmitforms_menu.shtml"> &nbsp; Submit&nbsp;<img src="${WEBSHARE_URL}images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
-  <ul>
-  <li> <a href="${WI_URL}menus/allsubmitforms_menu.shtml">Submissions Index</a></li>
-  <li> <a> Nomenclature &amp; Lab Code Requests</a>
-    <ul>
-      <li> <a href="${MGIHOME_URL}nomen/nomen_submit_form.shtml">Gene/Locus Nomenclature</a> </li>
-      <li> <a href="${MGIHOME_URL}nomen/allmut_form.shtml">Allele Nomenclature</a> </li>
-      <li> <a href="${MGIHOME_URL}submissions/strains/index.shtml"> Strain Nomenclature</a> </li>
-    </ul>
-  </li>
-  <li> <a>Contribute Data to MGI</a>
-    <ul>
-      <li> <a href="${MGIHOME_URL}nomen/pheno_form.shtml">Phenotype Data</a> </li>
-      <li> <a href="${MGIHOME_URL}GXD/GEN/gxd_submission_guidelines.shtml">Expression Data</a> </li>
-    </ul>
-  </li>
-  </ul>
-</li>
-<!---------- Submit Dropmenu End ----------->
-
-
 <!---------- Resources Dropmenu Start ----------->
 <li>
   <a href="${WI_URL}menus/allotherresources_menu.shtml">
@@ -474,11 +452,11 @@
   <li> <a href="${MGIHOME_URL}lists/lists.shtml">Research Community E-mail Lists</a> </li>
   <li> <a>Online Books</a>
     <ul>
-      <li> <a href=""> <em>Biology of the Laboratory Mouse</em> edited by Earl L. Green</a> </li>
-      <li> <a href="${SILVER_URL}"> <em>Mouse Genetics</em> by Lee Silver</a> </li>
-      <li> <a href="${COOKBOOK_URL}"> <em>The Anatomy of the Laboratory Mouse</em> by Margaret J. Cook</a> </li>
-      <li> <a href="${WKSILVERS_URL}"> <em>The Coat Colors of Mice</em> by Willys K. Silvers</a> </li>
-      <li> <a href="${MORSEBOOK_URL}"> <em>Origins of Inbred Mice</em> edited by Herbert C. Morse III</a> </li>
+      <li> <a href="${GREENBOOK_URL}"> Biology of the Laboratory Mouse edited by Earl L. Green</a> </li>
+      <li> <a href="${SILVER_URL}"> Mouse Genetics by Lee Silver</a> </li>
+      <li> <a href="${COOKBOOK_URL}"> The Anatomy of the Laboratory Mouse by Margaret J. Cook</a> </li>
+      <li> <a href="${WKSILVERS_URL}"> The Coat Colors of Mice by Willys K. Silvers</a> </li>
+      <li> <a href="${MORSEBOOK_URL}"> Origins of Inbred Mice edited by Herbert C. Morse III</a> </li>
     </ul>
   </li>
   <li> <a href="${MGIHOME_URL}nomen/index.shtml"> Nomenclature Home Page</a> </li>
@@ -503,7 +481,7 @@
       <li> <a href="${MGIHOME_URL}other/mouse_facts1.shtml#MolecRes">Mouse Facts</a> </li>
     </ul>
   </li>
-  <li> <a>Software Tools</a>
+  <li> <a>Software Developer Tools</a>
     <ul>
     <li> <a href="${MGIHOME_URL}other/link_instructions.shtml">Creating Web Links to MGI</a> </li>
     <li> <a href="${MGIHOME_URL}other/software_tools.shtml#acct">Direct SQL Account</a> </li>
@@ -524,6 +502,13 @@
 
 <!------- Direct Links  ------->
 <li>
+  <a href="${WI_URL}menus/allsubmitforms_menu.shtml"
+  title="">
+  Submit Data&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</li>
+
+
+<li>
   <a href="http://www.informatics.jax.org/imsr/index.jsp"
   title="International Mouse Strain Resource (IMSR)">
   Find Mice (IMSR) &nbsp;&nbsp;&nbsp;&nbsp;</a>
@@ -537,3 +522,98 @@
 </ul>
 </td></tr></table>
 <!--------------------------- Menu Bar End -------------------------->
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+// menu object
+var listMenu = new FSMenu('listMenu', true, 'display', 'block', 'none');
+
+listMenu.showDelay = 100;
+listMenu.switchDelay = 0;
+listMenu.hideDelay = 100;
+listMenu.animInSpeed = 1;
+listMenu.animOutSpeed = 1;
+
+FSMenu.prototype.ieSelBoxFixShow = function(mN) { with (this)
+{
+ var m = menus[mN];
+ if (!isIE || !window.createPopup) return;
+ if (navigator.userAgent.match(/MSIE ([\d\.]+)/) && parseFloat(RegExp.$1) > 6.5)
+  return;
+ // Create a new transparent IFRAME if needed, and insert under the menu.
+ if (!m.ifr)
+ {
+  m.ifr = document.createElement('iframe');
+  m.ifr.src = 'about:blank';
+  with (m.ifr.style)
+  {
+   position = 'absolute';
+   border = 'none';
+   padding = '300px';
+   filter = 'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';
+  }
+  m.lyr.ref.parentNode.insertBefore(m.ifr, m.lyr.ref);
+ }
+ // Position and show it on each call.
+ with (m.ifr.style)
+ {
+  left = m.lyr.ref.offsetLeft + 'px';
+  top = m.lyr.ref.offsetTop + 'px';
+  width = '200px';
+  height = '400px';
+  visibility = 'visible';
+ }
+}};
+FSMenu.prototype.ieSelBoxFixHide = function(mN) { with (this)
+{
+ if (!isIE || !window.createPopup) return;
+ var m = menus[mN];
+ if (m.ifr) m.ifr.style.visibility = 'hidden';
+}};
+addEvent(listMenu, 'show', function(mN) { this.ieSelBoxFixShow(mN) }, 1);
+addEvent(listMenu, 'hide', function(mN) { this.ieSelBoxFixHide(mN) }, 1);
+
+
+
+
+
+// Now the fun part... animation! This script supports animation plugins you
+// can add to each menu object you create. I have provided 3 to get you started.
+// To enable animation, add one or more functions to the menuObject.animations
+// array; available animations are:
+//  * FSMenu.animSwipeDown is a "swipe" animation that sweeps the menu down.
+//  * FSMenu.animFade is an alpha fading animation using tranparency.
+//  * FSMenu.animClipDown is a "blind" animation similar to 'Swipe'.
+// They are listed inside the "fsmenu.js" file for you to modify and extend :).
+
+// I'm applying two at once to listMenu. Delete this to disable!
+listMenu.animations[listMenu.animations.length] = FSMenu.animFade;
+listMenu.animations[listMenu.animations.length] = FSMenu.animSwipeDown;
+//listMenu.animations[listMenu.animations.length] = FSMenu.animClipDown;
+
+
+// Finally, on page load you have to activate the menu by calling its 'activateMenu()' method.
+// I've provided an "addEvent" method that lets you easily run page events across browsers.
+// You pass the activateMenu() function two parameters:
+//  (1) The ID of the outermost <ul> list tag containing your menu data.
+//  (2) A node containing your submenu popout arrow indicator.
+// If none of that made sense, just cut and paste this next bit for each menu you create.
+
+var arrow = null;
+if (document.createElement && document.documentElement)
+{
+ arrow = document.createElement('span');
+ arrow.appendChild(document.createTextNode('>'));
+ // Feel free to replace the above two lines with these for a small arrow image...
+ arrow = document.createElement('img');
+ arrow.src = '${WEBSHARE_URL}images//arrow_right.gif';
+ arrow.style.borderWidth = '0';
+ arrow.className = 'subind';
+}
+addEvent(window, 'load', new Function('listMenu.activateMenu("listMenuRoot", arrow)'));
+
+
+//]]>
+</script>
