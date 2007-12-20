@@ -87,6 +87,8 @@ SEQFETCH_URL            http://${SEQFETCH_HOST}/usrlocalmgi/live/seqfetch/www/to
 
 GLOSSARY_URL            {JAVAWI_URL}/WIFetch?page=glossaryIndex&printFormat=footer
 
+GREENBOOK_URL           http://${PY_HOST}/greenbook/
+
 COOKBOOK_URL            http://${PY_HOST}/cookbook/
 
 MORSEBOOK_URL           http://${PY_HOST}/morsebook/
