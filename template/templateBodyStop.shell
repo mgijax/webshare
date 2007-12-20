@@ -24,7 +24,7 @@
  </td>
  <td WIDTH="34%" ALIGN=center style="font-size:9px;">
     last database update<BR>
-    12/5/2007<BR>
+    ${dbDate}<BR>
     MGI 4.0<BR>
     <a href="${MGIHOME_URL}homepages/browser_compatability.shtml" class="">Web browser compatibility</a>
   </td>
@@ -44,7 +44,6 @@
 
 <script type="text/javascript">
 ddtabmenu.definemenu("ddtabs1", 0) //initialize Tab Menu with ID "ddtabs1" and select default
-startMenu();
 </script>
 
 </body>
