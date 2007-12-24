@@ -1,0 +1,205 @@
+############################################################################
+# Global Config
+############################################################################
+
+NAME                    MGI 4.0
+
+###------------------------###
+###--- MGI Host Servers ---###
+###------------------------###
+
+# Python host and directory where standard MGI python products are installed
+PY_HOST                 firien.informatics.jax.org/usrlocalmgi/live
+
+# Host of tomcat servlet container; non-public installs include port # 
+JAVA_HOST               firien.informatics.jax.org:8080
+
+# Host of the sequence retrieval tool
+SEQFETCH_HOST           firien.informatics.jax.org
+
+#Host of the mouse blast tool
+MOUSEBLAST_HOST         firien.informatics.jax.org/usrlocalmgi/live
+
+#Host of the gbrowse tool
+GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
+
+
+###-----------------------------###
+###--- Database Connectivity ---###
+###-----------------------------###
+
+DB_URL           firien.informatics.jax.org:4100
+DB_SERVER        DEV2_MGI
+DB_DATABASE      mgd
+DB_USER          mgd_public
+DB_PASSWORD      mgdpub
+SNP_DATABASE     snp
+
+
+###------------------------------###
+###--- Global Flags & Strings ---###
+###------------------------------###
+
+# is this WI part of a production installation?  (so no page caching)
+IS_PRODUCTION           0
+
+# are SNP and marker coordinates drawn from the same genome assembly? (0/1)
+BUILDS_IN_SYNC          1
+
+# genome assembly version for marker coordinates
+ASSEMBLY_VERSION        36
+
+# genome assembly version for SNP coordinates
+SNP_ASSEMBLY_VERSION    36
+
+
+###---------------------###
+###--- MGI BASE URLs ---### be aware some server aliases will include the '/www/'
+###---------------------###
+
+JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
+
+WI_URL                  http://${PY_HOST}/wi/www/
+
+MGIHOME_URL             http://${PY_HOST}/mgihome/www/
+
+USERDOCS_URL            http://${PY_HOST}/userdocs/www/
+
+WEBSHARE_URL            http://${PY_HOST}/webshare/
+
+FAQ_URL                 http://${PY_HOST}/faq/www/
+
+MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/www/
+
+FTP_URL                 ftp://devftp.informatics.jax.org/pub/reports/
+
+PIXELDB_URL             http://${PY_HOST}/pix/fetch_pixels.cgi?id=
+
+GO_GRAPH_URL            http://www.informatics.jax.org
+
+###---------------------###
+###--- MGI FULL URLs ---###
+###---------------------###
+
+SELECT_A_SEQ_URL        ${MOUSEBLAST_URL}seqSelect.cgi
+
+SEQFETCH_URL            http://${SEQFETCH_HOST}/usrlocalmgi/live/seqfetch/www/tofasta.cgi?
+
+GLOSSARY_URL            {JAVAWI_URL}/WIFetch?page=glossaryIndex&printFormat=footer
+
+GREENBOOK_URL           http://${PY_HOST}/greenbook/
+
+COOKBOOK_URL            http://${PY_HOST}/cookbook/
+
+MORSEBOOK_URL           http://${PY_HOST}/morsebook/
+
+SILVER_URL              http://${PY_HOST}/silverbook/www/
+
+WKSILVERS_URL           http://${PY_HOST}/wksilvers/www/
+
+SCHEMA                  http://firien.informatics.jax.org/schema/
+
+GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
+
+GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
+
+JAXRH_URL               http://www.jax.org/resources/documents/cmdata/rhmap/%sdata.html
+
+IMSRURL                 http://www.informatics.jax.org/imsr/
+
+MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
+
+TUTORIAL_URL            http://www.informatics.jax.org/tutorials/
+
+WEBIMAGEMAP_URL         ${WEBSHARE_URL}components.cgi
+
+###-------------------------###
+###--- Common Parameters ---###
+###-------------------------###
+
+PYTHON                  /usr/local/bin/python
+SYBASE                  /opt/sybase/12.5/
+GROUP                   www
+
+###-------------------------###
+###--- Other Paths ---###
+###-------------------------###
+
+GENOMIC_PATH /net/orodruin-g/vol/hobbiton/data/research/
+NIBDBS /net/orodruin-g/vol/hobbiton/data/research/dna/mouse_build_36_nib
+
+###---------------------###
+###--- External Urls ---###
+###---------------------###
+
+# URL to Entrez where we find human orthologs
+ENTREZ_URL              http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=
+
+# URL to NCBI's Entrez for Genbank sequence IDs
+GB_URL                  http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=
+
+MMRRC_KO_URL               http://www.mmrrc.org/catalog/StrainCatalogSearchForm.jsp?gene_search=Gene/Allele+Symbol&symName=contains&LowerCaseSymbol=%s&numName==&MmrrcId=&SourceCollection=%s&InitialMaintenanceLevel=Both&Status=AVD&Status=Importation&Status=Accepted&pageSize=25&jboEventVo=StrainCatalogMasterView&jboEvent=Search
+
+JAX_KO_URL              http://jaxmice.jax.org/strain/%s.html
+
+JAX_KO_SEARCH           http://jaxmice.jax.org/jaxmice-cgi/jaxmicedb.cgi?objtype=pricequery&objopr=query&istore=&aop=contains&sname=&gop=begins&gsym=%s&sop=begins&ssym=&sregistry=&dest=N&stype=0&mdl=0&button=Search+Database
+
+LOCUSLINK_URL           http://www.ncbi.nlm.nih.gov/LocusLink/LocRpt.cgi?l=
+
+RGD_URL                 http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=
+
+# link to home page of dbSNP
+DBSNP_HOME              http://www.ncbi.nlm.nih.gov/projects/SNP/
+
+# link to build statistics for current dbSNP build
+DBSNP_STATS             http://www.ncbi.nlm.nih.gov/SNP/snp_summary.cgi?view+summary=view+summary&build_id=126
+
+# the URL for linking to an orthology page at Homologene (append Homologene ID)
+HOMOLOGENE_URL          http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=homologene&dopt=HomoloGene&list_uids=
+
+# URL to RefSNP detail pages at MPD
+MPD_SNP_URL             http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=snps/retrieve&searchreq=
+
+# The location of the MPD (Mouse Phenome Database)
+MPD_URL                 http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home
+
+# URL to RefSNP detail pages at dbSNP
+DBSNP_URL               http://www.ncbi.nlm.nih.gov/SNP/snp_ref.cgi?rs=
+
+# URL to the ontology search page at RGD
+RGD_ONT_URL             http://rgd.mcw.edu/tools/ontology/ont_search.cgi
+
+# URL to the TreeFam database
+TREEFAM_URL             http://www.treefam.org/cgi-bin/TFinfo.pl?ac=
+
+# URL to the VISTA genome browser (fill in chrom, start & stop coord)
+VISTA_URL               http://pipeline.lbl.gov/cgi-bin/vistatrack?db=mm7&position=
+
+###--javawi Url's--###
+
+# URL for the 'browse Stage descriptions' link on expression query forms of javawi
+STAGE_INFO_URL			http://genex.hgu.mrc.ac.uk/Databases/Anatomy/MAstaging.shtml
+
+# javawi URL to the graphical view of protein domain structure (insert SwissProt ID)
+GRAPH_SP_URL        	http://www.ebi.ac.uk/interpro/ISpy?ac=@@@@
+
+# javawi URL to the genome browser at UCSC (insert coordinates) for SNP detail page
+SNP_UCSC_BROWSER_URL    http://genome.ucsc.edu/cgi-bin/hgTracks?clade=vertebrate&org=Mouse&db=mm8&position=@@@@
+
+# javawi URL to Ensembl's SNPView resource (append RefSNP accession ID)
+ENSEMBL_SNPVIEW_URL 	http://www.ensembl.org/Mus_musculus/snpview?snp=
+
+# javawi URL to NCBI's MapViewer resource (append RefSNP accession ID)
+NCBI_MAPVIEWER_URL		http://www.ncbi.nlm.nih.gov/mapview/map_search.cgi?taxid=10090&amp;advsrch=off&amp;query=
+
+
+###--------------###
+###--Komp Uri's--###
+###--------------###
+
+GENBANK_HOME            http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=Nucleotide
+ENSEMBL_HOME            http://www.ensembl.org/Mus_musculus/textview
+ENTREZGENE_HOME         http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene
+KOMP_HOME               http://www.knockoutmouse.org/
+KOMP_NIH                http://www.nih.gov/science/models/mouse/knockout/
+IMSR_HOME               ${IMSRURL}IMSRSearchForm.jsp

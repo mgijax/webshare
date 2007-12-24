@@ -1,3 +1,7 @@
-RCDFILE_PATH /usr/local/mgi/live/webshare/images.rcd
+INSTALL_PATH /usr/local/mgi/live/webshare/
+
+RCDFILE_PATH ${INSTALL_PATH}images.rcd
+
+GLOBAL_CONFIG ${INSTALL_PATH}config/GlobalConfig
 
 LIBDIRS /usr/local/mgi/live/lib/python/

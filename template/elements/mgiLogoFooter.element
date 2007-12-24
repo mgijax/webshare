@@ -1,0 +1,5 @@
+
+<a class="logoFooterAnchor" href="${MGIHOME_URL}homepages">&nbsp;Home</a>
+<a class="logoFooterAnchor" href="${MGIHOME_URL}projects/aboutmgi.shtml">About</a>
+<a class="logoFooterAnchor" href="${MGIHOME_URL}homepages/help.shtml">Help</a>
+<a class="logoFooterAnchor" href="${FAQ_URL}FAQ.shtml">FAQ</a>

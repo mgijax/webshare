@@ -1,0 +1,34 @@
+<!--===================== Body Start ===========================-->
+</head>
+<body onload="loadPage()" >
+
+<div id="topBannerContainer" style="position:relative;">
+
+  <div id="ddtabs1" class="ddcolortabs">
+    ${miniHomeTabs.element}
+  </div>
+
+  <div id="logoContainer" style="position:absolute; left:0; top:0;">
+    <div>
+      ${mgiLogo.element}
+    </div>
+    <span class="logoFooterContainer">
+      ${mgiLogoFooter.element}
+    </span>
+  </div>
+
+  <div id="templateSearchTool" style="position:absolute; top:2px; right:2px;">
+    ${searchToolForm.element}
+  </div>
+
+
+</div>
+
+<div id="navBarContainer">
+  ${navBar.element}
+</div>
+
+<div id="templateBodyInsert"> <!-- wrapper around inserted page body -->
+
+
+

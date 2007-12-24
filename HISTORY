@@ -1,5 +1,10 @@
-TAG: webshare-tr8087-x (BP)
-DATE: 6/20/07
+TAG: webshare-4-0-0-1
+DATE: 12/24/07
+STAFF: pf
+RELEASE: merging tr8087 branch to trunk
+
+TAG: webshare-tr8087-x (BP, 1->15)
+DATE: 12/20/07 (last)
 STAFF: pf
 RELEASE: 4.0 Branch point and branch tags
 

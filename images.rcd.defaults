@@ -9,11 +9,15 @@
 # For the sake of consistency, all names comprised of more than one word
 #   should have words separated by an underscore.
 
-TOPURL = http://www.informatics.jax.org/webshare/images/
+TOPURL = http://www.informatics.jax.org/webshare/
+IMAGES_URL = ${TOPURL}images/
+CSS_URL = ${TOPURL}css/
+JS_URL = ${TOPURL}js/
+TEMPLATE_URL = ${TOPURL}template/
 
 [
 name = black_ball
-url = ${TOPURL}blackball.gif
+url = ${IMAGES_URL}blackball.gif
 width = 14
 height = 14
 alt = black ball
@@ -21,7 +25,7 @@ alt = black ball
 
 [
 name = black_ball_small
-url = ${TOPURL}blackball_sm.gif
+url = ${IMAGES_URL}blackball_sm.gif
 width = 14
 height = 14
 alt = black ball
@@ -29,7 +33,7 @@ alt = black ball
 
 [
 name = help
-url = ${TOPURL}help_large.jpg
+url = ${IMAGES_URL}help_large_transp.gif
 width = 32
 height = 30
 alt = help icon
@@ -37,7 +41,15 @@ alt = help icon
 
 [
 name = help_small
-url = ${TOPURL}help_small.jpg
+url = ${IMAGES_URL}help_small.jpg
+width = 21
+height = 20
+alt = help icon
+]
+
+[
+name = help_small_transp
+url = ${IMAGES_URL}help_small_transp.gif
 width = 21
 height = 20
 alt = help icon
@@ -45,7 +57,7 @@ alt = help icon
 
 [
 name = is-a
-url = ${TOPURL}is-a.gif
+url = ${IMAGES_URL}is-a.gif
 width = 10
 height = 10
 alt = is-a
@@ -53,7 +65,7 @@ alt = is-a
 
 [
 name = jax_logo
-url = ${TOPURL}jax_logo.gif
+url = ${IMAGES_URL}jax_logo.gif
 width = 130
 height = 48
 alt = The Jackson Laboratory
@@ -61,7 +73,7 @@ alt = The Jackson Laboratory
 
 [
 name = mgi_banner
-url = ${TOPURL}mgi_banner.jpg
+url = ${IMAGES_URL}mgi_banner.jpg
 width = 190
 height = 70
 alt = Mouse Genome Informatics
@@ -69,7 +81,7 @@ alt = Mouse Genome Informatics
 
 [
 name = mgi_logo
-url = ${TOPURL}mgi_logo.jpg
+url = ${IMAGES_URL}mgi_logo.jpg
 width = 160
 height = 70
 alt = Mouse Genome Informatics
@@ -77,7 +89,7 @@ alt = Mouse Genome Informatics
 
 [
 name = mgi_logo_small
-url = ${TOPURL}mgi_logo_small.jpg
+url = ${IMAGES_URL}mgi_logo_small.jpg
 width = 190
 height = 70
 alt = Mouse Genome Informatics
@@ -85,7 +97,7 @@ alt = Mouse Genome Informatics
 
 [
 name = new
-url = ${TOPURL}new.gif
+url = ${IMAGES_URL}new.gif
 width = 27
 height = 12
 alt = -NEW-
@@ -93,7 +105,7 @@ alt = -NEW-
 
 [
 name = part-of
-url = ${TOPURL}part-of.gif
+url = ${IMAGES_URL}part-of.gif
 width = 10
 height = 10
 alt = part-of
@@ -101,7 +113,7 @@ alt = part-of
 
 [
 name = red_ball
-url = ${TOPURL}redball.gif
+url = ${IMAGES_URL}redball.gif
 width = 14
 height = 14
 alt = red ball
@@ -109,7 +121,7 @@ alt = red ball
 
 [
 name = warning
-url = ${TOPURL}warning.gif
+url = ${IMAGES_URL}warning.gif
 width = 40
 height = 40
 alt = warning
@@ -117,7 +129,7 @@ alt = warning
 
 [
 name = man_icon
-url = ${TOPURL}man_icon.gif
+url = ${IMAGES_URL}man_icon.gif
 width = 11
 height = 20
 alt = human
@@ -125,7 +137,7 @@ alt = human
 
 [
 name = small_mouse_icon
-url = ${TOPURL}black_mouse_small.gif
+url = ${IMAGES_URL}black_mouse_small.gif
 width = 23
 height = 11
 alt = mouse
@@ -133,5 +145,14 @@ alt = mouse
 
 [
 name = mgicss
-url = ${TOPURL}mgi.css
+url = ${CSS_URL}mgi.css
+]
+
+[
+name = arrow_right
+url = ${IMAGES_URL}arror_right.gif
+]
+[
+name = arrow_down
+url = ${IMAGES_URL}arror_down.gif
 ]
