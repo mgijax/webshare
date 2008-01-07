@@ -21,7 +21,7 @@ SEQFETCH_HOST           firien.informatics.jax.org
 MOUSEBLAST_HOST         firien.informatics.jax.org/usrlocalmgi/live
 
 #Host of the gbrowse tool
-GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
+GBROWSE_HOST            hobbiton.informatics.jax.org:8080/cgi-bin/
 
 
 ###-----------------------------###
