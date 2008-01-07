@@ -17,14 +17,14 @@
   <ul>
     <li>
       <a href="${JAVAWI_URL}WIFetch?page=markerQF"
-      onMouseOver="return overlib('Search by symbol, location, gene ontology classification, or phenotype.',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');" onMouseOut="nd();">
+      onMouseOver="return overlib('Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');" onMouseOut="nd();">
       Genes &amp; Markers Query</a>
       <!-- anchor div for overlib tooltips-->
       <div id="MarkerHelp"></div>
     </li>
     <li>
       <a href="${JAVAWI_URL}WIFetch?page=batchQF"
-      onMouseOver="return overlib('Download data for a batch of gene IDs or symbols.',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'MarkerHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
       Batch Query</a>
     </li>
     <li><a>Maps &amp; Mapping Data</a>
@@ -166,7 +166,7 @@
     </li>
     <li>
       <a href="${JAVAWI_URL}WIFetch?page=markerQF"
-      onMouseOver="return overlib('Search for genes using GO terms and other gene attributes.',ANCHOR, 'GOHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+      onMouseOver="return overlib('Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.',ANCHOR, 'GOHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
       Genes &amp; Markers Query</a>
       <!-- anchor div for overlib tooltips-->
     </li>
@@ -310,7 +310,7 @@
     </li>
     <li>
       <a href="${JAVAWI_URL}WIFetch?page=batchQF"
-      onMouseOver="return overlib('Download gene/marker data for a batch of IDs or symbols.',ANCHOR, 'SeqHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+      onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'SeqHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
       Batch Query</a>
     </li>
   </ul>
@@ -399,7 +399,7 @@
   </li>
   <li>
     <a href="${JAVAWI_URL}WIFetch?page=batchQF"
-    onMouseOver="return overlib('Download gene/marker data for a batch of IDs or symbols.',ANCHOR, 'BatchHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+    onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'BatchHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
     Batch Query</a>
     <div id="BatchHelp"></div>
     </li>
