@@ -32,10 +32,10 @@ body {
 #navBarContainer {
     background-color:#002255; 
     font-family:Verdana,Arial,Helvetica;
-    height: 2.1em;
+    height: 2.2em;
     width:100%;
     position:relative;
-    min-height:20px;
+    min-height:22px;
 }
 /* Block-level <div> wrapping the nav bar; see nav bar styles below */
 #templateSearchTool {
