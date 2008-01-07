@@ -30,7 +30,7 @@
     <li><a>Maps &amp; Mapping Data</a>
     <ul>
       <li>
-        <a href="http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current"
+        <a href="${GBROWSE_URL}"
         onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
         Mouse GBrowse</a>
         <!-- anchor div for overlib tooltips-->
@@ -304,7 +304,7 @@
       Protein Superfamily (PIRSF) Browser</a>
     </li>
     <li>
-      <a href="http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current"
+      <a href="${GBROWSE_URL}"
       onMouseOver="return overlib('Download data for a batch of gene IDs or symbols.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
       Mouse GBrowse</a>
     </li>
@@ -410,7 +410,7 @@
     <div id="BlastHelp"></div>
   </li>
   <li>
-    <a href="http://gbrowse.informatics.jax.org/cgi-bin/gbrowse/mouse_current"
+    <a href="${GBROWSE_URL}"
     onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'GBrowseHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
     Mouse GBrowse</a>
     <div id="GBrowseHelp"></div>
