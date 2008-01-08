@@ -52,6 +52,9 @@ ASSEMBLY_VERSION        36
 # genome assembly version for SNP coordinates
 SNP_ASSEMBLY_VERSION    36
 
+# if present, indicates that the Java WI should do no caching of pages
+NO_CACHE    1
+
 
 ###---------------------###
 ###--- MGI BASE URLs ---### be aware some server aliases will include the '/www/'
@@ -77,7 +80,7 @@ PIXELDB_URL             http://${PY_HOST}/pix/fetch_pixels.cgi?id=
 
 GO_GRAPH_URL            http://www.informatics.jax.org/GOgraphs/
 
-GO_TOOLS_URL			http://${PY_HOST}/gotools/
+GO_TOOLS_URL			http://firien.informatics.jax.org/gotools/
 
 ###---------------------###
 ###--- MGI FULL URLs ---###
