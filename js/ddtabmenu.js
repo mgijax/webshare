@@ -11,15 +11,12 @@ definemenu:function(tabid, dselected){
 },
 
 showsubmenu:function(tabid, targetitem){
+
 	var menuitems=this[tabid+"-menuitems"]
- for (i=0; i<menuitems.length; i++){
+	for (i=0; i<menuitems.length; i++){
 		menuitems[i].className=""
-		if (typeof menuitems[i].hasSubContent!="undefined")
-			document.getElementById(menuitems[i].getAttribute("rel")).style.display="none"
 	}
 	targetitem.className="current"
-	if (typeof targetitem.hasSubContent!="undefined")
-		document.getElementById(targetitem.getAttribute("rel")).style.display="block"
 },
 
 isSelected:function(menuurl){
