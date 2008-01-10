@@ -80,7 +80,7 @@ PIXELDB_URL             http://${PY_HOST}/pix/fetch_pixels.cgi?id=
 
 GO_GRAPH_URL            http://www.informatics.jax.org/GOgraphs/
 
-GO_TOOLS_URL			http://firien.informatics.jax.org/gotools/
+GO_TOOLS_URL		http://firien.informatics.jax.org/gotools/
 
 ###---------------------###
 ###--- MGI FULL URLs ---###
