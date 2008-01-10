@@ -2,7 +2,7 @@
 //Only 1 configuration variable below
 
 var ddtabmenu={
-	disabletablinks: false, ////Disable hyperlinks in 1st level tabs with sub contents (true or false)?
+	disabletablinks: true, ////Disable hyperlinks in 1st level tabs with sub contents (true or false)?
 	currentpageurl: window.location.href.replace("http://"+window.location.hostname, "").replace(/^\//, ""), //get current page url (minus hostname, ie: http://www.dynamicdrive.com/)
 
 definemenu:function(tabid, dselected){
@@ -11,12 +11,10 @@ definemenu:function(tabid, dselected){
 },
 
 showsubmenu:function(tabid, targetitem){
-
 	var menuitems=this[tabid+"-menuitems"]
-	for (i=0; i<menuitems.length; i++){
-		menuitems[i].className=""
-	}
 	targetitem.className="current"
+	if (typeof targetitem.hasSubContent!="undefined")
+		document.getElementById(targetitem.getAttribute("rel")).style.display="block"
 },
 
 isSelected:function(menuurl){
@@ -43,6 +41,7 @@ init:function(tabid, dselected){
 		}
 		else //for items without a submenu, add onMouseout effect
 			menuitems[x].onmouseout=function(){this.className=""}
+
 		menuitems[x].onmouseover=function(){ddtabmenu.showsubmenu(tabid, this)}
 		if (dselected=="auto" && typeof setalready=="undefined" && this.isSelected(menuitems[x].href)){
 			ddtabmenu.showsubmenu(tabid, menuitems[x])
