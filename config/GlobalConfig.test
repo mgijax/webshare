@@ -90,7 +90,7 @@ SELECT_A_SEQ_URL        ${MOUSEBLAST_URL}seqSelect.cgi
 
 SEQFETCH_URL            http://${SEQFETCH_HOST}/usrlocalmgi/live/seqfetch/www/tofasta.cgi?
 
-GLOSSARY_URL            {JAVAWI_URL}/WIFetch?page=glossaryIndex&printFormat=footer
+GLOSSARY_URL            ${JAVAWI_URL}/WIFetch?page=glossaryIndex&printFormat=footer
 
 GREENBOOK_URL           http://${PY_HOST}/greenbook/
 
