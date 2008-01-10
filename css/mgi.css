@@ -25,7 +25,7 @@ select {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
 .label {font-size:12px;font-family:Arial,Helvetica;text-align:right;color:#000001;font-weight:bold;}
 .qfLabel {font-size:12px;font-family:Arial,Helvetica;color:#000001;font-weight:bold;}
 td.headerLabel {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;background-color:#dddddd}
-td.headerLabelSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;width:50;background-color:#dddddd}
+td.headerLabelSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;width:50px;background-color:#dddddd}
 th  {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:left;color:#000001;font-weight:bold;}
 th.centerMiddle  {font-size:12px;font-family:Arial,Helvetica;vertical-align:middle;text-align:center;color:#000001;font-weight:bold;}
 th.centerBottom {font-size:12px;font-family:Arial,Helvetica;vertical-align:bottom;text-align:center;color:#000001;font-weight:bold;}
@@ -50,8 +50,8 @@ tr.stripe2 {background-color:#F0F0F0}
 tr.stripe3 {background-color:#D0E0F0}
 tr.stripe4 {background-color:#DFEFFF}
 /* TableData Label Categories (Left Side)*/
-td.cat1 {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#DFEFFF;font-weight:bold;width:120;padding:8px}
-td.cat2 {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#D0E0F0;font-weight:bold;width:120;padding:8px}
+td.cat1 {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#DFEFFF;font-weight:bold;width:120px;padding:8px}
+td.cat2 {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#D0E0F0;font-weight:bold;width:120px;padding:8px}
 /* TableData Data (Right Side)*/
 td.data1 {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:top;color:#000001;background-color:#ffffff;}
 td.data2 {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:top;color:#000001;background-color:#eeeeee;}
@@ -66,7 +66,7 @@ td.data2rightMiddle {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical
 tr.summary {background-color:#ffffff}
 td.resultsHeader {font-size:12px;font-family:Arial,Helvetica;vertical-align:middle;color:#000001;background-color:#D0E0F0;font-weight:bold;text-align:center}
 td.resultsHeaderYellow {font-size:12px;font-family:Arial,Helvetica;vertical-align:middle;color:#000001;background-color:#FFFFCC;font-weight:bold;text-align:center}
-td.resultsHeaderSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;width:50;background-color:#D0E0F0}
+td.resultsHeaderSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;font-weight:bold;vertical-align:middle;text-align:center;width:50px;background-color:#D0E0F0}
 
 /* Miscellaneous */ 
 table.results {background-color:#777777}
