@@ -172,5 +172,8 @@ div#DataContent {
     font-size:20px;
     text-align:center;
     vertical-align:middle;
+}
 
+.vocab-list{
+    line-height: 140%;
 }
