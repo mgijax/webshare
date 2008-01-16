@@ -103,9 +103,7 @@ a.logoFooterAnchor{
     vertical-align: middle;
     color: #000001;
     text-align: center;
-    margin-top:1px;
-    margin-left:1px;
-    margin-bottom:4px;
+    margin-bottom:8px;
     width: 100%;
     height:35px;
 }
@@ -269,8 +267,6 @@ a.logoFooterAnchor{
 .ddcolortabs{ /* default state */
 padding: 0;
 background: transparent;
-voice-family: "\"}\"";
-voice-family: inherit;
 text-align:center;
 position:absolute;
 bottom:0px;
