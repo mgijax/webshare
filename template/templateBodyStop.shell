@@ -41,11 +41,6 @@
 </tr>
 
 </table>
-
-<script type="text/javascript">
-ddtabmenu.definemenu("ddtabs1", "auto") //initialize Tab Menu with ID "ddtabs1" and select default
-</script>
-
 </body>
 </html>
 

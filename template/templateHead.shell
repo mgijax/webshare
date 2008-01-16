@@ -11,8 +11,6 @@
 
 <!-- JavaScript -->
 <script type="text/javascript" src="${WEBSHARE_URL}js/fsmenu.js"></script>
-<script type="text/javascript" src="${WEBSHARE_URL}js/ddtabmenu.js"></script>
-
 
 <!-- Overlib -->
 <script type="text/javascript" src="${WEBSHARE_URL}js/overlibHomepage.js"></script>
