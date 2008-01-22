@@ -4,7 +4,7 @@
 
 <div id="topBannerContainer" style="position:relative;">
 
-  <div id="homePageTitle" style="position:absolute; bottom:0px; left:200px;">
+  <div id="homePageTitle" style="position:absolute; bottom:0px; left:150px;">
     Mouse Genome Informatics
   </div>
 
@@ -17,7 +17,7 @@
     </span>
   </div>
 
-  <div id="templateSearchTool" style="position:absolute; top:2px; right:2px;">
+  <div id="templateSearchTool" style="position:absolute; top:2px; right:25px;">
     ${searchToolForm.element}
   </div>
 
