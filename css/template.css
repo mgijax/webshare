@@ -95,6 +95,7 @@ a.logoFooterAnchor{
     font-weight:bold;
     color: #002255;
     background-color: #dfefff;
+    white-space: nowrap;
 }
 #homePageBodyInsert {
     width:800px;
