@@ -3,7 +3,7 @@
 <tr>
 
  <td>
-    <a href="javascript:void(0);"
+    <a onClick='return false;' href="${USERDOCS_URL}searchtool_help.shtml"
     onMouseOver="return overlib('You may search for genes and markers by name or symbol, or any form of accession ID.<BR/><BR/>Use * for wildcard. Use quotation marks around phrases. Use angle brackets around superscript.<BR/>Examples:<BR/>&nbsp;&nbsp;&nbsp;&nbsp;Pax*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;paired box&quot;<BR/> &nbsp;&nbsp;&nbsp;&nbsp;OST128284 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MGI:97485<BR/> &nbsp;&nbsp;&nbsp;&nbsp;Pax6&lt;10Neu&gt; for Pax6<sup>10Neu</sup><BR/><BR/>Advanced searches are listed under the Search menu.<BR/><center><a href=\'${USERDOCS_URL}searchtool_help.shtml\'>More searching help.</a></center><BR/>', STICKY, CAPTION, 'Search Tips', CENTER, BELOW, WIDTH, 265, DELAY, 600);" onMouseOut="nd();">
     <img src="${WEBSHARE_URL}images/help_small_transp.gif" border="0">
     </a>
