@@ -92,6 +92,12 @@ function openFaqWindow(faqFile)
     window.open(faqUrl,'faqWindow','width=1000,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
 };
 
+function openNewWindow(url)
+{
+    window.open(url,'new','width=1000,height=600,resizable=yes,scrollbars=yes,menubar=yes,toolbar=yes,alwaysRaised=yes');
+};
+
+
 function verifySearchToolParms() {
 
   var searchToolTextArea = document.getElementById("searchToolTextArea");
