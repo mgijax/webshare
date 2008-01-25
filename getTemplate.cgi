@@ -13,11 +13,15 @@
 import sys
 import os
 
-if '/usr/local/mgi/lib/python/' not in sys.path:
-        sys.path.insert (0, '/usr/local/mgi/lib/python/')
+if '/usr/local/mgi/live/lib/python/' not in sys.path:
+        sys.path.insert (0, '/usr/local/mgi/live/lib/python/')
 
 import Configuration
 config = Configuration.get_Configuration ("webshare.config")
+
+commonConfig = Configuration.get_Configuration (config['COMMON_CONFIG'])
+
+config.merge(commonConfig)
 
 # Attempt to import the module that will ask Python to ignore any
 # deprecation errors.  If it fails, ignore it and go forward.
@@ -144,6 +148,7 @@ class getTemplateCGI (CGI.CGI):
         shellContents = shellContents.replace(searchKey, replaceValue)
 
     #return translated string representation of file
+    
     print shellContents
 
 
