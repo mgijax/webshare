@@ -8,7 +8,7 @@
 
 /* Additional constraint on pages using an mgi template */
 body {
-    min-width:800px;
+    min-width:760px;
 }
 
 /*************************************************************************
@@ -22,8 +22,6 @@ body {
     height: 80px;
     width: 100%;
     position:relative;
-    min-width:800px;
-    width:expression(document.body.clientWidth < 775? "775px": "auto" );
 }
 /* <div> wrapping mgi logo and links below it; bound for easier placement */
 #logoContainer {
@@ -38,9 +36,6 @@ body {
     width:100%;
     position:relative;
     min-height:22px;
-    min-width:800px;
-    width:expression(document.body.clientWidth < 800? "800px": "auto" );
-
 }
 /* Block-level <div> wrapping the nav bar; see nav bar styles below */
 #templateSearchTool {
@@ -56,13 +51,9 @@ body {
 }
 
 #searchToolTextArea {
-    font-size:13px;
+    font-size:12px;
     font-family:Verdana,Arial,Helvetica,sans-serif;
     color:#002255;
-    background-color:#FFFFDD;
-    border: 3px #D0E0F0 inset;
-    padding: 3px 0px;
-    background-color:#FFFFDD;
 }
 
 .searchToolButton {
@@ -70,7 +61,6 @@ body {
     font-family:Arial,Helvetica;
     color:#002255;
     font-weight:bolder;
-    background-color:#FFFFDD;
 }
 
 .templateMgiLogo{
@@ -95,10 +85,9 @@ a.logoFooterAnchor{
     font-weight:bold;
     color: #002255;
     background-color: #dfefff;
-    white-space: nowrap;
 }
 #homePageBodyInsert {
-    width:800px;
+    width:786px;
     height: auto;
     margin-left: auto; 
     margin-right: auto;
