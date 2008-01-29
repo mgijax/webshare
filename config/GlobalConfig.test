@@ -80,7 +80,15 @@ PIXELDB_URL             http://${PY_HOST}/pixeldb/www/fetch_pixels.cgi?id=
 
 GO_GRAPH_URL            http://firien.informatics.jax.org/GOgraphs/
 
-GO_TOOLS_URL		http://firien.informatics.jax.org/gotools/
+GO_TOOLS_URL            http://firien.informatics.jax.org/gotools/
+
+###------------------------------------------------###
+###--- MGI URLs overlapping with apache aliases ---### 
+###------------------------------------------------###
+
+HOMEPAGES_URL           http://${PY_HOST}
+
+MENUS_URL               http://${PY_HOST}
 
 ###---------------------###
 ###--- MGI FULL URLs ---###
