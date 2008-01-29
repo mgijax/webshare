@@ -4,9 +4,9 @@
 
 NAME                    MGI 4.0
 
-###------------------------###
-###--- MGI Host Servers ---###
-###------------------------###
+###--
+###-- MGI Host Servers
+###--
 
 # Python host and directory where standard MGI python products are installed
 PY_HOST                 firien.informatics.jax.org/usrlocalmgi/live
@@ -24,9 +24,9 @@ MOUSEBLAST_HOST         firien.informatics.jax.org/usrlocalmgi/live
 GBROWSE_HOST            hobbiton.informatics.jax.org:8080/cgi-bin/
 
 
-###-----------------------------###
-###--- Database Connectivity ---###
-###-----------------------------###
+###--
+###-- Database Connectivity
+###--
 
 DB_URL           firien.informatics.jax.org:4100
 DB_SERVER        DEV2_MGI
@@ -36,9 +36,9 @@ DB_PASSWORD      mgdpub
 SNP_DATABASE     snp
 
 
-###------------------------------###
-###--- Global Flags & Strings ---###
-###------------------------------###
+###--
+###-- Global Flags & Strings
+###--
 
 # is this WI part of a production installation?  (so no page caching)
 IS_PRODUCTION           0
@@ -56,9 +56,9 @@ SNP_ASSEMBLY_VERSION    36
 NO_CACHE    1
 
 
-###---------------------###
-###--- MGI BASE URLs ---### be aware some server aliases will include the '/www/'
-###---------------------###
+###--
+###-- MGI BASE URLs -be aware some server aliases will include the '/www/'
+###--
 
 JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
@@ -82,18 +82,21 @@ GO_GRAPH_URL            http://firien.informatics.jax.org/GOgraphs/
 
 GO_TOOLS_URL            http://firien.informatics.jax.org/gotools/
 
-###------------------------------------------------###
-###--- MGI URLs overlapping with apache aliases ---### 
-###------------------------------------------------###
+###--
+###-- MGI URLs using apache aliases - if you wish to use apache aliases to 
+###-- find these pages, use the PY_HOST (if same as docroot), otherwise use
+###-- fully extended paths to their respective directories
+###--
 
+#HOMEPAGES_URL           http://${MGIHOME_URL}homepages/
 HOMEPAGES_URL           http://${PY_HOST}
 
+#MENUS_URL               http://${WI_URL}menus/
 MENUS_URL               http://${PY_HOST}
 
-###---------------------###
-###--- MGI FULL URLs ---###
-###---------------------###
-
+###--
+###-- MGI FULL URLs 
+###--
 
 SEQFETCH_URL            http://${SEQFETCH_HOST}/usrlocalmgi/live/seqfetch/www/tofasta.cgi?
 
@@ -118,9 +121,9 @@ IMSRURL                 http://www.informatics.jax.org/imsr/
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
 
-###-------------------------###
-###--- Other Paths ---###
-###-------------------------###
+###--
+###-- Other Paths
+###--
 
 GENOMIC_PATH /net/orodruin-g/vol/hobbiton/data/research/
 NIBDBS /net/orodruin-g/vol/hobbiton/data/research/dna/mouse_build_36_nib
