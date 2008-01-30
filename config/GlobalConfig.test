@@ -89,10 +89,10 @@ GO_TOOLS_URL            http://firien.informatics.jax.org/gotools/
 ###--
 
 #HOMEPAGES_URL           http://${MGIHOME_URL}homepages/
-HOMEPAGES_URL           http://${PY_HOST}
+HOMEPAGES_URL           http://${PY_HOST}/
 
 #MENUS_URL               http://${WI_URL}menus/
-MENUS_URL               http://${PY_HOST}
+MENUS_URL               http://${PY_HOST}/
 
 ###--
 ###-- MGI FULL URLs 
