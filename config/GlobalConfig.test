@@ -3,13 +3,13 @@
 ############################################################################
 
 NAME                    MGI 4.0
-
+ 
 ###--
 ###-- MGI Host Servers
 ###--
 
 # Python host and directory where standard MGI python products are installed
-PY_HOST                 firien.informatics.jax.org/usrlocalmgi/live
+PY_HOST                 firien.informatics.jax.org
 
 # Host of tomcat servlet container; non-public installs include port # 
 JAVA_HOST               firien.informatics.jax.org:8080
@@ -18,7 +18,7 @@ JAVA_HOST               firien.informatics.jax.org:8080
 SEQFETCH_HOST           firien.informatics.jax.org
 
 #Host of the mouse blast tool
-MOUSEBLAST_HOST         firien.informatics.jax.org/usrlocalmgi/live
+MOUSEBLAST_HOST         firien.informatics.jax.org
 
 #Host of the gbrowse tool
 GBROWSE_HOST            hobbiton.informatics.jax.org:8080/cgi-bin/
@@ -62,21 +62,21 @@ NO_CACHE    1
 
 JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
-WI_URL                  http://${PY_HOST}/wi/www/
+WI_URL                  http://${PY_HOST}/
 
-MGIHOME_URL             http://${PY_HOST}/mgihome/www/
+MGIHOME_URL             http://${PY_HOST}/mgihome/
 
-USERDOCS_URL            http://${PY_HOST}/userdocs/www/
+USERDOCS_URL            http://${PY_HOST}/userdocs/
 
 WEBSHARE_URL            http://${PY_HOST}/webshare/
 
-FAQ_URL                 http://${PY_HOST}/faq/www/
+FAQ_URL                 http://${PY_HOST}/faq/
 
-MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/www/
+MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/
 
 FTP_URL                 ftp://devftp.informatics.jax.org/pub/reports/
 
-PIXELDB_URL             http://${PY_HOST}/pixeldb/www/fetch_pixels.cgi?id=
+PIXELDB_URL             http://${PY_HOST}/pixeldb/fetch_pixels.cgi?id=
 
 GO_GRAPH_URL            http://firien.informatics.jax.org/GOgraphs/
 
@@ -98,7 +98,7 @@ MENUS_URL               http://${PY_HOST}/
 ###-- MGI FULL URLs 
 ###--
 
-SEQFETCH_URL            http://${SEQFETCH_HOST}/usrlocalmgi/live/seqfetch/www/tofasta.cgi?
+SEQFETCH_URL            http://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
 
 GREENBOOK_URL           http://${PY_HOST}/greenbook/
 
@@ -106,11 +106,11 @@ COOKBOOK_URL            http://${PY_HOST}/cookbook/
 
 MORSEBOOK_URL           http://${PY_HOST}/morsebook/
 
-SILVER_URL              http://${PY_HOST}/silverbook/www/
+SILVER_URL              http://${PY_HOST}/silverbook/
 
-WKSILVERS_URL           http://${PY_HOST}/wksilvers/www/
+WKSILVERS_URL           http://${PY_HOST}/wksilvers/
 
-SCHEMA                  http://firien.informatics.jax.org/schema/
+SCHEMA                  http://${PY_HOST}/schema/
 
 GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
