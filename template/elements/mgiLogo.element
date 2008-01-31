@@ -1,4 +1,4 @@
 
-<a href="${MGIHOME_URL}homepages/">
+<a href="${HOMEPAGES_URL}">
  <img src="${WEBSHARE_URL}images/mgi_logo.gif" border=0>
 </a>

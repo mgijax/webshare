@@ -3,35 +3,35 @@
 <!--display order reversed due to the list being sequentially floated right-->
 <ul>
   <li>
-    <a href="http://tumor.informatics.jax.org/mtbwi/index.do">
+    <a href="${MTB_URL}">
     <span>&nbsp;&nbsp;Mouse&nbsp;&nbsp;<br/>&nbsp;&nbsp;Tumor&nbsp;&nbsp;<br/>&nbsp;&nbsp;Biology&nbsp;&nbsp;</span></a>
   </li>
   <li>
-    <a id="minitab_Ortho" href="${MGIHOME_URL}homepages/homepage_mini_Ortho.shtml">
+    <a id="minitab_Ortho" href="${HOMEPAGES_URL}orthology.shtml">
     <span><br/>Mammalian <br/>Orthology</span></a>
   </li>
   <li>
-    <a id="minitab_Strain" href="${MGIHOME_URL}homepages/homepage_mini_Strain.shtml">
+    <a id="minitab_Strain" href="${HOMEPAGES_URL}strains_SNPs.shtml">
     <span><br/>Strains, SNPs &amp;<br/>Polymorphisms</span></a>
   </li>
   <li>
-    <a id="minitab_BioPath"href="${MGIHOME_URL}homepages/minihome_BioPath.shtml">
+    <a id="minitab_BioPath"href="${HOMEPAGES_URL}pathways.shtml">
     <span><br/>Biochemical<br/>Pathways</span></a>
   </li>
   <li>
-    <a id="minitab_GO" href="${MGIHOME_URL}homepages/homepage_mini_GO.shtml">
+    <a id="minitab_GO" href="${HOMEPAGES_URL}function.shtml">
     <span>GO<br/>Functional<br/>Annotations</span></a>
   </li>
   <li>
-    <a id="minitab_GXD" href="${MGIHOME_URL}homepages/homepage_mini_GXD.shtml">
+    <a id="minitab_GXD" href="${HOMEPAGES_URL}expression.shtml">
     <span><br/>Gene <br/>Expression</span></a>
   </li>
   <li>
-    <a id="minitab_PAD" href="${MGIHOME_URL}homepages/homepage_mini_PAD.shtml">
+    <a id="minitab_PAD" href="${HOMEPAGES_URL}phenotypes.shtml">
     <span>Phenotypes,<br/>Alleles &amp;<br/>Diseases</span></a>
   </li>
   <li>
-    <a id="minitab_Genes" href="${MGIHOME_URL}homepages/homepage_mini_Genes.shtml">
+    <a id="minitab_Genes" href="${HOMEPAGES_URL}genes.shtml">
     <span><br/>Genes, Genome<br/>Features &amp; Maps</span></a>
   </li>
 </ul>

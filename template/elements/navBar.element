@@ -5,9 +5,9 @@
 
 
 <!---------- Searches Start ---------->
-<li> <a href="${WI_URL}menus/allsearch_menu.shtml"> &nbsp; Search&nbsp;<img src="${WEBSHARE_URL}images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
+<li> <a href="${MENUS_URL}allsearch.shtml"> &nbsp; Search&nbsp;<img src="${WEBSHARE_URL}images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
   <ul>
-  <li> <a href="${WI_URL}menus/allsearch_menu.shtml">
+  <li> <a href="${MENUS_URL}allsearch.shtml">
        All Search Tools</a>
        <div id="SearchesHelp"></div>
   </li>
@@ -75,7 +75,7 @@
     </li>
     <li>
       <div align="center" >
-        <a href="${MGIHOME_URL}homepages/homepage_mini_Genes.shtml">
+        <a href="${HOMEPAGES_URL}genes.shtml">
         More</a>
       </div>
     </li>
@@ -104,7 +104,7 @@
     </li>
     <li>
       <div align="center" style="display:list-item;">
-        <a href="${MGIHOME_URL}homepages/homepage_mini_PAD.shtml">
+        <a href="${HOMEPAGES_URL}phenotypes.shtml">
         More</a>
       </div>
     </li>
@@ -148,7 +148,7 @@
     </li>
     <li>
       <div align="center" style="display:list-item;">
-        <a href="${MGIHOME_URL}homepages/homepage_mini_GXD.shtml">
+        <a href="${HOMEPAGES_URL}expression.shtml">
         More</a>
       </div>
     </li>
@@ -177,7 +177,7 @@
     </li>
     <li>
       <div align="center" style="display:list-item;">
-        <a href="${MGIHOME_URL}homepages/homepage_mini_GO.shtml">
+        <a href="${HOMEPAGES_URL}function.shtml">
         More</a>
       </div>
     </li>
@@ -186,7 +186,7 @@
 
   <!-- BioChem Pathways -->
   <li>
-    <a href="http://ella.jax.org:8000/"
+    <a href="${PATHWAYS_URL}"
     onMouseOver="return overlib('View mouse genomic data in the context of metabolic cellular  processes such as biosynthesis, degradation, energy production, and detoxification.',ANCHOR, 'biochemHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
     Biochemical Pathways
     <div id="biochemHelp"></div></a>
@@ -224,7 +224,7 @@
     </li>
     <li>
       <div align="center" style="display:list-item;">
-        <a href="${MGIHOME_URL}homepages/homepage_mini_Strain.shtml">
+        <a href="${HOMEPAGES_URL}strains_SNPs.shtml">
         More</a>
       </div>
     </li>
@@ -263,7 +263,7 @@
     </li>
     <li>
       <div align="center" style="display:list-item;">
-      <a href="${MGIHOME_URL}homepages/homepage_mini_Ortho.shtml">
+      <a href="${HOMEPAGES_URL}orthology.shtml">
       More</a>
       </div>
     </li>
@@ -444,10 +444,10 @@
 
 <!---------- Resources Dropmenu Start ----------->
 <li>
-  <a href="${WI_URL}menus/allotherresources_menu.shtml">
+  <a href="${MENUS_URL}resources.shtml">
     &nbsp; More Resources &nbsp;<img src="${WEBSHARE_URL}images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;&nbsp;&nbsp;</a>
   <ul>
-  <li> <a href="${WI_URL}menus/allotherresources_menu.shtml">More Resources Index</a> </li>
+  <li> <a href="${MENUS_URL}resources.shtml">More Resources Index</a> </li>
   <li> <a href="${MGIHOME_URL}lists/lists.shtml">Research Community E-mail Lists</a> </li>
   <li> <a>Online Books</a>
     <ul>
@@ -483,12 +483,12 @@
   <li> <a>Software Developer Tools</a>
     <ul>
     <li> <a href="${MGIHOME_URL}other/link_instructions.shtml">Creating Web Links to MGI</a> </li>
-    <li> <a href="${MGIHOME_URL}other/software_tools.shtml#sql">Direct SQL Account</a> </li>
+    <li> <a href="${HOMEPAGES_URL}software.shtml#sql">Direct SQL Account</a> </li>
     <li> <a href="${SCHEMA}">Database Schema Browser</a> </li>
     <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html">All MGI Reports</a> </li>
     <li>
       <div align="center" >
-        <a href="${MGIHOME_URL}other/software_tools.shtml">
+        <a href="${HOMEPAGES_URL}software.shtml">
         More</a>
       </div>
     </li>
@@ -501,7 +501,7 @@
 
 <!------- Direct Links  ------->
 <li>
-  <a href="${WI_URL}menus/allsubmitforms_menu.shtml"
+  <a href="${HOMEPAGES_URL}submit.shtml"
   title="">
   Submit Data&nbsp;&nbsp;&nbsp;&nbsp;</a>
 </li>
