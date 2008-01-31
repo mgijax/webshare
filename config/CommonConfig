@@ -24,6 +24,8 @@ GROUP                   www
 ###--- External Urls ---###
 ###---------------------###
 
+PATHWAYS_URL            http://ella.jax.org:8000/
+
 # URL to Entrez where we find human orthologs
 ENTREZ_URL              http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=
 
