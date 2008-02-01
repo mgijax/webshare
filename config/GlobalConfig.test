@@ -12,7 +12,7 @@ NAME                    MGI 4.0
 PY_HOST                 firien.informatics.jax.org
 
 # Host of tomcat servlet container; non-public installs include port # 
-JAVA_HOST               firien.informatics.jax.org:8080
+JAVA_HOST               firien.informatics.jax.org
 
 # Host of the sequence retrieval tool
 SEQFETCH_HOST           firien.informatics.jax.org
