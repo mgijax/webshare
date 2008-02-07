@@ -468,8 +468,8 @@
     <ul>
       <li> <a href="http://www.knockoutmouse.org/">NIH Knockout Mouse Project (KOMP) Data Coordination Center </a> </li>
       <li> <a href="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiatives</a> </li>
-      <li> <a href="http://www.eucomm.org/">European Conditional Mouse Mutagenesis Program (EUCOMM)</a> </li>
-      <li> <a href="http://www.norcomm.org/">North American Conditional Mouse Mutagenesis project (NORCOMM)</a> </li>
+      <li> <a href="http://www.eucomm.org/">European Conditional Mouse Mutagenesis Program (EUComm)</a> </li>
+      <li> <a href="http://www.norcomm.org/">North American Conditional Mouse Mutagenesis project (NORComm)</a> </li>
     </ul>
   </li>
   <li> <a href="ftp://ftp.informatics.jax.org/pub/datasets/index.html"> Contributed Data Sets</a> </li>
