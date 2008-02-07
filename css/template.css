@@ -30,18 +30,7 @@ body {
     height: 75px;
     width:200px;
 }
-/* Block-level <div> wrapping the nav bar; see nav bar styles below */
-#navBarContainer {
-    background-color:#002255; 
-    font-family:Verdana,Arial,Helvetica;
-    height: 2.2em;
-    width:100%;
-    position:relative;
-    min-height:22px;
-    min-width:800px;
-    width:expression(document.body.clientWidth < 800? "800px": "auto" );
 
-}
 /* Block-level <div> wrapping the nav bar; see nav bar styles below */
 #templateSearchTool {
     height:25px;
@@ -55,24 +44,6 @@ body {
     padding:6px;
 }
 
-#searchToolTextArea {
-    font-size:13px;
-    font-family:Verdana,Arial,Helvetica,sans-serif;
-    color:#002255;
-    background-color:#FFFFDD;
-    border: 3px #D0E0F0 inset;
-    padding: 3px 0px;
-    background-color:#FFFFDD;
-}
-
-.searchToolButton {
-    font-size:12px;
-    font-family:Arial,Helvetica;
-    color:#002255;
-    font-weight:bolder;
-    background-color:#FFFFDD;
-}
-
 .templateMgiLogo{
     border:none;
 }
@@ -82,17 +53,38 @@ body {
     height:10px;
 }
 a.logoFooterAnchor{
-    font-size:9px; 
-    /*text-decoration:none;*/
+    font-size:11px; 
     color:#002255;
 }
+/*************************************************************************
+*  Search Tool
+*************************************************************************/
+#searchToolTextArea {
+    font-size:12px;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    color:#002255;
+    background-color:#FFFFDD;
+    border: 1px #7D95B9 solid;
+    padding:2px 1px;
+}
+
+.searchToolButton {
+    font-size:12px;
+    font-family:Verdana, Arial,Helvetica;
+    color:#002255;
+    font-weight:bolder;
+    background-color:#eeeeee;
+    border: 1px #7D95B9 solid;
+    padding:2px;
+}
+
 /*************************************************************************
 *  Styles specific to the homepage template
 *************************************************************************/
 #homePageTitle { 
-    font-family:Book Antiqua, Palatino Linotype, Palatino, serif;
-    font-size:44px; 
-    font-weight:bold;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size:38px; 
+    font-weight:500;
     color: #002255;
     background-color: #dfefff;
     white-space: nowrap;
@@ -161,10 +153,56 @@ a.logoFooterAnchor{
     color:#002255;
 }
 
+/*************************************************************************
+*  Notices, if displayed
+*************************************************************************/
+.bl {
+    background:url(../images/roundedButtonBlueBL.gif) 0 100% no-repeat; 
+    width:16em; 
+    background-color:#D0E0F0; 
+    text-align:center
+}
+.br {
+    background:url(../images/roundedButtonBlueBR.gif) 100% 100% no-repeat
+}
+.tl {
+    background:url(../images/roundedButtonBlueTL.gif) 0 0 no-repeat
+}
+.tr {
+    background:url(../images/roundedButtonBlueTR.gif) 100% 0 no-repeat; padding:5px;
+}
+
+a.noticeLink:link {       
+color: #1433c8;
+text-decoration: none;
+border-bottom-width: 1px;
+border-bottom-style: dotted;
+border-bottom-color: #999999;
+}
+
+a.noticeLink:hover {
+color: #cc0000;
+text-decoration: none;
+border-bottom-width: 1px;
+border-bottom-style: dashed;
+border-bottom-color: #cc0000;
+}
 
 /*************************************************************************
 *  Navigation Bar - Navagation menu droplist styling
 *************************************************************************/
+
+/* Block-level <div> wrapping the nav bar */
+#navBarContainer {
+    background-color:#002255; 
+    font-family:Verdana,Arial,Helvetica;
+    height: 2.2em;
+    width:100%;
+    position:relative;
+    min-height:22px;
+    min-width:800px;
+    width:expression(document.body.clientWidth < 800? "800px": "auto" );
+}
 
 /* 
  * "Tier 1" items -- Effects ALL <ul>, <li>, <a> tags in menubar
@@ -181,12 +219,12 @@ a.logoFooterAnchor{
     background: #002255;
     margin-right: -1px;
     font-weight:bold;
-    font-size:12px;
+    font-size:13px;
 }
 .menulist a {
     display: block;
-    padding: 3px;
-    color: #DDD;
+    padding: 2px 1px;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -286,7 +324,7 @@ clear:right;
 }
 
 .ddcolortabs ul{
-font: normal 9px Verdana, Arial, sans-serif;
+font: normal 13px Verdana, Arial, sans-serif;
 font-weight:normal;
 margin:0;
 padding:0;
@@ -361,3 +399,7 @@ height:1.5em;
 .tabcontent{
 display:none;
 }
+
+.tabTipFont {color:#002255; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:9px; font-style:italic;}
+.tabTipBoxFG {border: none; background-color:#DFEFFF; width:auto;}
+.tabTipBoxBG {border: none; background-color:#DFEFFF; width:auto;}
