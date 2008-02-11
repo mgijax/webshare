@@ -32,7 +32,7 @@
       <li>
         <a href="${GBROWSE_URL}"
         onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'MapsHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-        Mouse Genome Browse</a>
+        Mouse Genome Browser</a>
         <!-- anchor div for overlib tooltips-->
         <div id="MapsHelp"></div>
       </li>
@@ -306,7 +306,7 @@
     <li>
       <a href="${GBROWSE_URL}"
       onMouseOver="return overlib('Download data for a batch of gene IDs or symbols.',ANCHOR, 'SeqHelp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-      Mouse Genome Browse</a>
+      Mouse Genome Browser</a>
     </li>
     <li>
       <a href="${JAVAWI_URL}WIFetch?page=batchQF"
