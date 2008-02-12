@@ -23,12 +23,12 @@ body {
     width: 100%;
     position:relative;
     min-width:800px;
-    width:expression(document.body.clientWidth < 775? "775px": "auto" );
+    width:expression(document.body.clientWidth < 800? "800px": "auto" );
 }
 /* <div> wrapping mgi logo and links below it; bound for easier placement */
 #logoContainer {
     height: 75px;
-    width:200px;
+    width:125px;
 }
 
 /* Block-level <div> wrapping the nav bar; see nav bar styles below */
