@@ -9,27 +9,27 @@ NAME                    MGI 4.0
 ###--
 
 # Python host and directory where standard MGI python products are installed
-PY_HOST                 firien.informatics.jax.org
+PY_HOST                 prodwww.informatics.jax.org
 
-# Host of tomcat servlet container; non-public installs include port # 
-JAVA_HOST               firien.informatics.jax.org
+# Host of tomcat servlet container; non-public, production or firien installs include port # 
+JAVA_HOST               prodwww.informatics.jax.org
 
 # Host of the sequence retrieval tool
-SEQFETCH_HOST           firien.informatics.jax.org
+SEQFETCH_HOST           prodmgs.informatics.jax.org
 
 #Host of the mouse blast tool
-MOUSEBLAST_HOST         firien.informatics.jax.org
+MOUSEBLAST_HOST         prodmgs.informatics.jax.org
 
 #Host of the gbrowse tool
-GBROWSE_HOST            hobbiton.informatics.jax.org:8080/cgi-bin/
+GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
 
 
 ###--
 ###-- Database Connectivity
 ###--
 
-DB_URL           firien.informatics.jax.org:4100
-DB_SERVER        DEV2_MGI
+DB_URL           shire.informatics.jax.org:4100
+DB_SERVER        PROD_MGI
 DB_DATABASE      mgd
 DB_USER          mgd_public
 DB_PASSWORD      mgdpub
@@ -41,7 +41,7 @@ SNP_DATABASE     snp
 ###--
 
 # is this WI part of a production installation?  (so no page caching)
-IS_PRODUCTION           0
+IS_PRODUCTION           1
 
 # are SNP and marker coordinates drawn from the same genome assembly? (0/1)
 BUILDS_IN_SYNC          1
@@ -62,7 +62,7 @@ NO_CACHE    1
 
 JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
-WI_URL                  http://${PY_HOST}/
+WI_URL                  http://${PY_HOST}/wi/
 
 MGIHOME_URL             http://${PY_HOST}/mgihome/
 
@@ -74,7 +74,7 @@ FAQ_URL                 http://${PY_HOST}/faq/
 
 MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/
 
-FTP_URL                 ftp://devftp.informatics.jax.org/pub/reports/
+FTP_URL                 ftp://ftp.informatics.jax.org/pub/reports/
 
 PIXELDB_URL             http://${PY_HOST}/pixeldb/fetch_pixels.cgi?id=
 
@@ -100,15 +100,15 @@ MENUS_URL               http://${PY_HOST}/
 
 SEQFETCH_URL            http://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
 
-GREENBOOK_URL           http://${PY_HOST}/greenbook/
+GREENBOOK_URL           http://informatics.jax.org/greenbook/
 
-COOKBOOK_URL            http://${PY_HOST}/cookbook/
+COOKBOOK_URL            http://informatics.jax.org/cookbook/
 
-MORSEBOOK_URL           http://${PY_HOST}/morsebook/
+MORSEBOOK_URL           http://informatics.jax.org/morsebook/
 
-SILVER_URL              http://${PY_HOST}/silverbook/
+SILVER_URL              http://informatics.jax.org/silverbook/
 
-WKSILVERS_URL           http://${PY_HOST}/wksilvers/
+WKSILVERS_URL           http://informatics.jax.org/wksilvers/
 
 SCHEMA                  http://${PY_HOST}/schema/
 

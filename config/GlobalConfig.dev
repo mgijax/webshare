@@ -9,27 +9,27 @@ NAME                    MGI 4.0
 ###--
 
 # Python host and directory where standard MGI python products are installed
-PY_HOST                 firien.informatics.jax.org
+PY_HOST                 rohan.informatics.jax.org
 
 # Host of tomcat servlet container; non-public installs include port # 
-JAVA_HOST               firien.informatics.jax.org
+JAVA_HOST               rohan.informatics.jax.org
 
 # Host of the sequence retrieval tool
-SEQFETCH_HOST           firien.informatics.jax.org
+SEQFETCH_HOST           rohan.informatics.jax.org
 
 #Host of the mouse blast tool
-MOUSEBLAST_HOST         firien.informatics.jax.org
+MOUSEBLAST_HOST         rohan.informatics.jax.org
 
 #Host of the gbrowse tool
-GBROWSE_HOST            hobbiton.informatics.jax.org:8080/cgi-bin/
+GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
 
 
 ###--
 ###-- Database Connectivity
 ###--
 
-DB_URL           firien.informatics.jax.org:4100
-DB_SERVER        DEV2_MGI
+DB_URL           rohan.informatics.jax.org:4100
+DB_SERVER        DEV_MGI
 DB_DATABASE      mgd
 DB_USER          mgd_public
 DB_PASSWORD      mgdpub
@@ -62,7 +62,7 @@ NO_CACHE    1
 
 JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
-WI_URL                  http://${PY_HOST}/
+WI_URL                  http://${PY_HOST}/wi/
 
 MGIHOME_URL             http://${PY_HOST}/mgihome/
 
@@ -100,17 +100,17 @@ MENUS_URL               http://${PY_HOST}/
 
 SEQFETCH_URL            http://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
 
-GREENBOOK_URL           http://${PY_HOST}/greenbook/
+GREENBOOK_URL           http:///www.informatics.jax.org/greenbook/
 
-COOKBOOK_URL            http://${PY_HOST}/cookbook/
+COOKBOOK_URL            http:///www.informatics.jax.org/cookbook/
 
-MORSEBOOK_URL           http://${PY_HOST}/morsebook/
+MORSEBOOK_URL           http:///www.informatics.jax.org/morsebook/
 
-SILVER_URL              http://${PY_HOST}/silverbook/
+SILVER_URL              http:///www.informatics.jax.org/silverbook/
 
-WKSILVERS_URL           http://${PY_HOST}/wksilvers/
+WKSILVERS_URL           http:///www.informatics.jax.org/wksilvers/
 
-SCHEMA                  http://${PY_HOST}/schema/
+SCHEMA                  http:///${PY_HOST}/schema/
 
 GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
