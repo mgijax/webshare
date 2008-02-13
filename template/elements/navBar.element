@@ -501,7 +501,7 @@
 
 <!------- Direct Links  ------->
 <li>
-  <a href="${HOMEPAGES_URL}submit.shtml"
+  <a href="${MENUS_URL}submit.shtml"
   title="">
   Submit Data&nbsp;&nbsp;&nbsp;&nbsp;</a>
 </li>
