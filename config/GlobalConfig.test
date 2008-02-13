@@ -23,6 +23,8 @@ MOUSEBLAST_HOST         firien.informatics.jax.org
 #Host of the gbrowse tool
 GBROWSE_HOST            hobbiton.informatics.jax.org:8080/cgi-bin/
 
+#Host of the Public Installation
+PUBLIC_HOST		www.informatics.jax.org
 
 ###--
 ###-- Database Connectivity
@@ -88,10 +90,8 @@ GO_TOOLS_URL            http://${PY_HOST}/gotools/
 ###-- fully extended paths to their respective directories
 ###--
 
-#HOMEPAGES_URL           http://${MGIHOME_URL}homepages/
 HOMEPAGES_URL           http://${PY_HOST}/
 
-#MENUS_URL               http://${WI_URL}menus/
 MENUS_URL               http://${PY_HOST}/
 
 ###--
@@ -116,7 +116,7 @@ GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
 GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
 
-IMSRURL                 http://www.informatics.jax.org/imsr/
+IMSRURL                 http://${PUBLIC_HOST}/imsr/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 

@@ -2,7 +2,7 @@
 # Global Config
 ############################################################################
 
-NAME                    MGI 4.0
+NAME                    MGI_4.0_Dev
  
 ###--
 ###-- MGI Host Servers
@@ -23,6 +23,8 @@ MOUSEBLAST_HOST         rohan.informatics.jax.org
 #Host of the gbrowse tool
 GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
 
+#Host of the Public Installation
+PUBLIC_HOST		www.informatics.jax.org
 
 ###--
 ###-- Database Connectivity
@@ -88,10 +90,10 @@ GO_TOOLS_URL            http://${PY_HOST}/gotools/
 ###-- fully extended paths to their respective directories
 ###--
 
-#HOMEPAGES_URL           http://${MGIHOME_URL}homepages/
+#HOMEPAGES_URL          ${MGIHOME_URL}homepages/
 HOMEPAGES_URL           http://${PY_HOST}/
 
-#MENUS_URL               http://${WI_URL}menus/
+#MENUS_URL              ${WI_URL}menus/
 MENUS_URL               http://${PY_HOST}/
 
 ###--
@@ -100,23 +102,23 @@ MENUS_URL               http://${PY_HOST}/
 
 SEQFETCH_URL            http://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
 
-GREENBOOK_URL           http:///www.informatics.jax.org/greenbook/
+GREENBOOK_URL           http://${PUBLIC_HOST}/greenbook/
 
-COOKBOOK_URL            http:///www.informatics.jax.org/cookbook/
+COOKBOOK_URL            http://${PUBLIC_HOST}/cookbook/
 
-MORSEBOOK_URL           http:///www.informatics.jax.org/morsebook/
+MORSEBOOK_URL           http://${PUBLIC_HOST}/morsebook/
 
-SILVER_URL              http:///www.informatics.jax.org/silverbook/
+SILVER_URL              http://${PUBLIC_HOST}/silverbook/
 
-WKSILVERS_URL           http:///www.informatics.jax.org/wksilvers/
+WKSILVERS_URL           http://${PUBLIC_HOST}/wksilvers/
 
-SCHEMA                  http:///${PY_HOST}/schema/
+SCHEMA                  http://${PY_HOST}/schema/
 
 GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
 GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
 
-IMSRURL                 http://www.informatics.jax.org/imsr/
+IMSRURL                 http://${PUBLIC_HOST}/imsr/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
