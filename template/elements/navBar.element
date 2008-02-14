@@ -477,7 +477,7 @@
     <ul>
       <li> <a href="${MGIHOME_URL}other/mouse_facts4.shtml"> Mouse Resources & Model Organism Links</a> </li>
       <li> <a href="${MGIHOME_URL}other/phenoallele_commun_resource.shtml"> Phenotypes &amp; Mutants Community Resources</a> </li>
-      <li> <a href="${MGIHOME_URL}other/mouse_facts1.shtml#MolecRes">Mouse Facts</a> </li>
+      <li> <a href="${MGIHOME_URL}other/mouse_facts1.shtml">Mouse Facts</a> </li>
     </ul>
   </li>
   <li> <a>Software Developer Tools</a>
