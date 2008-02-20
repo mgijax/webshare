@@ -1,0 +1,131 @@
+############################################################################
+# Global Config
+############################################################################
+
+NAME                    MGI_4.0_Production
+ 
+###--
+###-- MGI Host Servers
+###--
+
+# Python host and directory where standard MGI python products are installed
+PY_HOST                 prodwww.informatics.jax.org
+
+# Host of tomcat servlet container; non-public, production or firien installs include port # 
+JAVA_HOST               prodwww.informatics.jax.org
+
+# Host of the sequence retrieval tool
+SEQFETCH_HOST           prodmgs.informatics.jax.org
+
+#Host of the mouse blast tool
+MOUSEBLAST_HOST         prodmgs.informatics.jax.org
+
+#Host of the gbrowse tool
+GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
+
+#Host of the Public Installation
+PUBLIC_HOST		www.informatics.jax.org
+
+###--
+###-- Database Connectivity
+###--
+
+DB_URL           isengard.informatics.jax.org:4100
+DB_SERVER        BOT_MGI
+DB_DATABASE      mgd
+DB_USER          mgd_public
+DB_PASSWORD      mgdpub
+SNP_DATABASE     snp
+
+
+###--
+###-- Global Flags & Strings
+###--
+
+# is this WI part of a production installation?  (so no page caching)
+IS_PRODUCTION           1
+
+# are SNP and marker coordinates drawn from the same genome assembly? (0/1)
+BUILDS_IN_SYNC          1
+
+# genome assembly version for marker coordinates
+ASSEMBLY_VERSION        36
+
+# genome assembly version for SNP coordinates
+SNP_ASSEMBLY_VERSION    36
+
+# if present, indicates that the Java WI should do no caching of pages
+NO_CACHE    1
+
+
+###--
+###-- MGI BASE URLs -be aware some server aliases will include the '/www/'
+###--
+
+JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
+
+WI_URL                  http://${PY_HOST}/wi/
+
+MGIHOME_URL             http://${PY_HOST}/mgihome/
+
+USERDOCS_URL            http://${PY_HOST}/userdocs/
+
+WEBSHARE_URL            http://${PY_HOST}/webshare/
+
+FAQ_URL                 http://${PY_HOST}/faq/
+
+MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/
+
+FTP_URL                 ftp://ftp.informatics.jax.org/pub/reports/
+
+PIXELDB_URL             http://${PY_HOST}/pixeldb/fetch_pixels.cgi?id=
+
+GO_GRAPH_URL            http://${PY_HOST}/GOgraphs/
+
+GO_TOOLS_URL            http://${PY_HOST}/gotools/
+
+###--
+###-- MGI URLs using apache aliases - if you wish to use apache aliases to 
+###-- find these pages, use the PY_HOST (if same as docroot), otherwise use
+###-- fully extended paths to their respective directories
+###--
+
+HOMEPAGES_URL          ${MGIHOME_URL}homepages/
+#HOMEPAGES_URL           http://${PY_HOST}/
+
+MENUS_URL               http://${PY_HOST}/
+
+###--
+###-- MGI FULL URLs 
+###--
+
+SEQFETCH_URL            http://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
+
+GREENBOOK_URL           http://${PUBLIC_HOST}/greenbook/
+
+COOKBOOK_URL            http://${PUBLIC_HOST}/cookbook/
+
+MORSEBOOK_URL           http://${PUBLIC_HOST}/morsebook/
+
+SILVER_URL              http://${PUBLIC_HOST}/silverbook/
+
+WKSILVERS_URL           http://${PUBLIC_HOST}/wksilvers/
+
+SCHEMA                  http://${PY_HOST}/schema/
+
+GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
+
+GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
+
+IMSRURL                 http://${PUBLIC_HOST}/imsr/
+
+MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
+
+
+###--
+###-- Other Paths
+###--
+
+GENOMIC_PATH /net/orodruin-g/vol/hobbiton/data/research/
+NIBDBS /net/orodruin-g/vol/hobbiton/data/research/dna/mouse_build_36_nib
+
