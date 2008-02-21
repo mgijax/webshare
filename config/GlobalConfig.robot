@@ -2,23 +2,23 @@
 # Global Config
 ############################################################################
 
-NAME                    MGI_4.0_Production
+NAME                    MGI_4.0
  
 ###--
 ###-- MGI Host Servers
 ###--
 
 # Python host and directory where standard MGI python products are installed
-PY_HOST                 prodwww.informatics.jax.org
+PY_HOST                 www.informatics.jax.org
 
 # Host of tomcat servlet container; non-public, production or firien installs include port # 
-JAVA_HOST               prodwww.informatics.jax.org
+JAVA_HOST               www.informatics.jax.org
 
 # Host of the sequence retrieval tool
-SEQFETCH_HOST           prodmgs.informatics.jax.org
+SEQFETCH_HOST           www.informatics.jax.org
 
 #Host of the mouse blast tool
-MOUSEBLAST_HOST         prodmgs.informatics.jax.org
+MOUSEBLAST_HOST         mouseblast.informatics.jax.org
 
 #Host of the gbrowse tool
 GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
@@ -37,13 +37,12 @@ DB_USER          mgd_public
 DB_PASSWORD      mgdpub
 SNP_DATABASE     snp
 
-
 ###--
 ###-- Global Flags & Strings
 ###--
 
 # is this WI part of a production installation?  (so no page caching)
-IS_PRODUCTION           1
+IS_PRODUCTION           0
 
 # are SNP and marker coordinates drawn from the same genome assembly? (0/1)
 BUILDS_IN_SYNC          1
@@ -64,7 +63,7 @@ NO_CACHE    1
 
 JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
-WI_URL                  http://${PY_HOST}/wi/
+WI_URL                  http://${PY_HOST}/
 
 MGIHOME_URL             http://${PY_HOST}/mgihome/
 
@@ -74,7 +73,7 @@ WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FAQ_URL                 http://${PY_HOST}/faq/
 
-MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/
+MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/
 
 FTP_URL                 ftp://ftp.informatics.jax.org/pub/reports/
 
@@ -90,8 +89,7 @@ GO_TOOLS_URL            http://${PY_HOST}/gotools/
 ###-- fully extended paths to their respective directories
 ###--
 
-HOMEPAGES_URL          ${MGIHOME_URL}homepages/
-#HOMEPAGES_URL           http://${PY_HOST}/
+HOMEPAGES_URL           http://${PY_HOST}/
 
 MENUS_URL               http://${PY_HOST}/
 
@@ -101,15 +99,15 @@ MENUS_URL               http://${PY_HOST}/
 
 SEQFETCH_URL            http://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
 
-GREENBOOK_URL           http://${PUBLIC_HOST}/greenbook/
+GREENBOOK_URL           http://${PY_HOST}/greenbook/
 
-COOKBOOK_URL            http://${PUBLIC_HOST}/cookbook/
+COOKBOOK_URL            http://${PY_HOST}/cookbook/
 
-MORSEBOOK_URL           http://${PUBLIC_HOST}/morsebook/
+MORSEBOOK_URL           http://${PY_HOST}/morsebook/
 
-SILVER_URL              http://${PUBLIC_HOST}/silverbook/
+SILVER_URL              http://${PY_HOST}/silverbook/
 
-WKSILVERS_URL           http://${PUBLIC_HOST}/wksilvers/
+WKSILVERS_URL           http://${PY_HOST}/wksilvers/
 
 SCHEMA                  http://${PY_HOST}/schema/
 
