@@ -177,3 +177,29 @@ div#DataContent {
 .vocab-list{
     line-height: 140%;
 }
+
+/* styles for the allsearch style menu pages */
+.toc { margin: 0px;
+    background-color:#DFEFFF; }
+    
+.toc ul { font-size: 12px;
+    margin: 0px;
+    text-align: center;
+    line-height: 1.75;
+    list-style-type: none;
+    padding: .75em .75em 0.1em .75em;
+    min-width: 600px;}
+    
+.toc li { display: inline;
+    white-space: nowrap; }
+    
+.outline { border: 2px solid #DFEFFF; }
+
+dl.linkedList { margin-left: 2em; }
+
+.linkedList dt { margin-top: 1em; }
+
+.linkedList dd { margin-left: 1em;
+    margin-top: .25em;
+    font-style:italic}
+

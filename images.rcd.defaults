@@ -58,8 +58,8 @@ alt = help icon
 [
 name = is-a
 url = ${IMAGES_URL}is-a.gif
-width = 10
-height = 10
+width = 16
+height = 12
 alt = is-a
 ]
 
@@ -106,9 +106,33 @@ alt = -NEW-
 [
 name = part-of
 url = ${IMAGES_URL}part-of.gif
-width = 10
-height = 10
+width = 16
+height = 12
 alt = part-of
+]
+
+[
+name = regulates
+url = ${IMAGES_URL}regulates.gif
+width = 16
+height = 12
+alt = regulates
+]
+
+[
+name = negatively_regulates
+url = ${IMAGES_URL}negatively_regulates.gif
+width = 16
+height = 12
+alt = negatively-regulates
+]
+
+[
+name = positively_regulates
+url = ${IMAGES_URL}positively_regulates.gif
+width = 16
+height = 12
+alt = positively-regulates
 ]
 
 [
