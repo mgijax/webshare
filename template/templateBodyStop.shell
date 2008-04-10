@@ -25,8 +25,8 @@
  <td WIDTH="34%" ALIGN=center style="font-size:9px;">
     last database update<BR>
     ${dbDate}<BR>
-    MGI 4.0<BR>
-    <a href="${MGIHOME_URL}homepages/browser_compatability.shtml" class="">Web browser compatibility</a>
+    ${NAME}<BR>
+    <a href="${MGIHOME_URL}homepages/browser_compatibility.shtml" class="">Web browser compatibility</a>
   </td>
   <td WIDTH="33%" ALIGN=right style="font-size:9px;">
     <A HREF="http://www.jax.org/" border=0>
