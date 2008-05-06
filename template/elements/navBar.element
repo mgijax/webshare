@@ -464,14 +464,15 @@
   <li> <a href="${MGIHOME_URL}GXD/GEN/"> Gene Expression Notebook (GEN)</a> </li>
   <li> <a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home"> Mouse Phenome Database (MPD)</a> </li>
   <li> <a href="${WI_URL}external/ko/"> Deltagen and Lexicon Knockout Mice</a> </li>
-  <li> <a>Knockout Mouse Projects </a>
+  <li> <a>International Knockout Mouse Consortium (IKMC)</a>
     <ul>
-      <li> <a href="http://www.knockoutmouse.org/">NIH Knockout Mouse Project (KOMP) Data Coordination Center </a> </li>
-      <li> <a href="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiatives</a> </li>
-      <li> <a href="http://www.eucomm.org/">European Conditional Mouse Mutagenesis Program (EUComm)</a> </li>
-      <li> <a href="http://www.norcomm.org/">North American Conditional Mouse Mutagenesis project (NORComm)</a> </li>
+      <li> <a href="http://www.knockoutmouse.org/">Knockout Mouse Project (KOMP, USA)</a> </li>
+      <li> <a href="http://www.eucomm.org/">European Conditional Mouse Mutagenesis (EUCOMM, Europe)</a> </li>
+      <li> <a href="http://www.norcomm.org/">North American Conditional Mouse Mutagenesis (NorCOMM, Canada)</a> </li>
+      <li> <a href="http://www.tigm.org/">Texas Institute for Genomic Medicine (TIGM, USA)</a> </li>
     </ul>
   </li>
+  <li> <a href="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiatives</a> </li>
   <li> <a href="ftp://ftp.informatics.jax.org/pub/datasets/index.html"> Contributed Data Sets</a> </li>
   <li> <a>Community Links</a>
     <ul>
@@ -483,6 +484,7 @@
   <li> <a>Software Developer Tools</a>
     <ul>
     <li> <a href="${MGIHOME_URL}other/link_instructions.shtml">Creating Web Links to MGI</a> </li>
+    <li> <a href="${MGIHOME_URL}other/web_service.shtml">MGI Web Service</a> </li>
     <li> <a href="${HOMEPAGES_URL}software.shtml#sql">Direct SQL Account</a> </li>
     <li> <a href="${SCHEMA}">Database Schema Browser</a> </li>
     <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html">All MGI Reports</a> </li>
