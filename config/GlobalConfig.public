@@ -85,6 +85,8 @@ GO_GRAPH_URL            http://${PY_HOST}/GOgraphs/
 
 GO_TOOLS_URL            http://${PY_HOST}/gotools/
 
+MGIWS_URL               http://services.informatics.jax.org/mgiws
+
 ###--
 ###-- MGI URLs using apache aliases - if you wish to use apache aliases to 
 ###-- find these pages, use the PY_HOST (if same as docroot), otherwise use
