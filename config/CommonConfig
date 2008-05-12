@@ -86,6 +86,8 @@ ENSEMBL_SNPVIEW_URL 	http://www.ensembl.org/Mus_musculus/snpview?snp=
 # javawi URL to NCBI's MapViewer resource (append RefSNP accession ID)
 NCBI_MAPVIEWER_URL		http://www.ncbi.nlm.nih.gov/mapview/map_search.cgi?taxid=10090&amp;advsrch=off&amp;query=
 
+# link to Allen Brain Atlas (append mgi id in url encoded quotes)
+ALLEN_BRAIN_ATLAS_URL	http://www.brain-map.org/search.do?queryText=
 
 ###--------------###
 ###--Komp Uri's--###

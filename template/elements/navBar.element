@@ -422,21 +422,21 @@
 
 
 <!---------- Download Dropmenu Start ----------->
-<li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html">
+<li> <a href="${FTP_URL}index.html">
     &nbsp;Download&nbsp;<img src="${WEBSHARE_URL}images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
   <ul>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html">All MGI Reports</a> </li>
+    <li> <a href="${FTP_URL}index.html">All MGI Reports</a> </li>
     <li> <a href="${JAVAWI_URL}WIFetch?page=batchQF">Batch Query</a> </li>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#marker">Genes &amp; Markers</a> </li>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#seq">Sequence Data</a> </li>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#orthology">Mammalian Orthology</a> </li>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#go">Gene Ontology Data</a> </li>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#strain">Strains &amp; Polymorphisms</a> </li>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#expression">Gene Expression</a> </li>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#pheno">Phenotypic Data</a> </li>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#nomen">Nomenclature</a> </li>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#refs">References</a> </li>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html#clonecoll">Clone Collections</a> </li>
+    <li> <a href="${FTP_URL}index.html#marker">Genes &amp; Markers</a> </li>
+    <li> <a href="${FTP_URL}index.html#seq">Sequence Data</a> </li>
+    <li> <a href="${FTP_URL}index.html#orthology">Mammalian Orthology</a> </li>
+    <li> <a href="${FTP_URL}index.html#go">Gene Ontology Data</a> </li>
+    <li> <a href="${FTP_URL}index.html#strain">Strains &amp; Polymorphisms</a> </li>
+    <li> <a href="${FTP_URL}index.html#expression">Gene Expression</a> </li>
+    <li> <a href="${FTP_URL}index.html#pheno">Phenotypic Data</a> </li>
+    <li> <a href="${FTP_URL}index.html#nomen">Nomenclature</a> </li>
+    <li> <a href="${FTP_URL}index.html#refs">References</a> </li>
+    <li> <a href="${FTP_URL}index.html#clonecoll">Clone Collections</a> </li>
   </ul>
 </li>
 <!---------- Download Dropmenu End ----------->
@@ -464,7 +464,7 @@
   <li> <a href="${MGIHOME_URL}GXD/GEN/"> Gene Expression Notebook (GEN)</a> </li>
   <li> <a href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home"> Mouse Phenome Database (MPD)</a> </li>
   <li> <a href="${WI_URL}external/ko/"> Deltagen and Lexicon Knockout Mice</a> </li>
-  <li> <a>International Knockout Mouse Consoritum (IKMC)</a>
+  <li> <a>International Knockout Mouse Consortium (IKMC)</a>
     <ul>
       <li> <a href="http://www.knockoutmouse.org/">Knockout Mouse Project (KOMP, USA)</a> </li>
       <li> <a href="http://www.eucomm.org/">European Conditional Mouse Mutagenesis (EUCOMM, Europe)</a> </li>
@@ -484,9 +484,10 @@
   <li> <a>Software Developer Tools</a>
     <ul>
     <li> <a href="${MGIHOME_URL}other/link_instructions.shtml">Creating Web Links to MGI</a> </li>
+    <li> <a href="${MGIHOME_URL}other/web_service.shtml">MGI Web Service</a> </li>
     <li> <a href="${HOMEPAGES_URL}software.shtml#sql">Direct SQL Account</a> </li>
     <li> <a href="${SCHEMA}">Database Schema Browser</a> </li>
-    <li> <a href="ftp://ftp.informatics.jax.org/pub/reports/index.html">All MGI Reports</a> </li>
+    <li> <a href="${FTP_URL}index.html">All MGI Reports</a> </li>
     <li>
       <div align="center" >
         <a href="${HOMEPAGES_URL}software.shtml">

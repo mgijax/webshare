@@ -32,6 +32,14 @@ alt = black ball
 ]
 
 [
+name = develops-from
+url = ${IMAGES_URL}develops-from.gif
+width = 15
+height = 15
+alt = develops-from
+]
+
+[
 name = help
 url = ${IMAGES_URL}help_large_transp.gif
 width = 32
