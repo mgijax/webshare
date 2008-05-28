@@ -78,7 +78,7 @@ STAGE_INFO_URL			http://genex.hgu.mrc.ac.uk/Databases/Anatomy/MAstaging.shtml
 GRAPH_SP_URL        	http://www.ebi.ac.uk/interpro/ISpy?ac=@@@@
 
 # javawi URL to the genome browser at UCSC (insert coordinates) for SNP detail page
-SNP_UCSC_BROWSER_URL    http://genome.ucsc.edu/cgi-bin/hgTracks?clade=vertebrate&org=Mouse&db=mm8&position=@@@@
+SNP_UCSC_BROWSER_URL    http://genome.ucsc.edu/cgi-bin/hgTracks?clade=vertebrate&org=Mouse&db=mm9&position=@@@@
 
 # javawi URL to Ensembl's SNPView resource (append RefSNP accession ID)
 ENSEMBL_SNPVIEW_URL 	http://www.ensembl.org/Mus_musculus/snpview?snp=

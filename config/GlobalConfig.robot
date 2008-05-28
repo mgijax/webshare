@@ -48,10 +48,10 @@ IS_PRODUCTION           0
 BUILDS_IN_SYNC          1
 
 # genome assembly version for marker coordinates
-ASSEMBLY_VERSION        36
+ASSEMBLY_VERSION        37
 
 # genome assembly version for SNP coordinates
-SNP_ASSEMBLY_VERSION    36
+SNP_ASSEMBLY_VERSION    37
 
 # if present, indicates that the Java WI should do no caching of pages
 NO_CACHE    1
