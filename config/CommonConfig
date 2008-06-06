@@ -46,7 +46,7 @@ RGD_URL                 http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=
 DBSNP_HOME              http://www.ncbi.nlm.nih.gov/projects/SNP/
 
 # link to build statistics for current dbSNP build
-DBSNP_STATS             http://www.ncbi.nlm.nih.gov/SNP/snp_summary.cgi?view+summary=view+summary&build_id=126
+DBSNP_STATS             http://www.ncbi.nlm.nih.gov/SNP/snp_summary.cgi?view+summary=view+summary&build_id=128
 
 # the URL for linking to an orthology page at Homologene (append Homologene ID)
 HOMOLOGENE_URL          http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=homologene&dopt=HomoloGene&list_uids=
