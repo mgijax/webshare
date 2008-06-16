@@ -126,6 +126,6 @@ MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 ###-- Other Paths
 ###--
 
-GENOMIC_PATH /net/orodruin-g/vol/hobbiton/data/research/
-NIBDBS /net/orodruin-g/vol/hobbiton/data/research/dna/mouse_build_37_nib
+GENOMIC_PATH /hobbiton/data/research/
+NIBDBS /hobbiton/data/research/dna/mouse_build_37_nib
 
