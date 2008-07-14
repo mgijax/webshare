@@ -156,36 +156,51 @@ a.logoFooterAnchor{
 /*************************************************************************
 *  Notices, if displayed
 *************************************************************************/
-.bl {
-    background:url(../images/roundedButtonBlueBL.gif) 0 100% no-repeat; 
+
+.notice {
+    width:290px;
+}
+
+.tour {
     width:16em; 
     background-color:#D0E0F0; 
-    text-align:center
+    text-align:center;
 }
-.br {
-    background:url(../images/roundedButtonBlueBR.gif) 100% 100% no-repeat
+
+.bl{
+    background:url(../images/roundedButtonBlueBL.gif) 0 100% no-repeat; 
 }
-.tl {
-    background:url(../images/roundedButtonBlueTL.gif) 0 0 no-repeat
+
+.br{
+    background:url(../images/roundedButtonBlueBR.gif) 100% 100% no-repeat;
 }
-.tr {
+
+.tl{
+    background:url(../images/roundedButtonBlueTL.gif) 0 0 no-repeat;
+}
+
+.tr{
     background:url(../images/roundedButtonBlueTR.gif) 100% 0 no-repeat; padding:5px;
 }
 
-a.noticeLink:link {       
-color: #1433c8;
-text-decoration: none;
-border-bottom-width: 1px;
-border-bottom-style: dotted;
-border-bottom-color: #999999;
+.notice a:link {       
+	color: #1433c8;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999999;
 }
 
-a.noticeLink:hover {
-color: #cc0000;
-text-decoration: none;
-border-bottom-width: 1px;
-border-bottom-style: dashed;
-border-bottom-color: #cc0000;
+.notice a:hover {
+	color: #cc0000;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #cc0000;
+}
+
+.red {
+	color:#FF0000;
 }
 
 /*************************************************************************
