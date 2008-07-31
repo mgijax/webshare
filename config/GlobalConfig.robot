@@ -48,13 +48,13 @@ IS_PRODUCTION           0
 BUILDS_IN_SYNC          1
 
 # genome assembly version for marker coordinates
-ASSEMBLY_VERSION        36
+ASSEMBLY_VERSION        37
 
 # genome assembly version for SNP coordinates
-SNP_ASSEMBLY_VERSION    36
+SNP_ASSEMBLY_VERSION    37
 
-# if present, indicates that the Java WI should do no caching of pages
-NO_CACHE    1
+# indicates if the Java WI should do no caching of pages
+JAVAWI_CACHE_ENABLED    1
 
 
 ###--
@@ -126,6 +126,6 @@ MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 ###-- Other Paths
 ###--
 
-GENOMIC_PATH /net/orodruin-g/vol/hobbiton/data/research/
-NIBDBS /net/orodruin-g/vol/hobbiton/data/research/dna/mouse_build_36_nib
+GENOMIC_PATH /hobbiton/data/research/
+NIBDBS /hobbiton/data/research/dna/mouse_build_37_nib
 

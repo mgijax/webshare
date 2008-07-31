@@ -46,7 +46,7 @@ RGD_URL                 http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=
 DBSNP_HOME              http://www.ncbi.nlm.nih.gov/projects/SNP/
 
 # link to build statistics for current dbSNP build
-DBSNP_STATS             http://www.ncbi.nlm.nih.gov/SNP/snp_summary.cgi?view+summary=view+summary&build_id=126
+DBSNP_STATS             http://www.ncbi.nlm.nih.gov/SNP/snp_summary.cgi?view+summary=view+summary&build_id=128
 
 # the URL for linking to an orthology page at Homologene (append Homologene ID)
 HOMOLOGENE_URL          http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=homologene&dopt=HomoloGene&list_uids=
@@ -78,7 +78,7 @@ STAGE_INFO_URL			http://genex.hgu.mrc.ac.uk/Databases/Anatomy/MAstaging.shtml
 GRAPH_SP_URL        	http://www.ebi.ac.uk/interpro/ISpy?ac=@@@@
 
 # javawi URL to the genome browser at UCSC (insert coordinates) for SNP detail page
-SNP_UCSC_BROWSER_URL    http://genome.ucsc.edu/cgi-bin/hgTracks?clade=vertebrate&org=Mouse&db=mm8&position=@@@@
+SNP_UCSC_BROWSER_URL    http://genome.ucsc.edu/cgi-bin/hgTracks?clade=vertebrate&org=Mouse&db=mm9&position=@@@@
 
 # javawi URL to Ensembl's SNPView resource (append RefSNP accession ID)
 ENSEMBL_SNPVIEW_URL 	http://www.ensembl.org/Mus_musculus/snpview?snp=
