@@ -227,6 +227,14 @@ a.genoLink:visited {color:#6600FF;text-decoration:none;
 a.genoLink:hover {color:#CC0000;text-decoration:none;
 	background-color:#c7e3fe; border-bottom:#CC0000 dotted 1px;}
 
+.rightBorder { border-right-color: #D0E0F0;
+	border-right-style:solid;
+	border-right-width:1px; }
+
+.topBorder { border-top-color: #D0E0F0;
+	border-top-style:solid;
+	border-top-width:1px; }
+
 .bottomBorder { border-bottom-color: #D0E0F0;
 	border-bottom-style:solid;
 	border-bottom-width:1px; }
