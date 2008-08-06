@@ -97,9 +97,7 @@ alt = images
 
 [
 name = mgi_logo
-url = ${IMAGES_URL}mgi_logo.jpg
-width = 160
-height = 70
+url = ${IMAGES_URL}mgi_logo.gif
 alt = Mouse Genome Informatics
 ]
 
@@ -186,6 +184,11 @@ alt = mouse
 [
 name = mgicss
 url = ${CSS_URL}mgi.css
+]
+
+[
+name = templatecss
+url = ${CSS_URL}template.css
 ]
 
 [
