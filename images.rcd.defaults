@@ -199,3 +199,25 @@ url = ${IMAGES_URL}arror_right.gif
 name = arrow_down
 url = ${IMAGES_URL}arror_down.gif
 ]
+
+# new images for phenoview release
+
+[
+name = bandaid
+url = ${IMAGES_URL}bandaid.jpg
+]
+
+[
+name = notSymbol
+url = ${IMAGES_URL}notSymbol.gif
+]
+
+[
+name = downArrow
+url = ${IMAGES_URL}downArrow.gif
+]
+
+[
+name = rightArrow
+url = ${IMAGES_URL}rightArrow.gif
+]
