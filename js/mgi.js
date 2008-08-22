@@ -30,6 +30,8 @@ function hitUrl (url, args) {
   return;
 }
 
+/*--------------------------------------------------------------------------*/
+
 /* function ajaxObject() for asynchronous loading of URLs taken from:
  *	http://www.hunlock.com/blogs/The_Ultimate_Ajax_Object
  * callbackFunction is optional;  returns a javascript object
@@ -80,4 +82,6 @@ function ajaxObject(url, callbackFunction) {
   var urlCall = url;        
   this.callback = callbackFunction || function () { };
 }
+
+/*--------------------------------------------------------------------------*/
 
