@@ -3,17 +3,24 @@
  *	dynamically.  This will initially be used for the allele detail page
  *	for the phenoview release, and will hide/show table rows as well as
  *	swapping images and such.
+ * Assumes: mgi.js is also loaded for the current page, as we use its
+ *	hitUrl() function.
  */
 
+/* --- general purpose (not page-specific) -------------------------------- */
+
+// set this to be the base URL of mgihome if you want to track user clicks
 var mgihomeUrl = null;
 
+// used to set the global mgihomeUrl to activate tracking of user clicks
 function setMgihomeUrl (url)
 {
     mgihomeUrl = url;
     return;
 }
 
-// toggle the visibility of an individual element identified by ID 'i'
+// toggle the visibility of an individual element identified by ID 'i'.
+// returns true if it was toggled, or false if no element named 'i' was found
 function toggle (i)
 {
     var elem = document.getElementById(i);
@@ -27,7 +34,8 @@ function toggle (i)
     return true;
 }
 
-// force the individual element identified by ID 'i' to be hidden
+// force the individual element identified by ID 'i' to be hidden.
+// returns true if it was hidden, or false if no element named 'i' was found
 function hide (i)
 {
     var elem = document.getElementById(i);
@@ -37,7 +45,8 @@ function hide (i)
     return true;
 }
 
-// force the individual element identified by ID 'i' to be displayed
+// force the individual element identified by ID 'i' to be displayed.
+// returns true if it was shown, or false if no element named 'i' was found
 function show (i)
 {
     var elem = document.getElementById(i);
@@ -47,8 +56,9 @@ function show (i)
     return true;
 }
 
-// for all nodes which have IDs beginning with 'prefix', followed by ascending
-// numbers starting at 1, toggle their display (shown and hidden)
+// for all elements which have IDs beginning with 'prefix', followed by
+// ascending numbers starting at 1, toggle their display (shown and hidden).
+// returns true if at least one element's display was toggled, false if not.
 function toggleAll (prefix)
 {
     var i = 0;
@@ -67,8 +77,9 @@ function toggleAll (prefix)
     return anyChanged;
 }
 
-// for all nodes which have IDs beginning with 'prefix', followed by ascending
-// numbers starting at 1, make them visible
+// for all elements which have IDs beginning with 'prefix', followed by
+// ascending numbers starting at 1, make them visible.
+// returns true if at least one element was shown, false if not.
 function showAll (prefix)
 {
     var i = 0;
@@ -87,8 +98,9 @@ function showAll (prefix)
     return anyChanged;
 }
 
-// for all nodes which have IDs beginning with 'prefix', followed by ascending
-// numbers starting at 1, hide them
+// for all elements which have IDs beginning with 'prefix', followed by
+// ascending numbers starting at 1, hide them.
+// returns true if at least one element was hidden, false if not.
 function hideAll (prefix)
 {
     var i = 0;
@@ -107,8 +119,9 @@ function hideAll (prefix)
     return anyChanged;
 }
 
-// for nodes which have IDs beginning with 'prefix', followed by ascending
-// numbers from 'm' to 'n', toggle their display (shown and hidden)
+// for elements which have IDs beginning with 'prefix', followed by ascending
+// numbers from 'm' to 'n', toggle their display (shown and hidden).
+// returns true if at least one element was toggled, false if not.
 function toggleMulti (prefix, m, n)
 {
     var i;
@@ -124,8 +137,9 @@ function toggleMulti (prefix, m, n)
     return anyChanged;
 }
 
-// for nodes which have IDs beginning with 'prefix', followed by ascending
-// numbers from 'm' to 'n', show them
+// for elements which have IDs beginning with 'prefix', followed by ascending
+// numbers from 'm' to 'n', show them.
+// returns true if at least one element was shown, false if not.
 function showMulti (prefix, m, n)
 {
     var i;
@@ -141,8 +155,9 @@ function showMulti (prefix, m, n)
     return anyChanged;
 }
 
-// for nodes which have IDs beginning with 'prefix', followed by ascending
-// numbers from 'm' to 'n', hide them
+// for elements which have IDs beginning with 'prefix', followed by ascending
+// numbers from 'm' to 'n', hide them.
+// returns true if at least one element was hidden, false if not.
 function hideMulti (prefix, m, n)
 {
     var i;
@@ -159,7 +174,8 @@ function hideMulti (prefix, m, n)
 }
 
 // for the image identified by ID 'i', swap its visible image to whichever is
-// not shown of 'image1' or 'image2'
+// not shown of 'image1' or 'image2'.  'image1' and 'image2' are URLs.
+// returns true if it was swapped, or false if element 'i' was not found.
 function swapImage (i, image1, image2)
 {
     var elem = document.getElementById(i);
@@ -175,7 +191,9 @@ function swapImage (i, image1, image2)
     return true;
 }
 
-// for the image identified by ID 'i', force its visible image to be 'image'
+// for the image identified by ID 'i', force its visible image to be 'image'.
+// ('image' is a URL)
+// returns true if it was set, or false if element 'i' was not found.
 function setImage (i, image)
 {
     var elem = document.getElementById(i);
@@ -185,8 +203,11 @@ function setImage (i, image)
     return true;
 }
 
+/* --- specific to phenotype summary grid --------------------------------- */
+
 // toggles a phenotype header row open/closed, including showing or hiding the
-// child rows and changing the button image
+// child rows and changing the button image.  (pheno grid)
+// If global mgihomeUrl is non-null, we also do tracking of this event.
 function togglePhenoRow (parentRow, startChildRow, endChildRow)
 {
     hide ("subhead" + parentRow);
@@ -201,7 +222,8 @@ function togglePhenoRow (parentRow, startChildRow, endChildRow)
 }
 
 // show all child rows in the phenotype table, and set the icons on all
-// parent rows
+// parent rows.  (pheno grid)
+// If global mgihomeUrl is non-null, we also do tracking of this event.
 function showPheno()
 {
     var i;
@@ -222,7 +244,8 @@ function showPheno()
 }
 
 // hide all child rows in the phenotype table, and set the icons on all
-// parent rows
+// parent rows.  (pheno grid)
+// If global mgihomeUrl is non-null, we also do tracking of this event.
 function hidePheno()
 {
     var i;
@@ -243,11 +266,25 @@ function hidePheno()
     return;
 }
 
-// toggle an individual genotype section open/closed
+// toggle the row with the genotype column labels in the pheno grid.
+// if global 'mgihomeUrl' is non-null, also track this event.
+function toggleColumnLabels (rowLabel)
+{
+    toggle (rowLabel);
+    if (mgihomeUrl != null) {
+        hitUrl (mgihomeUrl + "other/monitor.html", "showPhenoLabels=1");
+    }
+    return;
+}
+
+/* --- specific to phenotype details -------------------------------------- */
+
+// toggle an individual genotype section open/closed.  (pheno details section)
+// If global mgihomeUrl is non-null, we also do tracking of this event.
 function toggleGeno (i)
 {
-    toggle ("geno" + i + "-1");
-    toggle ("geno" + i + "-3");
+    toggle ("geno" + i + "-1");		// headings
+    toggle ("geno" + i + "-3");		// details
     toggle ("genoRightArrow" + i);
     toggle ("genoDownArrow" + i);
     if (mgihomeUrl != null) { 
@@ -256,38 +293,39 @@ function toggleGeno (i)
     return;
 }
 
-// show an individual genotype section
+// show an individual genotype section.  (pheno details section)
 function showGeno (i)
 {
-    show ("geno" + i + "-1");
-    show ("geno" + i + "-3");
+    show ("geno" + i + "-1");		// headings
+    show ("geno" + i + "-3");		// details
     hide ("genoRightArrow" + i);
     show ("genoDownArrow" + i);
     return;
 }
 
-// hide an individual genotype section
+// hide an individual genotype section.  (pheno details section)
 function hideGeno (i)
 {
-    hide ("geno" + i + "-1");
-    hide ("geno" + i + "-3");
+    hide ("geno" + i + "-1");		// headings
+    hide ("geno" + i + "-3");		// details
     hide ("genoDownArrow" + i);
     show ("genoRightArrow" + i);
     return;
 }
 
 // hide all child rows in the genotype table, and set the icons on all
-// parent rows
+// parent rows.  (pheno details section)
+// If global mgihomeUrl is non-null, we also do tracking of this event.
 function hideAllGeno()
 {
     var i;
     for (i = 1; i < 1000; i++)		// assume < 1000 parent rows
     {
 	// "-1" row is header which exists only for rows 2..
-	// "-3" row always exists, so if it doesn't can exit loop
+	// "-3" row always exists, so if it doesn't we can exit loop
 
-	hide ("geno" + i + "-1");
-	if (!hide ("geno" + i + "-3"))
+	hide ("geno" + i + "-1");		// headings
+	if (!hide ("geno" + i + "-3"))		// details
 	{
 	    break;
 	}
@@ -301,17 +339,18 @@ function hideAllGeno()
 }
 
 // show all child rows in the genotype table, and set the icons on all
-// parent rows
+// parent rows.  (pheno details section)
+// If global mgihomeUrl is non-null, we also do tracking of this event.
 function showAllGeno()
 {
     var i;
     for (i = 1; i < 1000; i++)		// assume < 1000 parent rows
     {
 	// "-1" row is header which exists only for rows 2..
-	// "-3" row always exists, so if it doesn't can exit loop
+	// "-3" row always exists, so if it doesn't we can exit loop
 
-	show ("geno" + i + "-1");
-	if (!show ("geno" + i + "-3"))
+	show ("geno" + i + "-1");		// headings
+	if (!show ("geno" + i + "-3"))		// details
 	{
 	    break;
 	}
@@ -324,18 +363,29 @@ function showAllGeno()
     return;
 }
 
-var popupNextX = 0;
-var popupNextY = 0;
+/* --- specific to genotype popup windows --------------------------------- */
 
+var popupNextX = 0;	// x position of top-left corner of next popup
+var popupNextY = 0;	// y position of top-left corner of next popup
+
+// pop up a new window for displaying details from the given 'url' for the
+// given genotype key.
 function popupGenotype (url, genoKey)
 {
+    // new window will be named using the genotype key with a prefix
     var windowName;
     windowName = "genoPopup" + genoKey;
+
+    // open the window small but scrollable and resizable
     var child = window.open (url, windowName,
 	'width=500,height=300,resizable=yes,scrollbars=yes,alwaysRaised=yes');
 
+    // move the new window and bring it to the front
     child.moveTo (popupNextX, popupNextY);
     child.focus();
+
+    // set the position for the next new window (at position 400,400 we will
+    // start over at 0,0)
 
     if (popupNextX >= 400) {
 	popupNextX = 0;
@@ -348,9 +398,16 @@ function popupGenotype (url, genoKey)
     return;
 }
 
+/* --- specific to other popup windows ------------------------------------ */
+
+// note that these are not the smaller, minimalistic genotype windows; these
+// are larger, fully-functional windows.
+
 var windowCounter = 0;		// counter of sub-windows of current window
 var windowPrefix = "";		// prefix for sub-windows of current window
 
+// used internally to initialize global 'windowPrefix'; should not be called
+// outside this module
 function setWindowPrefix()
 {
     // array of characters we will use to compose our window prefix code
@@ -379,177 +436,19 @@ function setWindowPrefix()
     return;
 }
 
+// pop open a fully-functional window for the given 'url'.
 function newWindow (url)
 {
+    // if this is the first new window popped open from this window, then
+    // initialize the window prefix for this one
     if (windowPrefix == "") { setWindowPrefix(); }
 
+    // new window will be named using the prefix and an ascending counter
     var windowName = windowPrefix + windowCounter;
     windowCounter = windowCounter + 1;
+
+    // pop open the window and bring it to the front
     var child = window.open (url, windowName, 'width=800,height=600,status=yes,toolbar=yes,location=yes,menubar=yes,resizable=yes,scrollbars=yes,directories=yes');
     child.focus();
-    return;
-}
-
-function toggleColumnLabels (rowLabel)
-{
-    toggle (rowLabel);
-    if (mgihomeUrl != null) {
-        hitUrl (mgihomeUrl + "other/monitor.html", "showPhenoLabels=1");
-    }
-    return;
-}
-
-/* code for highlighting rows and columns */
-
-var columnHighlight = null;
-var rowOrigColor = null;
-var rowHighlight = null;
-var highlightHeight = null;
-var colOrigColors = null;
-
-function unhighlight ()
-{
-    if (highlightHeight == null) { setHighlightHeight(); }
-
-    unhighlightRow (rowHighlight);
-    unhighlightColumn (columnHighlight);
-}
-
-function highlight (row, col)
-{
-    if ((row == rowHighlight) && (col == columnHighlight))
-    {
-        unhighlight();
-    }
-    else
-    {
-        unhighlight();
-	captureOriginalColors (row, col);
-	highlightColumn (col);
-	highlightRow (row);
-    }
-    return;
-}
-
-function getColor (elementName)
-{
-    var elem = document.getElementById(elementName);
-    if (elem == null) { return null; }
-
-    var s = elem.style.background;
-    var parenPos = s.search ("\\)");
-    if (parenPos > 0)
-    {
-        s = s.substr(0, parenPos + 1);
-    }
-    return s;
-}
-
-function applyColor (elementName, colorCode)
-{
-    var elem = document.getElementById(elementName);
-    if (elem == null) { return false; }
-
-    elem.style.background = colorCode;
-    return true;
-}
-
-function unhighlightRow (row)
-{
-    if (rowOrigColor != null)
-    {
-        for (i = 1; i < 1000; i++)
-	{
-	    if (applyColor ("child-" + row + "-" + i, rowOrigColor) == false)
-	    { break; }
-	}
-	rowOrigColor = null;
-    }
-    rowHighlight = null;
-    return;
-}
-
-function captureOriginalColors (row, col)
-{
-    if (highlightHeight == null) { setHighlightHeight(); }
-
-    if (rowHighlight != row)
-    {
-        rowOrigColor = getColor ("child-" + row + "-1");
-    }
-    if (columnHighlight != col)
-    {
-        colOrigColors = Array(highlightHeight);
-        for (i = 1; i <= highlightHeight; i++)
-        {
-            colOrigColors[i-1] = getColor ("child-" + i + "-" + col);
-        }
-    }
-    return;
-}
-
-function highlightRow (row)
-{
-    if (rowHighlight != row)
-    {
-	rowHighlight = row;
-
-	for (i = 1; i < 1000; i++)
-	{
-	    if (applyColor ("child-" + row + "-" + i, "#ffff00") == false)
-	    { break; }
-	}
-    }
-    else { rowHighlight = null; }
-
-    return;
-}
-
-function setHighlightHeight ()
-{
-    var i;
-    var elem;
-
-    for (i = 1; i < 1000; i++)
-    {
-        elem = document.getElementById("child-" + i + "-1");
-        if (elem == null) { break; }
-    }
-    highlightHeight = i - 1;
-    return;
-}
-
-function unhighlightColumn (col)
-{
-    if (highlightHeight == null) { setHighlightHeight(); }
-
-    if (colOrigColors != null)
-    {
-        for (i = 1; i <= highlightHeight; i++)
-	{
-	    applyColor ("child-" + i + "-" + col, colOrigColors[i-1]);
-	}
-        colOrigColors = null;
-    }
-    columnHighlight = null;
-    return;
-}
-
-function highlightColumn (col)
-{
-    if (highlightHeight == null) { setHighlightHeight(); }
-
-    if (columnHighlight != col)
-    {
-        for (i = 1; i <= highlightHeight; i++)
-        {
-	    applyColor ("child-" + i + "-" + col, "#ffff00");
-        }
-        columnHighlight = col;
-    }
-    else
-    {
-        columnHighlight = null;
-    }
     return;
 }
