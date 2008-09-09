@@ -221,3 +221,8 @@ url = ${IMAGES_URL}downArrow.gif
 name = rightArrow
 url = ${IMAGES_URL}rightArrow.gif
 ]
+
+[
+name = hideshow
+url = ${JS_URL}hideshow.js
+]
