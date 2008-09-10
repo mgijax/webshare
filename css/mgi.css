@@ -243,6 +243,14 @@ a.genoLink:hover {color:#CC0000;text-decoration:none;
 	border-left-style:solid;
 	border-left-width:1px; }
 
+.topBorderDark { border-top-color: gray;
+	border-top-style:solid;
+	border-top-width:1px; }
+
+.bottomBorderDark { border-bottom-color: gray;
+	border-bottom-style:solid;
+	border-bottom-width:0.5pt; }
+
 td.noWrap { white-space:nowrap; }
 
 td.noPad { padding-top:0; padding-bottom:2px;
