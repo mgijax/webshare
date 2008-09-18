@@ -56,6 +56,10 @@ SNP_ASSEMBLY_VERSION    37
 # indicates if the Java WI should do no caching of pages
 JAVAWI_CACHE_ENABLED    1
 
+# integer number of minutes for which we can cache an allele's phenotype data
+# (should be 0 on production to see edits instantly; longer on public to aid
+# performance)
+PHENO_CACHE_TIMEOUT   15
 
 ###--
 ###-- MGI BASE URLs -be aware some server aliases will include the '/www/'

@@ -1,3 +1,9 @@
+TAG: webshare-4-1-2-4
+DATE: 09/18/2008
+STAFF: jsb
+CHANGES:
+1) added PHENO_CACHE_TIMEOUT to global config files
+
 TAG: webshare-4-1-2-3
 DATE: 09/10/2008
 STAFF: jsb
