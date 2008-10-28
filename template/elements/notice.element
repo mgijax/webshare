@@ -1,8 +1,0 @@
-<div class="notice">
-    <div class="tour">
-      <div class="bl"><div class="br"><div class="tl"><div class="tr">
-        <a href='javascript:openFaqWindow("Tour.shtml")'">Tour the MGI website</a>
-      </div></div></div></div>
-    </div>
-    <!--<span class="small red">Place notice text here and comment out the tour div above</span>-->
-</div>
