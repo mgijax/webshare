@@ -17,10 +17,6 @@
     </span>
   </div>
 
-  <div id="templateSearchTool" style="position:absolute; top:2px; right:25px;">
-    ${searchToolForm.element}
-  </div>
-
   <div style="position:absolute; top:4px; left:150px;">
     ${notice.element}
   </div>
