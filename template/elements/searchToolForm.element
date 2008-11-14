@@ -1,4 +1,4 @@
-<form action="${JAVAWI_URL}WIFetch" method="get">
+<form action="${QUICKSEARCH_URL}Search.do" method="get">
 <table>
 <tr>
 
@@ -16,8 +16,6 @@
 
  <td>
     <input name="submit" type="submit" class="searchToolButton" value="Quick Search" onclick="return verifySearchToolParms();">
-    <input name="page" type="hidden" value="searchTool">
-    <input name="selectedQuery" type="hidden" value="Genes and Markers">
  </td>
 
 </tr>
