@@ -61,6 +61,9 @@ JAVAWI_CACHE_ENABLED    1
 # performance)
 PHENO_CACHE_TIMEOUT   15
 
+# indicates if the awstats browser stat collection javascript is enabled
+STAT_COLLECT_ENABLED    0
+
 ###--
 ###-- MGI BASE URLs -be aware some server aliases will include the '/www/'
 ###--
