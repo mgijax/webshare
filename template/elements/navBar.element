@@ -510,7 +510,7 @@
 
 
 <li>
-  <a href="http://www.informatics.jax.org/imsr/index.jsp"
+  <a href="${IMSRURL}index.jsp"
   title="International Mouse Strain Resource (IMSR)">
   Find Mice (IMSR) &nbsp;&nbsp;&nbsp;&nbsp;</a>
 </li>
