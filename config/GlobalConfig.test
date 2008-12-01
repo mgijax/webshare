@@ -73,7 +73,7 @@ JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
 WI_URL                  http://${PY_HOST}/
 
-QUICKSEARCH_URL         http://valinor.informatics.jax.org:18080/searchtool_wi/
+QUICKSEARCH_URL         http://firien.informatics.jax.org/searchtool/
 
 MGIHOME_URL             http://${PY_HOST}/mgihome/
 
