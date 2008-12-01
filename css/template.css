@@ -78,6 +78,26 @@ a.logoFooterAnchor{
     padding:2px;
 }
 
+.searchToolHelp {
+    margin-top:0px; 
+    margin-left:10px; 
+    padding-left:7px; 
+    line-height:1.35;
+}
+
+.searchToolHelp li {
+    font-size:1.1em;
+}
+
+.searchToolHelp ul {
+    margin-left:30px; 
+    padding-left:0px;
+}
+
+.searchToolHelp sup {
+    font-size:0.75em;
+}
+
 /*************************************************************************
 *  Styles specific to the homepage template
 *************************************************************************/
