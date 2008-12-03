@@ -61,6 +61,9 @@ JAVAWI_CACHE_ENABLED    1
 # performance)
 PHENO_CACHE_TIMEOUT   15
 
+# indicates if the awstats browser stat collection javascript is enabled
+STAT_COLLECT_ENABLED    0
+
 ###--
 ###-- MGI BASE URLs -be aware some server aliases will include the '/www/'
 ###--
@@ -68,6 +71,8 @@ PHENO_CACHE_TIMEOUT   15
 JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
 WI_URL                  http://${PY_HOST}/
+
+QUICKSEARCH_URL         http://www.informatics.jax.org/searchtool/
 
 MGIHOME_URL             http://${PY_HOST}/mgihome/
 
