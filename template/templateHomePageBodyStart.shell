@@ -16,11 +16,12 @@
       ${mgiLogoFooter.element}
     </span>
   </div>
+  
 
   <div style="position:absolute; top:4px; left:150px;">
+  <!--  Commented out to allow enabling the notification message
     ${notice.element}
   </div>
-
 
 </div>
 
