@@ -73,7 +73,7 @@ JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
 WI_URL                  http://${PY_HOST}/wi/
 
-QUICKSEARCH_URL         http://rohan.informatics.jax.org/searchtool/
+QUICKSEARCH_URL         http://${PY_HOST}/searchtool/
 
 MGIHOME_URL             http://${PY_HOST}/mgihome/
 
