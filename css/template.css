@@ -66,6 +66,7 @@ a.logoFooterAnchor{
     background-color:#FFFFDD;
     border: 1px #7D95B9 solid;
     padding:2px 1px;
+    height:23px;
 }
 
 .searchToolButton {
@@ -76,6 +77,8 @@ a.logoFooterAnchor{
     background-color:#eeeeee;
     border: 1px #7D95B9 solid;
     padding:2px;
+    -moz-outline-style: none;
+    outline:0;
 }
 
 .searchToolHelp {
