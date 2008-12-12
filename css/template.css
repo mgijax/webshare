@@ -22,8 +22,8 @@ body {
     height: 80px;
     width: 100%;
     position:relative;
-    min-width:800px;
-    width:expression(document.body.clientWidth < 800? "800px": "auto" );
+    min-width:920px;
+    width:expression(document.body.clientWidth < 920? "920px": "auto" );
 }
 /* <div> wrapping mgi logo and links below it; bound for easier placement */
 #logoContainer {
@@ -207,23 +207,23 @@ a.logoFooterAnchor{
 }
 
 .notice a:link {       
-	color: #1433c8;
-	text-decoration: none;
-	border-bottom-width: 1px;
-	border-bottom-style: dotted;
-	border-bottom-color: #999999;
+    color: #1433c8;
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #999999;
 }
 
 .notice a:hover {
-	color: #cc0000;
-	text-decoration: none;
-	border-bottom-width: 1px;
-	border-bottom-style: dashed;
-	border-bottom-color: #cc0000;
+    color: #cc0000;
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #cc0000;
 }
 
 .red {
-	color:#FF0000;
+    color:#FF0000;
 }
 
 /*************************************************************************
@@ -238,8 +238,8 @@ a.logoFooterAnchor{
     width:100%;
     position:relative;
     min-height:22px;
-    min-width:800px;
-    width:expression(document.body.clientWidth < 800? "800px": "auto" );
+    min-width:920px;
+    width:expression(document.body.clientWidth < 920? "920px": "auto" );
 }
 
 /* 
