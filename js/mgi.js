@@ -9,7 +9,8 @@ function openNewWindow(url)
 function verifySearchToolParms() {
 
   var searchToolTextArea = document.getElementById("searchToolTextArea");
-  if (searchToolTextArea.value == " Keywords, Symbols, or IDs") {
+
+  if (searchToolTextArea.value == " Keywords, Symbols, or IDs" || searchToolTextArea.value == "") {
     alert("Please enter an ID or symbol or name into the text box.");
     return false;
   }
