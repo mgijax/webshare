@@ -85,7 +85,9 @@ FAQ_URL                 http://${PY_HOST}/faq/
 
 MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/
 
-FTP_URL                 ftp://devftp.informatics.jax.org/pub/reports/
+FTP_BASE_URL            ftp://devftp.informatics.jax.org/pub/
+
+FTP_URL                 ${FTP_BASE_URL}reports/
 
 PIXELDB_URL             http://${PY_HOST}/pixeldb/fetch_pixels.cgi?id=
 
