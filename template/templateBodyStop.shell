@@ -41,6 +41,12 @@
 </tr>
 
 </table>
+
+
+
+<!-- MGI JavaScript -->
+<script type="text/javascript" src="${WEBSHARE_URL}js/mgi_template_min.js"></script>
+
 </body>
 </html>
 
