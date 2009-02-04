@@ -32,3 +32,4 @@ for arg in sys.argv[1:]:
 
 #return translated string representation of file    
 print shellContents
+
