@@ -1,0 +1,27 @@
+#!/bin/sh
+
+#  If the MGICONFIG environment variable does not have a local override,
+#  use the default "live" settings.
+
+if [ "${MGICONFIG}" = "" ]
+then
+    MGICONFIG=/usr/local/mgi/live/mgiconfig
+    export MGICONFIG
+fi
+
+. ${MGICONFIG}/master.config.sh
+
+# clean out old minified css files
+rm ./css/*_min.css
+
+# minify css files
+cat ./css/mgi.css ./css/template.css | java -jar yuicompressor-2.4.2.jar --type css > ./css/mgi_template_min.css
+cat ./css/ajaxtabs.css ./css/homepages.css | java -jar yuicompressor-2.4.2.jar --type css > ./css/homepages_min.css
+
+# clean out old minified css files
+rm ./js/*_min.js
+
+# minify js files
+catReplace.py ./js/overlib*.js ./js/mgi.js ./js/fsmenu.js ./js/template.js | java -jar yuicompressor-2.4.2.jar --type js > ./js/mgi_template_min.js
+cat ./js/ajaxtabs.js |  java -jar yuicompressor-2.4.2.jar --type js > ./js/ajaxtabs_min.js
+
