@@ -422,21 +422,21 @@
 
 
 <!---------- Download Dropmenu Start ----------->
-<li> <a href="${FTP_URL}index.html">
+<li> <a href="${FTP_BASE_URL}reports/index.html">
     &nbsp;Download&nbsp;<img src="${WEBSHARE_URL}images/arrow_down.gif" alt="expand" width="10" height="10" border="0"> &nbsp;&nbsp;</a>
   <ul>
-    <li> <a href="${FTP_URL}index.html">All MGI Reports</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html">All MGI Reports</a> </li>
     <li> <a href="${JAVAWI_URL}WIFetch?page=batchQF">Batch Query</a> </li>
-    <li> <a href="${FTP_URL}index.html#marker">Genes &amp; Markers</a> </li>
-    <li> <a href="${FTP_URL}index.html#seq">Sequence Data</a> </li>
-    <li> <a href="${FTP_URL}index.html#orthology">Mammalian Orthology</a> </li>
-    <li> <a href="${FTP_URL}index.html#go">Gene Ontology Data</a> </li>
-    <li> <a href="${FTP_URL}index.html#strain">Strains &amp; Polymorphisms</a> </li>
-    <li> <a href="${FTP_URL}index.html#expression">Gene Expression</a> </li>
-    <li> <a href="${FTP_URL}index.html#pheno">Phenotypic Data</a> </li>
-    <li> <a href="${FTP_URL}index.html#nomen">Nomenclature</a> </li>
-    <li> <a href="${FTP_URL}index.html#refs">References</a> </li>
-    <li> <a href="${FTP_URL}index.html#clonecoll">Clone Collections</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html#marker">Genes &amp; Markers</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html#seq">Sequence Data</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html#orthology">Mammalian Orthology</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html#go">Gene Ontology Data</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html#strain">Strains &amp; Polymorphisms</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html#expression">Gene Expression</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html#pheno">Phenotypic Data</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html#nomen">Nomenclature</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html#refs">References</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html#clonecoll">Clone Collections</a> </li>
   </ul>
 </li>
 <!---------- Download Dropmenu End ----------->
@@ -473,7 +473,7 @@
     </ul>
   </li>
   <li> <a href="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiatives</a> </li>
-  <li> <a href="ftp://ftp.informatics.jax.org/pub/datasets/index.html"> Contributed Data Sets</a> </li>
+  <li> <a href="${FTP_BASE_URL}datasets/index.html"> Contributed Data Sets</a> </li>
   <li> <a>Community Links</a>
     <ul>
       <li> <a href="${MGIHOME_URL}other/mouse_facts4.shtml"> Mouse Resources & Model Organism Links</a> </li>
@@ -487,7 +487,7 @@
     <li> <a href="${MGIHOME_URL}other/web_service.shtml">MGI Web Service</a> </li>
     <li> <a href="${HOMEPAGES_URL}software.shtml#sql">Direct SQL Account</a> </li>
     <li> <a href="${SCHEMA}">Database Schema Browser</a> </li>
-    <li> <a href="${FTP_URL}index.html">All MGI Reports</a> </li>
+    <li> <a href="${FTP_BASE_URL}reports/index.html">All MGI Reports</a> </li>
     <li>
       <div align="center" >
         <a href="${HOMEPAGES_URL}software.shtml">
@@ -525,72 +525,4 @@
 <!--------------------------- Menu Bar End -------------------------->
 
 
-<script type="text/javascript">
-//<![CDATA[
 
-// menu object
-var listMenu = new FSMenu('listMenu', true, 'display', 'block', 'none');
-
-listMenu.showDelay = 100;
-listMenu.switchDelay = 0;
-listMenu.hideDelay = 100;
-listMenu.animInSpeed = 1;
-listMenu.animOutSpeed = 1;
-
-FSMenu.prototype.ieSelBoxFixShow = function(mN) { with (this)
-{
- var m = menus[mN];
- if (!isIE || !window.createPopup) return;
- if (navigator.userAgent.match(/MSIE ([\d\.]+)/) && parseFloat(RegExp.$1) > 6.5)
-  return;
- // Create a new transparent IFRAME if needed, and insert under the menu.
- if (!m.ifr)
- {
-  m.ifr = document.createElement('iframe');
-  m.ifr.src = 'about:blank';
-  with (m.ifr.style)
-  {
-   position = 'absolute';
-   border = 'none';
-   padding = '300px';
-   filter = 'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';
-  }
-  m.lyr.ref.parentNode.insertBefore(m.ifr, m.lyr.ref);
- }
- // Position and show it on each call.
- with (m.ifr.style)
- {
-  left = m.lyr.ref.offsetLeft + 'px';
-  top = m.lyr.ref.offsetTop + 'px';
-  width = '200px';
-  height = '400px';
-  visibility = 'visible';
- }
-}};
-FSMenu.prototype.ieSelBoxFixHide = function(mN) { with (this)
-{
- if (!isIE || !window.createPopup) return;
- var m = menus[mN];
- if (m.ifr) m.ifr.style.visibility = 'hidden';
-}};
-addEvent(listMenu, 'show', function(mN) { this.ieSelBoxFixShow(mN) }, 1);
-addEvent(listMenu, 'hide', function(mN) { this.ieSelBoxFixHide(mN) }, 1);
-
-// I'm applying two at once to listMenu. Delete this to disable!
-listMenu.animations[listMenu.animations.length] = FSMenu.animFade;
-listMenu.animations[listMenu.animations.length] = FSMenu.animSwipeDown;
-//listMenu.animations[listMenu.animations.length] = FSMenu.animClipDown;
-
-var arrow = null;
-if (document.createElement && document.documentElement)
-{
- arrow = document.createElement('img');
- arrow.src = '${WEBSHARE_URL}images/arrow_right.gif';
- arrow.style.borderWidth = '0';
- arrow.className = 'subind';
-}
-addEvent(window, 'load', new Function('listMenu.activateMenu("listMenuRoot", arrow)'));
-
-
-//]]>
-</script>
