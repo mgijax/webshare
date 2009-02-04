@@ -7,10 +7,10 @@ function openNewWindow(url)
 };
 
 function verifySearchToolParms() {
-
+  var blankRE=/^\s*$/;
   var searchToolTextArea = document.getElementById("searchToolTextArea");
 
-  if (searchToolTextArea.value == " Keywords, Symbols, or IDs" || searchToolTextArea.value == "") {
+  if (searchToolTextArea.value == " Keywords, Symbols, or IDs" || blankRE.test(searchToolTextArea.value)) {
     alert("Please enter an ID or symbol or name into the text box.");
     return false;
   }
