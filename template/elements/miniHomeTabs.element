@@ -1,52 +1,52 @@
-
 <!--mini home tabs start-->
-<!--display order reversed due to the list being sequentially floated right-->
-<ul>
-  <li>
-    <a id="minitab_Tumor" href="${MTB_URL}"
-    onmouseover="return overlib('Mouse Tumor Biology',ANCHOR, 'minitab_Tumor', ANCHORALIGN, 'UR', 'LR', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-    <span>Tumors</span></a>
-  </li>
-  <li>
-    <a id="minitab_Ortho" href="${HOMEPAGES_URL}orthology.shtml"
-    onmouseover="return overlib('Mammalian Orthology',ANCHOR, 'minitab_Ortho', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-    <span>Orthology</span></a>
-  </li>
-  <li>
-    <a id="minitab_Strain" href="${HOMEPAGES_URL}strains_SNPs.shtml"
-    onmouseover="return overlib('Strains, SNPs &amp; Polymorphisms',ANCHOR, 'minitab_Strain', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-    <span>Strains&nbsp;/&nbsp;SNPs</span></a>
-  </li>
-  <li>
-    <a id="minitab_BioPath" href="${HOMEPAGES_URL}pathways.shtml"
-    onmouseover="return overlib('Biochemical Pathways \(MouseCyc\)',ANCHOR, 'minitab_BioPath', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-    <span>Pathways</span></a>
-  </li>
-  <li>
-    <a id="minitab_GO" href="${HOMEPAGES_URL}function.shtml"
-    onmouseover="return overlib('Functional Annotations \(GO\)',ANCHOR, 'minitab_GO', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-    <span>Function</span></a>
-  </li>
-  <li>
-    <a id="minitab_GXD" href="${HOMEPAGES_URL}expression.shtml"
-    onmouseover="return overlib('Gene Expression Database \(GXD\)',ANCHOR, 'minitab_GXD', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-    <span>Expression</span></a>
-  </li>
-  <li>
-    <a id="minitab_PAD" href="${HOMEPAGES_URL}phenotypes.shtml"
-    onmouseover="return overlib('Phenotypes, Alleles &amp; Disease Models',ANCHOR, 'minitab_PAD', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-    <span>Phenotypes</span></a>
-  </li>
-  <li>
-    <a id="minitab_Genes" href="${HOMEPAGES_URL}genes.shtml"
-    onmouseover="return overlib('Genes, Genome Features &amp; Maps',ANCHOR, 'minitab_Genes', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-    <span>Genes</span></a>
-  </li>
-  <li>
-    <a id="minitab_Home" href="${HOMEPAGES_URL}"
-    onmouseover="return overlib('MGI Home Page',ANCHOR, 'minitab_Home', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-    <span>Home</span></a>
-  </li>
-</ul>
+    <div id="tabs" class="navtabs">
+        <ul>
+          <li id="minitab_Home">
+            <a href="${HOMEPAGES_URL}"
+                onmouseover="return overlib('MGI Home Page',ANCHOR, 'home', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+                <span id="home">Home</span></a>
+          </li>
+          <li id="genes.shtml">
+            <a href="${HOMEPAGES_URL}genes.shtml"
+                onmouseover="return overlib('Genes, Genome Features &amp; Maps',ANCHOR, 'genes', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+                <span id="genes">Genes</span></a>
+          </li>
+          <li id="phenotypes.shtml">
+            <a href="${HOMEPAGES_URL}phenotypes.shtml"
+                onmouseover="return overlib('Phenotypes, Alleles &amp; Disease Models',ANCHOR, 'pheno', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+                <span id="pheno">Phenotypes</span></a>
+          </li>
+          <li id="expression.shtml">
+            <a href="${HOMEPAGES_URL}expression.shtml"
+                onmouseover="return overlib('Gene Expression Database \(GXD\)',ANCHOR, 'exp', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+                <span id="exp">Expression</span></a>
+          </li>
+          <li id="function.shtml">
+            <a href="${HOMEPAGES_URL}function.shtml"
+                onmouseover="return overlib('Functional Annotations \(GO\)',ANCHOR, 'func', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+                <span id="func">Function</span></a>
+          </li>
+          <li id="pathways.shtml">
+            <a href="${HOMEPAGES_URL}pathways.shtml"
+                onmouseover="return overlib('Biochemical Pathways \(MouseCyc\)',ANCHOR, 'path', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+                <span id="path">Pathways</span></a>
+          </li>
+          <li id="strains_SNPs.shtml">
+            <a href="${HOMEPAGES_URL}strains_SNPs.shtml"
+                onmouseover="return overlib('Strains, SNPs &amp; Polymorphisms',ANCHOR, 'strains', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+                <span id="strains">Strains&nbsp;/&nbsp;SNPs</span></a>
+          </li>
+          <li id="orthology.shtml">
+            <a href="${HOMEPAGES_URL}orthology.shtml"
+            onmouseover="return overlib('Mammalian Orthology',ANCHOR, 'ortho', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+            <span id="ortho">Orthology</span></a>
+          </li>
+          <li id="minitab_Tumor">
+            <a href="${MTB_URL}"
+                onmouseover="return overlib('Mouse Tumor Biology',ANCHOR, 'tumors', ANCHORALIGN, 'UR', 'LR', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+                <span id="tumors">Tumors</span></a>
+          </li>
+        </ul>
+    </div>
 
 <!-- mini home tabs end -->
