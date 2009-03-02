@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <!-- CSS -->
-<link href="${WEBSHARE_URL}css/mgi_template_min.css" rel="stylesheet" type="text/css"/>
+${css.element}
 
 
 <!--===================== End Template Head  ===========================-->

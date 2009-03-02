@@ -18,7 +18,7 @@
   <A HREF="${MGIHOME_URL}other/copyright.shtml">
       Warranty Disclaimer &amp; Copyright Notice</A> <BR>
     Send questions and comments to
-  <A HREF="${MGIHOME_URL}support/tjl_inbox.shtml">
+  <A HREF="${MGIHOME_URL}support/mgi_inbox.shtml">
       User Support</A>.
  </td>
  <td WIDTH="34%" ALIGN=center style="font-size:9px;">
@@ -41,5 +41,5 @@
 
 </table>
 
-<!-- MGI JavaScript -->
-<script type="text/javascript" src="${WEBSHARE_URL}js/mgi_template_min.js"></script>
+<!-- JavaScript -->
+${js.element}
