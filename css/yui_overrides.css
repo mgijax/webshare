@@ -1,0 +1,111 @@
+/* Navigation bar overrides */
+.yui-skin-sam #navBarMenu{
+    border-top: 1px solid #002255;
+    border-bottom: 1px solid #002255;
+    height: 27px;
+    width: 100%;
+    font-family:Verdana,Arial,Helvetica;
+    font-weight:bold;
+    font-size:13px;
+    background: #002255;
+    min-width:920px;
+    width:expression(document.body.clientWidth < 800? "800px": "auto" );
+}
+
+div.yuimenu {
+    position:absolute;
+}
+
+.yui-skin-sam .yuimenubaritemlabel{
+    text-decoration:none;
+    cursor:default;
+    *position:relative;
+    background-color: #002255;
+}
+
+.yui-skin-sam .yuimenubar .yuimenubaritemlabel{
+    border: 0;
+    color: #fff;
+    padding-right:22px;
+    *display:inline-block;
+}
+
+.yui-skin-sam .yuimenubar .yuimenubaritemlabel-selected{
+    border-top: 1px solid #002255;
+    border-bottom: 1px solid #002255;
+    color: #000;
+    background-color: #ddd;
+}
+
+.yui-skin-sam .yuimenubar .yuimenubaritemlabel-hassubmenu{
+    background-image: url(../images/arrow_down.gif);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+}
+
+.yui-skin-sam .yuimenuitem{
+    border-top: 1px solid #fff;
+    background-color: #CAD7E5;
+    text-align:left;
+}
+
+.yui-skin-sam .yuimenuitem-selected{
+    background-color: #ddd;
+}
+
+.yui-skin-sam .yuimenuitem-hassubmenu{
+    background-image:url(../images/menuArrowRight.gif);
+    background-position:98% 50%;
+    background-repeat:no-repeat;}
+
+.yui-skin-sam .yuimenuitem-hassubmenu-selected{
+    background-image: url(../images/menuArrowRight.gif);
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+}
+
+.yuimenu ul{
+    width: 210px;
+}
+
+/* override left padding on menus */
+.yui-skin-sam .yuimenuitemlabel, .yui-skin-sam .yuimenuitemlabel:hover{
+    padding:0 5px 0 5px;
+    color:#000;
+    text-decoration:none;
+    cursor:default;
+    white-space: normal;
+    width: 100%;
+}
+
+/* override 3px pad at top & bottom of menus */
+.yui-skin-sam .yuimenu ul {
+    padding-top: 0px;
+    padding-right: 0pt;
+    padding-bottom: 0px;
+    padding-left: 0pt;
+    border-top-width: 1px;
+    border-right-width-value: 0pt;
+    border-bottom-width: 0pt;
+    border-left-width-value: 0pt;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-top-color: #cccccc;
+    border-right-color-value: #cccccc;
+    border-bottom-color: #cccccc;
+    border-left-color-value: #cccccc;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-top-style: solid;
+    border-right-style-value: solid;
+    border-bottom-style: solid;
+    border-left-style-value: solid;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+}
