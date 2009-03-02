@@ -1,0 +1,9 @@
+<!-- Template CSS -->
+<link href="${WEBSHARE_URL}css/mgi.css" rel="stylesheet" type="text/css"/>
+<link href="${WEBSHARE_URL}css/template.css" rel="stylesheet" type="text/css"/>
+
+<!-- Combo-handled YUI CSS files: -->
+<link rel="stylesheet" type="text/css" href="${YUI_CSS_URL}">
+
+<!-- YUI CSS overrides: -->
+<link href="${WEBSHARE_URL}css/yui_overrides.css" rel="stylesheet" type="text/css"/>
