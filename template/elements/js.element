@@ -1,4 +1,1 @@
-<!-- Combo-handled YUI JS files: -->
-<script type="text/javascript" src="${YUI_JS_URL}"></script>
-
 <script type="text/javascript" src="${WEBSHARE_URL}js/${TEMPLATE_JS_FILE}"></script>
