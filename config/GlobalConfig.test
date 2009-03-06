@@ -111,6 +111,8 @@ GO_TOOLS_URL            http://${PY_HOST}/gotools/
 
 MGIWS_URL               http://firien.informatics.jax.org:18080/axis2/services/mgiws
 
+YUI_URL                 http://yui.yahooapis.com/
+
 ###--
 ###-- MGI URLs using apache aliases - if you wish to use apache aliases to 
 ###-- find these pages, use the PY_HOST (if same as docroot), otherwise use
