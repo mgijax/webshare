@@ -9,11 +9,20 @@
 # the filemanes designated by the TEMPLATE_CSS_FILE, TEMPLATE_JS_FILE,
 # HOMEPAGE_CSS_FILE, and HOMEPAGE_JS_FILE parameters set in GlobalConfig.
 
-
 # generate and source GlobalConfig sh file
 /usr/local/mgi/live/lib/python/Configuration.py config/GlobalConfig sh > .Configuration.sh
 . .Configuration.sh
 rm .Configuration.sh
+
+# clean out old minified js files
+echo "Clean up js files"
+rm ./js/mgi.js
+rm ./js/$TEMPLATE_JS_FILE
+rm ./js/$MGIHOME_JS_FILE
+
+# generate mgi.js file
+echo "Generate js files"
+catReplace.py ./js/mgi.txt > ./js/mgi.js
 
 # cleanup element files
 echo "Cleanup css element"
@@ -27,6 +36,10 @@ then
     then
         echo "Copy dev css element"
         cp template/elements/cssDev.element template/elements/css.element
+        
+        # concatenate js files
+        cat ./js/overlib*.js ./js/mgi.js > ./js/$TEMPLATE_JS_FILE   
+        cat ./js/ajaxtabs.js > ./js/$MGIHOME_JS_FILE     
     fi   
 else
     echo "Copy default css element"
@@ -40,16 +53,9 @@ else
     # minify css files
     echo "Generate css files"
     cat ./css/mgi.css ./css/template.css ./css/yui_overrides.css | java -jar yuicompressor-2.4.2.jar --type css > ./css/$TEMPLATE_CSS_FILE
-    cat ./css/ajaxtabs.css ./css/homepages.css | java -jar yuicompressor-2.4.2.jar --type css > ./css/$MGIHOME_CSS_FILE        
+    cat ./css/ajaxtabs.css ./css/homepages.css | java -jar yuicompressor-2.4.2.jar --type css > ./css/$MGIHOME_CSS_FILE 
+
+    # concatenate and minify js files
+    cat ./js/overlib*.js ./js/mgi.js | java -jar yuicompressor-2.4.2.jar --type js > ./js/$TEMPLATE_JS_FILE
+    cat ./js/ajaxtabs.js |  java -jar yuicompressor-2.4.2.jar --type js > ./js/$MGIHOME_JS_FILE       
 fi
-
-# clean out old minified js files
-echo "Clean up js files"
-rm ./js/$TEMPLATE_JS_FILE
-rm ./js/$MGIHOME_JS_FILE
-
-# minify js files
-echo "Generate js files"
-catReplace.py ./js/mgi.txt > ./js/mgi.js
-cat ./js/overlib*.js ./js/mgi.js | java -jar yuicompressor-2.4.2.jar --type js > ./js/$TEMPLATE_JS_FILE
-cat ./js/ajaxtabs.js |  java -jar yuicompressor-2.4.2.jar --type js > ./js/$MGIHOME_JS_FILE 
