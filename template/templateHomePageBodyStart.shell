@@ -1,7 +1,7 @@
 <!--===================== Body Start ===========================-->
 
 </head>
-<body onload="loadPage()" class="yui-skin-sam">
+<body class="yui-skin-sam">
 
 <div id="topBannerContainer" style="position:relative;">
 
