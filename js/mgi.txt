@@ -6,10 +6,14 @@
 // of the concatenation and minification of the js files.  
 
 <!-- select current tab -->
-var winLoc = new String(window.location);
-var winLocArray = winLoc.split("/");  
-var selectedPage = YAHOO.util.Dom.get(winLocArray[winLocArray.length -1]);
-YAHOO.util.Dom.addClass(selectedPage, 'selected');
+function selectMinihomeTab(){
+    var winLoc = new String(window.location);
+    var winLocArray = winLoc.split("/");  
+    var selectedPage = YAHOO.util.Dom.get(winLocArray[winLocArray.length -1]);
+    YAHOO.util.Dom.addClass(selectedPage, 'selected');
+}
+
+YAHOO.util.Event.onDOMReady(selectMinihomeTab);
 
 <!-- function kicks off on page load -->
 function loadPage() {  
@@ -28,13 +32,16 @@ function loadPage() {
           helpLink = "<a href='" + userdoc + "'>" + helpIcon + "</a>";
         }
         else {
-          helpLink = "<a href='${USERDOCS_URL}" + userdoc + "'>" + helpIcon + "</a>";
+          helpLink = "<a href='http://rohan.informatics.jax.org/~marka/userdocs/www/" + userdoc + "'>" + helpIcon + "</a>";
         }
 
         titleBarWrapper.innerHTML = helpLink + currentHTML;
       }
   }
 };
+
+YAHOO.util.Event.onDOMReady(loadPage);
+
 
 <!-- faq window to assist user; callable from anywhere using the templates -->
 function openFaqWindow(faqFile)
