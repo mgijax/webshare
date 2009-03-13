@@ -1,13 +1,14 @@
 #!/bin/sh
 
-# This install script creates the appropriate css & js element files necessary
-# for the template.  It will look for the INSTALL_TYPE setting from mgiconfig.  
-# If this is set to dev the non-minified css and js element files will be used.
-# INSTALL_TYPE can be overridden by using adding a command-line argument, i.e.
-# "Install dev".  If INSTALL_TYPE is not dev, the minified element files are
-# used and the appropriate js and css files are concatenated and minified to 
-# the filemanes designated by the TEMPLATE_CSS_FILE, TEMPLATE_JS_FILE,
-# HOMEPAGE_CSS_FILE, and HOMEPAGE_JS_FILE parameters set in GlobalConfig.
+# This install script creates the appropriate css.element, *.css, and *.js 
+# files necessary for the template.  The install concatenates and minifies 
+# the appropriate js and css files.  These files are written to the filenames
+# designated by the TEMPLATE_CSS_FILE, TEMPLATE_JS_FILE, HOMEPAGE_CSS_FILE,
+# and HOMEPAGE_JS_FILE parameters set in GlobalConfig.  There is a command 
+# line option to perform a 'dev' install, i.e. Install dev.  This option uses 
+# does not perform concatenation of the css files and does not minify the css 
+# or js files.  This is intended for developers to use so they can see their 
+# css changes requiring an Install.  
 
 # generate and source GlobalConfig sh file
 /usr/local/mgi/live/lib/python/Configuration.py config/GlobalConfig sh > .Configuration.sh
@@ -16,9 +17,9 @@ rm .Configuration.sh
 
 # clean out old minified js files
 echo "Clean up js files"
-rm ./js/mgi.js
-rm ./js/$TEMPLATE_JS_FILE
-rm ./js/$MGIHOME_JS_FILE
+rm -f ./js/mgi.js
+rm -f ./js/$TEMPLATE_JS_FILE
+rm -f ./js/$MGIHOME_JS_FILE
 
 # generate mgi.js file
 echo "Generate js files"
@@ -26,7 +27,7 @@ catReplace.py ./js/mgi.txt > ./js/mgi.js
 
 # cleanup element files
 echo "Cleanup css element"
-rm template/elements/css.element
+rm -f template/elements/css.element
 
 if [ $# -gt 0 ]
 then
@@ -47,8 +48,8 @@ else
     
     # clean out old minified css files
     echo "Clean up css files"
-    rm ./css/$TEMPLATE_CSS_FILE
-    rm ./css/$MGIHOME_CSS_FILE
+    rm -f ./css/$TEMPLATE_CSS_FILE
+    rm -f ./css/$MGIHOME_CSS_FILE
     
     # minify css files
     echo "Generate css files"
