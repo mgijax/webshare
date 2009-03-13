@@ -72,7 +72,7 @@ MGI_VERSION         01
 # path & name of the generated css files
 TEMPLATE_CSS_FILE   mgi_template${MGI_VERSION}.css
 MGIHOME_CSS_FILE    homepages_template${MGI_VERSION}.css
-YUI_CSS_URL         ${YUI_URL}combo?${YUI_VERSION}/build/fonts/fonts-min.css&${YUI_VERSION}/build/assets/skins/sam/skin.css
+YUI_CSS_URL         ${YUI_URL}combo?${YUI_VERSION}/build/assets/skins/sam/skin.css
 
 # patch and name of the generated js files
 TEMPLATE_JS_FILE    mgi_template${MGI_VERSION}.js
@@ -146,7 +146,7 @@ GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
 GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
 
-IMSRURL                 http://${PUBLIC_HOST}/imsr/
+IMSRURL                 http://www.findmice.org/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
