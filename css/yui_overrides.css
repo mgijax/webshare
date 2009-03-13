@@ -3,12 +3,11 @@
     border-top: 1px solid #002255;
     border-bottom: 1px solid #002255;
     height: 27px;
-    width: 100%;
     font-family:Verdana,Arial,Helvetica;
     font-weight:bold;
     font-size:13px;
     background: #002255;
-    min-width:920px;
+    min-width:800px;
     width:expression(document.body.clientWidth < 800? "800px": "auto" );
 }
 
@@ -65,6 +64,7 @@ div.yuimenu {
 }
 
 .yuimenu ul{
+	white-space: no-wrap;
     width: 210px;
 }
 
