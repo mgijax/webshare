@@ -1,6 +1,7 @@
 <!--===================== Body Start ===========================-->
+
 </head>
-<body onload="loadPage()" >
+<body class="yui-skin-sam">
 
 <div id="topBannerContainer" style="position:relative;">
 
@@ -24,9 +25,8 @@
 
 </div>
 
-<div id="navBarContainer">
-  ${navBar.element}
-</div>
+${navBar.element}
+
 
 <div id="templateBodyInsert"> <!-- wrapper around inserted page body -->
 

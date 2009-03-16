@@ -1,0 +1,54 @@
+.shadetabs{
+white-space: nowrap;
+padding: 3px 0;
+margin-left: 0;
+margin-top: 1px;
+margin-bottom: 0;
+font: bold 12px Verdana;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+.shadetabs li{
+display: inline;
+margin: 0;
+}
+
+.shadetabs li a{
+text-decoration: none;
+padding: 3px 7px;
+margin-right: 3px;
+border-top: 1px solid #759BC1;
+border-right: 1px solid #759BC1;
+border-left: 1px solid #759BC1;
+border-bottom-style:none;
+background: white url(../images/shadeBlueGray.gif) top left repeat-x;
+}
+
+.shadetabs li a:visited{
+color: #660099;
+}
+
+.shadetabs li a:hover{
+text-decoration: none;
+color: #CC0000;
+}
+
+.shadetabs li.selected a{ /*selected main tab style */
+background-image: url(../images/shadeactiveBlue.gif);
+background-color:#D0E0F0;
+border-bottom-style:solid;
+border-bottom-color:#F9F9F9;
+}
+
+.shadetabs li.selected a:hover{ /*selected main tab style */
+text-decoration: none;
+}
+
+.contentstyle{
+border: 1px solid #759BC1; 
+margin-bottom: 1em; 
+padding: 10px;
+background-color:#F9F9F9;
+color:#002255;
+}

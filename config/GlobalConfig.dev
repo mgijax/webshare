@@ -65,6 +65,20 @@ PHENO_CACHE_TIMEOUT   0
 # indicates if the awstats browser stat collection javascript is enabled
 STAT_COLLECT_ENABLED    0
 
+# version numbers used in css and js filename and path
+YUI_VERSION         2.6.0
+MGI_VERSION         01
+
+# path & name of the generated css files
+TEMPLATE_CSS_FILE   mgi_template${MGI_VERSION}.css
+MGIHOME_CSS_FILE    homepages_template${MGI_VERSION}.css
+YUI_CSS_URL         ${YUI_URL}combo?${YUI_VERSION}/build/assets/skins/sam/skin.css
+
+# patch and name of the generated js files
+TEMPLATE_JS_FILE    mgi_template${MGI_VERSION}.js
+MGIHOME_JS_FILE     homepages_template${MGI_VERSION}.js
+YUI_JS_URL          ${YUI_URL}combo?${YUI_VERSION}/build/utilities/utilities.js&${YUI_VERSION}/build/container/container-min.js&${YUI_VERSION}/build/datasource/datasource-min.js&${YUI_VERSION}/build/datatable/datatable-min.js&${YUI_VERSION}/build/menu/menu-min.js&${YUI_VERSION}/build/selector/selector-beta-min.js&${YUI_VERSION}/build/tabview/tabview-min.js
+
 ###--
 ###-- MGI BASE URLs -be aware some server aliases will include the '/www/'
 ###--
@@ -85,7 +99,9 @@ FAQ_URL                 http://${PY_HOST}/faq/
 
 MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/
 
-FTP_URL                 ftp://devftp.informatics.jax.org/pub/reports/
+FTP_BASE_URL            ftp://devftp.informatics.jax.org/pub/
+
+FTP_URL                 ${FTP_BASE_URL}reports/
 
 PIXELDB_URL             http://${PY_HOST}/pixeldb/fetch_pixels.cgi?id=
 
@@ -94,6 +110,8 @@ GO_GRAPH_URL            http://${PY_HOST}/GOgraphs/
 GO_TOOLS_URL            http://${PY_HOST}/gotools/
 
 MGIWS_URL               http://firien.informatics.jax.org:18080/axis2/services/mgiws
+
+YUI_URL                 http://yui.yahooapis.com/
 
 ###--
 ###-- MGI URLs using apache aliases - if you wish to use apache aliases to 
@@ -129,10 +147,11 @@ GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
 GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
 
-IMSRURL                 http://${PUBLIC_HOST}/imsr/
+IMSRURL                 http://www.findmice.org/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
+YUI_URL                 http://yui.yahooapis.com/
 
 ###--
 ###-- Other Paths

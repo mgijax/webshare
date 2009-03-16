@@ -1,5 +1,71 @@
-// mgi.js
+// mgi.txt
 //
+
+// note: this file cannot be used as is on any page as it contains config variables.
+// these variables must have their values inserted before use.  this occurs as part 
+// of the concatenation and minification of the js files.  
+
+<!-- select current tab -->
+function selectMinihomeTab(){
+    var winLoc = new String(window.location);
+    var winLocArray = winLoc.split("/");  
+    var selectedPage = YAHOO.util.Dom.get(winLocArray[winLocArray.length -1]);
+    YAHOO.util.Dom.addClass(selectedPage, 'selected');
+}
+
+YAHOO.util.Event.onDOMReady(selectMinihomeTab);
+
+<!-- function kicks off on page load -->
+function loadPage() {  
+  // if we have a title bar, add help-linked logo if requested
+  var titleBarWrapper = document.getElementById("titleBarWrapper");
+  if (titleBarWrapper != null) {
+      var currentHTML = titleBarWrapper.innerHTML;
+      var helpIcon = '<img class="titleBarHelpIcon" src="${WEBSHARE_URL}images/help_large_transp.gif">';
+      var userdoc = titleBarWrapper.getAttribute("userdoc");
+      if (userdoc != null) {
+
+        var helpLink = '';
+
+        userdocArray = userdoc.split("/");
+        if (userdocArray[0] == 'http:') { //passed a full URL
+          helpLink = "<a href='" + userdoc + "'>" + helpIcon + "</a>";
+        }
+        else {
+          helpLink = "<a href='${USERDOCS_URL}" + userdoc + "'>" + helpIcon + "</a>";
+        }
+
+        titleBarWrapper.innerHTML = helpLink + currentHTML;
+      }
+  }
+};
+
+YAHOO.util.Event.onDOMReady(loadPage);
+
+
+<!-- faq window to assist user; callable from anywhere using the templates -->
+function openFaqWindow(faqFile)
+{
+    faqUrl = "${FAQ_URL}" + faqFile;
+    window.open(faqUrl,'faqWindow','width=1000,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+};
+
+<!-- initialize navigation menu -->
+YAHOO.namespace("mgi.navbar");
+YAHOO.mgi.navbar.menuinit = function() {
+    var menu = new YAHOO.widget.MenuBar("navBarMenu", {
+            constraintoviewport: false,
+            autosubmenudisplay: true,
+            showdelay: 100,
+            hidedelay: 400,
+            lazyload: true
+        });
+    menu.render();
+    menu.cfg.setProperty("constraintoviewport", false);
+};
+
+YAHOO.util.Event.onDOMReady(YAHOO.mgi.navbar.menuinit);
+
 
 function openNewWindow(url)
 {
@@ -7,9 +73,10 @@ function openNewWindow(url)
 };
 
 function verifySearchToolParms() {
-
+  var blankRE=/^\s*$/;
   var searchToolTextArea = document.getElementById("searchToolTextArea");
-  if (searchToolTextArea.value == " Keywords, Symbols, or IDs") {
+
+  if (searchToolTextArea.value == " Keywords, Symbols, or IDs" || blankRE.test(searchToolTextArea.value)) {
     alert("Please enter an ID or symbol or name into the text box.");
     return false;
   }

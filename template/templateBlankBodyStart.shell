@@ -1,6 +1,6 @@
 <!--===================== Body Start ===========================-->
 </head>
-<body class="mainBody" onload="loadPage()" >
+<body class="mainBody" class="yui-skin-sam">
 
 <div id="templateBodyInsert"> <!-- wrapper around inserted page body -->
 <!--================= End of Body Start ========================-->

@@ -1,0 +1,62 @@
+#!/bin/sh
+
+# This install script creates the appropriate css.element, *.css, and *.js 
+# files necessary for the template.  The install concatenates and minifies 
+# the appropriate js and css files.  These files are written to the filenames
+# designated by the TEMPLATE_CSS_FILE, TEMPLATE_JS_FILE, HOMEPAGE_CSS_FILE,
+# and HOMEPAGE_JS_FILE parameters set in GlobalConfig.  There is a command 
+# line option to perform a 'dev' install, i.e. Install dev.  This option uses 
+# does not perform concatenation of the css files and does not minify the css 
+# or js files.  This is intended for developers to use so they can see their 
+# css changes requiring an Install.  
+
+# generate and source GlobalConfig sh file
+/usr/local/mgi/live/lib/python/Configuration.py config/GlobalConfig sh > .Configuration.sh
+. .Configuration.sh
+rm .Configuration.sh
+
+# clean out old minified js files
+echo "Clean up js files"
+rm -f ./js/mgi.js
+rm -f ./js/$TEMPLATE_JS_FILE
+rm -f ./js/$MGIHOME_JS_FILE
+
+# generate mgi.js file
+echo "Generate js files"
+catReplace.py ./js/mgi.txt > ./js/mgi.js
+
+# cleanup element files
+echo "Cleanup css element"
+rm -f template/elements/css.element
+
+if [ $# -gt 0 ]
+then
+    # test dev build & write dev css and js element files, otherwise
+    # write default css and js element files and cat and minify them
+    if [ $1 = "dev" ]
+    then
+        echo "Copy dev css element"
+        cp template/elements/cssDev.element template/elements/css.element
+        
+        # concatenate js files
+        cat ./js/overlib*.js ./js/mgi.js > ./js/$TEMPLATE_JS_FILE   
+        cat ./js/ajaxtabs.js > ./js/$MGIHOME_JS_FILE     
+    fi   
+else
+    echo "Copy default css element"
+    cp template/elements/cssDefault.element template/elements/css.element
+    
+    # clean out old minified css files
+    echo "Clean up css files"
+    rm -f ./css/$TEMPLATE_CSS_FILE
+    rm -f ./css/$MGIHOME_CSS_FILE
+    
+    # minify css files
+    echo "Generate css files"
+    cat ./css/mgi.css ./css/template.css ./css/yui_overrides.css | java -jar yuicompressor-2.4.2.jar --type css > ./css/$TEMPLATE_CSS_FILE
+    cat ./css/ajaxtabs.css ./css/homepages.css | java -jar yuicompressor-2.4.2.jar --type css > ./css/$MGIHOME_CSS_FILE 
+
+    # concatenate and minify js files
+    cat ./js/overlib*.js ./js/mgi.js | java -jar yuicompressor-2.4.2.jar --type js > ./js/$TEMPLATE_JS_FILE
+    cat ./js/ajaxtabs.js |  java -jar yuicompressor-2.4.2.jar --type js > ./js/$MGIHOME_JS_FILE       
+fi

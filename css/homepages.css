@@ -1,0 +1,266 @@
+.mgiDescription {
+    padding: 4px 10px; 
+    line-height: 1.5;
+    text-align: center;
+    color: #002255;
+    font-size: 12px;
+    font-style: italic;
+}
+.homePageImageLabel {
+    font-size:14px;
+    font-weight:bold;
+    text-align: center;
+    vertical-align:middle;
+    padding-bottom:4px;
+    padding-top:10px;
+}
+.homePageImage {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#mgiNews {
+    font-size:12px;
+    padding:3px;
+}
+#mouseCommunityNews {
+    font-size:12px;
+    padding:8px;
+}
+
+ .homePageTitle {
+     font-size:22px;
+     color:#002255;
+     white-space: nowrap;
+ }
+
+ .homePageSubTitle {
+     font-size:12px;
+     color:#003366;
+     font-style:italic;
+ }
+ 
+ .imgCenter {
+     float:left;
+     text-align:center;
+ }
+
+ .sideMargin {
+     margin-left:30px;
+     margin-right:30px;
+ }
+
+ .leftCenterMargin {
+     margin-left:10px;
+ }
+ 
+ .rightCenterMargin {
+     margin-right:10px;
+ }
+ 
+ .blueBorder {
+     border: 2px solid #DFEFFF;
+ }
+
+ .pad5 {
+     padding:.5em;
+ }
+
+.outlineImg {
+    border:1px solid #002255;
+ }
+
+ .boxBG{
+     background-color:#F9F9F9;
+ }
+ 
+ .marginTop {
+     margin-top:20px;
+ }    
+
+ .marginBottom {
+     margin-bottom:20px;
+ }
+
+
+ .boxTitle {
+     color: #002255;
+     font-weight: bold;
+     height:14px;
+     background-color:#D0E0F0;
+     font-size:12px;
+     padding:3px;
+ }
+
+ .boxWide {
+     clear:both;
+     height:auto;
+     position:relative;
+     margin:15px 30px 0px 30px;
+ }
+
+ dl {
+     margin-top:0px;
+     margin-bottom:1em;
+ }
+ 
+ dt.whatList {
+     margin-top:1.5em;
+ }
+ 
+ .newsList {
+     margin: 0em 0em .5em .5em;
+     padding: 0em;
+ }  
+
+ .newsList li {
+     margin-bottom: .5em;
+     list-style-position: inside;
+     line-height: 1.25em;
+ }
+
+ dd.searchList {
+     margin:.5em 0em .5em 5em;
+ }
+
+ .statList {
+     margin-top:0px;
+     margin-bottom:1em;
+ }
+ .statList dt {
+     float:left;
+     text-align:right;
+     margin-right:1em;
+     width:7em;
+ }
+ .statList dd {
+     margin-bottom:.5em;
+     margin-left:7em;
+ }
+ .statListHomePage {
+     margin-top:0px;
+     margin-bottom:1em;
+ }
+ .statListHomePage dt {
+     float:left;
+     text-align:right;
+     margin-right:1em;
+     width:7em;
+ }
+ .statListHomePage dd {
+     margin-bottom:.5em;
+     margin-left:7em;
+ }
+
+ .left {
+     float:left;
+     white-space: nowrap;
+     text-align:left;
+ }
+
+ .right {
+     float:right;
+     white-space: nowrap;
+     text-align:right;
+ }
+ 
+ .center {
+     text-align:center;
+ }
+ 
+ .padBottom {
+     padding-top: 10px;
+     padding-bottom: 1em;
+ }
+
+ .faqList {
+     margin-top:.5em;
+     margin-left:5em;
+ }
+ .faqListHomePage {
+     margin-top:.5em;
+     margin-left:2em;
+ }
+
+ .clear {
+     clear:both;
+     position:relative;
+ }
+ 
+ .outerGOWrap {
+     position:relative;
+     height:235px;
+     width:193px;
+ }
+ 
+ .outerGeneWrap {
+     position:relative;
+     height:270px;
+     width:300px;
+ }
+ 
+ .smallGOWrap {
+     position:absolute;
+     top:0px; 
+     right:0px;
+     text-align:center; 
+     background-color:#FFFFFF;
+ }    
+ 
+ .bigGOWrap {
+     position:absolute;
+     top:-2px; 
+     right:-2px;
+     height:425px;
+     width:443px;
+     text-align:center; 
+     background-color:#FFFFFF;
+ }
+ 
+ .bigGeneWrap {
+     position:absolute;
+     top:-2px; 
+     right:-2px;
+     height:410px;
+     width:410px;
+     text-align:center; 
+     background-color:#FFFFFF;
+ }
+ 
+ .imgTopBottom {
+     border-top: 2px solid #DFEFFF;
+     border-bottom: 2px solid #DFEFFF;
+     
+ }
+ 
+ /*:focus { -moz-outline-style: none; }*/
+ a { outline:0; }
+  
+ a.homeLink:link {
+     color:#1433C8;
+     text-decoration:none;
+     border-bottom:dotted 1px #888888;
+ }
+ 
+ a.homeLink:visited {
+     color:#513696;
+     text-decoration:none;
+     border-bottom:dotted 1px #999999;
+ }
+ 
+ a.homeLink:hover {
+     color:#CC0000;
+     text-decoration:none;
+     border-bottom:dashed 1px #CC0000;
+ }
+ 
+ a.homeLink:active {
+     color:#1433C8;
+     text-decoration:none;
+     border-bottom:dotted 1px #888888;
+ } 
+ 
+ .smaller {
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:smaller;font-size:85%; font-size:10px;
+ }

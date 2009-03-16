@@ -1,4 +1,8 @@
 </div> <!--  class="templateBodyInsert" -->
+
+<!-- MGI JavaScript -->
+${js.element}
+
 </body>
 </html>
 
