@@ -32,7 +32,7 @@ div.yuimenu {
 .yui-skin-sam .yuimenubar .yuimenubaritemlabel-selected{
     border-top: 1px solid #002255;
     border-bottom: 1px solid #002255;
-    color: #000;
+    color: #002255;
     background-color: #ddd;
 }
 
@@ -71,7 +71,7 @@ div.yuimenu {
 /* override left padding on menus */
 .yui-skin-sam .yuimenuitemlabel, .yui-skin-sam .yuimenuitemlabel:hover{
     padding:0 5px 0 5px;
-    color:#000;
+    color: #002255;
     text-decoration:none;
     cursor:default;
     white-space: normal;
