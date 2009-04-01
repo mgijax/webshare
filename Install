@@ -21,6 +21,10 @@ rm -f ./js/mgi.js
 rm -f ./js/$TEMPLATE_JS_FILE
 rm -f ./js/$MGIHOME_JS_FILE
 
+# clean out old minified css files
+echo "Clean up css files"
+rm -f ./css/$MGIHOME_CSS_FILE
+
 # generate mgi.js file
 echo "Generate js files"
 catReplace.py ./js/mgi.txt > ./js/mgi.js
@@ -40,7 +44,8 @@ then
         
         # concatenate js files
         cat ./js/overlib*.js ./js/mgi.js > ./js/$TEMPLATE_JS_FILE   
-        cat ./js/ajaxtabs.js > ./js/$MGIHOME_JS_FILE     
+        cp ./js/ajaxtabs.js ./js/$MGIHOME_JS_FILE  
+        cat ./css/ajaxtabs.css ./css/homepages.css > ./css/$MGIHOME_CSS_FILE 
     fi   
 else
     echo "Copy default css element"
@@ -49,7 +54,6 @@ else
     # clean out old minified css files
     echo "Clean up css files"
     rm -f ./css/$TEMPLATE_CSS_FILE
-    rm -f ./css/$MGIHOME_CSS_FILE
     
     # minify css files
     echo "Generate css files"
