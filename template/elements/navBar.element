@@ -175,7 +175,7 @@
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}reports/homologymap/mouse_human.shtml"
 												onMouseOver="return overlib('View the Mouse-Human comparative map.',ANCHOR, 'orthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Mouse-Human Orthology Map</a></li>
-											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="{WI_URL}reports/homologymap/mouse_rat.shtml"
+											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}reports/homologymap/mouse_rat.shtml"
 												onMouseOver="return overlib('View the Mouse-Rat comparative map.',ANCHOR, 'orthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Mouse-Rat Orthology Map</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}orthology.shtml">More</a></li>
