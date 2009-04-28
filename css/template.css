@@ -19,8 +19,11 @@ body {
     width: 100%;
     position:relative;
     min-width:920px;
-    width:expression(document.body.clientWidth < 852? "850px" : document.body.clientWidth > 1202? "1200px" : "auto" );
 } 
+
+* html #headerContainer {
+    width:expression(document.body.clientWidth < 852? "850px" : document.body.clientWidth > 1202? "1200px" : "auto" );
+}
 
 /* Block-level <div> wrapping mgi logo, mini-home tabs, and searchtool */
 /* for the standard mgi template */
@@ -139,8 +142,11 @@ a.logoFooterAnchor{
     width: 100%;
     min-width: 750px
     height:35px;
+    width:expression(document.body.clientWidth < 752? "750px" : document.body.clientWidth > 922? "920px" : "auto" );    
+}
+
+* html #titleBarWrapper {
     width:expression(document.body.clientWidth < 752? "750px" : document.body.clientWidth > 922? "920px" : "auto" );
-    
 }
 
 #titleBarWrapper img.titleBarHelpIcon {
