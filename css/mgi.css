@@ -13,6 +13,11 @@ td {
     font-size:12px;
 }
 
+dl {
+    margin-top:0px;
+    margin-bottom:1em;
+}
+
 /* Form Elements */
 input {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
 select {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
