@@ -2,6 +2,7 @@
 </head>
 <body class="yui-skin-sam">
 
+<div id="headerContainer">
 <div id="topBannerContainer">
 
   ${miniHomeTabs.element}
@@ -26,7 +27,7 @@
 </div>
 
 ${navBar.element}
-
+</div>
 
 
 <div id="templateBodyInsert"> <!-- wrapper around inserted page body -->
