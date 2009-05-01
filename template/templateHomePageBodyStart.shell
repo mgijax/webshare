@@ -3,6 +3,7 @@
 </head>
 <body class="yui-skin-sam">
 
+<div id="headerContainer">
 <div id="topBannerContainer" style="position:relative;">
 
   <div id="homePageTitle" style="position:absolute; bottom:0px; left:150px;">
@@ -26,7 +27,7 @@
 </div>
 
 ${navBar.element}
-
+</div>
 
 <div id="templateBodyInsert"> <!-- wrapper around inserted page body -->
 

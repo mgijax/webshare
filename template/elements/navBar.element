@@ -1,9 +1,9 @@
-<!--------------------------- Menu Bar Start -------------------------->
+<!-- Menu Bar Start -->
 <div id="navBarMenu" class="yuimenubar">
 	<div class="bd">
 		<ul class="first-of-type">
 
-			<!---------- Searches Start ---------->
+			<!-- Searches Start -->
 			<li class="yuimenubaritem first-of-type"><a class="yuimenubaritemlabel" href="${MENUS_URL}allsearch.shtml">Search</a>
 
 				<div id="search" class="yuimenu">
@@ -249,7 +249,7 @@
 								</div>
 							</li>
 
-							<!--- Vocabularies Submenu --->
+							<!-- Vocabularies Submenu -->
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">Vocabularies</a>
 								<div id="vocabularies" class="yuimenu">
 									<div class="bd">
@@ -297,10 +297,10 @@
 					</div>
 				</div>
 			</li>
-			<!---------- Searches Dropmenu End ---------->
+			<!-- Searches Dropmenu End -->
 
 
-			<!---------- Download Dropmenu Start ----------->
+			<!-- Download Dropmenu Start -->
 			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${FTP_BASE_URL}reports/index.html">Download</a>
 				<div id="download" class="yuimenu">
 					<div class="bd">
@@ -321,10 +321,10 @@
 					</div>
 				</div>
 			</li>
-			<!---------- Download Dropmenu End ----------->
+			<!-- Download Dropmenu End -->
 			
 			
-			<!---------- Resources Dropmenu Start ----------->
+			<!-- Resources Dropmenu Start -->
 			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${MENUS_URL}resources.shtml">More Resources</a>
 				<div id="resources" class="yuimenu">
 					<div class="bd">
@@ -399,9 +399,9 @@
 					</div>
 				</div>
 			</li>
-			<!---------- Resources Dropmenu End ----------->
+			<!-- Resources Dropmenu End -->
 
-			<!------- Direct Links  ------->
+			<!-- Direct Links  -->
 			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${MENUS_URL}submit.shtml">Submit Data</a></li>
 			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${IMSRURL}index.jsp" title="International Mouse Strain Resource (IMSR)">Find Mice (IMSR)</a></li>
 			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${MGIHOME_URL}support/mgi_inbox.shtml" title="Contact user support">Contact&nbsp;Us</a></li>
@@ -410,4 +410,4 @@
 </div>
 
 
-<!--------------------------- Menu Bar End -------------------------->
+<!-- Menu Bar End -->

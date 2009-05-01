@@ -8,7 +8,7 @@
     font-size:13px;
     background: #002255;
     min-width:800px;
-    width:expression(document.body.clientWidth < 800? "800px": "auto" );
+    
 }
 
 div.yuimenu {

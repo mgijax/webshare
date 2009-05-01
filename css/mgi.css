@@ -13,6 +13,11 @@ td {
     font-size:12px;
 }
 
+dl {
+    margin-top:0px;
+    margin-bottom:1em;
+}
+
 /* Form Elements */
 input {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
 select {color:#000000;font-family:Verdana,Arial,Helvetica;font-size:11px}
@@ -270,3 +275,37 @@ dd.popUp { margin-left: 7px; padding-left: 0px; padding-right: 5px; }
 ul.popUp { margin-left: 28px; padding-left: 0px; }
 li.popUp { margin-left: 0px; padding-left: 0px; padding-right: 5px; }
 .popUpText { font-size: 12px; font-weight: normal; }
+
+    ul#btab { /* general settings */
+        text-align: left; /* set to left, right or center */
+        margin: 1px 0 0 0; /* set margins as desired */
+        border-bottom: 1px solid #000; /* set border COLOR as desired */
+        list-style-type: none;
+        padding: 3px 10px 3px 10px; /* THIRD number must change with respect to padding-top (X) below */
+    }
+
+    ul#btab li { /* do not change */
+        display: inline;
+    }
+
+
+    ul#btab li a { /* settings for all tab links */
+        padding: 3px 4px; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
+        border: 1px solid #000; /* set border COLOR as desired; usually matches border color specified in #btab */
+        color: purple; /* set unselected tab link color as desired */
+        text-decoration: none;
+    }
+
+    ul#btab li a.on {
+        border-bottom: 1px solid #eeeeee; /* set border COLOR as desired */
+        background-color: #eeeeee;
+    }
+
+    ul#btab li a.off {
+        border-bottom: 1px solid #000; /* set border COLOR as desired */
+        background-color: #fff;
+    }
+
+    ul#btab a:hover { /* settings for hover effect */
+    color: red; /* set desired hover color */
+    }
