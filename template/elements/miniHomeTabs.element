@@ -1,5 +1,6 @@
 <!--mini home tabs start-->
     <div id="tabs" class="navtabs">
+      <span id="navRight">
         <ul>
           <li id="minitab_Home">
             <a href="${HOMEPAGES_URL}"
@@ -47,6 +48,7 @@
                 <span id="tumors">Tumors</span></a>
           </li>
         </ul>
+      </span>
     </div>
 
 <!-- mini home tabs end -->

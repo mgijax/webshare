@@ -76,7 +76,7 @@ a.logoFooterAnchor{
     background-color:#FFFFDD;
     border: 1px #7D95B9 solid;
     padding:2px 1px;
-    height:17px;
+    height:1.25em;
 }
 
 .searchToolButton {
@@ -253,9 +253,13 @@ a.logoFooterAnchor{
     bottom: 0px;
     right: 0px;
     clear: right;
-    width: 60em;
+    width: 67em;
 }
 
+.navtabs span{
+    padding 0 3em 0 0;
+    float: right;
+}
 .navtabs ul{
     font-size: 13px;
     list-style: none;
