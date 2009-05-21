@@ -96,6 +96,8 @@ td.hilite {background-color:#FDFDDD}
 .quickSearch {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:middle;color:#000000;background-color:#D0E0F0}
 .small {font-size:10px;font-weight:normal;}
 .spaced {line-height:135%}
+.rightBorderThinGray { border-right: 1px solid rgb(168, 168, 168); }
+.leftBorderThinGray { border-left: 1px solid rgb(168, 168, 168); } 
 
 /*  ToolBar / Main Data Seperator */
 td.separator {background-color:#888888;width:1px} 
