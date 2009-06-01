@@ -203,6 +203,32 @@ function setImage (i, image)
     return true;
 }
 
+/* --- specific to mutation description on allele detail page ------------- */
+
+// toggle the table of sequence tags in the Mutation Description section of
+// the allele detail page
+function toggleSequenceTags ()
+{
+    toggle ("downArrowSeqTag");
+    toggle ("rightArrowSeqTag");
+    toggle ("seqTagTable");
+    if (mgihomeUrl != null) {
+        hitUrl (mgihomeUrl + "other/monitor.html", "toggleSequenceTags=1");
+    }
+}
+
+// toggle the Gbrowse thumbnail section in the Mutation Description section of
+// the allele detail page
+function toggleGenomeContext ()
+{
+    toggle ("downArrowGenome");
+    toggle ("rightArrowGenome");
+    toggle ("genomeContextTable");
+    if (mgihomeUrl != null) {
+        hitUrl (mgihomeUrl + "other/monitor.html", "toggleGenomeContext=1");
+    }
+}
+
 /* --- specific to phenotype summary grid --------------------------------- */
 
 // toggles a phenotype header row open/closed, including showing or hiding the
