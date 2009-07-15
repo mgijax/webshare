@@ -147,7 +147,7 @@ GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
 GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
 
-IMSRURL                 http://www.findmice.org/
+IMSRURL                 http://lindon.informatics.jax.org:18080/imsr/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
