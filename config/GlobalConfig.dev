@@ -151,8 +151,6 @@ IMSRURL                 http://lindon.informatics.jax.org:18080/imsr/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
-YUI_URL                 http://yui.yahooapis.com/
-
 ###--
 ###-- Other Paths
 ###--
