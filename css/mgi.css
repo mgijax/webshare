@@ -225,14 +225,11 @@ a.MP:visited {color:#660099;text-decoration:none}
 
 a.MP:hover {color:#CC0000;text-decoration:none; background-color:#c7e3fe}
 
-a.genoLink:link {color:#0000FF;text-decoration:none;
-	border-bottom:#0000FF dotted 1px;}
-a.genoLink:active {color:#0000FF;text-decoration:none;
-	border-bottom:#0000FF dotted 1px;}
-a.genoLink:visited {color:#6600FF;text-decoration:none;
-	border-bottom:#6600FF dotted 1px;}
+a.genoLink:link {color:#0000FF;text-decoration:none}
+a.genoLink:active {color:#0000FF;text-decoration:none}
+a.genoLink:visited {color:#6600FF;text-decoration:none}
 a.genoLink:hover {color:#CC0000;text-decoration:none;
-	background-color:#c7e3fe; border-bottom:#CC0000 dotted 1px;}
+	background-color:#c7e3fe}
 
 .rightBorder { border-right-color: #D0E0F0;
 	border-right-style:solid;
