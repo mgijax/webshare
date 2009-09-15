@@ -98,6 +98,7 @@ td.hilite {background-color:#FDFDDD}
 .spaced {line-height:135%}
 .rightBorderThinGray { border-right: 1px solid rgb(168, 168, 168); }
 .leftBorderThinGray { border-left: 1px solid rgb(168, 168, 168); } 
+.italic {font-style:italic;}
 
 /*  ToolBar / Main Data Seperator */
 td.separator {background-color:#888888;width:1px} 
@@ -211,9 +212,9 @@ dl.linkedList { margin-left: 2em; }
     font-style:italic}
 
 .tiny { font-weight:normal;
-	font-size:x-small; 
-	color:#333333; 
-	line-height:8px; }
+    font-size:x-small; 
+    color:#333333; 
+    line-height:8px; }
 
 .smaller { font-size:9px; font-weight:normal; }
 
@@ -226,49 +227,49 @@ a.MP:visited {color:#660099;text-decoration:none}
 a.MP:hover {color:#CC0000;text-decoration:none; background-color:#c7e3fe}
 
 a.genoLink:link {color:#0000FF;text-decoration:none;
-	border-bottom:#0000FF dotted 1px;}
+    border-bottom:#0000FF dotted 1px;}
 a.genoLink:active {color:#0000FF;text-decoration:none;
-	border-bottom:#0000FF dotted 1px;}
+    border-bottom:#0000FF dotted 1px;}
 a.genoLink:visited {color:#6600FF;text-decoration:none;
-	border-bottom:#6600FF dotted 1px;}
+    border-bottom:#6600FF dotted 1px;}
 a.genoLink:hover {color:#CC0000;text-decoration:none;
-	background-color:#c7e3fe; border-bottom:#CC0000 dotted 1px;}
+    background-color:#c7e3fe; border-bottom:#CC0000 dotted 1px;}
 
 .rightBorder { border-right-color: #D0E0F0;
-	border-right-style:solid;
-	border-right-width:1px; }
+    border-right-style:solid;
+    border-right-width:1px; }
 
 .topBorder { border-top-color: #D0E0F0;
-	border-top-style:solid;
-	border-top-width:1px; }
+    border-top-style:solid;
+    border-top-width:1px; }
 
 .bottomBorder { border-bottom-color: #D0E0F0;
-	border-bottom-style:solid;
-	border-bottom-width:1px; }
+    border-bottom-style:solid;
+    border-bottom-width:1px; }
 
 .leftBorder { border-left-color :#CCCCCC; 
-	border-left-style:solid;
-	border-left-width:1px; }
+    border-left-style:solid;
+    border-left-width:1px; }
 
 .topBorderDark { border-top-color: gray;
-	border-top-style:solid;
-	border-top-width:1px; }
+    border-top-style:solid;
+    border-top-width:1px; }
 
 .bottomBorderDark { border-bottom-color: gray;
-	border-bottom-style:solid;
-	border-bottom-width:0.5pt; }
+    border-bottom-style:solid;
+    border-bottom-width:0.5pt; }
 
 td.noWrap { white-space:nowrap; }
 
 td.noPad { padding-top:0; padding-bottom:2px;
-	padding-left:2px; padding-right:2px; }
+    padding-left:2px; padding-right:2px; }
 
 .captions { display:inline; float:right; width:auto; clear:none; }
 
 .nomen { display:inline; float:left; clear:none; }
 
 .cap { display:block; position:relative; right:5px; text-align:right;
-	clear:both; white-space:nowrap; }
+    clear:both; white-space:nowrap; }
 
 .primeImg { display:inline; float:right; width:auto; clear:none; }
 
