@@ -22,6 +22,12 @@
                 onmouseover="return overlib('Gene Expression Database \(GXD\)',ANCHOR, 'exp', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="exp">Expression</span></a>
           </li>
+          <li id="recombinase.shtml">
+            <a href="${HOMEPAGES_URL}recombinase.shtml"
+                onmouseover="return overlib('Recombinase Tissue Specificity',ANCHOR, 'cre', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+                <span id="cre">Recombinases</span></a>
+          </li>
+          
           <li id="function.shtml">
             <a href="${HOMEPAGES_URL}function.shtml"
                 onmouseover="return overlib('Functional Annotations \(GO\)',ANCHOR, 'func', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">

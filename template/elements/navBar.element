@@ -107,6 +107,10 @@
 									</div>
 								</div>
 							</li>
+							
+							<li class="yuimenuitem"><a id="creHelp" class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=creSpecificity"
+                                onMouseOver="return overlib('Get recombinase (cre) specificity data for knock-in and transgene alleles.',ANCHOR, 'creHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+                                Recombinase (cre)</a></li>
 
 							<!-- GO Functional Annotations Submenu -->
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">Function</a>
