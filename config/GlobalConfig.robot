@@ -76,7 +76,7 @@ YUI_CSS_URL         ${YUI_URL}combo?${YUI_VERSION}/build/assets/skins/sam/skin.c
 # patch and name of the generated js files
 TEMPLATE_JS_FILE    mgi_template${MGI_VERSION}.js
 MGIHOME_JS_FILE     homepages_template${MGI_VERSION}.js
-YUI_JS_URL          ${YUI_URL}combo?${YUI_VERSION}/build/utilities/utilities.js&${YUI_VERSION}/build/container/container-min.js&${YUI_VERSION}/build/datasource/datasource-min.js&${YUI_VERSION}/build/datatable/datatable-min.js&${YUI_VERSION}/build/menu/menu-min.js&${YUI_VERSION}/build/selector/selector-beta-min.js&${YUI_VERSION}/build/tabview/tabview-min.js
+YUI_JS_URL          ${YUI_URL}combo?${YUI_VERSION}/build/utilities/utilities.js&${YUI_VERSION}/build/container/container-min.js&${YUI_VERSION}/build/datasource/datasource-min.js&${YUI_VERSION}/build/datatable/datatable-min.js&${YUI_VERSION}/build/menu/menu-min.js&${YUI_VERSION}/build/selector/selector-beta-min.js&${YUI_VERSION}/build/tabview/tabview-min.js&${YUI_VERSION}/build/resize/resize-min.js
 
 ###--
 ###-- MGI BASE URLs -be aware some server aliases will include the '/www/'
