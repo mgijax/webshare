@@ -152,3 +152,25 @@ function ajaxObject(url, callbackFunction) {
 
 /*--------------------------------------------------------------------------*/
 
+function changeVisibility(id) {
+
+    var myID = document.getElementById(id);
+
+    if (myID.style.display != "none"){
+        myID.style.display = "none";
+    } else {
+        myID.style.display = "block";
+    }
+}
+
+function changeInline(id) {
+
+    var myID = document.getElementById(id);
+
+    if (myID.style.display == "inline"){
+        myID.style.display = "none";
+    } else {
+        myID.style.display = "inline";
+    }
+}
+

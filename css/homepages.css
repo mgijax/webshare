@@ -261,6 +261,33 @@
  } 
  
  .smaller {
-  font-family:Verdana, Arial, Helvetica, sans-serif;
-  font-size:smaller;font-size:85%; font-size:10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:smaller;font-size:85%; font-size:10px;
  }
+ 
+.creSearch {
+	background-color:#FFFFFF; 
+	border:#DFEFFF 2px solid; 
+	padding:2px;
+}
+
+.creInputs {
+	position:relative;
+	float:left;
+    clear:none;
+	margin-bottom:7px;
+	width:auto;
+	padding-top:7px;
+}
+
+.hrblue {
+    width:90%;
+    color:#DFEFFF;
+    background-color:#DFEFFF;
+    height:2px;
+    margin-top:12px;
+    margin-bottom:0px;
+    border:none;
+}
+
+ 
