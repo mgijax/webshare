@@ -318,6 +318,7 @@
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#strain">Strains &amp; Polymorphisms</a> </li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#expression">Gene Expression</a> </li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#pheno">Phenotypic Data</a> </li>
+                            <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#cre">Recombinase (cre) Specificity</a> </li>							
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#nomen">Nomenclature</a> </li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#refs">References</a> </li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#clonecoll">Clone Collections</a> </li>
