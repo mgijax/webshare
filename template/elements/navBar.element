@@ -6,49 +6,49 @@
 			<!-- Searches Start -->
 			<li class="yuimenubaritem first-of-type"><a class="yuimenubaritemlabel" href="${MENUS_URL}allsearch.shtml">Search</a>
 
-				<div id="search" class="yuimenu">
+				<div id="navBarSearch" class="yuimenu">
 					<div class="bd">
 						<ul class="first-of-type">
 							<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${MENUS_URL}allsearch.shtml" title="">All Search Tools</a></li>
 
 							<!-- Marker Submenu -->
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">Genes</a>
-								<div id="genes" class="yuimenu">
+								<div id="navBarGenes" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=markerQF"
-												onMouseOver="return overlib('Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.',ANCHOR, 'genes', ANCHORALIGN, 'UR', 'UL');" onMouseOut="nd();">
+												onMouseOver="return overlib('Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.',ANCHOR, 'navBarGenes', ANCHORALIGN, 'UR', 'UL');" onMouseOut="nd();">
 												Genes &amp; Markers Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=batchQF"
-												onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'genes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'navBarGenes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Batch Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="#">Maps &amp; Mapping Data</a>
-												<div id="mapping" class="yuimenu">
+												<div id="navBarMapping" class="yuimenu">
 													<div class="bd">
 														<ul class="first-of-type">
 															<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${GBROWSE_URL}"
-																onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'mapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+																onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarMapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 																Mouse Genome Browser</a></li>
 															<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/linkmap_form.shtml"
-																onMouseOver="return overlib('Build a comparative map using the Linkage Map tool.',ANCHOR, 'mapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+																onMouseOver="return overlib('Build a comparative map using the Linkage Map tool.',ANCHOR, 'navBarMapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 																Mouse Linkage Map with Orthologs</a></li>
 															<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/cytomap_form.shtml"
-																onMouseOver="return overlib('Build a graphical Cytogenic Map with selected parameters.',ANCHOR, 'mapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+																onMouseOver="return overlib('Build a graphical Cytogenic Map with selected parameters.',ANCHOR, 'navBarMapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 																Cytogenetic Map</a></li>
 															<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}reports/mitmap/"
-																onMouseOver="return overlib('Build a graphical Physical Map with selected parameters.',ANCHOR, 'mapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+																onMouseOver="return overlib('Build a graphical Physical Map with selected parameters.',ANCHOR, 'navBarMapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 																Physical Maps</a></li>
 															<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/mapdata_form.shtml"
-																onMouseOver="return overlib('Search by experiment type, marker symbol, chromosome, or reference.',ANCHOR, 'mapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+																onMouseOver="return overlib('Search by experiment type, marker symbol, chromosome, or reference.',ANCHOR, 'navBarMapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 																Mapping Data Query</a></li>
 															<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/riset_form.shtml"
-																onMouseOver="return overlib('Search MGI mapping data for recombinant inbred strain distribution patterns.',ANCHOR, 'mapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+																onMouseOver="return overlib('Search MGI mapping data for recombinant inbred strain distribution patterns.',ANCHOR, 'navBarMapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 																RI Strain Distribution Patterns</a></li>
 															<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/rcset_form.shtml"
-																onMouseOver="return overlib('Search MGI mapping data for recombinant congenic strain distribution patterns.',ANCHOR, 'mapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+																onMouseOver="return overlib('Search MGI mapping data for recombinant congenic strain distribution patterns.',ANCHOR, 'navBarMapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 																RC Strain Distribution Patterns</a></li>
 															<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/crossdata_form.shtml"
-																onMouseOver="return overlib('Search by Mapping Panel and chromosome.',ANCHOR, 'mapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+																onMouseOver="return overlib('Search by Mapping Panel and chromosome.',ANCHOR, 'navBarMapping', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 																DNA Mapping Panel Data Sets</a></li>
 														</ul>
 													</div>
@@ -62,17 +62,17 @@
 
 							<!-- Pheno Submenu -->
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">Phenotypes</a>
-								<div id="phenotypes" class="yuimenu">
+								<div id="navBarPhenotypes" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/allele_form.shtml"
-												onMouseOver="return overlib('Search for mutations or QTL based on phenotype, human disease, mutation type, gene, or genome location.',ANCHOR, 'phenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for mutations or QTL based on phenotype, human disease, mutation type, gene, or genome location.',ANCHOR, 'navBarPhenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Phenotypes, Alleles &amp; Diseases Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/MP_form.shtml"
-												onMouseOver="return overlib('Search for a phenotype term to find relevant mutant genotypes.',ANCHOR, 'phenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for a phenotype term to find relevant mutant genotypes.',ANCHOR, 'navBarPhenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Mammalian Phenotype (MP) Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=omimVocab&subset=A"
-												onMouseOver="return overlib('Search for a human disease or condition term to find mouse models.',ANCHOR, 'phenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for a human disease or condition term to find mouse models.',ANCHOR, 'navBarPhenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Human Disease (OMIM) Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}phenotypes.shtml">More</a></li>
 										</ul>
@@ -81,26 +81,26 @@
 							</li>
 
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">Expression</a>
-								<div id="expression" class="yuimenu">
+								<div id="navBarExpression" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/gxdindex_form.shtml"
-												onMouseOver="return overlib('Search for references on gene expression during development.',ANCHOR, 'expression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for references on gene expression during development.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Gene Expression Literature Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=expressionQF"
-												onMouseOver="return overlib('Search for detailed gene expression assay results.',ANCHOR, 'expression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for detailed gene expression assay results.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Gene Expression Data Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=expressionQFexpanded"
-												onMouseOver="return overlib('Search for  genes expressed in some anatomical structures and/or developmental stages but not in others.',ANCHOR, 'expression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for  genes expressed in some anatomical structures and/or developmental stages but not in others.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Gene Expression Data Expanded Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/anatdict_form.shtml"
-												onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'expression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Mouse Anatomical Dictionary Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://genex.hgu.mrc.ac.uk/Resources/GXDQuery1/SectionBrowser.html"
-												onMouseOver="return overlib('Search the Edinburgh Mouse Atlas for anatomical terms and query for associated expression data.',ANCHOR, 'expression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search the Edinburgh Mouse Atlas for anatomical terms and query for associated expression data.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												EMAGE Anatomical Section Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=cDNAQF"
-												onMouseOver="return overlib('Search for expression information based on tissue or cell-line origin of cDNAs.',ANCHOR, 'expression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for expression information based on tissue or cell-line origin of cDNAs.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												cDNA Clone Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}expression.shtml">More</a></li>
 										</ul>
@@ -108,23 +108,23 @@
 								</div>
 							</li>
 							
-							<li class="yuimenuitem"><a id="creHelp" class="yuimenuitemlabel" href="${HOMEPAGES_URL}recombinase.shtml"
-                                onMouseOver="return overlib('Get recombinase (cre) specificity data for knock-in and transgene alleles.',ANCHOR, 'creHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+							<li class="yuimenuitem"><a id="navBarCre" class="yuimenuitemlabel" href="${HOMEPAGES_URL}recombinase.shtml"
+                                onMouseOver="return overlib('Get recombinase (cre) specificity data for knock-in and transgene alleles.',ANCHOR, 'navBarCre', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
                                 Recombinase (cre)</a></li>
 
 							<!-- GO Functional Annotations Submenu -->
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">Function</a>
-								<div id="function" class="yuimenu">
+								<div id="navBarFunction" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/GO_form.shtml"
-												onMouseOver="return overlib('Browse the Gene Ontology and mouse annotations in MGI.',ANCHOR, 'function', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Browse the Gene Ontology and mouse annotations in MGI.',ANCHOR, 'navBarFunction', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												GO Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=markerQF"
-												onMouseOver="return overlib('Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.',ANCHOR, 'function', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for genes and genome features by symbol, name, location, gene ontology classification or phenotype.',ANCHOR, 'navBarFunction', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Genes &amp; Markers Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=batchQF"
-												onMouseOver="return overlib('Obtain sets of MGI IDs for use in GO tools.',ANCHOR, 'function', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Obtain sets of MGI IDs for use in GO tools.',ANCHOR, 'navBarFunction', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Batch Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}function.shtml">More</a></li>
 										</ul>
@@ -132,29 +132,29 @@
 								</div>
 							</li>
 
-							<li class="yuimenuitem"><a id="biochemHelp" class="yuimenuitemlabel" href="${PATHWAYS_URL}"
-								onMouseOver="return overlib('View mouse genomic data in the context of metabolic cellular  processes such as biosynthesis, degradation, energy production, and detoxification.',ANCHOR, 'biochemHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+							<li class="yuimenuitem"><a id="navBarBiochem" class="yuimenuitemlabel" href="${PATHWAYS_URL}"
+								onMouseOver="return overlib('View mouse genomic data in the context of metabolic cellular  processes such as biosynthesis, degradation, energy production, and detoxification.',ANCHOR, 'navBarBiochem', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
 								Pathways</a></li>
 								
 							<!-- Strains Submenu -->
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">Strains / SNPs</a>
-								<div id="strains" class="yuimenu">
+								<div id="navBarStrains" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=snpQF"
-												onMouseOver="return overlib('Search for SNPs by strain(s), SNP attributes, genomic position, or associated genes.',ANCHOR, 'strains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for SNPs by strain(s), SNP attributes, genomic position, or associated genes.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												SNP Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/polymorphism_form.shtml"
-												onMouseOver="return overlib('Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position.',ANCHOR, 'strains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for RFLP or PCR based polymorphisms by strain, locus symbol, or map position.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												RFLP/PCR Polymorphism Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}reports/snpSummary.shtml"
-												onMouseOver="return overlib('View report of SNP data in MGI organized by chromosome, strain, and submitter.',ANCHOR, 'strains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('View report of SNP data in MGI organized by chromosome, strain, and submitter.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Summary of SNP Data in MGI</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}external/festing/search_form.cgi"
-												onMouseOver="return overlib('Search the Listing of Inbred Strains of Mice and Rats by M. Festing.',ANCHOR, 'strains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search the Listing of Inbred Strains of Mice and Rats by M. Festing.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Inbred Strain Characteristics</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGIHOME_URL}genealogy/"
-												onMouseOver="return overlib('View the genealogy chart of inbred strains.',ANCHOR, 'strains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('View the genealogy chart of inbred strains.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Genealogy Chart of Inbred Strains</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}strains_SNPs.shtml">More</a></li>
 										</ul>
@@ -164,23 +164,23 @@
 
 							<!-- Orthology Submenu -->
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">Orthology</a>
-								<div id="orthology" class="yuimenu">
+								<div id="navBarOrthology" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/homology_form.shtml"
-												onMouseOver="return overlib('Search for orthologs between two species using marker symbol or name, accession ID, chromosomal location, author, or reference ID.',ANCHOR, 'orthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for orthologs between two species using marker symbol or name, accession ID, chromosomal location, author, or reference ID.',ANCHOR, 'navBarOrthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Orthology Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=pirsfVocab&subset=A"
-												onMouseOver="return overlib('Search for gene family data by the Protein Information Resource SuperFamily classification names.',ANCHOR, 'orthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for gene family data by the Protein Information Resource SuperFamily classification names.',ANCHOR, 'navBarOrthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Protein Superfamily (PIRSF) Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/linkmap_form.shtml"
-												onMouseOver="return overlib('Build a comparative map using the Linkage Map tool.',ANCHOR, 'orthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Build a comparative map using the Linkage Map tool.',ANCHOR, 'navBarOrthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Mouse Linkage Map with Orthologs</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}reports/homologymap/mouse_human.shtml"
-												onMouseOver="return overlib('View the Mouse-Human comparative map.',ANCHOR, 'orthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('View the Mouse-Human comparative map.',ANCHOR, 'navBarOrthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Mouse-Human Orthology Map</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}reports/homologymap/mouse_rat.shtml"
-												onMouseOver="return overlib('View the Mouse-Rat comparative map.',ANCHOR, 'orthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('View the Mouse-Rat comparative map.',ANCHOR, 'navBarOrthology', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Mouse-Rat Orthology Map</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}orthology.shtml">More</a></li>
 										</ul>
@@ -189,32 +189,32 @@
 							</li>
 
 							<!-- MTB -->
-							<li class="yuimenuitem"><a id="MTBHelp" class="yuimenuitemlabel" href="http://tumor.informatics.jax.org/mtbwi/index.do"
-								onMouseOver="return overlib('MTB provides information on the frequency, pathology, and genetics of spontaneous and induced tumors in mice.',ANCHOR, 'MTBHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+							<li class="yuimenuitem"><a id="navBarMTB" class="yuimenuitemlabel" href="http://tumor.informatics.jax.org/mtbwi/index.do"
+								onMouseOver="return overlib('MTB provides information on the frequency, pathology, and genetics of spontaneous and induced tumors in mice.',ANCHOR, 'navBarMTB', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
 								Tumors</a></li>
 
 							<!-- Sequence Submenu -->
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">Sequences</a>
-								<div id="sequences" class="yuimenu">
+								<div id="navBarSequences" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/sequence_form.shtml"
-												onMouseOver="return overlib('Search for mouse sequences by sequence attributes, sources, and/or properties of associated genes and markers in MGI.',ANCHOR, 'sequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for mouse sequences by sequence attributes, sources, and/or properties of associated genes and markers in MGI.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Sequence Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/accession_form.shtml"
-												onMouseOver="return overlib('Use sequence IDs to find associated sequences, genes, markers, probes and clones.',ANCHOR, 'sequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Use sequence IDs to find associated sequences, genes, markers, probes and clones.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Accession IDs Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MOUSEBLAST_URL}"
-												onMouseOver="return overlib('Search for sequence similarity for mouse, human, or rat.',ANCHOR, 'sequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for sequence similarity for mouse, human, or rat.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												MouseBLAST</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=pirsfVocab&subset=A"
-												onMouseOver="return overlib('Search for gene family data by the Protein Information Resource SuperFamily classification names.',ANCHOR, 'sequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for gene family data by the Protein Information Resource SuperFamily classification names.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Protein Superfamily (PIRSF) Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${GBROWSE_URL}"
-												onMouseOver="return overlib('Download data for a batch of gene IDs or symbols.',ANCHOR, 'sequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Download data for a batch of gene IDs or symbols.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Mouse Genome Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=batchQF"
-												onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'sequences', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+												onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Batch Query</a></li>
 										</ul>
 									</div>
@@ -223,14 +223,14 @@
 
 							<!-- Probes & Clones -->
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">Probes &amp; Clones</a>
-								<div id="probes" class="yuimenu">
+								<div id="navBarProbes" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=probeQF"
-												onMouseOver="return overlib('Search by probe/clone name, sequence type, vector type, marker symbol, origin, or reference.',ANCHOR, 'probes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search by probe/clone name, sequence type, vector type, marker symbol, origin, or reference.',ANCHOR, 'navBarProbes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Molecular Probes and Clones Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=cDNAQF"
-												onMouseOver="return overlib('Search for expression information based on tissue or cell-line origin of cDNAs.',ANCHOR, 'probes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for expression information based on tissue or cell-line origin of cDNAs.',ANCHOR, 'navBarProbes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												cDNA Clones Query</a></li>
 										</ul>
 									</div>
@@ -239,14 +239,14 @@
 
 							<!-- References Submenu -->
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">References</a>
-								<div id="references" class="yuimenu">
+								<div id="navBarReferences" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/reference_form.shtml"
-												onMouseOver="return overlib('Search for references (with abstracts) by title, author, journal, year, or abstract.',ANCHOR, 'references', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for references (with abstracts) by title, author, journal, year, or abstract.',ANCHOR, 'navBarReferences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Reference Query</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/gxdindex_form.shtml"
-												onMouseOver="return overlib('Search for references on gene expression during development.',ANCHOR, 'references', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for references on gene expression during development.',ANCHOR, 'navBarReferences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Gene Expression Literature Query</a></li>
 										</ul>
 									</div>
@@ -255,26 +255,26 @@
 
 							<!-- Vocabularies Submenu -->
 							<li class="yuimenuitem"><a class="yuimenuitemlabel">Vocabularies</a>
-								<div id="vocabularies" class="yuimenu">
+								<div id="navBarVocabularies" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/GO_form.shtml"
-												onMouseOver="return overlib('Browse the Gene Ontology and mouse annotations in MGI.',ANCHOR, 'vocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Browse the Gene Ontology and mouse annotations in MGI.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												GO Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=omimVocab&subset=A"
-												onMouseOver="return overlib('Search for a human disease or condition term to find mouse models.',ANCHOR, 'vocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for a human disease or condition term to find mouse models.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Human Disease (OMIM) Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/MP_form.shtml"
-												onMouseOver="return overlib('Search for a phenotype term to find relevant mutant genotypes.',ANCHOR, 'vocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for a phenotype term to find relevant mutant genotypes.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Mammalian Phenotype (MP) Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=pirsfVocab&subset=A"
-												onMouseOver="return overlib('Search for gene family data by the Protein Information Resource SuperFamily classification names.',ANCHOR, 'vocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search for gene family data by the Protein Information Resource SuperFamily classification names.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Protein Superfamily (PIRSF) Browser</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/anatdict_form.shtml"
-												onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'vocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Mouse Anatomical Dictionary</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/AMA_form.shtml"
-												onMouseOver="return overlib('An extensive ontology of anatomical structures for the postnatal mouse.',ANCHOR, 'vocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('An extensive ontology of anatomical structures for the postnatal mouse.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Adult Mouse Anatomy Browser</a></li>
 										</ul>
 									</div>
@@ -282,20 +282,20 @@
 							</li>
 
 							<!-- Non-Drop-Downs -->
-							<li class="yuimenuitem"><a id="AccHelp" class="yuimenuitemlabel" href="${WI_URL}searches/accession_form.shtml"
-								onMouseOver="return overlib('Use MGI IDs or external IDs referenced in MGI to find associated data.',ANCHOR, 'AccHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+							<li class="yuimenuitem"><a id="navBarAcc" class="yuimenuitemlabel" href="${WI_URL}searches/accession_form.shtml"
+								onMouseOver="return overlib('Use MGI IDs or external IDs referenced in MGI to find associated data.',ANCHOR, 'navBarAcc', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
 								Accession IDs Query</a></li>
 
-							<li class="yuimenuitem"><a id="BatchHelp" class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=batchQF"
-								onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'BatchHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+							<li class="yuimenuitem"><a id="navBarBatch" class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=batchQF"
+								onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'navBarBatch', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
 								Batch Query</a></li>
 
-							<li class="yuimenuitem"><a id="BlastHelp" class="yuimenuitemlabel" href="${MOUSEBLAST_URL}"
-								onMouseOver="return overlib('Search for sequence similarity for mouse, human, or rat.',ANCHOR, 'BlastHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+							<li class="yuimenuitem"><a id="navBarBlast" class="yuimenuitemlabel" href="${MOUSEBLAST_URL}"
+								onMouseOver="return overlib('Search for sequence similarity for mouse, human, or rat.',ANCHOR, 'navBarBlast', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
 								MouseBLAST</a></li>
 
-							<li class="yuimenuitem"><a id="GBrowseHelp" class="yuimenuitemlabel" href="${GBROWSE_URL}"
-								onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'GBrowseHelp', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+							<li class="yuimenuitem"><a id="navBarGBrowse" class="yuimenuitemlabel" href="${GBROWSE_URL}"
+								onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarGBrowse', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
 								Mouse Genome Browser</a></li>
 						</ul>
 					</div>
@@ -306,7 +306,7 @@
 
 			<!-- Download Dropmenu Start -->
 			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${FTP_BASE_URL}reports/index.html">Download</a>
-				<div id="download" class="yuimenu">
+				<div id="navBarDownload" class="yuimenu">
 					<div class="bd">
 						<ul class="first-of-type">
 							<li class="yuimenuitem first-of-type"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html">All MGI Reports</a> </li>
@@ -331,13 +331,13 @@
 			
 			<!-- Resources Dropmenu Start -->
 			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${MENUS_URL}resources.shtml">More Resources</a>
-				<div id="resources" class="yuimenu">
+				<div id="navBarResources" class="yuimenu">
 					<div class="bd">
 						<ul class="first-of-type">
 							<li class="yuimenuitem first-of-type"> <a class="yuimenuitemlabel" href="${MENUS_URL}resources.shtml">More Resources Index</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}lists/lists.shtml">Research Community E-mail Lists</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel">Online Books</a>
-								<div id="books" class="yuimenu">
+								<div id="navBarBooks" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${GREENBOOK_URL}">Biology of the Laboratory Mouse 
@@ -361,7 +361,7 @@
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home">Mouse Phenome Database (MPD)</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${WI_URL}external/ko/"">Deltagen and Lexicon Knockout Mice</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel">International Knockout Mouse Consortium (IKMC)</a>
-								<div id="ikmc" class="yuimenu">
+								<div id="navBarIKMC" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="http://www.knockoutmouse.org/">Knockout Mouse Project (KOMP, USA)</a></li>
@@ -375,7 +375,7 @@
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiatives</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}datasets/index.html"">Contributed Data Sets</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel">Community Links</a>
-								<div id="links" class="yuimenu">
+								<div id="navBarLinks" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/mouse_facts4.shtml">Mouse Resources & Model Organism Links</a></li>
@@ -386,7 +386,7 @@
 								</div>
 							</li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="#">Software Developer Tools</a>
-								<div id="software" class="yuimenu">
+								<div id="navBarSoftware" class="yuimenu">
 									<div class="bd">
 										<ul class="first-of-type">
 											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/link_instructions.shtml">Creating Web Links to MGI</a></li>
