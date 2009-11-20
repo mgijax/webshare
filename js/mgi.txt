@@ -174,3 +174,17 @@ function changeInline(id) {
     }
 }
 
+function formCap(){
+    var c;
+    if ( document.getElementById("${CAPTCHA_ELEMENT}") ){
+        c = document.getElementById("${CAPTCHA_ELEMENT}");
+        if ( isNaN(c.value) == true ) {
+            c.value = 0;
+        } else {
+            c.value = parseInt(c.value) + 1;
+        }
+        
+    }
+    setTimeout("formCap()", 1000);
+}
+formCap();

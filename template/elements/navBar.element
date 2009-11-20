@@ -294,6 +294,10 @@
 								onMouseOver="return overlib('Search for sequence similarity for mouse, human, or rat.',ANCHOR, 'navBarBlast', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
 								MouseBLAST</a></li>
 
+                            <li class="yuimenuitem"><a id="navBarMart" class="yuimenuitemlabel" href="${BIOMART_URL}"
+                                onMouseOver="return overlib('Access MGI\'s mouse genetic and genomic data using BioMart.',ANCHOR, 'navBarMart', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+                                <img src="${WEBSHARE_URL}images/new.gif" alt="new!" border="0"> MGI BioMart</a></li>
+                                
 							<li class="yuimenuitem"><a id="navBarGBrowse" class="yuimenuitemlabel" href="${GBROWSE_URL}"
 								onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarGBrowse', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
 								Mouse Genome Browser</a></li>
@@ -409,10 +413,10 @@
 			<!-- Direct Links  -->
 			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${MENUS_URL}submit.shtml">Submit Data</a></li>
 			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${IMSRURL}index.jsp" title="International Mouse Strain Resource (IMSR)">Find Mice (IMSR)</a></li>
+            <li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${MENUS_URL}tools.shtml" title="Analysis Tools"><img src="${WEBSHARE_URL}images/tools.gif" alt="Analysis Tools"> Analysis Tools</a></li>			
 			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${MGIHOME_URL}support/mgi_inbox.shtml" title="Contact user support">Contact&nbsp;Us</a></li>
 		</ul>
 	</div>
 </div>
-
 
 <!-- Menu Bar End -->
