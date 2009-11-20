@@ -109,3 +109,10 @@ div.yuimenu {
     border-right-style-ltr-source: physical;
     border-right-style-rtl-source: physical;
 }
+
+.yui-skin-sam .yuimenubaritemlabel img{
+	vertical-align: middle;
+	border:    0;
+    height: 18px;
+    width:  18px;
+}
