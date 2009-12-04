@@ -363,21 +363,11 @@
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://proto.informatics.jax.org/"> Prototype Tools</a> </li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}GXD/GEN/">Gene Expression Notebook (GEN)</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home">Mouse Phenome Database (MPD)</a></li>
-							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${WI_URL}external/ko/"">Deltagen and Lexicon Knockout Mice</a></li>
-							<li class="yuimenuitem"> <a class="yuimenuitemlabel">International Knockout Mouse Consortium (IKMC)</a>
-								<div id="navBarIKMC" class="yuimenu">
-									<div class="bd">
-										<ul class="first-of-type">
-											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="http://www.knockoutmouse.org/">Knockout Mouse Project (KOMP, USA)</a></li>
-											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://www.eucomm.org/">European Conditional Mouse Mutagenesis (EUCOMM, Europe)</a></li>
-											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://www.norcomm.org/">North American Conditional Mouse Mutagenesis (NorCOMM, Canada)</a></li>
-											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://www.tigm.org/">Texas Institute for Genomic Medicine (TIGM, USA)</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
+							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${WI_URL}external/ko/">Deltagen and Lexicon Knockout Mice</a></li>
+							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${KOMP_HOME}" 
+							    id="navBarKomp" onMouseOver="return overlib('Central web site for all IKMC projects: KOMP, EUCOMM, NorCOMM, and TIGM.',ANCHOR, 'navBarKomp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">International Knockout Mouse Consortium (IKMC)</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiatives</a></li>
-							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}datasets/index.html"">Contributed Data Sets</a></li>
+							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}datasets/index.html">Contributed Data Sets</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel">Community Links</a>
 								<div id="navBarLinks" class="yuimenu">
 									<div class="bd">
