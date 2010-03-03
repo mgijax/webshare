@@ -312,3 +312,38 @@ li.popUp { margin-left: 0px; padding-left: 0px; padding-right: 5px; }
     ul#btab a:hover { /* settings for hover effect */
     color: red; /* set desired hover color */
     }
+    .markerNoteSpan {
+    
+    }
+    
+    .markerNoteButton {
+	    font-size:10px;
+	    font-family:Verdana, Arial,Helvetica;
+	    text-decoration: none;
+	    text-align: center;
+	    color:#002255;
+	    display: block;
+	    width: 10em;
+	    font-weight:bolder;
+	    background-color:#feeedd;
+	    border: 1px #002255 solid;   
+	    padding:3px;
+	    -moz-outline-style: none;
+	    outline:0;
+    }
+    
+    .markerNoteButton:hover { 
+        color:#002255;
+        border-color: #c63 #930 #930 #c63;
+    }
+    
+    .bioMismatch td {
+        text-align: center;
+    }
+    
+    .bioMismatch .header {
+        font-weight:bold;
+        color:#002255;
+        background-color:#aaaaaa;
+    }
+    
