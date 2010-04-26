@@ -1,7 +1,7 @@
 <div class="notice">
     <div class="tour">
       <div class="bl"><div class="br"><div class="tl"><div class="tr">
-        <a href='javascript:openFaqWindow("GM_search.shtml")'">Tour our new Quick Search</a>
+        <a href='javascript:openFaqWindow("retire.shtml")'">Changes to MGI's website</a>
       </div></div></div></div>
     </div>
     <!--<span class="small red">Place notice text here and comment out the tour div above</span>-->
