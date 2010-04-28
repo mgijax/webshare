@@ -357,4 +357,28 @@ color: red; /* set desired hover color */
     color:#002255;
     background-color:#aaaaaa;
 }
+
+H1{display:inline; float:left; position:absolute; bottom:2px; font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:20px;color:#025; padding:0px; margin:0px;}
+H2{display:inline; float:left; clear:none; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:18px; vertical-align:bottom; color:#025; margin:0px auto; padding:0px inherit;  }
+H3{font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:16px; color:#025; margin:16px 6px 20px 3px; border-bottom:1px solid #025;}
+H4{display:inline; clear:right; font-size:15px; padding:-3px 3px 5px 0px; margin:2px 2px 2px 0px; color:#002255; font-variant:small-caps; font-weight:normal;} /*background-color:#EDF9FF; */
+
+div.Change_area {margin:10px 0px; width:97%; position:relative; clear:both;}/*overflow:auto; */
+div.Change_area a {text-decoration:none;}
+div.Change_area img {margin:2px; padding:0px; border:1px solid #AAAAAA; float:right;}
+div.Change_area hr {width:99%; color:#D0E0F0; height:2px; border:none;}
+
+div.ChangePage {width:98%; padding:3px 3px 3px 3px; margin:0 0 0 14px; border-bottom:1px #D0E0F0 solid;}/*border:2px #D0E0F0 solid; */
+
+div.Existing {position:relative; width:99%; overflow:auto; line-height:1.4; line-height:140%;}
+div.Existing hr {width:99%; color:#BBBBBB; background-color:#DDDDDD; height:1px;}
+div.Existing div.Change_Image {position:relative; display:inline; float:right; clear:right; margin:0px 3px;}
+div.Existing div.Change_Image em {color:#54709B; font-style:italic; font-variant:small-caps;}
+
+div.Change_alternative {position:relative; width:auto; overflow:auto; line-height:1.4; line-height:140%; margin:0px 0px 0px 0px; padding:3px 3px 3px 26px;} 
+div.Change_alternative div.ChangeAlt_Image {display:inline; position:relative; float:right; clear:right; margin:0px 3px; padding:0px;}
+div.Change_alternative div.ChangeAlt_Image em {color:#54709B; font-style:italic; font-variant:small-caps;}
+div.Change_alternative div.ChangeAlt_Image img {border:1px solid #025;}
+div.Change_alternative div.text {position:relative; font-size:15px; width:98%; padding:-3px 3px 0px -3px; margin:2px 2px 2px -15px; color:#002255;}/* border-top:1px solid #D0E0F0;*/
+div.Change_alternative .AltText {color:#025;}
     
