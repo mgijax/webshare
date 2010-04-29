@@ -245,10 +245,6 @@
 							</li>
 
 							<!-- Non-Drop-Downs -->
-							<li class="yuimenuitem"><a id="navBarAcc" class="yuimenuitemlabel" href="${WI_URL}searches/accession_form.shtml"
-								onMouseOver="return overlib('Use MGI IDs or external IDs referenced in MGI to find associated data.',ANCHOR, 'navBarAcc', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
-								Accession IDs Query</a></li>
-
 							<li class="yuimenuitem"><a id="navBarBatch" class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=batchQF"
 								onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'navBarBatch', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
 								Batch Query</a></li>
@@ -289,6 +285,7 @@
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#nomen">Nomenclature</a> </li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#refs">References</a> </li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#clonecoll">Clone Collections</a> </li>
+							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#dnamap">DNA Mapping Panels</a> </li>
 						</ul>
 					</div>
 				</div>
