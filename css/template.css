@@ -181,8 +181,11 @@ a.logoFooterAnchor{
     top:0;
     left:0;
     width: 100%;
+    height:auto;
     border:thin solid #002255;
     margin-bottom: 5px;
+    overflow:auto; 
+    padding:0px;
 }
 
 .faqHeaderText {
@@ -192,6 +195,8 @@ a.logoFooterAnchor{
     vertical-align: bottom;
     color:#002255;
 }
+
+#faqPageHeader{overflow:auto; width:100%; height:auto; padding:0px;}
 
 /*************************************************************************
 *  Notices, if displayed

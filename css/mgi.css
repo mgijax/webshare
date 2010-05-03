@@ -76,6 +76,17 @@ td.resultsHeaderSmall {font-size:9px;font-family:Arial,Helvetica;vertical-align:
 
 /* Miscellaneous */ 
 table.results {background-color:#777777}
+table.center {margin-left:auto; margin-right:auto;}
+
+/* STYLES FOR TABLE TO REPLACE DEPRECATED BORDER=, CELL-PADDING=, CELL-SPACING= */
+/* CSS STYLE 'BORDER-SPACING:' TO REPLACE CELL-SPACING= IS NOT SUPPORTED BY MOST WEB BROWSERS 
+*/
+table.b0p0s7 {border:none; border-collapse:collapse;}
+table.b0p0s7 td {border:none; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px;}
+table.b1p3s7 {border-collapse:collapse;}
+table.b1p3s7 th {border-bottom:2px solid #BFBFBF; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px; font-size:14px;}
+table.b1p3s7 td {border-bottom:1px solid #DFDFDF; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px; vertical-align:middle;}
+
 .buttonLabel {font-size:12px;font-family:Arial,Helvetica;text-align:center;color:#000001;font-weight:bold;}
 tr.buttons {vertical-align:middle;text-align:left;background-color:#ffffff}
 tr.pageInfo {vertical-align:middle;text-align:left;background-color:#ffffff}
@@ -279,71 +290,95 @@ ul.popUp { margin-left: 28px; padding-left: 0px; }
 li.popUp { margin-left: 0px; padding-left: 0px; padding-right: 5px; }
 .popUpText { font-size: 12px; font-weight: normal; }
 
-    ul#btab { /* general settings */
-        text-align: left; /* set to left, right or center */
-        margin: 1px 0 0 0; /* set margins as desired */
-        border-bottom: 1px solid #000; /* set border COLOR as desired */
-        list-style-type: none;
-        padding: 3px 10px 3px 10px; /* THIRD number must change with respect to padding-top (X) below */
-    }
+ul#btab { /* general settings */
+    text-align: left; /* set to left, right or center */
+    margin: 1px 0 0 0; /* set margins as desired */
+    border-bottom: 1px solid #000; /* set border COLOR as desired */
+    list-style-type: none;
+    padding: 3px 10px 3px 10px; /* THIRD number must change with respect to padding-top (X) below */
+}
 
-    ul#btab li { /* do not change */
-        display: inline;
-    }
+ul#btab li { /* do not change */
+    display: inline;
+}
 
 
-    ul#btab li a { /* settings for all tab links */
-        padding: 3px 4px; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
-        border: 1px solid #000; /* set border COLOR as desired; usually matches border color specified in #btab */
-        color: purple; /* set unselected tab link color as desired */
-        text-decoration: none;
-    }
+ul#btab li a { /* settings for all tab links */
+    padding: 3px 4px; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
+    border: 1px solid #000; /* set border COLOR as desired; usually matches border color specified in #btab */
+    color: purple; /* set unselected tab link color as desired */
+    text-decoration: none;
+}
 
-    ul#btab li a.on {
-        border-bottom: 1px solid #eeeeee; /* set border COLOR as desired */
-        background-color: #eeeeee;
-    }
+ul#btab li a.on {
+    border-bottom: 1px solid #eeeeee; /* set border COLOR as desired */
+    background-color: #eeeeee;
+}
 
-    ul#btab li a.off {
-        border-bottom: 1px solid #000; /* set border COLOR as desired */
-        background-color: #fff;
-    }
+ul#btab li a.off {
+    border-bottom: 1px solid #000; /* set border COLOR as desired */
+    background-color: #fff;
+}
 
-    ul#btab a:hover { /* settings for hover effect */
-    color: red; /* set desired hover color */
-    }
-    .markerNoteSpan {
-    
-    }
-    
-    .markerNoteButton {
-	    font-size:10px;
-	    font-family:Verdana, Arial,Helvetica;
-	    text-decoration: none;
-	    text-align: center;
-	    color:#002255;
-	    display: block;
-	    width: 13em; 
-	    font-weight:bolder;
-	    background-color:#feeedd;
-	    border: 1px #002255 solid;   
-	    padding:3px;
-	    -moz-outline-style: none;
-	    outline:0;
-    }
-    
-    .markerNoteButton:hover { 
-        color:#002255;
-        border-color: #c63 #930 #930 #c63;
-    }
-    
-    .bioMismatch td {
-        text-align: center;
-    }
-    
-    .bioMismatch .header {
-        font-weight:bold;
-        color:#002255;
-        background-color:#aaaaaa;
-    }
+ul#btab a:hover { /* settings for hover effect */
+color: red; /* set desired hover color */
+}
+.markerNoteSpan {
+
+}
+
+.markerNoteButton {
+	 font-size:10px;
+	 font-family:Verdana, Arial,Helvetica;
+	 text-decoration: none;
+	 text-align: center;
+	 color:#002255;
+	 display: block;
+	 width: 13em; 
+	 font-weight:bolder;
+	 background-color:#feeedd;
+	 border: 1px #002255 solid;   
+	 padding:3px;
+	 -moz-outline-style: none;
+	 outline:0;
+}
+
+.markerNoteButton:hover { 
+    color:#002255;
+    border-color: #c63 #930 #930 #c63;
+}
+
+.bioMismatch td {
+    text-align: center;
+}
+
+.bioMismatch .header {
+    font-weight:bold;
+    color:#002255;
+    background-color:#aaaaaa;
+}
+
+H1{display:inline; float:left; position:absolute; bottom:2px; font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:20px;color:#025; padding:0px; margin:0px;}
+H2{display:inline; float:left; clear:none; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:18px; vertical-align:bottom; color:#025; margin:0px auto; padding:0px inherit;  }
+H3{font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:16px; color:#025; margin:16px 6px 20px 3px; border-bottom:1px solid #025;}
+H4{display:inline; clear:right; font-size:15px; padding:-3px 3px 5px 0px; margin:2px 2px 2px 0px; color:#002255; font-variant:small-caps; font-weight:normal;} /*background-color:#EDF9FF; */
+
+div.Change_area {margin:10px 0px; width:97%; position:relative; clear:both;}/*overflow:auto; */
+div.Change_area a {text-decoration:none;}
+div.Change_area img {margin:2px; padding:0px; border:1px solid #AAAAAA; float:right;}
+div.Change_area hr {width:99%; color:#D0E0F0; height:2px; border:none;}
+
+div.ChangePage {width:98%; padding:3px 3px 3px 3px; margin:0 0 0 14px; border-bottom:1px #D0E0F0 solid;}/*border:2px #D0E0F0 solid; */
+
+div.Existing {position:relative; width:99%; overflow:auto; line-height:1.4; line-height:140%;}
+div.Existing hr {width:99%; color:#BBBBBB; background-color:#DDDDDD; height:1px;}
+div.Existing div.Change_Image {position:relative; display:inline; float:right; clear:right; margin:0px 3px;}
+div.Existing div.Change_Image em {color:#54709B; font-style:italic; font-variant:small-caps;}
+
+div.Change_alternative {position:relative; width:auto; overflow:auto; line-height:1.4; line-height:140%; margin:0px 0px 0px 0px; padding:3px 3px 3px 26px;} 
+div.Change_alternative div.ChangeAlt_Image {display:inline; position:relative; float:right; clear:right; margin:0px 3px; padding:0px;}
+div.Change_alternative div.ChangeAlt_Image em {color:#54709B; font-style:italic; font-variant:small-caps;}
+div.Change_alternative div.ChangeAlt_Image img {border:1px solid #025;}
+div.Change_alternative div.text {position:relative; font-size:15px; width:98%; padding:-3px 3px 0px -3px; margin:2px 2px 2px -15px; color:#002255;}/* border-top:1px solid #D0E0F0;*/
+div.Change_alternative .AltText {color:#025;}
     

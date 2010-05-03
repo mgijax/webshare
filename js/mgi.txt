@@ -72,6 +72,11 @@ function openNewWindow(url)
     window.open(url,'new','width=1000,height=600,resizable=yes,scrollbars=yes,menubar=yes,toolbar=yes,alwaysRaised=yes');
 };
 
+function openNewWindowNoMenu(url)
+{
+    window.open(url,'new','width=1000,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+};
+
 function verifySearchToolParms() {
   var blankRE=/^\s*$/;
   var searchToolTextArea = document.getElementById("searchToolTextArea");
