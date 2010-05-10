@@ -145,7 +145,7 @@
 												onMouseOver="return overlib('View report of SNP data in MGI organized by chromosome, strain, and submitter.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Summary of SNP Data in MGI</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}external/festing/search_form.cgi"
-												onMouseOver="return overlib('Search the Listing of Inbred Strains of Mice and Rats by M. Festing.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+												onMouseOver="return overlib('Browse the Listing of Inbred Strains of Mice and Rats by M. Festing.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
 												Inbred Strain Characteristics</a></li>
 											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGIHOME_URL}genealogy/"
 												onMouseOver="return overlib('View the genealogy chart of inbred strains.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
