@@ -30,8 +30,8 @@ PUBLIC_HOST		www.informatics.jax.org
 ###-- Database Connectivity
 ###--
 
-DB_URL           shire.informatics.jax.org:4100
-DB_SERVER        PROD_MGI
+DB_URL           lindon.informatics.jax.org:4100
+DB_SERVER        PROD1_MGI
 DB_DATABASE      mgd
 DB_USER          mgd_public
 DB_PASSWORD      mgdpub
