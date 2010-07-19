@@ -206,10 +206,12 @@ a.logoFooterAnchor{
     width:290px;
 }
 
-.tour {
+.tour, .tour a {
     width:16em; 
-    background-color:#D0E0F0; 
+    background-color:#D0E0F0;
+    color:#FF0000;
     text-align:center;
+    font-weight: bold;
 }
 
 .bl{
