@@ -159,12 +159,10 @@ function ajaxObject(url, callbackFunction) {
 
 function changeVisibility(id) {
 
-    var myID = document.getElementById(id);
-
-    if (myID.style.display != "none"){
-        myID.style.display = "none";
+    if (YAHOO.util.Dom.getStyle(id, 'display') == 'none'){
+        YAHOO.util.Dom.setStyle(id, 'display', 'block');
     } else {
-        myID.style.display = "block";
+        YAHOO.util.Dom.setStyle(id, 'display', 'none');
     }
 }
 
