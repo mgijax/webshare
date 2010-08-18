@@ -22,6 +22,10 @@ div.yuimenu {
     background-color: #002255;
 }
 
+.yui-skin-sam .yuimenuitemlabel:visited {
+    color: #002255;
+}
+
 .yui-skin-sam .yuimenubar .yuimenubaritemlabel{
     border: 0;
     color: #fff;
@@ -115,4 +119,70 @@ div.yuimenu {
 	border:    0;
     height: 18px;
     width:  18px;
+}
+
+/* override for treeview */
+.ygtvtm{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -6400px no-repeat;
+}
+.ygtvtmh,.ygtvtmhh{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -6400px no-repeat;
+}
+.ygtvtp{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -7200px no-repeat;
+}
+.ygtvtph,.ygtvtphh{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -7200px no-repeat;
+}
+.ygtvlm{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -0px no-repeat;
+}
+.ygtvlmh,.ygtvlmhh{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -0px no-repeat;
+}
+.ygtvlp{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -2400px no-repeat;
+}
+.ygtvlph,.ygtvlphh{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -2400px no-repeat;
+}
+.ygtvlabel,.ygtvlabel:link,.ygtvlabel:visited,.ygtvlabel:hover{
+	margin-left:10px;
+	text-decoration:none;
+	background-color:#eeeeee;
+	cursor:pointer;
+}
+
+/* hides element for browser history manager */
+#yui-history-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
 }
