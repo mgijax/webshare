@@ -366,7 +366,6 @@ color: red; /* set desired hover color */
 }
 
 .catFG{
-
     background-color:#D0D0D0;
 }
 
@@ -389,6 +388,7 @@ color: red; /* set desired hover color */
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
+    color: #0000FF;
 }
 
 #catSelectors{
