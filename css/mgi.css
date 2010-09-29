@@ -395,11 +395,10 @@ color: red; /* set desired hover color */
     padding-bottom: 10px;
 }
 
-
-H1{display:inline; float:left; position:absolute; bottom:2px; font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:20px;color:#025; padding:0px; margin:0px;}
-H2{display:inline; float:left; clear:none; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:18px; vertical-align:bottom; color:#025; margin:0px auto; padding:0px inherit;  }
-H3{font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:16px; color:#025; margin:16px 6px 20px 3px; border-bottom:1px solid #025;}
-H4{display:inline; clear:right; font-size:15px; padding:-3px 3px 5px 0px; margin:2px 2px 2px 0px; color:#002255; font-variant:small-caps; font-weight:normal;} /*background-color:#EDF9FF; */
+.retire H1{display:inline; float:left; position:absolute; bottom:2px; font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:20px;color:#025; padding:0px; margin:0px;}
+.retire H2{display:inline; float:left; clear:none; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:18px; vertical-align:bottom; color:#025; margin:0px auto; padding:0px inherit;  }
+.retire H3{font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:16px; color:#025; margin:16px 6px 20px 3px; border-bottom:1px solid #025;}
+.retire H4{display:inline; clear:right; font-size:15px; padding:-3px 3px 5px 0px; margin:2px 2px 2px 0px; color:#002255; font-variant:small-caps; font-weight:normal;} /*background-color:#EDF9FF; */
 
 div.Change_area {margin:10px 0px; width:97%; position:relative; clear:both;}/*overflow:auto; */
 div.Change_area a {text-decoration:none;}
