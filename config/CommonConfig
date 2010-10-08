@@ -4,7 +4,7 @@
 
 SELECT_A_SEQ_URL        ${MOUSEBLAST_URL}seqSelect.cgi
 
-GLOSSARY_URL            ${JAVAWI_URL}/WIFetch?page=glossaryIndex&printFormat=footer
+GLOSSARY_URL            ${FEWI_URL}glossary
 
 JAXRH_URL               http://www.jax.org/resources/documents/cmdata/rhmap/%sdata.html
 
