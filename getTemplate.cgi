@@ -33,7 +33,7 @@ except:
 import CGI
 import string
 import regex
-import db
+#import db
 
 class getTemplateCGI (CGI.CGI):
 
@@ -80,24 +80,25 @@ class getTemplateCGI (CGI.CGI):
     # Throws: db module may throw DB exceptions
     # pull the MGI:ID and geneSymbol from the database
 
-    db.useOneConnection(1)
-    db.set_sqlUser(config["DB_USER"])
-    db.set_sqlPassword(config["DB_PASSWORD"])
-    db.set_sqlServer(config["DB_SERVER"])
-    db.set_sqlDatabase(config["DB_DATABASE"])
-    cmds = [] # SQL command list
-    cmds.append(string.join([
-        'SELECT CONVERT(varchar, lastdump_date, 101) as dbDate, '
-        'public_version '
-        'FROM MGI_dbInfo '
-    ]))
+    #db.useOneConnection(1)
+    #db.set_sqlUser(config["DB_USER"])
+    #db.set_sqlPassword(config["DB_PASSWORD"])
+    #db.set_sqlServer(config["DB_SERVER"])
+    #db.set_sqlDatabase(config["DB_DATABASE"])
+    #cmds = [] # SQL command list
+    #cmds.append(string.join([
+    #    'SELECT CONVERT(varchar, lastdump_date, 101) as dbDate, '
+    #    'public_version '
+    #    'FROM MGI_dbInfo '
+    #]))
 
     #  Excecute queries
-    results = db.sql(cmds, 'auto')
-    db.useOneConnection(0)
-    dbDateInfo = results[0][0]
+    #results = db.sql(cmds, 'auto')
+    #db.useOneConnection(0)
+    #dbDateInfo = results[0][0]
 
-    return dbDateInfo["dbDate"]
+    #return dbDateInfo["dbDate"]
+    return "Date is not implemented at this time."
 
 
   def main (self):
