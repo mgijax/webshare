@@ -1,12 +1,2 @@
-<!-- Template CSS -->
-<link href="${WEBSHARE_URL}css/mgi.css" rel="stylesheet" type="text/css"/>
-<link href="${WEBSHARE_URL}css/template.css" rel="stylesheet" type="text/css"/>
-
-<!-- Combo-handled YUI CSS files: -->
-<link rel="stylesheet" type="text/css" href="${YUI_CSS_URL}">
-
-<!-- Combo-handled YUI JS files: -->
-<script type="text/javascript" src="${YUI_JS_URL}"></script>
-
-<!-- YUI CSS overrides: -->
-<link href="${WEBSHARE_URL}css/yui_overrides.css" rel="stylesheet" type="text/css"/>
+This is simply a place-holder file.  This file will be over written 
+during the install process by either cssDefault or cssDev element
