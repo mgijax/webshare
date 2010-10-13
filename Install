@@ -57,7 +57,7 @@ else
     
     # minify css files
     echo "Generate css files"
-    cat ./css/mgi.css ./css/template.css ./css/yui_overrides.css | java -jar yuicompressor-2.4.2.jar --type css > ./css/$TEMPLATE_CSS_FILE
+    cat ./css/yui_overrides.css ./css/mgi.css ./css/template.css ./css/fewi.css | java -jar yuicompressor-2.4.2.jar --type css > ./css/$TEMPLATE_CSS_FILE
     cat ./css/ajaxtabs.css ./css/homepages.css | java -jar yuicompressor-2.4.2.jar --type css > ./css/$MGIHOME_CSS_FILE 
 
     # concatenate and minify js files
