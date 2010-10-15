@@ -1,13 +1,17 @@
-<!-- YUI CSS overrides-->
-<link href="${WEBSHARE_URL}css/yui_overrides.css" rel="stylesheet" type="text/css"/>
- 
+<!-- YUI Reset -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css">
+
 <!-- Combo-handled YUI CSS files: -->
 <link rel="stylesheet" type="text/css" href="${YUI_CSS_URL}">
 
-<!-- Template CSS -->
+
+<!-- Individual css files -->
+<link href="${WEBSHARE_URL}css/yui_overrides.css" rel="stylesheet" type="text/css"/>
 <link href="${WEBSHARE_URL}css/mgi.css" rel="stylesheet" type="text/css"/>
 <link href="${WEBSHARE_URL}css/template.css" rel="stylesheet" type="text/css"/>
 <link href="${WEBSHARE_URL}css/fewi.css" rel="stylesheet" type="text/css"/>
+
+
 
 
 <!-- Combo-handled YUI JS files: -->
