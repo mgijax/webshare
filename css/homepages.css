@@ -113,13 +113,6 @@
      padding: 0em;
  }  
 
-#templateBodyInsert li {
-     list-style-type: disc;
-     list-style-position: inside;
-     margin-left: 5px;
-     padding-left: 10px;
-}
-
  .newsList li {
      margin-bottom: .5em;
      list-style-position: inside;
