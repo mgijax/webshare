@@ -76,6 +76,7 @@ a.logoFooterAnchor{
     background-color:#FFFFDD;
     border: 1px #7D95B9 solid;
     padding:2px 1px;
+    margin: 5px 4px;
     height:1.25em;
 }
 
@@ -110,6 +111,7 @@ a.logoFooterAnchor{
 .searchToolHelp sup {
     font-size:0.75em;
 }
+
 
 /*************************************************************************
 *  Styles specific to the homepage template
@@ -197,6 +199,19 @@ a.logoFooterAnchor{
 }
 
 #faqPageHeader{overflow:auto; width:100%; height:auto; padding:0px;}
+
+.overlibBGClass {
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: solid;
+	border-color: #002255;
+	border-collapse: collapse;
+	background-color: #002255;
+}
+
+.overlibBGClass td td {
+	padding: 2px;
+}
 
 /*************************************************************************
 *  Notices, if displayed
