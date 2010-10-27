@@ -87,6 +87,8 @@ table.b1p3s7 {border-collapse:collapse;}
 table.b1p3s7 th {border-bottom:2px solid #BFBFBF; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px; font-size:14px;}
 table.b1p3s7 td {border-bottom:1px solid #DFDFDF; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px; vertical-align:middle;}
 
+p {padding: 8px 0px;}
+
 .buttonLabel {font-size:12px;font-family:Arial,Helvetica;text-align:center;color:#000001;font-weight:bold;}
 tr.buttons {vertical-align:middle;text-align:left;background-color:#ffffff}
 tr.pageInfo {vertical-align:middle;text-align:left;background-color:#ffffff}
@@ -213,7 +215,8 @@ div#DataContent {
     min-width: 600px;}
     
 .toc li { display: inline;
-    white-space: nowrap; }
+    white-space: nowrap;
+    margin: 0px;}
     
 .outline { border: 2px solid #DFEFFF; }
 
@@ -229,6 +232,53 @@ dl.linkedList { margin-left: 2em; }
     font-size:x-small; 
     color:#333333; 
     line-height:8px; }
+
+/***************************
+* Standard overarching styles
+****************************/
+    
+ul {
+    padding: 8px 0px;
+}
+    
+ul li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 40px;
+}
+
+ul ul {
+    padding: 2px 0px;
+}
+    
+ul ul li {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 30px;
+}
+
+ul ul ul {
+    padding: 2px 0px;
+}
+    
+ul ul ul li {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-left: 30px;
+}
+
+sup {
+	position: relative;
+	bottom: 1ex;
+}
+
+strong {
+	font-weight: bolder;
+}
+
+em {
+	font-style: italic;
+}
 
 .smaller { font-size:9px; font-weight:normal; }
 
