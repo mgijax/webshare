@@ -218,7 +218,14 @@ div#DataContent {
     white-space: nowrap;
     margin: 0px;}
     
-.outline { border: 2px solid #DFEFFF; }
+.outline { 
+	border: 2px solid #DFEFFF;
+	margin-top: 5px;
+	}
+	
+.outline td { 
+	padding: 4px;
+	}	
 
 dl.linkedList { margin-left: 2em; }
 
@@ -267,6 +274,10 @@ ul ul ul li {
     margin-left: 30px;
 }
 
+ol li {
+	list-style-type: decimal;
+}
+
 sup {
 	position: relative;
 	bottom: 1ex;
@@ -279,6 +290,21 @@ strong {
 em {
 	font-style: italic;
 }
+
+/*
+* Specific Styles, for cases where the global ones fail
+*/
+
+.softwareUL li {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 60px;
+}
+
+.softwareOL li {
+    margin-left: 80px;
+}
+/*########################################################## */
 
 .smaller { font-size:9px; font-weight:normal; }
 
