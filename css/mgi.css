@@ -243,6 +243,15 @@ dl.linkedList { margin-left: 2em; }
 /***************************
 * Standard overarching styles
 ****************************/
+
+dl {
+   font-weight: bolder;
+}
+
+dl dd {
+   font-weight: normal;
+   margin-left: 40px;
+}
     
 ul {
     padding: 8px 0px;
