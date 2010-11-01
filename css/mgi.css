@@ -79,8 +79,8 @@ table.results {background-color:#777777}
 table.center {margin-left:auto; margin-right:auto;}
 
 /* STYLES FOR TABLE TO REPLACE DEPRECATED BORDER=, CELL-PADDING=, CELL-SPACING= */
-/* CSS STYLE 'BORDER-SPACING:' TO REPLACE CELL-SPACING= IS NOT SUPPORTED BY MOST WEB BROWSERS 
-*/
+/* CSS STYLE 'BORDER-SPACING:' TO REPLACE CELL-SPACING= IS NOT SUPPORTED BY MOST WEB BROWSERS */
+
 table.b0p0s7 {border:none; border-collapse:collapse;}
 table.b0p0s7 td {border:none; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px;}
 table.b1p3s7 {border-collapse:collapse;}
@@ -240,9 +240,9 @@ dl.linkedList { margin-left: 2em; }
     color:#333333; 
     line-height:8px; }
 
-/***************************
-* Standard overarching styles
-****************************/
+/*******************************/
+/* Standard overarching styles */
+/*******************************/
 
 dl {
    font-weight: bolder;
