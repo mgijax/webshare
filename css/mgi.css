@@ -87,6 +87,31 @@ table.b1p3s7 {border-collapse:collapse;}
 table.b1p3s7 th {border-bottom:2px solid #BFBFBF; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px; font-size:14px;}
 table.b1p3s7 td {border-bottom:1px solid #DFDFDF; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px; vertical-align:middle;}
 
+table.bdouble {
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: separate;
+	background-color: white;
+}
+table.bdouble th {
+	border-width: 1px;
+	padding: 3px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+table.bdouble td {
+	border-width: 1px;
+	padding: 3px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+
 p {padding: 8px 0px;}
 
 .buttonLabel {font-size:12px;font-family:Arial,Helvetica;text-align:center;color:#000001;font-weight:bold;}
@@ -259,6 +284,15 @@ ul li {
     margin-left: 40px;
 }
 
+ol {
+    padding: 8px 0px;
+}
+    
+ol li {
+    list-style-position: outside;
+    margin-left: 40px;
+}
+
 ul ul {
     padding: 2px 0px;
 }
@@ -295,6 +329,11 @@ strong {
 em {
 	font-style: italic;
 }
+
+blockquote  {
+    padding-left: 40px;
+}
+
 
 /*
 * Specific Styles, for cases where the global ones fail
