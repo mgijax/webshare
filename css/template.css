@@ -275,7 +275,7 @@ a.logoFooterAnchor{
     bottom: 0px;
     right: 0px;
     clear: right;
-    width: 69em;
+    width: 70em;
 }
 
 .navtabs span{
@@ -285,11 +285,13 @@ a.logoFooterAnchor{
 .navtabs ul{
     font-size: 13px;
     list-style: none;
+    padding: 0px;
 }
 
 .navtabs li{
     display: inline;
     margin-right: 2px;
+    margin-left: 0px;
 }
 
 .navtabs a{
