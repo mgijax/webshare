@@ -112,6 +112,31 @@ table.bdouble td {
 	-moz-border-radius: 0px 0px 0px 0px;
 }
 
+table.mgitable {
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: solid;
+	border-color: black;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.mgitable th {
+	border-width: 1px;
+	padding: 2px;
+	border-style: solid;
+	border-color: black;
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+table.mgitable td {
+	border-width: 1px;
+	padding: 2px;
+	border-style: solid;
+	border-color: black;
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+
 p {padding: 8px 0px;}
 
 .buttonLabel {font-size:12px;font-family:Arial,Helvetica;text-align:center;color:#000001;font-weight:bold;}
