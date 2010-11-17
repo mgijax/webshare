@@ -322,7 +322,7 @@
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=glossaryIndex&printFormat=footer">MGI Glossary</a></li>				
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://proto.informatics.jax.org/"> Prototype Tools</a> </li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}GXD/GEN/">Gene Expression Notebook (GEN)</a></li>
-							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home">Mouse Phenome Database (MPD)</a></li>
+							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MPD_URL}">Mouse Phenome Database (MPD)</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${WI_URL}external/ko/">Deltagen and Lexicon Knockout Mice</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${KOMP_HOME}" 
 							    id="navBarKomp" onMouseOver="return overlib('Central web site for all IKMC projects: KOMP, EUCOMM, NorCOMM, and TIGM.',ANCHOR, 'navBarKomp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">International Knockout Mouse Consortium (IKMC)</a></li>
