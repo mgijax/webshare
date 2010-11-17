@@ -136,6 +136,8 @@ MENUS_URL               http://${PY_HOST}/
 
 SEQFETCH_URL            http://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
 
+FRITHBOOK_URL           http://${PY_HOST}/frithbook/
+
 GREENBOOK_URL           http://${PY_HOST}/greenbook/
 
 COOKBOOK_URL            http://${PY_HOST}/cookbook/
