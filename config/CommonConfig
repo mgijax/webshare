@@ -69,6 +69,9 @@ TREEFAM_URL             http://www.treefam.org/cgi-bin/TFinfo.pl?ac=
 # URL to the VISTA genome browser (fill in chrom, start & stop coord)
 VISTA_URL               http://pipeline.lbl.gov/cgi-bin/vistatrack?db=mm7&position=
 
+# URL to the Theiler book The House Mouse, Atlas of Embryonic Development
+THEILERBOOK_URL		http://www.emouseatlas.org/Atlas/Theiler_book_download.html 
+
 ###--javawi Url's--###
 
 # URL for the 'browse Stage descriptions' link on expression query forms of javawi
