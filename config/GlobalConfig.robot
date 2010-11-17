@@ -158,6 +158,8 @@ IMSRURL                 http://www.findmice.org/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
+# URL to MTB's submission interface for pathology images
+MTB_PATHOLOGY_URL       http://tumor.informatics.jax.org/mtbpathwi/index.do
 
 ###--
 ###-- Other Paths
