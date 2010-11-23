@@ -26,12 +26,12 @@ table, th, td {
     font-weight:bold;
     font-size:13px;
     background: #002255;
-    min-width:800px;
-    
+    min-width:800px;   
 }
 
 div.yuimenu {
     position:absolute;
+    z-index:2000;
 }
 
 .yui-skin-sam .yuimenubaritemlabel{
