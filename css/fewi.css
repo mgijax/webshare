@@ -71,7 +71,7 @@ table.pad5 th, table.pad5 td {
     padding-bottom:2em;
 }
 
-#authorAutoComplete .yui-ac-content, journalAutoComplete .yui-ac-content {
+#authorAutoComplete .yui-ac-content, #journalAutoComplete .yui-ac-content {
     max-height:30em;
     overflow:auto;
     overflow-x:hidden; /* set scrolling */
@@ -217,9 +217,10 @@ a.extUrl {
 }
 
 .yui-dt-expansion .yui-dt-liner{
+    line-height:1.5em;
     padding:.5em;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    padding-left: 10em;
+    padding-right: 10em;
     border:solid 0 #cbcbcb;
     border-width: 1px 0 1px 0;
 }
@@ -274,4 +275,8 @@ a.extUrl {
 	margin:0  1em 1em 0;
 	background-color: #eeeeee;
 	background:url(../images/remove.gif) no-repeat right;
+}
+
+.ital {
+	font-style:italic;
 }
