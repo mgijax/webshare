@@ -17,9 +17,7 @@ body {
 
 #headerContainer {
     width: 100%;
-    position:relative;
-    min-width:920px;
-    
+    min-width:920px; 
 } 
 
 * html #headerContainer {
