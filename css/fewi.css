@@ -6,10 +6,12 @@
  */
 table.detailStructureTable {
   border: 1px solid black;
+  width:100%;
 }
 
 table.detailStructureTable td{
   padding:2px;
+  padding-bottom:3px;
   font-size:12px;
   font-family:Verdana,Arial,Helvetica;
   color:#000001;
