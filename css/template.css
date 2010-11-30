@@ -142,6 +142,7 @@ a.logoFooterAnchor{
     margin-bottom:8px;
     width: 100%;
     min-width: 750px;
+    max-width:1200px;
     height:35px;
 }
 
