@@ -300,29 +300,12 @@
 						<ul class="first-of-type">
 							<li class="yuimenuitem first-of-type"> <a class="yuimenuitemlabel" href="${MENUS_URL}resources.shtml">More Resources Index</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}lists/lists.shtml">Research Community E-mail Lists</a></li>
-							<li class="yuimenuitem"> <a class="yuimenuitemlabel">Online Books</a>
-								<div id="navBarBooks" class="yuimenu">
-									<div class="bd">
-										<ul class="first-of-type">
-											<li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${GREENBOOK_URL}">Biology of the Laboratory Mouse 
-												<span style="font-weight:normal;"> edited by Earl L. Green</span></a></li>
-											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${SILVER_URL}"">Mouse Genetics 
-												<span style="font-weight:normal;"> by Lee Silver</span></a></li>
-											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${COOKBOOK_URL}">The Anatomy of the Laboratory Mouse 
-												 <span style="font-weight:normal;">by Margaret J. Cook</span></a></li>
-											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WKSILVERS_URL}">The Coat Colors of Mice 
-												<span style="font-weight:normal;">by Willys K. Silvers</span></a></li>
-											<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MORSEBOOK_URL}">Origins of Inbred Mice 
-												<span style="font-weight:normal;">edited by Herbert C. Morse III</span></a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
+							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MENUS_URL}resources.shtml#res_books">Online Books</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}nomen/index.shtml">Nomenclature Home Page</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=glossaryIndex&printFormat=footer">MGI Glossary</a></li>				
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://proto.informatics.jax.org/"> Prototype Tools</a> </li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}GXD/GEN/">Gene Expression Notebook (GEN)</a></li>
-							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home">Mouse Phenome Database (MPD)</a></li>
+							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MPD_URL}">Mouse Phenome Database (MPD)</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${WI_URL}external/ko/">Deltagen and Lexicon Knockout Mice</a></li>
 							<li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${KOMP_HOME}" 
 							    id="navBarKomp" onMouseOver="return overlib('Central web site for all IKMC projects: KOMP, EUCOMM, NorCOMM, and TIGM.',ANCHOR, 'navBarKomp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">International Knockout Mouse Consortium (IKMC)</a></li>
