@@ -285,7 +285,7 @@ a.extUrl {
 }
 
 .fsItem  {
-	font-size: 10px;
+	font-weight: 10px;
 	color: #002255;
 	border: 1px solid #7d95b9;
 	padding:2px 1.5em 2px 2px;
@@ -296,4 +296,59 @@ a.extUrl {
 
 .ital {
 	font-style:italic;
+}
+
+#qfWrap{
+	
+	overflow:auto;
+	overflow-x:hidden; /* set scrolling */
+}
+
+.yui-skin-sam .yui-resize .yui-resize-handle {
+    background-color: #7d95b9;
+}
+
+
+
+#outer {
+	border: 1px solid black;
+	padding:0;
+	overflow:hidden;
+}
+
+#inner {
+	width:100%;
+	height:22px;
+	padding:5px;
+	text-align:center;
+	background-color:#d0e0f0;
+	white-space: nowrap;
+
+}
+
+#inner .buttons {
+	float:right;
+	margin-right:10px;
+	margin-top:5px;
+}
+
+#qwrap {
+	margin:2px;
+}
+
+.qfExpand {
+	padding-left:22px;
+	background:url(../images/layout_sprite.png) -20px -240px no-repeat;
+
+}
+
+.qfCollapse {
+	padding-left:22px;
+	background:url(../images/layout_sprite.png) -20px -220px no-repeat;
+}
+
+#inner .qfTitle {
+	display:inline;
+	font-size: 12px;
+	font-weight: bold;
 }
