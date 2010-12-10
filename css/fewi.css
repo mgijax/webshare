@@ -97,8 +97,13 @@ table.pad5 th, table.pad5 td {
 
 
 
-#summDiv{
+#summDiv {
+	position:relative;
+	display:inline;
 	width:100%;
+	line-height: 1.5em;
+	margin:1em;
+	white-space: nowrap;
 }
 
 #querySummary {
@@ -125,7 +130,7 @@ table.pad5 th, table.pad5 td {
 }
 
 .filters {
-	padding-left:20em;
+	padding-left:10em;
 }
 
 .filterButton{
@@ -134,17 +139,51 @@ table.pad5 th, table.pad5 td {
 	font-weight: bolder;
 	border: 1px solid #7d95b9;
 	padding:2px;
-	margin:0  0 1em 0;
+	margin:0  0 2em 0;
 	background-color: #eeeeee;	
 }
 
-.paginator{
-	width:100px;
+#filterDiv {
+	margin-bottom:1em;
+}
+
+.fsItem  {
+	font-size: 10px;
+	color: #002255;
+	border: 1px solid #7d95b9;
+	padding:2px 1.5em 2px 2px;
+	margin-right:.5em;
+	margin-bottom:1em;
+	background-color: #eeeeee;
+	background:url(../images/remove.gif) no-repeat right;
+}
+
+.paginator {
+	position:relative;
+	bottom:0;
+	float:right;
 }
 
 #paginationTop{
 	text-align:center;
 	bottom:0px;
+}
+
+.facetFilter .yui-panel .hd {
+    text-align: left;
+    background:#d0e0f0;
+}
+
+.facetFilter .yui-panel .bd {
+    text-align: left;
+    max-height:30em;
+    overflow:auto;
+    overflow-x:hidden; /* set scrolling */
+    _height:30em; /* ie6 */
+}
+
+#toggleAbstract {
+	margin-left:5em;
 }
 
 #dynamicdata {
@@ -190,17 +229,7 @@ table.pad5 th, table.pad5 td {
   no-repeat right;
 }
 
-.facetFilter .yui-panel .hd {
-    text-align: left;
-    background:#d0e0f0;
-}
-.facetFilter .yui-panel .bd {
-    text-align: left;
-    max-height:30em;
-    overflow:auto;
-    overflow-x:hidden; /* set scrolling */
-    _height:30em; /* ie6 */
-}
+
 
 a.extUrl {
     text-decoration: none;
@@ -284,15 +313,7 @@ a.extUrl {
 	text-align:left;
 }
 
-.fsItem  {
-	font-weight: 10px;
-	color: #002255;
-	border: 1px solid #7d95b9;
-	padding:2px 1.5em 2px 2px;
-	margin:0  1em 1em 0;
-	background-color: #eeeeee;
-	background:url(../images/remove.gif) no-repeat right;
-}
+
 
 .ital {
 	font-style:italic;
@@ -351,4 +372,8 @@ a.extUrl {
 	display:inline;
 	font-size: 12px;
 	font-weight: bold;
+}
+
+.yui-skin-sam .yui-ac-content li {
+	white-space: normal;
 }
