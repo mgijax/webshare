@@ -5,6 +5,7 @@ table.detailStructureTable {
   border: 1px solid black;
   width:100%;
 }
+
 table.detailStructureTable td{
   padding:3px;
   padding-bottom:4px;
@@ -13,6 +14,7 @@ table.detailStructureTable td{
   color:#000001;
   vertical-align:top;
 }
+
 td.detailCat1 {
   border: 1px solid black;
   text-align:right;
@@ -316,8 +318,8 @@ a.extUrl {
 .yui-dt-expansion .yui-dt-liner{
     line-height:1.5em;
     padding:.5em;
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 5em;
+    padding-right: 15em;
     border:solid 0 #cbcbcb;
     border-width: 1px 0 1px 0;
 }
