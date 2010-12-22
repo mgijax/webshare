@@ -230,6 +230,7 @@ table.pad5 th, table.pad5 td {
 .facetFilter .yui-panel .bd {
     text-align: left;
     max-height:30em;
+    width:200px;
     overflow:auto;
     overflow-x:hidden; /* set scrolling */
     _height:30em; /* ie6 */
@@ -429,4 +430,8 @@ a.extUrl {
 
 .yui-skin-sam .yui-ac-content li {
 	white-space: normal;
+}
+
+.yui-dt-liner .highlight {
+	background-color: #FFFF99;
 }
