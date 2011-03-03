@@ -32,7 +32,7 @@ function loadPage() {
           helpLink = "<a href='" + userdoc + "'>" + helpIcon + "</a>";
         }
         else {
-          helpLink = "<a href='${USERDOCS_URL}" + userdoc + "'>" + helpIcon + "</a>";
+          helpLink = "<a href='${USERHELP_URL}" + userdoc + "'>" + helpIcon + "</a>";
         }
 
         titleBarWrapper.innerHTML = helpLink + currentHTML;
