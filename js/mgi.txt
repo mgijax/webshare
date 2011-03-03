@@ -58,7 +58,8 @@ YAHOO.mgi.navbar.menuinit = function() {
             autosubmenudisplay: true,
             showdelay: 100,
             hidedelay: 400,
-            lazyload: true
+            lazyload: true,
+            iframe:true
         });
     menu.render();
     menu.cfg.setProperty("constraintoviewport", false);
@@ -191,3 +192,8 @@ function formCap(){
     setTimeout("formCap()", 1000);
 }
 formCap();
+
+function setText(element, text){
+	element.innerText ? element.innerText=text : element.textContent=text;
+
+};
