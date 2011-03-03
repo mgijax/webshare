@@ -149,20 +149,58 @@ table.pad5 th, table.pad5 td {
 }
 
 
+/* Summary element styling */
 
-#summDiv {
-	position:relative;
-	display:inline;
-	width:100%;
-	line-height: 1.5em;
-	margin:1em;
+#breadbox {
+	float: left;
+	width: 100%;
+}
+
+#breadbox .filterItem  {
+	white-space: nowrap;
+	font-size: 10px;
+	color: #002255;
+	border: 1px solid #7d95b9;
+	padding:2px 1.5em 2px 2px;
+	margin:1em .2em;
+	background-color: #eeeeee;
+	background:url(../images/remove.gif) no-repeat right;	
+}
+
+#fCount{
+	padding: 2em;
 	white-space: nowrap;
 }
 
+#contentcolumn{
+	white-space: normal;
+	margin: 0 275px 0 300px; /*Margins for content column. Should be "0 right-column-width 0 left-column-width*/
+}
+
+#rightcolumn{
+	float: left;
+	text-align:right;
+	width: 275px; /*Width of right column in pixels*/
+	margin-left: -300px; /*Set margin to -(RightColumnWidth)*/
+}
+
+
+.innertube{
+	margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+	margin-top: 0;
+}
+
+#summary {
+	width:100%;
+	line-height: 1.5em;
+	display: block;
+}
+
 #querySummary {
-	float:left;	
+	float: left;
+	width: 300px; /*Width of left column in percentage*/
+	margin-left: -100%;
 	text-align:left;
-	margin:0 5em 1em 0;
 	line-height: 1.5em;
 }
 
@@ -178,12 +216,34 @@ table.pad5 th, table.pad5 td {
 	padding-left: 2em;
 }
 
-#querySummary .count{	
+#querySummary .count {	
+	white-space: nowrap;
 	margin-left: 2em;
 }
 
-.filters {
-	padding-left:10em;
+#toolbar {
+	clear: both;
+	height: 15px;
+	min-width:800px;
+	padding: 10px;
+	border-bottom: 0px;
+}
+
+#filterDiv {
+	float: left;
+	width: 400px;
+	text-align: left;
+}
+
+#otherDiv {
+	float: left;
+	width: 300px;
+	padding-top: 2px;
+}
+
+#downloadDiv {
+	text-align: right;
+	padding-top: 2px;
 }
 
 .filterButton{
@@ -192,34 +252,18 @@ table.pad5 th, table.pad5 td {
 	font-weight: bolder;
 	border: 1px solid #7d95b9;
 	padding:2px;
-	margin:0  0 2em 0;
-	background-color: #eeeeee;	
-}
-
-#filterDiv {
-	margin-bottom:1em;
-}
-
-.fsItem  {
-	font-size: 10px;
-	color: #002255;
-	border: 1px solid #7d95b9;
-	padding:2px 1.5em 2px 2px;
-	margin-right:.5em;
-	margin-bottom:1em;
 	background-color: #eeeeee;
-	background:url(../images/remove.gif) no-repeat right;
 }
 
-.paginator {
-	position:relative;
-	bottom:0;
-	float:right;
-}
 
-#paginationTop{
+.bluebar {
 	text-align:center;
-	bottom:0px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #002255;	
+	white-space: nowrap;
+	border: 1px solid #7F7F7F;
+	background-color:#d0e0f0;
 }
 
 .facetFilter .yui-panel .hd {
@@ -234,10 +278,6 @@ table.pad5 th, table.pad5 td {
     overflow:auto;
     overflow-x:hidden; /* set scrolling */
     _height:30em; /* ie6 */
-}
-
-#toggleAbstract {
-	margin-left:5em;
 }
 
 #dynamicdata {
@@ -373,8 +413,7 @@ a.extUrl {
 	font-style:italic;
 }
 
-#qfWrap{
-	
+#qfWrap {
 	overflow:auto;
 	overflow-x:hidden; /* set scrolling */
 }
@@ -386,47 +425,45 @@ a.extUrl {
 
 
 #outer {
-	border: 1px solid black;
+	border: 1px solid #7F7F7F;
+	background-color:#d0e0f0;
 	padding:0;
+	margin-bottom:1em;
 	overflow:hidden;
 }
 
-#inner {
+#toggleQF {
 	width:100%;
-	height:22px;
 	padding:5px;
-	text-align:center;
-	background-color:#d0e0f0;
-	white-space: nowrap;
-
+	cursor:pointer;
 }
 
-#inner .buttons {
-	float:right;
-	margin-right:10px;
-	margin-top:5px;
-}
-
-#qwrap {
-	margin:2px;
+#toggleImg {	
+	float: right;	
+	padding:8px;
+	margin: 5px 8px;
+	cursor:pointer;
 }
 
 .qfExpand {
-	padding-left:22px;
-	background:url(../images/layout_sprite.png) -20px -240px no-repeat;
+	background:url("../images/layout_sprite.png") -20px -240px  no-repeat;
 
 }
 
 .qfCollapse {
-	padding-left:22px;
-	background:url(../images/layout_sprite.png) -20px -220px no-repeat;
+	background:url("../images/layout_sprite.png") -20px -220px no-repeat;
 }
 
-#inner .qfTitle {
-	display:inline;
-	font-size: 12px;
-	font-weight: bold;
+
+#resultbar {
+	padding:5px;
 }
+
+#qwrap {
+	margin: 2px;
+	padding: 0px;
+}
+
 
 .yui-skin-sam .yui-ac-content li {
 	white-space: normal;
@@ -434,4 +471,8 @@ a.extUrl {
 
 .yui-dt-liner .highlight {
 	background-color: #FFFF99;
+}
+
+.noBorder{
+	border: 0px;
 }
