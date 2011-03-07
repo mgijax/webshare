@@ -87,6 +87,14 @@ table.b1p3s7 {border-collapse:collapse;}
 table.b1p3s7 th {border-bottom:2px solid #BFBFBF; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px; font-size:14px;}
 table.b1p3s7 td {border-bottom:1px solid #DFDFDF; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px; vertical-align:middle;}
 
+table.outline {
+        border-width: 1px;
+        border-spacing: 2px;
+        border-style: outset;
+        border-color: gray;
+        border-collapse: collapse;
+}
+
 table.bdouble {
 	border-width: 1px;
 	border-spacing: 2px;
@@ -155,6 +163,7 @@ td.hilite {background-color:#FDFDDD}
 .grayBackground {background-color:#eeeeee;}
 .nowrap {white-space: nowrap;} 
 .larger {font-size:14px;font-weight:bold}
+.extraLarge {font-size:18px;font-weight:bold}
 .bold {font-weight:bold}
 .normal {font-size:14px;font-weight:normal}
 .vocabLink {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000}
@@ -269,8 +278,9 @@ div#DataContent {
     margin: 0px;}
     
 .outline { 
-	border: 2px solid #DFEFFF;
+	border: 1px solid #DFEFFF;
 	margin-top: 5px;
+	border-color: gray;
 	}
 	
 .outline td { 
