@@ -142,7 +142,7 @@ table.pad5 th, table.pad5 td {
 }
 
 #authorAutoComplete .yui-ac-content, #journalAutoComplete .yui-ac-content {
-    max-height:30em;
+    max-height:20em;
     overflow:auto;
     overflow-x:hidden; /* set scrolling */
     _height:30em; /* ie6 */
@@ -282,6 +282,10 @@ table.pad5 th, table.pad5 td {
 
 #dynamicdata {
 	clear:both;
+}
+
+#paginationWrap {
+	text-align: right;
 }
 
 
@@ -475,4 +479,20 @@ a.extUrl {
 
 .noBorder{
 	border: 0px;
+}
+
+.queryControls {
+	background-color: #ffffff;
+}
+
+.autocompleteHighlight {
+	font-size:10px;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.qfError {
+	font-size:10px;
+	font-style:italic;
+	color: red;
 }
