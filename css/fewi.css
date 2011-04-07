@@ -128,6 +128,10 @@ table.pad5 th, table.pad5 td {
   padding:5px;
 }
 
+table.pad0 th, table.pad0 td {
+  padding:0px;
+}
+
 
 
 .formWidth {
@@ -246,13 +250,15 @@ table.pad5 th, table.pad5 td {
 	padding-top: 2px;
 }
 
-.filterButton{
+.filterButton {
+	text-decoration:none;
 	font-size: 10px;
 	color: #002255;
 	font-weight: bolder;
 	border: 1px solid #7d95b9;
 	padding:2px;
 	background-color: #eeeeee;
+	cursor:pointer;
 }
 
 
@@ -477,7 +483,7 @@ a.extUrl {
 	background-color: #FFFF99;
 }
 
-.noBorder{
+table.noBorder td, table.noBorder tr{
 	border: 0px;
 }
 
