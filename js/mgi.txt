@@ -201,6 +201,10 @@ function formCap(){
 formCap();
 
 function setText(element, text){
-	element.innerText ? element.innerText=text : element.textContent=text;
+	element.textContent=text;
+    if (!element.innerText){                 
+        element.innerText = text;
+
+    }
 
 };
