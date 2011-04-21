@@ -167,6 +167,7 @@ table.pad0 th, table.pad0 td {
 	border: 1px solid #7d95b9;
 	padding:2px 1.5em 2px 2px;
 	margin:1em .2em;
+	cursor:pointer;
 	background-color: #eeeeee;
 	background:url(../images/remove.gif) no-repeat right;	
 }
