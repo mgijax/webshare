@@ -202,9 +202,8 @@ formCap();
 
 function setText(element, text){
 	element.textContent=text;
-    if (!element.innerText){                 
+    if (!YAHOO.lang.isUndefined(element.innerText)){                 
         element.innerText = text;
 
     }
-
 };
