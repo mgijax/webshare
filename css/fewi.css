@@ -168,6 +168,10 @@ table.pad0 th, table.pad0 td {
     padding-bottom:2em;
 }
 
+th#yui-dt0-th-markerTissueResults.yui-dt0-col-markerTissueResults {
+    text-align:center;
+}
+
 #authorAutoComplete .yui-ac-content, #journalAutoComplete .yui-ac-content {
     max-height:20em;
     overflow:auto;
