@@ -108,29 +108,34 @@ td.queryParams2 {
 /*
  * Summary Header
  */
-table.summaryHeader{
+.summaryHeader{  
+  font-size:12px;
+  font-family:Verdana,Arial,Helvetica;
   border: 1px solid black;
   width:100%;
 }
 
-table.summaryHeader td{
-  padding:2px;
-  font-size:12px;
-  font-family:Verdana,Arial,Helvetica;
-  color:#000001;
-  vertical-align:top;
+.summaryHeader td{
+  line-height:1.5em;
+  padding:5px;
 }
+
 td.summaryHeaderCat1 {
-  border: 1px solid black;
+  border: 1px solid black;  
   text-align:right;
   background-color:#D0E0F0;
-  font-weight:bold;
   width:10%;
 }
+
 td.summaryHeaderData1 { 
   border: 1px solid black;
-  background-color:#ffffff;
   width:90%;
+}
+
+.symbolLink {
+  font-size:16px;
+  font-weight:bold;
+  text-decoration:none;
 }
 
 
@@ -154,8 +159,6 @@ table.pad5 th, table.pad5 td {
 table.pad0 th, table.pad0 td {
   padding:0px;
 }
-
-
 
 .formWidth {
 	width: 240px;
@@ -206,14 +209,14 @@ th#yui-dt0-th-markerTissueResults.yui-dt0-col-markerTissueResults {
 
 #contentcolumn{
 	white-space: normal;
-	margin: 0 275px 0 300px; /*Margins for content column. Should be "0 right-column-width 0 left-column-width*/
+	margin: 0 335px 0 300px; /*Margins for content column. Should be "0 right-column-width 0 left-column-width*/
 }
 
 #rightcolumn{
 	float: left;
 	text-align:right;
-	width: 275px; /*Width of right column in pixels*/
-	margin-left: -300px; /*Set margin to -(RightColumnWidth)*/
+	width: 325px; /*Width of right column in pixels*/
+	margin-left: -335px; /*Set margin to -(RightColumnWidth)*/
 }
 
 
@@ -317,6 +320,20 @@ th#yui-dt0-th-markerTissueResults.yui-dt0-col-markerTissueResults {
 #dynamicdata {
 	clear:both;
 }
+
+#batchdata {
+	clear:both;
+}
+
+#batchdata td {
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+#batchdata td a {
+	text-decoration: none;
+}
+
 
 #paginationWrap {
 	text-align: right;
@@ -445,8 +462,6 @@ a.extUrl {
 	text-align:left;
 }
 
-
-
 .ital {
 	font-style:italic;
 }
@@ -500,6 +515,7 @@ a.extUrl {
 #qwrap {
 	margin: 2px;
 	padding: 0px;
+	font-weight: normal;
 }
 
 
@@ -511,7 +527,7 @@ a.extUrl {
 	background-color: #FFFF99;
 }
 
-table.noBorder td, table.noBorder tr{
+table.noBorder td, table.noBorder tr {
 	border: 0px;
 }
 
@@ -529,4 +545,43 @@ table.noBorder td, table.noBorder tr{
 	font-size:10px;
 	font-style:italic;
 	color: red;
+}
+
+
+.batch span {
+	margin: 5px;
+	white-space:nowrap;
+	line-height:1.5em;
+}
+
+.batch .options span {
+	width: 190px;
+	float: left;
+
+}
+
+.batch input {
+	margin-right: 5px;
+	
+}
+
+#batchQueryForm .yui-navset .yui-nav {
+	border:0;
+	padding-left: 5px;
+}
+
+#batchQueryForm .yui-navset .yui-nav .selected a,.yui-skin-sam .yui-navset .yui-nav .selected a:focus,.yui-skin-sam .yui-navset .yui-nav .selected a:hover {
+	border-bottom: solid 0px  #eeeeee;
+	color: black;
+	background:none;
+	background-color: #eeeeee;
+}
+
+#batchQueryForm .yui-navset .yui-content {
+	background-color: #eeeeee;
+	border:0px solid white;
+}
+
+#batchQueryForm .yui-navset .yui-nav, .yui-skin-sam .yui-navset .yui-navset-top .yui-nav {
+	border-bottom: solid 1px black;
 }
