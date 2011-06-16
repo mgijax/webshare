@@ -585,3 +585,10 @@ table.noBorder td, table.noBorder tr {
 #batchQueryForm .yui-navset .yui-nav, .yui-skin-sam .yui-navset .yui-navset-top .yui-nav {
 	border-bottom: solid 1px black;
 }
+
+.yui-skin-sam .yui-dt th .helpLink  {
+	cursor:pointer;
+	font-size:10px;
+	margin: 5px;
+	color: #0000FF;
+}
