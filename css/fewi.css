@@ -588,6 +588,7 @@ table.noBorder td, table.noBorder tr {
 
 .yui-skin-sam .yui-dt th .helpLink  {
 	cursor:pointer;
+	text-decoration: underline;
 	font-size:10px;
 	margin: 5px;
 	color: #0000FF;
