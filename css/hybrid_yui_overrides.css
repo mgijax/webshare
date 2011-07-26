@@ -1,0 +1,188 @@
+/* Navigation bar overrides */
+.yui-skin-sam #navBarMenu{
+    border-top: 1px solid #002255;
+    border-bottom: 1px solid #002255;
+    height: 27px;
+    font-family:Verdana,Arial,Helvetica;
+    font-weight:bold;
+    font-size:13px;
+    background: #002255;
+    min-width:800px;
+    
+}
+
+div.yuimenu {
+    position:absolute;
+}
+
+.yui-skin-sam .yuimenubaritemlabel{
+    text-decoration:none;
+    cursor:default;
+    *position:relative;
+    background-color: #002255;
+}
+
+.yui-skin-sam .yuimenuitemlabel:visited {
+    color: #002255;
+}
+
+.yui-skin-sam .yuimenubar .yuimenubaritemlabel{
+    border: 0;
+    color: #fff;
+    padding-right:22px;
+    *display:inline-block;
+}
+
+.yui-skin-sam .yuimenubar .yuimenubaritemlabel-selected{
+    border-top: 1px solid #002255;
+    border-bottom: 1px solid #002255;
+    color: #002255;
+    background-color: #ddd;
+}
+
+.yui-skin-sam .yuimenubar .yuimenubaritemlabel-hassubmenu{
+    background-image: url(../images/arrow_down.gif);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+}
+
+.yui-skin-sam .yuimenuitem{
+    border-top: 1px solid #fff;
+    background-color: #CAD7E5;
+    text-align:left;
+}
+
+.yui-skin-sam .yuimenuitem-selected{
+    background-color: #ddd;
+}
+
+.yui-skin-sam .yuimenuitem-hassubmenu{
+    background-image:url(../images/menuArrowRight.gif);
+    background-position:98% 50%;
+    background-repeat:no-repeat;}
+
+.yui-skin-sam .yuimenuitem-hassubmenu-selected{
+    background-image: url(../images/menuArrowRight.gif);
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+}
+
+.yuimenu ul{
+	white-space: no-wrap;
+    width: 210px;
+}
+
+/* override left padding on menus */
+.yui-skin-sam .yuimenuitemlabel, .yui-skin-sam .yuimenuitemlabel:hover{
+    padding:0 5px 0 5px;
+    color: #002255;
+    text-decoration:none;
+    cursor:default;
+    white-space: normal;
+    width: 100%;
+}
+
+/* override 3px pad at top & bottom of menus */
+.yui-skin-sam .yuimenu ul {
+    padding-top: 0px;
+    padding-right: 0pt;
+    padding-bottom: 0px;
+    padding-left: 0pt;
+    border-top-width: 1px;
+    border-right-width-value: 0pt;
+    border-bottom-width: 0pt;
+    border-left-width-value: 0pt;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-top-color: #cccccc;
+    border-right-color-value: #cccccc;
+    border-bottom-color: #cccccc;
+    border-left-color-value: #cccccc;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-top-style: solid;
+    border-right-style-value: solid;
+    border-bottom-style: solid;
+    border-left-style-value: solid;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+}
+
+.yui-skin-sam .yuimenubaritemlabel img{
+	vertical-align: middle;
+	border:    0;
+    height: 18px;
+    width:  18px;
+}
+
+/* override for treeview */
+.ygtvtm{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -6400px no-repeat;
+}
+.ygtvtmh,.ygtvtmhh{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -6400px no-repeat;
+}
+.ygtvtp{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -7200px no-repeat;
+}
+.ygtvtph,.ygtvtphh{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -7200px no-repeat;
+}
+.ygtvlm{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -0px no-repeat;
+}
+.ygtvlmh,.ygtvlmhh{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -0px no-repeat;
+}
+.ygtvlp{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -2400px no-repeat;
+}
+.ygtvlph,.ygtvlphh{
+	width:18px;
+	height:22px;
+	cursor:pointer;
+	background:url(../images/treeview-sprite.gif) 0 -2400px no-repeat;
+}
+.ygtvlabel,.ygtvlabel:link,.ygtvlabel:visited,.ygtvlabel:hover{
+	margin-left:10px;
+	text-decoration:none;
+	background-color:#eeeeee;
+	cursor:pointer;
+}
+
+/* hides element for browser history manager */
+#yui-history-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}
