@@ -186,19 +186,19 @@
       <div id="navBarVocabularies" class="yuimenu">
       <div class="bd">
         <ul class="first-of-type">
-          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${FEWI_URL}gobrowser"
+          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/GO_form.shtml"
             onMouseOver="return overlib('Browse the Gene Ontology and mouse annotations in MGI.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             GO Browser</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}omimbrowser"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=omimVocab&subset=A"
             onMouseOver="return overlib('Search for a human disease or condition term to find mouse models.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Human Disease (OMIM) Browser</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}mpbrowser"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/MP_form.shtml"
             onMouseOver="return overlib('Search for a phenotype term to find relevant mutant genotypes.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mammalian Phenotype (MP) Browser</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}adbrowser"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/anatdict_form.shtml"
             onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mouse Anatomical Dictionary</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}amabrowser"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/AMA_form.shtml"
             onMouseOver="return overlib('An extensive ontology of anatomical structures for the postnatal mouse.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Adult Mouse Anatomy Browser</a></li>
         </ul>
