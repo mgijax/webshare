@@ -63,8 +63,8 @@ YAHOO.mgi.navbar.menuinit = function() {
     var menu = new YAHOO.widget.MenuBar("navBarMenu", {
             constraintoviewport: false,
             autosubmenudisplay: true,
-            showdelay: 100,
-            hidedelay: 400,
+            showdelay: 250,
+            hidedelay: 950,
             lazyload: true,
             iframe:true
         });
