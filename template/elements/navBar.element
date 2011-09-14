@@ -103,7 +103,7 @@
 							</li>
 							
 							<li class="yuimenuitem"><a id="navBarCre" class="yuimenuitemlabel" href="${HOMEPAGES_URL}recombinase.shtml"
-                                onMouseOver="return overlib('Get recombinase (cre) specificity data for knock-in and transgene alleles.',ANCHOR, 'navBarCre', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+                                onMouseOver="return overlib('Get recombinase (cre) activity data for knock-in and transgene alleles.',ANCHOR, 'navBarCre', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
                                 Recombinase (cre)</a></li>
 
 							<!-- GO Functional Annotations Submenu -->
