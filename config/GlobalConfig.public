@@ -150,7 +150,7 @@ SILVER_URL              http://${PY_HOST}/silverbook/
 
 WKSILVERS_URL           http://${PY_HOST}/wksilvers/
 
-SCHEMA                  http://${PY_HOST}/schema/
+SCHEMA                  http://${PY_HOST}/schema_pg/
 
 GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
