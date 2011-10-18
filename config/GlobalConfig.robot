@@ -138,6 +138,8 @@ MENUS_URL               http://${PY_HOST}/
 
 SEQFETCH_URL            http://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
 
+FRITHBOOK_URL           http://${PY_HOST}/frithbook/
+
 GREENBOOK_URL           http://${PY_HOST}/greenbook/
 
 COOKBOOK_URL            http://${PY_HOST}/cookbook/
@@ -148,7 +150,7 @@ SILVER_URL              http://${PY_HOST}/silverbook/
 
 WKSILVERS_URL           http://${PY_HOST}/wksilvers/
 
-SCHEMA                  http://${PY_HOST}/schema/
+SCHEMA                  http://www.informatics.jax.org/schema_pg/
 
 GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
@@ -158,6 +160,8 @@ IMSRURL                 http://www.findmice.org/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
+# URL to MTB's submission interface for pathology images
+MTB_PATHOLOGY_URL       http://tumor.informatics.jax.org/mtbpathwi/index.do
 
 ###--
 ###-- Other Paths

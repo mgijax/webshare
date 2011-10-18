@@ -1,8 +1,8 @@
 <div class="notice">
-    <div class="tour">
+    <!--<div class="tour">
       <div class="bl"><div class="br"><div class="tl"><div class="tr">
-        MGI 5.0 Milestone 1 Build
+        <a href='javascript:openFaqWindow("retire.shtml")'">Changes to MGI's website</a>
       </div></div></div></div>
     </div>
-    <!--<span class="small red">Place notice text here and comment out the tour div above</span>-->
+    <span class="small red">Place notice text here and comment out the tour div above</span>-->
 </div>
