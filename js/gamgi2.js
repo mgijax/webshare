@@ -23,7 +23,7 @@ var gaA_fileTypes = new RegExp(/\.(docx*|xlsx*|pptx*|exe|zip|pdf|xpi|txt|csv)$/i
 //		Indicate each file extension that needs to be tracked, 
 //	gaA_fileTypes is the regular expression that matches downloadable files
 var gaA_pageTracker = pageTracker; // Should be set to the name of your tracker variable
-var K3 = window.location.pathname; // KLF added to capture referring page path
+var K3 = window.location.href; // KLF added to capture referring page path
 /**
  * @class ga Addons component.
  *     This class encapsulates all logic for the Google Analytics addons
@@ -67,7 +67,6 @@ var trackExternalLink = function(evnt){
             elmnt = elmnt.parentNode;
         if (/http/.test(elmnt.protocol)) {
 			url = elmnt.href.substr(elmnt.href.indexOf('//')+2,Infinity);
-			K3 = window.location.pathname;
 			gaA_pageTracker._trackEvent("outbound", K3, url);
 		}
         if (elmnt.protocol == "mailto:") 
@@ -76,7 +75,6 @@ var trackExternalLink = function(evnt){
     else {
         if (/http/.test(this.protocol)) {
 			url = this.href.substr(this.href.indexOf('//')+2,Infinity);
-			K3 = window.location.pathname;
 			gaA_pageTracker._trackEvent("outbound", K3, url);
 		}
         if (this.protocol == "mailto:") 
@@ -144,7 +142,7 @@ gaA_pageTracker._trackEvent("viewport", "height", mySize, myHeight);
 function viewportDelay() {
 setTimeout(function() {
 	viewport();
-}, 6000);
+}, 9999);
 }
 //
 viewportDelay();
