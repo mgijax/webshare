@@ -64,10 +64,7 @@ DBSNP_URL               http://www.ncbi.nlm.nih.gov/SNP/snp_ref.cgi?rs=
 RGD_ONT_URL             http://rgd.mcw.edu/tools/ontology/ont_search.cgi
 
 # URL to the TreeFam database
-TREEFAM_URL             http://www.treefam.org/cgi-bin/TFinfo.pl?ac=
-
-# URL to the TreeFam database
-GENETREE_URL            http://useast.ensembl.org/Mus_musculus/Gene/Compara_Tree?db=core;g=%s;r=%s;t=%s
+GENETREE_URL            http://useast.ensembl.org/Mus_musculus/Gene/Compara_Tree?db=core;g=
 
 # URL to the VISTA genome browser (fill in chrom, start & stop coord)
 VISTA_URL               http://pipeline.lbl.gov/cgi-bin/vistatrack?db=mm7&position=
@@ -104,4 +101,4 @@ ENSEMBL_HOME            http://www.ensembl.org/Mus_musculus/textview
 ENTREZGENE_HOME         http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene
 KOMP_HOME               http://www.knockoutmouse.org/
 KOMP_NIH                http://www.nih.gov/science/models/mouse/knockout/
-IMSR_HOME               ${IMSRURL}IMSRSearchForm.jsp
+IMSR_HOME               ${IMSRURL}index
