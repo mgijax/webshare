@@ -163,7 +163,7 @@ GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
 GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
 
-IMSRURL                 http://lindon.informatics.jax.org:18080/imsr/
+IMSRURL                 http://cardolan.informatics.jax.org:48080/imsrwi/imsrwi/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
