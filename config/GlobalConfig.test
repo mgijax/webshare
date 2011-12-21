@@ -104,6 +104,8 @@ MGIHOME_URL             http://${PY_HOST}/mgihome/
 
 USERHELP_URL            http://${PY_HOST}/userhelp/
 
+USERDOCS_URL            http://${PY_HOST}/userdocs/
+
 WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FAQ_URL                 http://${PY_HOST}/faq/
