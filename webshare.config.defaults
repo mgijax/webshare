@@ -7,3 +7,5 @@ GLOBAL_CONFIG ${INSTALL_PATH}config/GlobalConfig
 COMMON_CONFIG ${INSTALL_PATH}config/CommonConfig
 
 LIBDIRS /usr/local/mgi/live/lib/python/
+
+PIXELDB_PATH /data/pixeldb/
