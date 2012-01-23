@@ -247,10 +247,6 @@ th#yui-dt0-th-markerTissueResults.yui-dt0-col-markerTissueResults {
 	line-height:2em;
 }
 
-#querySummary .label {
-	padding-left: 2em;
-}
-
 #querySummary .count {	
 	white-space: nowrap;
 	margin-left: 2em;
@@ -267,18 +263,18 @@ th#yui-dt0-th-markerTissueResults.yui-dt0-col-markerTissueResults {
 #filterDiv {
 	float: left;
 	width: 400px;
-	text-align: left;
+	padding-top: 2px;
 }
 
 #otherDiv {
-	float: left;
-	width: 300px;
+	text-align: right;
 	padding-top: 2px;
 }
 
 #downloadDiv {
-	text-align: right;
-	padding-top: 2px;
+	float: left;
+	width: 200px;
+	text-align: left;
 }
 
 .filterButton {
@@ -399,22 +395,20 @@ a.extUrl {
 }
 .yui-dt-expanded .yui-dt-expandablerow-trigger{
     background:url(../images/abs_down.png) 25px 4px no-repeat;
-    background-position:98% 90%;
+    background-position:98% 98%;
 }
 .yui-dt-expandablerow-trigger, .yui-dt-collapsed .yui-dt-expandablerow-trigger{
     background:url(../images/abs_right.png) 25px 4px no-repeat;
-    background-position:98% 90%;
+    background-position:98% 98%;
 }
 .yui-dt-expanded .yui-dt-expandablerow-trigger.spinner{
     background:url(../images/abs_right.png) 1px 4px no-repeat;
-    background-position:98% 90%;
+    background-position:98% 98%;
 }
 
 .yui-dt-expansion .yui-dt-liner{
     line-height:1.5em;
-    padding:.5em;
-    padding-left: 5em;
-    padding-right: 15em;
+    padding:.5em 15em 1em 1.5em;
     border:solid 0 #cbcbcb;
     border-width: 1px 0 1px 0;
 }
@@ -486,8 +480,9 @@ a.extUrl {
 
 #toggleQF {
 	width:100%;
-	padding:5px;
+	padding:5px 10px;
 	cursor:pointer;
+	text-align:left;
 }
 
 #toggleImg {	
@@ -508,7 +503,8 @@ a.extUrl {
 
 
 #resultbar {
-	padding:5px;
+	padding:5px 10px;
+	text-align:left;
 }
 
 #qwrap {
@@ -592,3 +588,4 @@ table.noBorder td, table.noBorder tr {
 	margin: 5px;
 	color: #0000FF;
 }
+
