@@ -207,3 +207,47 @@ function setText(element, text){
 
     }
 };
+
+/* This file takes a You Tube video ID from a link, calculates which row and cell 
+the link is in, creates a div in the same cell in the previous row, and plays the 
+specified video using the specified width and height. Tested in FF8, Chrome16, and 
+IE8 on Windows7Pro.  KLF, JMason  2012-01-03 */
+function play (yid, width, height, left, top){
+	/* get the link which triggered this script, then get the cell (column) 
+	and row and table it is in (because we still use tables for page layout) */
+	
+	var l = document.getElementById('YT')
+	var c=l.parentNode.cellIndex;
+	var r=l.parentNode.parentNode.rowIndex;
+	var t=l.parentNode.parentNode.parentNode;
+	/* create a div and put the You Tube player in it */
+	var newdiv = document.createElement('div');
+	if (width) { 
+		newdiv.style.width = width; 
+	} 
+	if (height) { 
+		newdiv.style.height = height;
+	} 
+	if ((left || top) || (left && top)) { 
+		newdiv.style.position = "absolute"; 
+		if (left) { 
+		    newdiv.style.left = left; 
+		} 
+		if (top){ 
+		    newdiv.style.top = top; 
+		} 
+	} 
+	newdiv.innerHTML = '<iframe width="'+width+'" height="'+height+'" src="http://www.youtube.com/v/'+yid+'&autoplay=1&autohide=1&loop=1&playlist='+yid+'&rel=0" frameborder="0" allowfullscreen></iframe>'; 
+	/*  You Tube link parameters: 
+		&autoplay=1   set to play the video as soon as it loads
+		&autohide=1   hides the player controls until user mouses over the video
+		&loop=1&playlist='+yid+'   sets the video to play continuous loop, 
+			must specify video ID again as its own playlist
+		&rel=0   hides any "related videos" that You Tube might promote
+		frameborder="0" allowfullscreen    these are usually included in 
+			examples though they don't do anything for us here
+	*/
+	/* put the new div containing the You Tube player and video into the table 
+	in the row above the triggering link, but in the same column */
+	t.rows[r-1].cells[c].innerHTML=newdiv.innerHTML;
+}
