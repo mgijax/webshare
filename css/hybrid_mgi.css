@@ -79,73 +79,13 @@ table.results {background-color:#777777}
 table.center {margin-left:auto; margin-right:auto;}
 
 /* STYLES FOR TABLE TO REPLACE DEPRECATED BORDER=, CELL-PADDING=, CELL-SPACING= */
-/* CSS STYLE 'BORDER-SPACING:' TO REPLACE CELL-SPACING= IS NOT SUPPORTED BY MOST WEB BROWSERS */
-
+/* CSS STYLE 'BORDER-SPACING:' TO REPLACE CELL-SPACING= IS NOT SUPPORTED BY MOST WEB BROWSERS 
+*/
 table.b0p0s7 {border:none; border-collapse:collapse;}
 table.b0p0s7 td {border:none; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px;}
 table.b1p3s7 {border-collapse:collapse;}
 table.b1p3s7 th {border-bottom:2px solid #BFBFBF; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px; font-size:14px;}
 table.b1p3s7 td {border-bottom:1px solid #DFDFDF; padding-left:3px; padding-right:4px; padding-bottom:4px; padding-top:3px; vertical-align:middle;}
-
-table.outline {
-        border-width: 1px;
-        border-spacing: 2px;
-        border-style: outset;
-        border-color: gray;
-        border-collapse: collapse;
-}
-
-table.bdouble {
-	border-width: 1px;
-	border-spacing: 2px;
-	border-style: outset;
-	border-color: gray;
-	border-collapse: separate;
-	background-color: white;
-}
-table.bdouble th {
-	border-width: 1px;
-	padding: 3px;
-	border-style: inset;
-	border-color: gray;
-	background-color: white;
-	-moz-border-radius: 0px 0px 0px 0px;
-}
-table.bdouble td {
-	border-width: 1px;
-	padding: 3px;
-	border-style: inset;
-	border-color: gray;
-	background-color: white;
-	-moz-border-radius: 0px 0px 0px 0px;
-}
-
-table.mgitable {
-	border-width: 1px;
-	border-spacing: 2px;
-	border-style: solid;
-	border-color: black;
-	border-collapse: collapse;
-	background-color: white;
-}
-table.mgitable th {
-	border-width: 1px;
-	padding: 2px;
-	border-style: solid;
-	border-color: black;
-	background-color: white;
-	-moz-border-radius: 0px 0px 0px 0px;
-}
-table.mgitable td {
-	border-width: 1px;
-	padding: 2px;
-	border-style: solid;
-	border-color: black;
-	background-color: white;
-	-moz-border-radius: 0px 0px 0px 0px;
-}
-
-p {padding: 8px 0px;}
 
 .buttonLabel {font-size:12px;font-family:Arial,Helvetica;text-align:center;color:#000001;font-weight:bold;}
 tr.buttons {vertical-align:middle;text-align:left;background-color:#ffffff}
@@ -163,7 +103,6 @@ td.hilite {background-color:#FDFDDD}
 .grayBackground {background-color:#eeeeee;}
 .nowrap {white-space: nowrap;} 
 .larger {font-size:14px;font-weight:bold}
-.extraLarge {font-size:18px;font-weight:bold}
 .bold {font-weight:bold}
 .normal {font-size:14px;font-weight:normal}
 .vocabLink {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000}
@@ -274,18 +213,9 @@ div#DataContent {
     min-width: 600px;}
     
 .toc li { display: inline;
-    white-space: nowrap;
-    margin: 0px;}
+    white-space: nowrap; }
     
-.outline { 
-	border: 1px solid #DFEFFF;
-	margin-top: 5px;
-	border-color: gray;
-	}
-	
-.outline td { 
-	padding: 4px;
-	}	
+.outline { border: 2px solid #DFEFFF; }
 
 dl.linkedList { margin-left: 2em; }
 
@@ -299,91 +229,6 @@ dl.linkedList { margin-left: 2em; }
     font-size:x-small; 
     color:#333333; 
     line-height:8px; }
-
-/*******************************/
-/* Standard overarching styles */
-/*******************************/
-
-dl dd {
-   font-weight: normal;
-   margin-left: 40px;
-}
-    
-ul {
-    padding: 8px 0px;
-}
-    
-ul li {
-    list-style-type: disc;
-    list-style-position: outside;
-    margin-left: 40px;
-}
-
-ol {
-    padding: 8px 0px;
-}
-    
-ol li {
-    list-style-position: outside;
-    margin-left: 40px;
-}
-
-ul ul {
-    padding: 2px 0px;
-}
-    
-ul ul li {
-    list-style-type: circle;
-    list-style-position: inside;
-    margin-left: 30px;
-}
-
-ul ul ul {
-    padding: 2px 0px;
-}
-    
-ul ul ul li {
-    list-style-type: square;
-    list-style-position: inside;
-    margin-left: 30px;
-}
-
-ol li {
-	list-style-type: decimal;
-}
-
-sup {
-	position: relative;
-	bottom: 1ex;
-}
-
-strong {
-	font-weight: bolder;
-}
-
-em {
-	font-style: italic;
-}
-
-blockquote  {
-    padding-left: 40px;
-}
-
-
-/*
-* Specific Styles, for cases where the global ones fail
-*/
-
-.softwareUL li {
-    list-style-type: circle;
-    list-style-position: inside;
-    margin-left: 60px;
-}
-
-.softwareOL li {
-    margin-left: 80px;
-}
-/*########################################################## */
 
 .smaller { font-size:9px; font-weight:normal; }
 

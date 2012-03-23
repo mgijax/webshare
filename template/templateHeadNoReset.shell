@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- Template CSS -->
+<link href="${WEBSHARE_URL}css/hybrid_mgi.css" rel="stylesheet" type="text/css"/>
+<link href="${WEBSHARE_URL}css/hybrid_template.css" rel="stylesheet" type="text/css"/>
+
+<!-- Combo-handled YUI CSS files: -->
+<link rel="stylesheet" type="text/css" href="${YUI_CSS_URL}">
+
+<!-- YUI CSS overrides: -->
+<link href="${WEBSHARE_URL}css/hybrid_yui_overrides.css" rel="stylesheet" type="text/css"/>
+
+<!-- Combo-handled YUI JS files: -->
+<script type="text/javascript" src="${YUI_JS_URL}"></script>
+
+
+<!--===================== End Template Head  ===========================-->
+

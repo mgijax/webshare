@@ -32,7 +32,7 @@ function loadPage() {
           helpLink = "<a href='" + userdoc + "'>" + helpIcon + "</a>";
         }
         else {
-          helpLink = "<a href='${USERDOCS_URL}" + userdoc + "'>" + helpIcon + "</a>";
+          helpLink = "<a href='${USERHELP_URL}" + userdoc + "' onclick='javascript:openUserhelpWindow(\"" + userdoc + "\"); return false;'>" + helpIcon + "</a>";
         }
 
         titleBarWrapper.innerHTML = helpLink + currentHTML;
@@ -50,15 +50,23 @@ function openFaqWindow(faqFile)
     window.open(faqUrl,'faqWindow','width=1000,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
 };
 
+<!-- faq window to assist user; callable from anywhere using the templates -->
+function openUserhelpWindow(helpFile)
+{
+    helpUrl = "${USERHELP_URL}" + helpFile;
+    window.open(helpUrl,'helpWindow','width=1000,height=600,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+};
+
 <!-- initialize navigation menu -->
 YAHOO.namespace("mgi.navbar");
 YAHOO.mgi.navbar.menuinit = function() {
     var menu = new YAHOO.widget.MenuBar("navBarMenu", {
             constraintoviewport: false,
             autosubmenudisplay: true,
-            showdelay: 100,
-            hidedelay: 400,
-            lazyload: true
+            showdelay: 250,
+            hidedelay: 950,
+            lazyload: true,
+            iframe:true
         });
     menu.render();
     menu.cfg.setProperty("constraintoviewport", false);
@@ -191,6 +199,14 @@ function formCap(){
     setTimeout("formCap()", 1000);
 }
 formCap();
+
+function setText(element, text){
+	element.textContent=text;
+    if (!YAHOO.lang.isUndefined(element.innerText)){                 
+        element.innerText = text;
+
+    }
+};
 
 /* This file takes a You Tube video ID from a link, calculates which row and cell 
 the link is in, creates a div in the same cell in the previous row, and plays the 

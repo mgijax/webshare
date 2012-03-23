@@ -115,10 +115,12 @@
 
  .newsList li {
      margin-bottom: .5em;
-     list-style-position: inside;
+     list-style-position: outside;
      line-height: 1.25em;
+     list-style-type: disc;
+     margin-left: 12px;
  }
-
+ 
  dd.searchList {
      margin:.5em 0em .5em 5em;
  }

@@ -14,6 +14,8 @@ PY_HOST                 rohan.informatics.jax.org
 # Host of tomcat servlet container; non-public installs include port # 
 JAVA_HOST               rohan.informatics.jax.org
 
+FEWI_HOST		cardolan:18080
+
 # Host of the sequence retrieval tool
 SEQFETCH_HOST           rohan.informatics.jax.org
 
@@ -66,7 +68,7 @@ PHENO_CACHE_TIMEOUT   0
 STAT_COLLECT_ENABLED    0
 
 # version numbers used in css and js filename and path
-YUI_VERSION         2.8.1
+YUI_VERSION         2.8.2r1
 MGI_VERSION         01
 
 # path & name of the generated css files
@@ -77,7 +79,7 @@ YUI_CSS_URL         ${YUI_URL}combo?${YUI_VERSION}/build/assets/skins/sam/skin.c
 # patch and name of the generated js files
 TEMPLATE_JS_FILE    mgi_template${MGI_VERSION}.js
 MGIHOME_JS_FILE     homepages_template${MGI_VERSION}.js
-YUI_JS_URL          ${YUI_URL}combo?${YUI_VERSION}/build/utilities/utilities.js&${YUI_VERSION}/build/container/container-min.js&${YUI_VERSION}/build/datasource/datasource-min.js&${YUI_VERSION}/build/datatable/datatable-min.js&${YUI_VERSION}/build/menu/menu-min.js&${YUI_VERSION}/build/resize/resize-min.js&${YUI_VERSION}/build/selector/selector-min.js&${YUI_VERSION}/build/tabview/tabview-min.js&${YUI_VERSION}/build/treeview/treeview-min.js&${YUI_VERSION}/build/history/history-min.js
+YUI_JS_URL          ${YUI_URL}combo?${YUI_VERSION}/build/utilities/utilities.js&${YUI_VERSION}/build/datasource/datasource-min.js&${YUI_VERSION}/build/autocomplete/autocomplete-min.js&${YUI_VERSION}/build/container/container-min.js&${YUI_VERSION}/build/menu/menu-min.js&${YUI_VERSION}/build/button/button-min.js&${YUI_VERSION}/build/paginator/paginator-min.js&${YUI_VERSION}/build/datatable/datatable-min.js&${YUI_VERSION}/build/history/history-min.js&${YUI_VERSION}/build/json/json-min.js&${YUI_VERSION}/build/resize/resize-min.js&${YUI_VERSION}/build/selector/selector-min.js&${YUI_VERSION}/build/tabview/tabview-min.js&${YUI_VERSION}/build/treeview/treeview-min.js
 
 # settings for javascript captcha implementation, element is hidden form param, 
 # hide is element hidden by css
@@ -93,11 +95,15 @@ JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
 WI_URL                  http://${PY_HOST}/wi/
 
+FEWI_URL                http://${FEWI_HOST}/fewi/mgi/
+
 QUICKSEARCH_URL         http://${PY_HOST}/searchtool/
 
 MGIHOME_URL             http://${PY_HOST}/mgihome/
 
 USERDOCS_URL            http://${PY_HOST}/userdocs/
+
+USERHELP_URL            http://${PY_HOST}/userhelp/
 
 WEBSHARE_URL            http://${PY_HOST}/webshare/
 
@@ -109,7 +115,7 @@ FTP_BASE_URL            ftp://devftp.informatics.jax.org/pub/
 
 FTP_URL                 ${FTP_BASE_URL}reports/
 
-PIXELDB_URL             http://${PY_HOST}/pixeldb/fetch_pixels.cgi?id=
+PIXELDB_URL             ${WEBSHARE_URL}fetch_pixels.cgi?id=
 
 GO_GRAPH_URL            http://${PY_HOST}/GOgraphs/
 
@@ -157,7 +163,7 @@ GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
 GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
 
-IMSRURL                 http://lindon.informatics.jax.org:18080/imsr/
+IMSRURL                 http://cardolan.informatics.jax.org:48080/imsrwi/imsrwi/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 

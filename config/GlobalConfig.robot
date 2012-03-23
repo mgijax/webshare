@@ -98,6 +98,8 @@ MGIHOME_URL             http://${PY_HOST}/mgihome/
 
 USERDOCS_URL            http://${PY_HOST}/userdocs/
 
+USERHELP_URL            http://${PY_HOST}/userhelp/
+
 WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FAQ_URL                 http://${PY_HOST}/faq/
@@ -108,7 +110,7 @@ FTP_BASE_URL            ftp://ftp.informatics.jax.org/pub/
 
 FTP_URL                 ${FTP_BASE_URL}reports/
 
-PIXELDB_URL             http://${PY_HOST}/pixeldb/fetch_pixels.cgi?id=
+PIXELDB_URL             ${WEBSHARE_URL}fetch_pixels.cgi?id=
 
 GO_GRAPH_URL            http://${PY_HOST}/GOgraphs/
 

@@ -33,7 +33,8 @@ except:
 import CGI
 import string
 import regex
-import db
+import pg_db
+db = pg_db      # set up alias to minimize code changes
 
 class getTemplateCGI (CGI.CGI):
 
@@ -87,7 +88,7 @@ class getTemplateCGI (CGI.CGI):
     db.set_sqlDatabase(config["DB_DATABASE"])
     cmds = [] # SQL command list
     cmds.append(string.join([
-        'SELECT CONVERT(varchar, lastdump_date, 101) as dbDate, '
+        'SELECT to_char(lastdump_date, \'MM/DD/YYYY\') as dbDate, '
         'public_version '
         'FROM MGI_dbInfo '
     ]))
