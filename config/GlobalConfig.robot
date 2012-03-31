@@ -2,7 +2,7 @@
 # Global Config
 ############################################################################
 
-NAME                    MGI_4.4
+NAME                    MGI 5.0
  
 ###--
 ###-- MGI Host Servers
@@ -13,6 +13,9 @@ PY_HOST                 www.informatics.jax.org
 
 # Host of tomcat servlet container; non-public, production or firien installs include port # 
 JAVA_HOST               www.informatics.jax.org
+
+# Host of (or Apache redirection of) fewi pages
+FEWI_HOST               www.informatics.jax.org
 
 # Host of the sequence retrieval tool
 SEQFETCH_HOST           www.informatics.jax.org
@@ -30,12 +33,11 @@ PUBLIC_HOST		www.informatics.jax.org
 ###-- Database Connectivity
 ###--
 
-DB_URL           isengard.informatics.jax.org:4100
-DB_SERVER        BOT_MGI
-DB_DATABASE      mgd
-DB_USER          mgd_public
-DB_PASSWORD      mgdpub
-SNP_DATABASE     snp
+DB_SERVER      mgi-botfedb1
+DB_URL         mgi-botfedb1.jax.org:5432
+DB_DATABASE    pub
+DB_USER        mgd_public
+DB_PASSWORD    mgdpub
 
 ###--
 ###-- Global Flags & Strings
@@ -65,7 +67,7 @@ PHENO_CACHE_TIMEOUT   15
 STAT_COLLECT_ENABLED    0
 
 # version numbers used in css and js filename and path
-YUI_VERSION         2.8.1
+YUI_VERSION         2.8.2r1
 MGI_VERSION         01
 
 # path & name of the generated css files
@@ -76,7 +78,7 @@ YUI_CSS_URL         ${YUI_URL}combo?${YUI_VERSION}/build/assets/skins/sam/skin.c
 # patch and name of the generated js files
 TEMPLATE_JS_FILE    mgi_template${MGI_VERSION}.js
 MGIHOME_JS_FILE     homepages_template${MGI_VERSION}.js
-YUI_JS_URL          ${YUI_URL}combo?${YUI_VERSION}/build/utilities/utilities.js&${YUI_VERSION}/build/container/container-min.js&${YUI_VERSION}/build/datasource/datasource-min.js&${YUI_VERSION}/build/datatable/datatable-min.js&${YUI_VERSION}/build/menu/menu-min.js&${YUI_VERSION}/build/resize/resize-min.js&${YUI_VERSION}/build/selector/selector-min.js&${YUI_VERSION}/build/tabview/tabview-min.js&${YUI_VERSION}/build/treeview/treeview-min.js&${YUI_VERSION}/build/history/history-min.js
+YUI_JS_URL          ${YUI_URL}combo?${YUI_VERSION}/build/utilities/utilities.js&${YUI_VERSION}/build/datasource/datasource-min.js&${YUI_VERSION}/build/autocomplete/autocomplete-min.js&${YUI_VERSION}/build/container/container-min.js&${YUI_VERSION}/build/menu/menu-min.js&${YUI_VERSION}/build/button/button-min.js&${YUI_VERSION}/build/paginator/paginator-min.js&${YUI_VERSION}/build/datatable/datatable-min.js&${YUI_VERSION}/build/history/history-min.js&${YUI_VERSION}/build/json/json-min.js&${YUI_VERSION}/build/resize/resize-min.js&${YUI_VERSION}/build/selector/selector-min.js&${YUI_VERSION}/build/tabview/tabview-min.js&${YUI_VERSION}/build/treeview/treeview-min.js
 
 # settings for javascript captcha implementation, element is hidden form param, 
 # hide is element hidden by css
@@ -94,11 +96,13 @@ WI_URL                  http://${PY_HOST}/
 
 QUICKSEARCH_URL         http://${PY_HOST}/searchtool/
 
+FEWI_URL                http://${FEWI_HOST}/
+
 MGIHOME_URL             http://${PY_HOST}/mgihome/
 
-USERDOCS_URL            http://${PY_HOST}/userdocs/
-
 USERHELP_URL            http://${PY_HOST}/userhelp/
+
+USERDOCS_URL            http://${PY_HOST}/userhelp/
 
 WEBSHARE_URL            http://${PY_HOST}/webshare/
 

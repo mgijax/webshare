@@ -2,7 +2,7 @@
 # Global Config
 ############################################################################
 
-NAME                    MGI 4.4
+NAME                    MGI 5.0
  
 ###--
 ###-- MGI Host Servers
@@ -14,7 +14,7 @@ PY_HOST                 firien.informatics.jax.org
 # Host of tomcat servlet container; non-public installs include port # 
 JAVA_HOST               firien.informatics.jax.org
 
-# Host of the jboss servlet container
+# Host of (or Apache redirection of) fewi pages
 FEWI_HOST               firien.informatics.jax.org
 
 # Host of the sequence retrieval tool
@@ -38,7 +38,6 @@ DB_URL         mgi-fedb1.jax.org:5432
 DB_DATABASE    pub
 DB_USER        mgd_public
 DB_PASSWORD    mgdpub
-
 
 ###--
 ###-- Global Flags & Strings
