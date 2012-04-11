@@ -33,7 +33,7 @@ PUBLIC_HOST		www.informatics.jax.org
 ###-- Database Connectivity
 ###--
 
-DB_SERVER      mgi-botfedb1
+DB_SERVER      mgi-botfedb1.jax.org
 DB_URL         mgi-botfedb1.jax.org:5432
 DB_DATABASE    pub
 DB_USER        mgd_public
