@@ -75,7 +75,7 @@ THEILERBOOK_URL		http://www.emouseatlas.org/Atlas/Theiler_book_download.html
 ###--javawi Url's--###
 
 # URL for the 'browse Stage descriptions' link on expression query forms of javawi
-STAGE_INFO_URL		http://www.emouseatlas.org/emap/ema/theiler_stages/StageDefinition/stagecriteria.html
+STAGE_INFO_URL		http://www.emouseatlas.org/emap/ema/theiler_stages/StageDefinition/stagedefinition.html
 
 # javawi URL to the graphical view of protein domain structure (insert SwissProt ID)
 GRAPH_SP_URL        	http://www.ebi.ac.uk/interpro/ISpy?ac=@@@@
