@@ -99,7 +99,7 @@ WI_URL                  http://${PY_HOST}/
 FEWI_URL                http://${FEWI_HOST}/fewi/mgi/
 
 #QUICKSEARCH_URL         http://${PY_HOST}/searchtool/
-QUICKSEARCH_URL        http://valinor.informatics.jax.org:8080/searchtool_wi/ 
+QUICKSEARCH_URL        http://valinor.informatics.jax.org:8080/searchtool_wi/
 
 MGIHOME_URL             http://${PY_HOST}/mgihome/
 
