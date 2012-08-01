@@ -175,7 +175,7 @@ th#yui-dt0-th-markerTissueResults.yui-dt0-col-markerTissueResults {
     text-align:center;
 }
 
-#authorAutoComplete .yui-ac-content, #journalAutoComplete .yui-ac-content {
+.yui-ac-container .yui-ac-content {
     max-height:20em;
     overflow:auto;
     overflow-x:hidden; /* set scrolling */
