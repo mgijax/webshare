@@ -63,7 +63,7 @@
           <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${FEWI_URL}gxdlit"
             onMouseOver="return overlib('Search for references on gene expression during development.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Gene Expression Literature Query</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=expressionQF"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}gxd/"
             onMouseOver="return overlib('Search for detailed gene expression assay results.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Gene Expression Data Query</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=expressionQFexpanded"
