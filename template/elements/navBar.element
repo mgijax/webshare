@@ -291,7 +291,7 @@
               <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/link_instructions.shtml">Creating Web Links to MGI</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/web_service.shtml">MGI Web Service</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}software.shtml#sql">Direct SQL Account</a></li>
-              <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${SCHEMA}"">Database Schema Browser</a></li>
+              <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${SCHEMA}">Database Schema Browser</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html">All MGI Reports</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}software.shtml">More</a></li>
             </ul>
