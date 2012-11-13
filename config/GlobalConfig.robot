@@ -2,7 +2,7 @@
 # Global Config
 ############################################################################
 
-NAME                    MGI 5.0
+NAME                    MGI 5.11
  
 ###--
 ###-- MGI Host Servers
@@ -50,7 +50,7 @@ IS_PRODUCTION           0
 BUILDS_IN_SYNC          0
 
 # genome assembly version for marker coordinates
-ASSEMBLY_VERSION        38
+ASSEMBLY_VERSION        GRCm38
 
 # genome assembly version for SNP coordinates
 SNP_ASSEMBLY_VERSION    37
