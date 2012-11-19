@@ -3,6 +3,6 @@
       <div class="bl"><div class="br"><div class="tl"><div class="tr">
         <a href='${MGIHOME_URL}other/mgi_jobs.shtml'>MGI Job Opening</a>
       </div></div></div></div>
-    </div>-->
-    <span class="small">MGI has a <a href='${MGIHOME_URL}other/mgi_jobs.shtml'>job opening</a> for a biologist.</span>
+    </div>
+    <span class="small"></span>-->
 </div>
