@@ -174,5 +174,5 @@ MTB_PATHOLOGY_URL       http://tumor.informatics.jax.org/mtbpathwi/index.do
 ###--
 
 GENOMIC_PATH /hobbiton/data/research/
-NIBDBS /hobbiton/data/research/dna/mouse_build_37_nib
+NIBDBS /hobbiton/data/research/dna/mouse_build_38_nib
 

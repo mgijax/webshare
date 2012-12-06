@@ -170,5 +170,5 @@ MTB_PATHOLOGY_URL       http://tumor.informatics.jax.org/mtbpathwi/index.do
 ###--
 
 GENOMIC_PATH /data/research/
-NIBDBS /data/research/dna/mouse_build_37_nib
+NIBDBS /data/research/dna/mouse_build_38_nib
 
