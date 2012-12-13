@@ -1,4 +1,4 @@
-INSTALL_PATH /usr/local/mgi/jenkins/.jenkins/workspace/webshare-trunk/
+INSTALL_PATH /usr/local/mgi/jenkins/.jenkins/workspace/webshare-dev/
 
 RCDFILE_PATH ${INSTALL_PATH}images.rcd
 

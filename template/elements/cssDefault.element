@@ -4,13 +4,14 @@
 <!-- Combo-handled YUI CSS files: -->
 <link rel="stylesheet" type="text/css" href="${YUI_CSS_URL}">
 
-
-
 <!-- MGI CSS files: -->
 <link href="${WEBSHARE_URL}css/${TEMPLATE_CSS_FILE}" rel="stylesheet" type="text/css"/>
 
-
-
+<!-- Combo-handled YUI JS files: -->
+<script type="text/javascript" src="${YUI_JS_URL}"></script>
 
 <!-- Combo-handled YUI JS files: -->
 <script type="text/javascript" src="${YUI_JS_URL}"></script>
+
+<!-- jQuery -->
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.min.js"></script>

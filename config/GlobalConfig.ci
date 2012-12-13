@@ -15,7 +15,7 @@ PY_HOST                 cardolan.informatics.jax.org
 JAVA_HOST               cardolan.informatics.jax.org
 
 # Host of the jboss servlet container
-FEWI_HOST               cardolan.informatics.jax.org:13080
+FEWI_HOST               cardolan.informatics.jax.org
 
 # Host of the sequence retrieval tool
 SEQFETCH_HOST           cardolan.informatics.jax.org
@@ -96,7 +96,7 @@ JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
 WI_URL                  http://${PY_HOST}/
 
-FEWI_URL                http://${FEWI_HOST}/fewi/mgi/
+FEWI_URL                http://${FEWI_HOST}/
 
 #QUICKSEARCH_URL         http://${PY_HOST}/searchtool/
 QUICKSEARCH_URL        http://valinor.informatics.jax.org:8080/searchtool_wi/
@@ -117,7 +117,7 @@ FTP_BASE_URL            ftp://ftp.informatics.jax.org/pub/
 
 FTP_URL                 ${FTP_BASE_URL}reports/
 
-PIXELDB_URL             ${WEBSHARE_URL}fetch_pixels.cgi?id=
+PIXELDB_URL            http://www.informatics.jax.org/webshare/fetch_pixels.cgi?id=
 
 GO_GRAPH_URL            http://${PY_HOST}/GOgraphs/
 
@@ -163,7 +163,8 @@ GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
 
 GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
 
-IMSRURL                 http://cardolan.informatics.jax.org:48080/imsrwi/imsrwi/
+#IMSRURL                 http://cardolan.informatics.jax.org:48080/imsrwi/imsrwi/
+IMSRURL                 http://www.findmice.org/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 

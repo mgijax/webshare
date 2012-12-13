@@ -17,6 +17,9 @@
 <!-- Combo-handled YUI JS files: -->
 <script type="text/javascript" src="${YUI_JS_URL}"></script>
 
+<!-- jQuery -->
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.min.js"></script>
+
 
 <!--===================== End Template Head  ===========================-->
 
