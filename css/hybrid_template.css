@@ -315,3 +315,18 @@ a.logoFooterAnchor{
 .tabTipFont {color:#002255; font-size:9px; font-style:italic;}
 .tabTipBoxFG {border: none; background-color:transparent; width:auto;}
 .tabTipBoxBG {border: none; background-color:transparent; width:auto;}
+
+
+.overlibBGClass {
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: solid;
+	border-color: #002255;
+	border-collapse: collapse;
+	background-color: #002255;
+}
+
+.overlibBGClass td td {
+	padding: 2px;
+}
+
