@@ -156,9 +156,9 @@ WKSILVERS_URL           http://${PY_HOST}/wksilvers/
 
 SCHEMA                  http://www.informatics.jax.org/schema_pg/
 
-GBROWSE_URL             http://${GBROWSE_HOST}gbrowse/mouse_current
+GBROWSE_URL             http://${GBROWSE_HOST}gb2/gbrowse/mouse38/
 
-GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gbrowse_img/thumbs_current
+GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gb2/gbrowse_img/mouse38/
 
 IMSRURL                 http://www.findmice.org/
 
