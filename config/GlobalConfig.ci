@@ -33,11 +33,17 @@ PUBLIC_HOST     www.informatics.jax.org
 ###-- Database Connectivity
 ###--
 
-DB_SERVER      cardolan
-DB_URL         cardolan.informatics.jax.org:5432
-DB_DATABASE    pub
+DB_SERVER      mgi-testdb4.jax.org
+DB_URL         mgi-testdb4.jax.org:5432
+DB_DATABASE    pub_stable
 DB_USER        mgd_public
 DB_PASSWORD    mgdpub
+
+#DB_SERVER      cardolan
+#DB_URL         cardolan.informatics.jax.org:5432
+#DB_DATABASE    pub_stable
+#DB_USER        mgd_public
+#DB_PASSWORD    mgdpub
 
 
 ###--
