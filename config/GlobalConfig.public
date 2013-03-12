@@ -53,7 +53,7 @@ BUILDS_IN_SYNC          0
 ASSEMBLY_VERSION        GRCm38
 
 # genome assembly version for SNP coordinates
-SNP_ASSEMBLY_VERSION    38
+SNP_ASSEMBLY_VERSION    37
 
 # indicates if the Java WI should do no caching of pages
 JAVAWI_CACHE_ENABLED    1
