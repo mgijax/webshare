@@ -215,7 +215,7 @@
         onMouseOver="return overlib('Search for sequence similarity for mouse, human, or rat.',ANCHOR, 'navBarBlast', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         MouseBLAST</a></li>
 
-      <li class="yuimenuitem"><a id="navBarMine" class="yuimenuitemlabel" href="www.mousemine.org"
+      <li class="yuimenuitem"><a id="navBarMine" class="yuimenuitemlabel" href="http://www.mousemine.org"
         onMouseOver="return overlib('Access MGI data via InterMine.',ANCHOR, 'navBarMine', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         MouseMine</a></li>
 
@@ -271,7 +271,7 @@
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=glossaryIndex&printFormat=footer">MGI Glossary</a></li>        
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://proto.informatics.jax.org/"> Prototype Tools</a> </li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}GXD/GEN/">Gene Expression Notebook (GEN)</a></li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://phenome.jax.org/pub-cgi/phenome/mpdcgi?rtn=docs/home">Mouse Phenome Database (MPD)</a></li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://phenome.jax.org">Mouse Phenome Database (MPD)</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${WI_URL}external/ko/">Deltagen and Lexicon Knockout Mice</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${KOMP_HOME}" 
           id="navBarKomp" onMouseOver="return overlib('Central web site for all IKMC projects: KOMP, EUCOMM, NorCOMM, and TIGM.',ANCHOR, 'navBarKomp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">International Knockout Mouse Consortium (IKMC)</a></li>
@@ -293,7 +293,7 @@
           <div class="bd">
             <ul class="first-of-type">
               <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/link_instructions.shtml">Creating Web Links to MGI</a></li>
-              <li class="yuimenuitem"><a class="yuimenuitemlabel" href="www.mousemine.org">MouseMine</a></li>
+              <li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://www.mousemine.org">MouseMine</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/web_service.shtml">MGI Web Service</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}software.shtml#sql">Direct SQL Account</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${SCHEMA}">Database Schema Browser</a></li>
