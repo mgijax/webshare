@@ -136,10 +136,10 @@
       </li>
 
 
-      <!-- Orthology Submenu -->
-      <li class="yuimenuitem"><a id="navBarOrthology" class="yuimenuitemlabel" href="${HOMEPAGES_URL}orthology.shtml"
-        onMouseOver="return overlib('Find out more about Orthology relationships in MGI.',ANCHOR, 'navBarBiochem', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
-        Orthology</a></li>
+      <!-- Homology Submenu -->
+      <li class="yuimenuitem"><a id="navBarHomology" class="yuimenuitemlabel" href="${HOMEPAGES_URL}homology.shtml"
+        onMouseOver="return overlib('Find out more about Homology relationships in MGI.',ANCHOR, 'navBarBiochem', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+        Homology</a></li>
 
       <!-- MTB -->
       <li class="yuimenuitem"><a id="navBarMTB" class="yuimenuitemlabel" href="http://tumor.informatics.jax.org/mtbwi/index.do"
@@ -242,7 +242,7 @@
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FEWI_URL}batch">Batch Query</a> </li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#marker">Genes &amp; Markers</a> </li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#seq">Sequence Data</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#orthology">Mammalian Orthology</a> </li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#homology">Vertebrate Homology</a> </li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#go">Gene Ontology Data</a> </li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#strain">Strains &amp; Polymorphisms</a> </li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#expression">Gene Expression</a> </li>

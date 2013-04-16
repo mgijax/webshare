@@ -26,7 +26,7 @@ GROUP                   www
 
 PATHWAYS_URL            http://mousecyc.jax.org/
 
-# URL to Entrez where we find human orthologs
+# URL to Entrez where we find human homologs
 ENTREZ_URL              http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=
 
 # URL to NCBI's Entrez for Genbank sequence IDs
@@ -48,7 +48,7 @@ DBSNP_HOME              http://www.ncbi.nlm.nih.gov/projects/SNP/
 # link to build statistics for current dbSNP build
 DBSNP_STATS             http://www.ncbi.nlm.nih.gov/SNP/snp_summary.cgi?view+summary=view+summary&build_id=128
 
-# the URL for linking to an orthology page at Homologene (append Homologene ID)
+# the URL for linking to an homology class page at Homologene (append Homologene ID)
 HOMOLOGENE_URL          http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=homologene&dopt=HomoloGene&list_uids=
 
 # URL to RefSNP detail pages at MPD

@@ -43,10 +43,10 @@
                 onmouseover="return overlib('Strains, SNPs &amp; Polymorphisms',ANCHOR, 'tab_snps', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="tab_snps">Strains&nbsp;/&nbsp;SNPs</span></a>
           </li>
-          <li id="orthology.shtml">
-            <a href="${HOMEPAGES_URL}orthology.shtml"
-            onmouseover="return overlib('Mammalian Orthology',ANCHOR, 'tab_ortho', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-            <span id="tab_ortho">Orthology</span></a>
+          <li id="homology.shtml">
+            <a href="${HOMEPAGES_URL}homology.shtml"
+            onmouseover="return overlib('Vertebrate Homology',ANCHOR, 'tab_homo', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+            <span id="tab_homo">Homology</span></a>
           </li>
           <li id="minitab_Tumor">
             <a href="${MTB_URL}"
