@@ -1,7 +1,9 @@
+TAG: webshare-5-1-4-2
 TAG: webshare-5-1-4-1
 DATE: 5/28/13
 STAFF: pf
 CHANGES: merging tr11248 branch
+-update snp related values in GlobalConfig files
 
 TAG: webshare-5-1-3-2
 DATE: 4/30/13
