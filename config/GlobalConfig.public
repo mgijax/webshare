@@ -47,13 +47,13 @@ DB_PASSWORD    mgdpub
 IS_PRODUCTION           0
 
 # are SNP and marker coordinates drawn from the same genome assembly? (0/1)
-BUILDS_IN_SYNC          0
+BUILDS_IN_SYNC          1
 
 # genome assembly version for marker coordinates
 ASSEMBLY_VERSION        GRCm38
 
 # genome assembly version for SNP coordinates
-SNP_ASSEMBLY_VERSION    37
+SNP_ASSEMBLY_VERSION    38
 
 # indicates if the Java WI should do no caching of pages
 JAVAWI_CACHE_ENABLED    1
