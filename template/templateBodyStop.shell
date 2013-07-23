@@ -29,7 +29,7 @@
   </td>
   <td WIDTH="33%" ALIGN=right style="font-size:9px;">
     <A HREF="http://www.jax.org/" border=0>
-    <IMG SRC="${WEBSHARE_URL}images/jax_logo.gif" BORDER=0 ALT="The Jackson Laboratory"></A>
+    <IMG SRC="${WEBSHARE_URL}images/jax_logo_small.png" BORDER=0 ALT="The Jackson Laboratory"></A>
  </td>
 </tr>
 

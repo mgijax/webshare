@@ -73,9 +73,9 @@ alt = is-a
 
 [
 name = jax_logo
-url = ${IMAGES_URL}jax_logo.gif
-width = 130
-height = 48
+url = ${IMAGES_URL}jax_logo_small.png
+width = 138
+height = 59
 alt = The Jackson Laboratory
 ]
 
