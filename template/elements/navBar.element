@@ -45,7 +45,7 @@
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/MP_form.shtml"
             onMouseOver="return overlib('Search for a phenotype term to find relevant mutant genotypes.',ANCHOR, 'navBarPhenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mammalian Phenotype (MP) Browser</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=omimVocab&subset=A"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/omim"
             onMouseOver="return overlib('Search for a human disease or condition term to find mouse models.',ANCHOR, 'navBarPhenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Human Disease (OMIM) Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}phenotypes.shtml">More</a></li>
@@ -186,7 +186,7 @@
           <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/GO_form.shtml"
             onMouseOver="return overlib('Browse the Gene Ontology and mouse annotations in MGI.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             GO Browser</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=omimVocab&subset=A"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/omim"
             onMouseOver="return overlib('Search for a human disease or condition term to find mouse models.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Human Disease (OMIM) Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/MP_form.shtml"
@@ -265,7 +265,7 @@
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}lists/lists.shtml">Research Community E-mail Lists</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MENUS_URL}resources.shtml#res_books">Online Books</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}nomen/index.shtml">Nomenclature Home Page</a></li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${JAVAWI_URL}WIFetch?page=glossaryIndex&printFormat=footer">MGI Glossary</a></li>        
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FEWI_URL}glossary">MGI Glossary</a></li>        
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://proto.informatics.jax.org/"> Prototype Tools</a> </li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}GXD/GEN/">Gene Expression Notebook (GEN)</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://phenome.jax.org">Mouse Phenome Database (MPD)</a></li>
