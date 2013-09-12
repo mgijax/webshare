@@ -1,8 +1,8 @@
 <!-- YUI Reset -->
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css">
+<link rel="stylesheet" type="text/css" href="${WEBSHARE_URL}css/yui-reset.css">
 
 <!-- Combo-handled YUI CSS files: -->
-<link rel="stylesheet" type="text/css" href="${YUI_CSS_URL}">
+<link rel="stylesheet" type="text/css" href="${WEBSHARE_URL}css/yui-2.8-combo.css">
 
 <!-- MGI CSS files: -->
 <link href="${WEBSHARE_URL}css/${TEMPLATE_CSS_FILE}" rel="stylesheet" type="text/css"/>
