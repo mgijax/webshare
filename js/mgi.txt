@@ -290,12 +290,14 @@ var MGIAjax = {
                 }
         },
         // to load ajax content, simply provide the url and the id of the container we want the content loaded into
+
         // the div of the loading gif must be of format "contentID_loading"
         // for multiple uses of this function, be sure to use unique contentIDs
-        loadContent : function(url,contentID)
+        loadContent : function(url,contentID,usePost,postData)
         {
                 var contentID = "#"+contentID;
                 var loadingID = contentID+"_loading";
+                if(usePost==undefined) usePost = false;
 
                 // use contentID as key for error handling
                 MGIAjax.RETRY_TRACKER[contentID] = 0;
@@ -303,8 +305,17 @@ var MGIAjax = {
                 // define the load function
                 var loadJson = function ()
                 {
-                        $.get(url, ajaxResponse)
-                        .error(ajaxError );
+                	
+                	if(!usePost)
+                	{
+	                	$.get(url, ajaxResponse)
+	                		.error(ajaxError);
+                	}
+                	else
+                	{
+                		$.post(url, postData, ajaxResponse)
+                			.error(ajaxError);
+                	}
                 }
 
                 // define the success and error handling functions
@@ -328,6 +339,11 @@ var MGIAjax = {
                 $.ajaxSetup({ timeout: MGIAjax.AJAX_TIMEOUT });
                 // kick off the ajax call
                 loadJson();
+        },
+        // convenience method
+        postLoadContent : function(url,contentID,postData)
+        {
+        	MGIAjax.loadContent(url,contentID,true,postData);
         }
 };
 /*--------------------------------------------------------------------------*/

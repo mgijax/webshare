@@ -213,7 +213,7 @@ a.logoFooterAnchor{
 }
 
 /*************************************************************************/
-/*  Notices, if displayed						 */
+/*  Notices, if displayed                                                */
 /*************************************************************************/
 
 .notice {
@@ -264,8 +264,11 @@ a.logoFooterAnchor{
     color:#FF0000;
 }
 
-/* template nav bar Tabs */
-.navtabs { /* default state */
+/*************************************************************************/
+/* Template Navigation Tabs                                             */
+/*************************************************************************/
+
+.navtabs {                     /* default state */
     padding: 0;
     margin: 0;
     background: transparent;
@@ -274,7 +277,7 @@ a.logoFooterAnchor{
     bottom: 0px;
     right: 0px;
     clear: right;
-    width: 70em;
+    width: 82em;
 }
 
 .navtabs span{

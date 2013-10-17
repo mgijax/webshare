@@ -2,26 +2,31 @@
     <div id="tabs" class="navtabs">
       <span id="navRight">
         <ul>
+
           <li id="minitab_Home">
             <a href="${HOMEPAGES_URL}"
                 onmouseover="return overlib('MGI Home Page',ANCHOR, 'tab_home', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="tab_home">Home</span></a>
           </li>
+
           <li id="genes.shtml">
             <a href="${HOMEPAGES_URL}genes.shtml"
                 onmouseover="return overlib('Genes, Genome Features &amp; Maps',ANCHOR, 'tab_gene', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="tab_gene">Genes</span></a>
           </li>
+
           <li id="phenotypes.shtml">
             <a href="${HOMEPAGES_URL}phenotypes.shtml"
                 onmouseover="return overlib('Phenotypes, Alleles &amp; Disease Models',ANCHOR, 'tab_pheno', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="tab_pheno">Phenotypes</span></a>
           </li>
+
           <li id="expression.shtml">
             <a href="${HOMEPAGES_URL}expression.shtml"
                 onmouseover="return overlib('Gene Expression Database \(GXD\)',ANCHOR, 'tab_exp', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="tab_exp">Expression</span></a>
           </li>
+
           <li id="recombinase.shtml">
             <a href="${HOMEPAGES_URL}recombinase.shtml"
                 onmouseover="return overlib('Recombinase Tissue Specificity',ANCHOR, 'tab_cre', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
@@ -33,26 +38,37 @@
                 onmouseover="return overlib('Functional Annotations \(GO\)',ANCHOR, 'tab_func', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="tab_func">Function</span></a>
           </li>
+
           <li id="pathways.shtml">
             <a href="${HOMEPAGES_URL}pathways.shtml"
                 onmouseover="return overlib('Biochemical Pathways \(MouseCyc\)',ANCHOR, 'tab_path', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="tab_path">Pathways</span></a>
           </li>
+
           <li id="strains_SNPs.shtml">
             <a href="${HOMEPAGES_URL}strains_SNPs.shtml"
                 onmouseover="return overlib('Strains, SNPs &amp; Polymorphisms',ANCHOR, 'tab_snps', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="tab_snps">Strains&nbsp;/&nbsp;SNPs</span></a>
           </li>
+
           <li id="homology.shtml">
             <a href="${HOMEPAGES_URL}homology.shtml"
             onmouseover="return overlib('Vertebrate Homology',ANCHOR, 'tab_homo', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
             <span id="tab_homo">Homology</span></a>
           </li>
+
+          <li id="humanDisease.shtml">
+            <a href="${HOMEPAGES_URL}humanDisease.shtml"
+            onmouseover="return overlib('Human Disease',ANCHOR, 'tab_humanDisease', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+            <span id="tab_humanDisease">Human Disease</span></a>
+          </li>
+
           <li id="minitab_Tumor">
             <a href="${MTB_URL}"
                 onmouseover="return overlib('Mouse Tumor Biology',ANCHOR, 'tab_tumors', ANCHORALIGN, 'UR', 'LR', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="tab_tumors">Tumors</span></a>
           </li>
+
         </ul>
       </span>
     </div>
