@@ -9,7 +9,9 @@
     width: 100%;
     position:relative;
     width: 820px;
-    margin: 0 auto;}
+    margin: 0 auto;
+    border:1px solid;
+}
 </style>
 <div id="headerContainer">
 <div id="hdpBannerContainer">
