@@ -1,9 +1,10 @@
-TAG: webshare-5-1-6-1,webshare-5-1-6-2
+TAG: webshare-5-1-6-1,webshare-5-1-6-2,webshare-5-1-6-3
 DATE: 11/13/13
 STAFF: pf,kstone
 CHANGES: 
 1) update for human disease
 2) fix overlibHomepage.js for IE 10
+3) upgraded jquery to version 1.10.2
 
 
 TAG: webshare-tr11423-perMerge
