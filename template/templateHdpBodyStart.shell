@@ -3,35 +3,45 @@
 <body class="yui-skin-sam">
 
 <style>
-#hdpBannerContainer {
+#headerContainer {
     background-color: #DDDDDD;
     height: 148px;
     width: 100%;
+    /*border:1px solid;*/
+}
+#hdpBannerContainer {
+    background-color: #DDDDDD;
+    height: 148px;
     position:relative;
     width: 820px;
     margin: 0 auto;
-    border:1px solid;
+    /*border:1px solid;*/
 }
 </style>
+
 <div id="headerContainer">
 <div id="hdpBannerContainer">
 
   <div style="float:right;">
-    <img src="${WEBSHARE_URL}images/hmdc_logo.png" style=''>
+    <a href="${MGIHOME_URL}homepages/humanDisease.shtml">
+    <img src="${WEBSHARE_URL}images/hmdc_logo.png" >
+    </a>
   </div>
 
-  <div style="font-size:280%; position:absolute; top:15px; left:35px;">
+  <div style="font-size:260%; position:absolute; top:8px; left:30px;">
     Human<img src="${WEBSHARE_URL}images/hmdc_arrow.png" style='height:20px;'>Mouse: Disease Connection
   </div>
 
-  <div style="font-size:175%; position:absolute; top:70px; left:70px;">
+  <div style="font-size:175%; position:absolute; top:60px; left:70px;">
     Relating human diseases and mouse models
   </div>
 
   <div style="font-size:90%; position:absolute; bottom:5px; left:5px;">
-    &nbsp;&nbsp;<a class="logoFooterAnchor" href="${MGIHOME_URL}projects/aboutmgi.shtml">About</a>
+    <a href="${HOMEPAGES_URL}"><img src="${WEBSHARE_URL}images/mgi_logo.gif" style='height:48px; width:90px;'></a>
+    &nbsp;<a class="logoFooterAnchor" href="${MGIHOME_URL}projects/aboutmgi.shtml">About MGI</a>
     &nbsp;&nbsp;<a class="logoFooterAnchor" href="${MGIHOME_URL}homepages/help.shtml">Help</a>
     &nbsp;&nbsp;<a class="logoFooterAnchor" href="${MGIHOME_URL}support/mgi_inbox.shtml">Contact Us</a>
+    &nbsp;&nbsp;<a class="logoFooterAnchor" href="${MGIHOME_URL}homepages/humanDisease.shtml">Home</a>
   </div>
 
 </div>
