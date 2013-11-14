@@ -1,7 +1,10 @@
-TAG: webshare-5-1-6-1
+TAG: webshare-5-1-6-1,webshare-5-1-6-2
 DATE: 11/13/13
-STAFF: pf
-CHANGES: update for human disease
+STAFF: pf,kstone
+CHANGES: 
+1) update for human disease
+2) fix overlibHomepage.js for IE 10
+
 
 TAG: webshare-tr11423-perMerge
 DATE: 10/17/13
