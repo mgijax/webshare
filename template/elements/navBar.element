@@ -55,6 +55,13 @@
       </li>
 
 
+      <!-- Human Mouse Disease Connection -->
+      <li class="yuimenuitem"><a id="navBarHMDC" class="yuimenuitemlabel" href="${FEWI_URL}diseasePortal/"
+        onMouseOver="return overlib('Human-Mouse Disease Connection', ANCHOR, 'navBarHMDC', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+        Human Disease</a>
+      </li>
+
+
       <!-- Expression Submenu -->
       <li class="yuimenuitem"><a class="yuimenuitemlabel">Expression</a>
       <div id="navBarExpression" class="yuimenu">
@@ -106,12 +113,6 @@
       </li>
 
 
-      <!-- Pathways -->
-      <li class="yuimenuitem"><a id="navBarBiochem" class="yuimenuitemlabel" href="${PATHWAYS_URL}"
-        onMouseOver="return overlib('View mouse genomic data in the context of metabolic cellular  processes such as biosynthesis, degradation, energy production, and detoxification.',ANCHOR, 'navBarBiochem', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
-        Pathways</a></li>
-
-
       <!-- Strains Submenu -->
       <li class="yuimenuitem"><a class="yuimenuitemlabel">Strains / SNPs</a>
       <div id="navBarStrains" class="yuimenu">
@@ -137,6 +138,11 @@
       <li class="yuimenuitem"><a id="navBarHomology" class="yuimenuitemlabel" href="${HOMEPAGES_URL}homology.shtml"
         onMouseOver="return overlib('Find out more about Homology relationships in MGI.',ANCHOR, 'navBarBiochem', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         Homology</a></li>
+
+      <!-- Pathways -->
+      <li class="yuimenuitem"><a id="navBarBiochem" class="yuimenuitemlabel" href="${PATHWAYS_URL}"
+        onMouseOver="return overlib('View mouse genomic data in the context of metabolic cellular  processes such as biosynthesis, degradation, energy production, and detoxification.',ANCHOR, 'navBarBiochem', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+        Pathways</a></li>
 
       <!-- MTB -->
       <li class="yuimenuitem"><a id="navBarMTB" class="yuimenuitemlabel" href="http://tumor.informatics.jax.org/mtbwi/index.do"
