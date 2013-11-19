@@ -39,12 +39,6 @@
                 <span id="tab_func">Function</span></a>
           </li>
 
-          <li id="pathways.shtml">
-            <a href="${HOMEPAGES_URL}pathways.shtml"
-                onmouseover="return overlib('Biochemical Pathways \(MouseCyc\)',ANCHOR, 'tab_path', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-                <span id="tab_path">Pathways</span></a>
-          </li>
-
           <li id="strains_SNPs.shtml">
             <a href="${HOMEPAGES_URL}strains_SNPs.shtml"
                 onmouseover="return overlib('Strains, SNPs &amp; Polymorphisms',ANCHOR, 'tab_snps', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
@@ -55,6 +49,12 @@
             <a href="${HOMEPAGES_URL}homology.shtml"
             onmouseover="return overlib('Vertebrate Homology',ANCHOR, 'tab_homo', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
             <span id="tab_homo">Homology</span></a>
+          </li>
+
+          <li id="pathways.shtml">
+            <a href="${HOMEPAGES_URL}pathways.shtml"
+                onmouseover="return overlib('Biochemical Pathways \(MouseCyc\)',ANCHOR, 'tab_path', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
+                <span id="tab_path">Pathways</span></a>
           </li>
 
           <li id="humanDisease.shtml">
