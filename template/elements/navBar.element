@@ -56,7 +56,7 @@
 
 
       <!-- Human Mouse Disease Connection -->
-      <li class="yuimenuitem"><a id="navBarHMDC" class="yuimenuitemlabel" href="${HOMEPAGES_URL}humanDisease.shtml
+      <li class="yuimenuitem"><a id="navBarHMDC" class="yuimenuitemlabel" href="${HOMEPAGES_URL}humanDisease.shtml"
         onMouseOver="return overlib('Human-Mouse: Disease Connection', ANCHOR, 'navBarHMDC', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         Human Disease</a>
       </li>
