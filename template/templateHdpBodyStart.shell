@@ -29,11 +29,11 @@
   </div>
 
   <div style="font-size:260%; position:absolute; top:8px; left:30px;">
-    <a href="${MGIHOME_URL}homepages/humanDisease.shtml">Human<img src="${WEBSHARE_URL}images/hmdc_arrow.png" style='height:20px;'>Mouse: Disease Connection</a>
+    <a style='text-decoration:none;' href="${MGIHOME_URL}homepages/humanDisease.shtml">Human<img src="${WEBSHARE_URL}images/hmdc_arrow.png" style='height:20px;'>Mouse: Disease Connection</a>
   </div>
 
   <div style="font-size:175%; position:absolute; top:60px; left:70px;">
-    <a href="${MGIHOME_URL}homepages/humanDisease.shtml">Relating human diseases and mouse models</a>
+    <a style='text-decoration:none;' href="${MGIHOME_URL}homepages/humanDisease.shtml">Relating human diseases and mouse models</a>
   </div>
 
   <div style="font-size:90%; position:absolute; bottom:5px; left:5px;">
