@@ -17,6 +17,14 @@
     margin: 0 auto;
     /*border:1px solid;*/
 }
+.headerHomepageLinks {
+  text-decoration:none;
+  a:link    {color:#000000;}      
+  a:visited {color:#000000;}  
+  a:hover   {color:#000000;}  
+  a:active  {color:#000000;} 
+}
+
 </style>
 
 <div id="headerContainer">
@@ -29,11 +37,11 @@
   </div>
 
   <div style="font-size:260%; position:absolute; top:8px; left:30px;">
-    <a style='text-decoration:none;' href="${MGIHOME_URL}homepages/humanDisease.shtml">Human<img src="${WEBSHARE_URL}images/hmdc_arrow.png" style='height:20px;'>Mouse: Disease Connection</a>
+    <a class='headerHomepageLinks' href="${MGIHOME_URL}homepages/humanDisease.shtml">Human<img src="${WEBSHARE_URL}images/hmdc_arrow.png" style='height:20px;'>Mouse: Disease Connection</a>
   </div>
 
   <div style="font-size:175%; position:absolute; top:60px; left:70px;">
-    <a style='text-decoration:none;' href="${MGIHOME_URL}homepages/humanDisease.shtml">Relating human diseases and mouse models</a>
+    <a class='headerHomepageLinks' href="${MGIHOME_URL}homepages/humanDisease.shtml">Relating human diseases and mouse models</a>
   </div>
 
   <div style="font-size:90%; position:absolute; bottom:5px; left:5px;">
