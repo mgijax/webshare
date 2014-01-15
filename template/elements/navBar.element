@@ -39,7 +39,7 @@
       <div id="navBarPhenotypes" class="yuimenu">
       <div class="bd">
         <ul class="first-of-type">
-          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/allele_form.shtml"
+          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${FEWI_URL}allele/"
             onMouseOver="return overlib('Search for mutations or QTL based on phenotype, human disease, mutation type, gene, or genome location.',ANCHOR, 'navBarPhenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Phenotypes, Alleles &amp; Diseases Query</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/MP_form.shtml"
