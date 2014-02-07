@@ -126,9 +126,11 @@ myWidth = document.body.clientWidth;
 myHeight = document.body.clientHeight;
 }
   mySize = myWidth+"X"+myHeight;
-gaA_pageTracker._trackEvent("viewport", "size", mySize);
-gaA_pageTracker._trackEvent("viewport", "width", mySize, myWidth);
-gaA_pageTracker._trackEvent("viewport", "height", mySize, myHeight);
+  if (gaA_pageTracker) {
+    gaA_pageTracker._trackEvent("viewport", "size", mySize);
+    gaA_pageTracker._trackEvent("viewport", "width", mySize, myWidth);
+    gaA_pageTracker._trackEvent("viewport", "height", mySize, myHeight);
+  }
 }
 //
 //		KLF DELAY CAPTURE OF ONLOAD EVENTS BY 6 SECONDS

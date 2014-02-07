@@ -37,6 +37,36 @@ function loadPage() {
 
         titleBarWrapper.innerHTML = helpLink + currentHTML;
       }
+  } else {
+      // special handling for GXD pages
+
+      titleBarWrapper = document.getElementById("titleBarWrapperGxd");
+      var helpIcon = '<img class="titleBarHelpIconGxd" src="${WEBSHARE_URL}images/help_large_transp.gif">';
+      var userdoc = titleBarWrapper.getAttribute("userdoc");
+      if (userdoc != null) {
+	 var helpLink = '';
+	 userdocArray = userdoc.split("/");
+
+	 if (userdocArray[0] == 'http:') { //passed a full URL
+              helpLink = "<a href='" + userdoc + "'>" + helpIcon + "</a>";
+         } else {
+              helpLink = "<a href='${USERHELP_URL}" + userdoc + "' onclick='javascript:openUserhelpWindow(\"" + userdoc + "\"); return false;'>" + helpIcon + "</a>";
+         }
+
+         // For GXD pages, if there is a headerRightGxd div, then we want to
+	 // put the help icon there.  If there is not one, then we add it to
+	 // the titleBarWrapperGxd div. 
+	 
+	 var wrapper = document.getElementById("headerRightGxd");
+	 if (wrapper == null) {
+	   wrapper = document.getElementById("titleBarWrapperGxd");
+	 }
+
+	 if (wrapper != null) {
+	    var currentHTML = wrapper.innerHTML; 
+            wrapper.innerHTML = currentHTML + helpLink;
+         }
+      }
   }
 };
 

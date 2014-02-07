@@ -99,6 +99,6 @@ ALLEN_BRAIN_ATLAS_URL	http://www.brain-map.org/search.do?queryText=
 GENBANK_HOME            http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=Nucleotide
 ENSEMBL_HOME            http://www.ensembl.org/Mus_musculus/textview
 ENTREZGENE_HOME         http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene
-KOMP_HOME               http://www.knockoutmouse.org/
+KOMP_HOME               https://www.mousephenotype.org/
 KOMP_NIH                http://www.nih.gov/science/models/mouse/knockout/
 IMSR_HOME               ${IMSRURL}index

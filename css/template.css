@@ -131,6 +131,97 @@ a.logoFooterAnchor{
 
 
 /*************************************************************************/
+/*  GXD Title Bar - Page Title appearing within the body of a page	 */
+/*************************************************************************/
+
+#titleBarWrapperGxd {
+    font-family: Arial,Helvetica;
+    vertical-align: center;
+    color: #000001;
+    background-color: #EBCA6D;
+    text-align: center;
+    width: 100%;
+    min-width: 750px;
+    height:81px;
+    position: relative;
+}
+
+* html #titleBarWrapperGxd {
+    width: 840px;
+}
+
+
+#gxdLogoDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+}
+
+#gxdCenteredTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    text-align: center;
+    z-index:0;
+    height: 81px;
+    padding-top: 12px;
+}
+
+#titleBarWrapperGxd img.gxdLogo {
+    border:none;
+    float:left;
+    margin-left: 40px;
+    margin-top: 3px;
+}
+
+#titleBarWrapperGxd img.titleBarHelpIconGxd {
+    border:none;
+    float:right;
+    padding-top: 23px;
+    margin-right: 40px;
+}
+
+#titleBarWrapperGxd .yourInputButton {
+    float:right;
+    margin:10px;
+    height:33px;
+    padding-top:17px;
+}
+
+#headerRightGxd {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#headerRightGxd img.titleBarHelpIconGxd {
+    border:none;
+    float:right;
+    padding-top: 23px;
+    margin-right: 40px;
+}
+
+#headerRightGxd .yourInputButton {
+    float:left;
+    margin:10px;
+    height:33px;
+}
+
+.titleBarMainTitleGxd {
+    font-size: 22px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.titleBarSubTitleGxd {
+    font-size: 14px;
+    text-align: center;
+}
+
+/*************************************************************************/
 /*  Standard Title Bar - Page Title appearing within the body of a page	 */
 /*************************************************************************/
 
@@ -139,11 +230,10 @@ a.logoFooterAnchor{
     vertical-align: middle;
     color: #000001;
     text-align: center;
-    margin-bottom:8px;
     width: 100%;
     min-width: 750px;
     max-width:1200px;
-    height:35px;
+    height:40px;
 }
 
 * html #titleBarWrapper {

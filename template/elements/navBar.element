@@ -73,9 +73,9 @@
           <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${FEWI_URL}gxdlit"
             onMouseOver="return overlib('Search for references on gene expression during development.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Gene Expression Literature Query</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/anatdict_form.shtml"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gxd/anatomy/EMAPA:16039"
             onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            Mouse Anatomical Dictionary Browser</a></li>
+            Mouse Developmental Anatomy Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://www.emouseatlas.org/emap/ema/section_browser/SectionBrowser.html"
             onMouseOver="return overlib('Search the Edinburgh Mouse Atlas for anatomical terms and query for associated expression data.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             EMAGE Anatomical Section Browser</a></li>
@@ -198,9 +198,9 @@
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/MP_form.shtml"
             onMouseOver="return overlib('Search for a phenotype term to find relevant mutant genotypes.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mammalian Phenotype (MP) Browser</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/anatdict_form.shtml"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gxd/anatomy/EMAPA:16039"
             onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            Mouse Anatomical Dictionary</a></li>
+            Mouse Developmental Anatomy Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/AMA_form.shtml"
             onMouseOver="return overlib('An extensive ontology of anatomical structures for the postnatal mouse.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Adult Mouse Anatomy Browser</a></li>
@@ -277,7 +277,7 @@
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://phenome.jax.org">Mouse Phenome Database (MPD)</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${WI_URL}external/ko/">Deltagen and Lexicon Knockout Mice</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${KOMP_HOME}" 
-          id="navBarKomp" onMouseOver="return overlib('Central web site for all IKMC projects: KOMP, EUCOMM, NorCOMM, and TIGM.',ANCHOR, 'navBarKomp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">International Knockout Mouse Consortium (IKMC)</a></li>
+          id="navBarKomp" onMouseOver="return overlib('Producing and phenotyping knockout mice from the IKMC mutant ES cell line resource.',ANCHOR, 'navBarKomp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">International Mouse Phenotyping Consortium (IMPC)</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiatives</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}datasets/index.html">Contributed Data Sets</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel">Community Links</a>
@@ -286,6 +286,7 @@
             <ul class="first-of-type">
               <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/mouse_facts4.shtml">Mouse Resources & Model Organism Links</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/phenoallele_commun_resource.shtml">Phenotypes &amp; Mutants Community Resources</a></li>
+              <li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://www.oxfordjournals.org/nar/database/a/" id="navBarNAR" onMouseOver="return overlib('An index of over 1500 biological databases compiled by the journal of Nucleic Acids Research. Includes links for other model organisms and species, diseases, DNA, RNA, and protein resources.',ANCHOR, 'navBarNAR', ANCHORALIGN, 'UR', 'UL');" onMouseOut="nd();">Nucleic Acids Research (Journal) Database Summary</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/mouse_facts1.shtml">Mouse Facts</a></li>
             </ul>
           </div>

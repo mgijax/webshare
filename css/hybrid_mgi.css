@@ -54,10 +54,15 @@ a.help {cursor:help}
 tr.stripe1 {background-color:#ffffff}
 tr.stripe2 {background-color:#F0F0F0}
 tr.stripe3 {background-color:#D0E0F0}
+tr.stripe1Gxd {background-color:#EBCA6D}
+tr.stripe2Gxd {background-color:#E2AC00}
+tr.stripe3Gxd {background-color:#EBCA6D}
 tr.stripe4 {background-color:#DFEFFF}
 /* TableData Label Categories (Left Side)*/
 td.cat1 {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#DFEFFF;font-weight:bold;width:120px;padding:8px}
 td.cat2 {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#D0E0F0;font-weight:bold;width:120px;padding:8px}
+td.cat1Gxd {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#EBCA6D;font-weight:bold;width:120px;padding:8px}
+td.cat2Gxd {font-size:12px;font-family:Arial,Helvetica;vertical-align:top;text-align:right;color:#000001;background-color:#E2AC00;font-weight:bold;width:120px;padding:8px}
 /* TableData Data (Right Side)*/
 td.data1 {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:top;color:#000001;background-color:#ffffff;}
 td.data2 {font-size:12px;font-family:Verdana,Arial,Helvetica;vertical-align:top;color:#000001;background-color:#eeeeee;}
