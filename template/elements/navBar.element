@@ -319,6 +319,7 @@
   <li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${IMSRURL}index.jsp" title="International Mouse Strain Resource (IMSR)">Find Mice (IMSR)</a></li>
   <li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${MENUS_URL}tools.shtml" title="Analysis Tools"><img src="${WEBSHARE_URL}images/tools.gif" alt="Analysis Tools"> Analysis Tools</a></li>      
   <li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${MGIHOME_URL}support/mgi_inbox.shtml" title="Contact user support">Contact&nbsp;Us</a></li>
+  <li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${MGIHOME_URL}homepages/browser_compatibility.shtml" title="Browser compatibility">Browsers</a></li>
 
 </ul>
 </div>
