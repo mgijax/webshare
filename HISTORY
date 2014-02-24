@@ -1,3 +1,8 @@
+TAG: webshare-5-1-7-3
+DATE: 02/24/2014
+STAFF: jsb
+1) widened min-width for headerContainer to keep new Browsers link from wrapping
+
 TAG: webshare-5-1-7-2
 DATE: 02/18/2014
 STAFF: jsb
