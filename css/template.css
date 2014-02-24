@@ -17,7 +17,7 @@ body {
 
 #headerContainer {
     width: 100%;
-    min-width:920px; 
+    min-width:1000px; 
 } 
 
 * html #headerContainer {
@@ -31,7 +31,7 @@ body {
     height: 80px;
     width: 100%;
     position:relative;
-    min-width:920px;
+    min-width:1000px;
 }
 /* <div> wrapping mgi logo and links below it; bound for easier placement */
 #logoContainer {
