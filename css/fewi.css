@@ -460,14 +460,15 @@ th#yui-dt0-th-markerTissueResults.yui-dt0-col-markerTissueResults {
 
 .yui-skin-sam th.yui-dt-sortable .yui-dt-liner{
   background:url(../images/cre/creSortableArrow.png) no-repeat right;
+  background-position: 100% 5px;
 }
 .yui-skin-sam th.yui-dt-asc .yui-dt-liner{
-  background:url(../images/cre/creDownArrow.png)
-  no-repeat right;
+  background:url(../images/cre/creDownArrow.png) no-repeat right;
+  background-position: 100% 5px;
 }
 .yui-skin-sam th.yui-dt-desc .yui-dt-liner{
-  background:url(../images/cre/creUpArrow.png)
-  no-repeat right;
+  background:url(../images/cre/creUpArrow.png) no-repeat right;
+  background-position: 100% 5px;
 }
 
 
