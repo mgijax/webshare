@@ -424,6 +424,38 @@ function popupGenotype (url, genoKey)
     return;
 }
 
+/* --- specific to mutation involves windows ------------------------------ */
+
+// pop up a new window for displaying details from the given 'url' for the
+// given genotype key.
+function popupWide (url, uniqueKey)
+{
+    // new window will be named using the unique key with a prefix
+    var windowName;
+    windowName = "widePopup" + uniqueKey;
+
+    // open the window small but scrollable and resizable
+    var child = window.open (url, windowName,
+	'width=1000,height=300,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+
+    // move the new window and bring it to the front
+    child.moveTo (popupNextX, popupNextY);
+    child.focus();
+
+    // set the position for the next new window (at position 400,400 we will
+    // start over at 0,0)
+
+    if (popupNextX >= 400) {
+	popupNextX = 0;
+	popupNextY = 0;
+    }
+    else {
+	popupNextX = popupNextX + 20;
+	popupNextY = popupNextY + 20;
+    }
+    return;
+}
+
 /* --- specific to other popup windows ------------------------------------ */
 
 // note that these are not the smaller, minimalistic genotype windows; these
