@@ -436,7 +436,7 @@ function popupWide (url, uniqueKey)
 
     // open the window small but scrollable and resizable
     var child = window.open (url, windowName,
-	'width=1000,height=700,resizable=yes,scrollbars=yes,alwaysRaised=yes');
+	'width=1000,height=500,resizable=yes,scrollbars=yes,alwaysRaised=yes');
 
     // move the new window and bring it to the front
     child.moveTo (popupNextX, popupNextY);
