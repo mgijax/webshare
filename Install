@@ -11,7 +11,14 @@
 # css changes requiring an Install.  
 
 # generate and source GlobalConfig sh file
-/usr/local/mgi/live/lib/python/Configuration.py config/GlobalConfig sh > .Configuration.sh
+
+if [ -z "$LIB_PY_MISC" ]
+then
+   LIB_PY_MISC=/usr/local/mgi/live/lib/python
+	export LIB_PY_MISC
+fi
+
+$LIB_PY_MISC/Configuration.py config/GlobalConfig sh > .Configuration.sh
 . .Configuration.sh
 rm .Configuration.sh
 
