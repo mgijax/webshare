@@ -13,8 +13,11 @@
 # add the path to the standard MGI python libraries
 
 import sys
-if '/usr/local/mgi/live/lib/python/' not in sys.path:
-	sys.path.insert (0, '/usr/local/mgi/live/lib/python/')
+
+if "LIB_PY_MISC" not in os.environ:
+   sys.path.insert (0, '/usr/local/mgi/live/lib/python/')
+else:
+   sys.path.insert (0, os.environ["LIB_PY_MISC"])
 
 # Attempt to import the module that will ask Python to ignore any
 # deprecation errors.  If it fails, ignore it and go forward.

@@ -12,8 +12,10 @@ import sys
 import os
 import cgi
 
-if '/usr/local/mgi/live/lib/python' not in sys.path:
-	sys.path.insert (0, '/usr/local/mgi/live/lib/python')
+if "LIB_PY_MISC" not in os.environ:
+   sys.path.insert (0, '/usr/local/mgi/live/lib/python/')
+else:
+   sys.path.insert (0, os.environ["LIB_PY_MISC"])
 
 try:
 	import ignoreDeprecation
