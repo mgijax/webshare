@@ -14,7 +14,7 @@ PY_HOST                 localhost.jax.org
 # Host of tomcat servlet container; non-public installs include port # 
 JAVA_HOST               localhost.jax.org
 
-FEWI_HOST		cardolan:18080
+FEWI_HOST		localhost:8080
 
 # Host of the sequence retrieval tool
 SEQFETCH_HOST           rohan.informatics.jax.org
