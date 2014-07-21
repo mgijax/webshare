@@ -4,6 +4,7 @@
 # Purpose: propagate global config file contents
 
 import sys
+import os
 
 if "LIB_PY_MISC" not in os.environ:
    sys.path.insert (0, '/usr/local/mgi/live/lib/python/')
