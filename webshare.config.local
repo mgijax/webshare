@@ -1,3 +1,5 @@
+INSTALL_PATH ./
+
 RCDFILE_PATH images.rcd
 
 GLOBAL_CONFIG config/GlobalConfig
