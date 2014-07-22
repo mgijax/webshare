@@ -32,8 +32,8 @@ PUBLIC_HOST		www.informatics.jax.org
 ###-- Database Connectivity
 ###--
 
-DB_URL           rohan.informatics.jax.org:4100
-DB_SERVER        DEV_MGI
+DB_URL           localhost.jax.org:5432
+DB_SERVER        localhost.jax.org
 DB_DATABASE      mgd
 DB_USER          mgd_public
 DB_PASSWORD      mgdpub
