@@ -34,7 +34,7 @@ PUBLIC_HOST		www.informatics.jax.org
 
 DB_URL           localhost.jax.org:5432
 DB_SERVER        localhost.jax.org
-DB_DATABASE      mgd
+DB_DATABASE      export
 DB_USER          mgd_public
 DB_PASSWORD      mgdpub
 SNP_DATABASE     snp
