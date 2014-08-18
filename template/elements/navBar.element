@@ -24,7 +24,7 @@
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}batch"
             onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'navBarGenes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Batch Query</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${GBROWSE_URL}"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JBROWSE_URL}"
             onMouseOver="return overlib('Download data for a batch of gene IDs or symbols.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mouse Genome Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}genes.shtml">More</a></li>
@@ -157,7 +157,7 @@
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MOUSEBLAST_URL}"
             onMouseOver="return overlib('Search for sequence similarity for mouse, human, or rat.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             MouseBLAST</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${GBROWSE_URL}"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JBROWSE_URL}"
             onMouseOver="return overlib('Download data for a batch of gene IDs or symbols.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mouse Genome Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}batch"
@@ -226,8 +226,8 @@
         onMouseOver="return overlib('Access MGI\'s mouse genetic and genomic data using BioMart.',ANCHOR, 'navBarMart', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         MGI BioMart</a></li>
                         
-      <li class="yuimenuitem"><a id="navBarGBrowse" class="yuimenuitemlabel" href="${GBROWSE_URL}"
-        onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarGBrowse', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+      <li class="yuimenuitem"><a id="navBarJBrowse" class="yuimenuitemlabel" href="${JBROWSE_URL}"
+        onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarJBrowse', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         Mouse Genome Browser</a></li>
     </ul>
   </div>

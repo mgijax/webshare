@@ -23,8 +23,11 @@ SEQFETCH_HOST           cardolan.informatics.jax.org
 #Host of the mouse blast tool
 MOUSEBLAST_HOST         cardolan.informatics.jax.org
 
-#Host of the gbrowse tool
+#Host of the gbrowse tool 
 GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
+
+#Host of the jbrowse tool
+JBROWSE_HOST            jbrowse.informatics.jax.org/
 
 #Host of the Public Installation
 PUBLIC_HOST     www.informatics.jax.org
@@ -168,6 +171,8 @@ SCHEMA                  http://www.informatics.jax.org/schema_pg/
 GBROWSE_URL             http://${GBROWSE_HOST}gb2/gbrowse/mouse38/
 
 GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gb2/gbrowse_img/mouse38/
+
+JBROWSE_URL             http://${JBROWSE_HOST}?data=data/mouse
 
 #IMSRURL                 http://cardolan.informatics.jax.org:48080/imsrwi/imsrwi/
 IMSRURL                 http://www.findmice.org/
