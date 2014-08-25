@@ -96,9 +96,9 @@ CAPTCHA_TIMEOUT 5
 
 JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
 
-WI_URL                  http://${PY_HOST}/wi/
+WI_URL                  http://${PY_HOST}/
 
-FEWI_URL                http://${FEWI_HOST}/fewi/mgi/
+FEWI_URL                http://${FEWI_HOST}/
 
 QUICKSEARCH_URL         http://${PY_HOST}/searchtool/
 
@@ -112,7 +112,7 @@ WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FAQ_URL                 http://${PY_HOST}/faq/
 
-MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/mblast_wi/
+MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/
 
 FTP_BASE_URL            ftp://devftp.informatics.jax.org/pub/
 
