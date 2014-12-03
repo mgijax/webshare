@@ -320,7 +320,6 @@ th#yui-dt0-th-markerTissueResults.yui-dt0-col-markerTissueResults {
 
 #querySummary {
 	float: left;
-	width: 300px; /*Width of left column in percentage*/
 	margin-left: -100%;
 	text-align:left;
 	line-height: 1.5em;
