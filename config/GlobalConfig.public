@@ -23,6 +23,9 @@ SEQFETCH_HOST           www.informatics.jax.org
 #Host of the mouse blast tool
 MOUSEBLAST_HOST         mouseblast.informatics.jax.org
 
+#Host of the mouse mine site
+MOUSEMINE_HOST          www.mousemine.org
+
 #Host of the gbrowse tool
 GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
 
@@ -168,6 +171,8 @@ JBROWSE_URL             http://${JBROWSE_HOST}?data=data/mouse
 IMSRURL                 http://www.findmice.org/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
+
+MOUSEMINE_URL           http://${MOUSEMINE_HOST}/
 
 # URL to MTB's submission interface for pathology images
 MTB_PATHOLOGY_URL       http://tumor.informatics.jax.org/mtbpathwi/index.do

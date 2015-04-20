@@ -23,6 +23,9 @@ SEQFETCH_HOST           cardolan.informatics.jax.org
 #Host of the mouse blast tool
 MOUSEBLAST_HOST         cardolan.informatics.jax.org
 
+#Host of the mouse mine site
+MOUSEMINE_HOST				www.mousemine.org
+
 #Host of the gbrowse tool 
 GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
 
@@ -137,6 +140,8 @@ MGIWS_URL               http://cardolan.informatics.jax.org:18080/axis2/services
 BIOMART_URL             http://biomart.informatics.jax.org/
 
 YUI_URL                 http://yui.yahooapis.com/
+
+MOUSEMINE_URL				http://${MOUSEMINE_HOST}/
 
 ###--
 ###-- MGI URLs using apache aliases - if you wish to use apache aliases to 
