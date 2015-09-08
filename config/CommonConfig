@@ -92,6 +92,8 @@ NCBI_MAPVIEWER_URL		http://www.ncbi.nlm.nih.gov/mapview/map_search.cgi?taxid=100
 # link to Allen Brain Atlas (append mgi id in url encoded quotes)
 ALLEN_BRAIN_ATLAS_URL	http://www.brain-map.org/search.do?queryText=
 
+# base URL for NCBI BLAST
+NCBI_BLAST_URL	http://blast.ncbi.nlm.nih.gov/Blast.cgi
 
 ###--------------###
 ###--Komp Uri's--###

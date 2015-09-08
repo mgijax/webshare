@@ -45,7 +45,7 @@ a.headerHomepageLinks:active {color:#000000;}
   </div>
 
   <div style="font-size:90%; position:absolute; bottom:5px; left:5px;">
-    <a href="${HOMEPAGES_URL}"><img src="${WEBSHARE_URL}images/mgi_logo.gif" style='height:48px; width:90px;'></a>
+    <a href="${HOMEPAGES_URL}" style="background-color: transparent"><img src="${WEBSHARE_URL}images/mgi_logo.gif" style='height:48px; width:90px;'></a>
     &nbsp;<a class="logoFooterAnchor" href="${MGIHOME_URL}projects/aboutmgi.shtml">About MGI</a>
     &nbsp;&nbsp;<a class="logoFooterAnchor" href="${MGIHOME_URL}homepages/help.shtml">Help</a>
     &nbsp;&nbsp;<a class="logoFooterAnchor" href="${MGIHOME_URL}support/mgi_inbox.shtml">Contact Us</a>

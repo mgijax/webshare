@@ -25,7 +25,7 @@
             onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'navBarGenes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Batch Query</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JBROWSE_URL}"
-            onMouseOver="return overlib('Download data for a batch of gene IDs or symbols.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+            onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarGenes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mouse Genome Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}genes.shtml">More</a></li>
         </ul>
@@ -150,15 +150,15 @@
         Tumors</a></li>
 
       <!-- Sequence Submenu -->
-      <li class="yuimenuitem"><a class="yuimenuitemlabel">Sequences</a>
+      <li class="yuimenuitem"><a class="yuimenuitemlabel">Sequence Searches</a>
       <div id="navBarSequences" class="yuimenu">
       <div class="bd">
         <ul class="first-of-type">
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MOUSEBLAST_URL}"
-            onMouseOver="return overlib('Search for sequence similarity for mouse, human, or rat.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            MouseBLAST</a></li>
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${NCBI_BLAST_URL}"
+            onMouseOver="return overlib('Search for sequence similarity using BLAST at NCBI.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+            BLAST at NCBI</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JBROWSE_URL}"
-            onMouseOver="return overlib('Download data for a batch of gene IDs or symbols.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+            onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mouse Genome Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}batch"
             onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
@@ -213,10 +213,6 @@
       <li class="yuimenuitem"><a id="navBarBatch" class="yuimenuitemlabel" href="${FEWI_URL}batch"
         onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'navBarBatch', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         Batch Query</a></li>
-
-      <li class="yuimenuitem"><a id="navBarBlast" class="yuimenuitemlabel" href="${MOUSEBLAST_URL}"
-        onMouseOver="return overlib('Search for sequence similarity for mouse, human, or rat.',ANCHOR, 'navBarBlast', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
-        MouseBLAST</a></li>
 
       <li class="yuimenuitem"><a id="navBarMine" class="yuimenuitemlabel" href="http://www.mousemine.org"
         onMouseOver="return overlib('Access MGI data via InterMine.',ANCHOR, 'navBarMine', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
