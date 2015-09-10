@@ -1,4 +1,4 @@
-//** Ajax Tabs Content script v2.0- © Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+//** Ajax Tabs Content script v2.0- Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
 //** Updated Oct 21st, 07 to version 2.0. Contains numerous improvements
 
 var ddajaxtabssettings={}
