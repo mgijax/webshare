@@ -68,6 +68,6 @@ else
     cat ./css/ajaxtabs.css ./css/homepages.css | java -jar yuicompressor-2.4.2.jar --type css > ./css/$MGIHOME_CSS_FILE 
 
     # concatenate and minify js files
-    cat ./js/overlib*.js ./js/mgi.js | java -jar yuicompressor-2.4.2.jar --type js > ./js/$TEMPLATE_JS_FILE
+    cat ./js/overlibHomepage.js ./js/overlib_*.js ./js/mgi.js | java -jar yuicompressor-2.4.2.jar --type js > ./js/$TEMPLATE_JS_FILE
     cat ./js/ajaxtabs.js |  java -jar yuicompressor-2.4.2.jar --type js > ./js/$MGIHOME_JS_FILE 
 fi
