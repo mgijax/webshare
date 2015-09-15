@@ -1,6 +1,6 @@
 <!--===================== Body Start ===========================-->
 </head>
-<body class="yui-skin-sam">
+<body id="body" class="yui-skin-sam">
 
 <style>
 #headerContainer {

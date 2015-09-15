@@ -1,7 +1,7 @@
 <!--===================== Body Start ===========================-->
 
 </head>
-<body class="yui-skin-sam">
+<body id="body" class="yui-skin-sam">
 
 <div id="headerContainer">
 <div id="topBannerContainer" style="position:relative;">
