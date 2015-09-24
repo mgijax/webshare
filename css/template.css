@@ -264,6 +264,22 @@ a.logoFooterAnchor{
     height:33px;
 }
 
+#titleBarWrapper .whatsNewButton {
+    float: left;
+    font-size:12px;
+    font-family:Verdana, Arial,Helvetica;
+    color:#002255;
+    font-weight:bolder;
+    background-color:yellow;
+    border: 1px #7D95B9 solid;
+    padding:8px;
+    -moz-outline-style: none;
+    outline:0;
+    margin-left: 10px;
+}
+
+a.whatsNew:visited {color:#000000;text-decoration:none}
+a.whatsNew:hover {color:#000000;text-decoration:none; cursor:pointer;}
 
 .titleBarMainTitle {
     font-size: 22px;

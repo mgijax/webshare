@@ -22,6 +22,13 @@ function loadPage() {
   if (titleBarWrapper != null) {
       var currentHTML = titleBarWrapper.innerHTML;
       var helpIcon = '<img class="titleBarHelpIcon" src="${WEBSHARE_URL}images/help_large_transp.gif">';
+
+      var whatsnewButton = "";
+      var whatsnew = titleBarWrapper.getAttribute("whatsnew");
+      if (whatsnew != null) {
+          whatsnewButton = "<a href='${USERHELP_URL}" + whatsnew + "' onclick='javascript:openUserhelpWindow(\"" + whatsnew + "\"); return false;' class='whatsNew'><div class='whatsNewButton'>What's New on This Page?</div></a>";
+      }
+
       var userdoc = titleBarWrapper.getAttribute("userdoc");
       if (userdoc != null) {
 
@@ -35,7 +42,7 @@ function loadPage() {
           helpLink = "<a href='${USERHELP_URL}" + userdoc + "' onclick='javascript:openUserhelpWindow(\"" + userdoc + "\"); return false;'>" + helpIcon + "</a>";
         }
 
-        titleBarWrapper.innerHTML = helpLink + currentHTML;
+        titleBarWrapper.innerHTML = helpLink + whatsnewButton + currentHTML;
       }
   } else {
       // special handling for GXD pages
