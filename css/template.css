@@ -59,6 +59,7 @@ body {
     margin:0;
     padding:0;
     height:10px;
+    font-size: 12px;
 }
 a.logoFooterAnchor{
     font-size:11px; 
@@ -86,6 +87,18 @@ a.logoFooterAnchor{
     background-color:#eeeeee;
     border: 1px #7D95B9 solid;
     padding:2px;
+    -moz-outline-style: none;
+    outline:0;
+}
+
+.largeButton {
+    font-size:12px;
+    font-family:Verdana, Arial,Helvetica;
+    color:#002255;
+    font-weight:bolder;
+    background-color:#eeeeee;
+    border: 1px #7D95B9 solid;
+    padding:8px;
     -moz-outline-style: none;
     outline:0;
 }
