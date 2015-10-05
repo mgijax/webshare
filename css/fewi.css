@@ -373,6 +373,7 @@ th#yui-dt0-th-markerTissueResults.yui-dt0-col-markerTissueResults {
 	padding:2px;
 	background-color: #eeeeee;
 	cursor:pointer;
+	white-space: nowrap;
 }
 
 
