@@ -218,10 +218,6 @@
         onMouseOver="return overlib('Access MGI data via InterMine.',ANCHOR, 'navBarMine', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         MouseMine</a></li>
 
-      <li class="yuimenuitem"><a id="navBarMart" class="yuimenuitemlabel" href="${BIOMART_URL}"
-        onMouseOver="return overlib('Access MGI\'s mouse genetic and genomic data using BioMart.',ANCHOR, 'navBarMart', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
-        MGI BioMart</a></li>
-                        
       <li class="yuimenuitem"><a id="navBarJBrowse" class="yuimenuitemlabel" href="${JBROWSE_URL}"
         onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarJBrowse', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         Mouse Genome Browser</a></li>
