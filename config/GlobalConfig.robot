@@ -128,8 +128,6 @@ GO_TOOLS_URL            http://${PY_HOST}/gotools/
 
 MGIWS_URL               http://services.informatics.jax.org/mgiws
 
-BIOMART_URL             http://biomart.informatics.jax.org/
-
 YUI_URL                 http://yui.yahooapis.com/
 
 ###--

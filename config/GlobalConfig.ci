@@ -137,8 +137,6 @@ GO_TOOLS_URL            http://${PY_HOST}/gotools/
 
 MGIWS_URL               http://cardolan.informatics.jax.org:18080/axis2/services/mgiws
 
-BIOMART_URL             http://biomart.informatics.jax.org/
-
 YUI_URL                 http://yui.yahooapis.com/
 
 MOUSEMINE_URL				http://${MOUSEMINE_HOST}/
