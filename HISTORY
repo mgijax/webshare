@@ -1,8 +1,11 @@
+TAG: webshare-6-0-1-5
 TAG: webshare-6-0-1-4
 DATE: 11/02/2015
 STAFF: lnh
 CHANGES:
 1) Removed BIOMART_URL links from config/GlobalConfig.* files
+2) Removed MOUSEBLAST_URL links from config/GlobalConfig.* files
+3) Removed SELECT_A_SEQ_URL link from config/CommonConfig file
 
 TAG: webshare-6-0-1-3
 DATE: 10/07/2015
