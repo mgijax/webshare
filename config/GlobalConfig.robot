@@ -114,8 +114,6 @@ WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FAQ_URL                 http://${PY_HOST}/faq/
 
-MOUSEBLAST_URL          http://${MOUSEBLAST_HOST}/
-
 FTP_BASE_URL            ftp://ftp.informatics.jax.org/pub/
 
 FTP_URL                 ${FTP_BASE_URL}reports/
