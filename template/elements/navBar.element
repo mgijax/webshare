@@ -87,7 +87,7 @@
 
       
       <!-- Recombinase -->
-      <li class="yuimenuitem"><a id="navBarCre" class="yuimenuitemlabel" href="${HOMEPAGES_URL}recombinase.shtml"
+      <li class="yuimenuitem"><a id="navBarCre" class="yuimenuitemlabel" href="${FEWI_URL}home/recombinase"
           onMouseOver="return overlib('Get recombinase (cre) activity data for knock-in and transgene alleles.',ANCHOR, 'navBarCre', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
           Recombinase (cre)</a></li>
 

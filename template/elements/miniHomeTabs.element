@@ -33,8 +33,8 @@
                 <span id="tab_exp">Expression</span></a>
           </li> 
 
-          <li id="recombinase.shtml">
-            <a href="${HOMEPAGES_URL}recombinase.shtml"
+          <li id="home_recombinase">
+            <a href="${FEWI_URL}home/recombinase"
                 onmouseover="return overlib('Recombinase Tissue Specificity',ANCHOR, 'tab_cre', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="tab_cre">Recombinases</span></a>
           </li>
