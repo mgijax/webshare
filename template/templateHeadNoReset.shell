@@ -9,6 +9,7 @@
 
 <!-- jQuery -->
 <script type="text/javascript" src="${WEBSHARE_URL}js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="${WEBSHARE_URL}js/jquery-ui-1.11.4.js"></script>
 
 <!-- Hybrid Template CSS -->
 <link href="${WEBSHARE_URL}css/hybrid_mgi.css" rel="stylesheet" type="text/css"/>

@@ -22,7 +22,7 @@
           </li>
 
           <li id="humanDisease.shtml">
-            <a href="${HOMEPAGES_URL}humanDisease.shtml"
+            <a href="${FEWI_URL}diseasePortal"
               onmouseover="return overlib('Human-Mouse: Disease Connection',ANCHOR, 'tab_humanDisease', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
               <span id="tab_humanDisease">Human Disease</span></a>
           </li>

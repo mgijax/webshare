@@ -31,17 +31,17 @@ a.headerHomepageLinks:active {color:#000000;}
 <div id="hdpBannerContainer">
 
   <div style="float:right;">
-    <a href="${MGIHOME_URL}homepages/humanDisease.shtml">
+    <a href="${FEWI_URL}diseasePortal">
     <img src="${WEBSHARE_URL}images/hmdc_logo.png" >
     </a>
   </div>
 
   <div style="font-size:260%; position:absolute; top:8px; left:30px;">
-    <a class='headerHomepageLinks' href="${MGIHOME_URL}homepages/humanDisease.shtml">Human<img src="${WEBSHARE_URL}images/hmdc_arrow.png" style='height:20px;'>Mouse: Disease Connection</a>
+    <a class='headerHomepageLinks' href="${FEWI_URL}diseasePortal">Human<img src="${WEBSHARE_URL}images/hmdc_arrow.png" style='height:20px;'>Mouse: Disease Connection</a>
   </div>
 
   <div style="font-size:175%; position:absolute; top:60px; left:70px;">
-    <a class='headerHomepageLinks' href="${MGIHOME_URL}homepages/humanDisease.shtml">Relating human diseases and mouse models</a>
+    <a class='headerHomepageLinks' href="${FEWI_URL}diseasePortal">Relating human diseases and mouse models</a>
   </div>
 
   <div style="font-size:90%; position:absolute; bottom:5px; left:5px;">

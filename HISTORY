@@ -1,32 +1,7 @@
-TAG: webshare-6-0-2-2
-DATE: 1/19/2016 
-STAFF: kstone
-1) GENETREE_URL updated (TR12236)
-
-TAG: webshare-6-0-2-1
-DATE: 12/08/2015
-STAFF: kstone
-1) merged tr12070
-
-TAG: webshare-tr12070-BP
-DATE: 11/16/2015
-STAFF: kstone
-
-TAG: webshare-6-0-1-5
-TAG: webshare-6-0-1-4
-DATE: 11/02/2015
-STAFF: lnh
-CHANGES:
-1) Removed BIOMART_URL links from config/GlobalConfig.* files
-2) Removed MOUSEBLAST_URL links from config/GlobalConfig.* files
-3) Removed SELECT_A_SEQ_URL link from config/CommonConfig file
-
-TAG: webshare-6-0-1-3
-DATE: 10/07/2015
+TAG: webshare-tr11937-1
+DATE: 10/19/2015
 STAFF: jsb
-CHANGES: 
-1) added nowrap attribute to filter buttons style
-2) removed BioMart links
+CHANGES: merged post-branch trunk changes up to branch
 
 TAG: webshare-tr11937-BP
 DATE: 10/02/2015
