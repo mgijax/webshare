@@ -50,7 +50,7 @@ DBSNP_STATS             http://www.ncbi.nlm.nih.gov/SNP/snp_summary.cgi?view+sum
 HOMOLOGENE_URL          http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=homologene&dopt=HomoloGene&list_uids=
 
 # URL to RefSNP detail pages at MPD
-MPD_SNP_URL             http://phenome.jax.org/db/q?rtn=snp/ret1&gohint=1&ureg=
+MPD_SNP_URL             http://phenome.jax.org/db/q?rtn=snp/ret01&gohint=1&ureg=
 
 # The location of the MPD (Mouse Phenome Database)
 MPD_URL                 http://phenome.jax.org/
