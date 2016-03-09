@@ -9,12 +9,12 @@ NAME                    MGI_4.4_Dev
 ###--
 
 # Python host and directory where standard MGI python products are installed
-PY_HOST                 localhost.jax.org
+PY_HOST                 redbob.informatics.jax.org
 
 # Host of tomcat servlet container; non-public installs include port # 
-JAVA_HOST               localhost.jax.org
+JAVA_HOST               redbob.informatics.jax.org
 
-FEWI_HOST		localhost.jax.org
+FEWI_HOST		redbob.informatics.jax.org
 
 # Host of the sequence retrieval tool
 SEQFETCH_HOST           rohan.informatics.jax.org
