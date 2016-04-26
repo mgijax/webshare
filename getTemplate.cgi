@@ -35,8 +35,9 @@ except:
 import CGI
 import string
 import regex
-import pg_db
-db = pg_db      # set up alias to minimize code changes
+import db
+db.setAutoTranslate(False)
+db.setAutoTranslateBE(False)
 
 class getTemplateCGI (CGI.CGI):
 
@@ -88,17 +89,16 @@ class getTemplateCGI (CGI.CGI):
     db.set_sqlPassword(config["DB_PASSWORD"])
     db.set_sqlServer(config["DB_SERVER"])
     db.set_sqlDatabase(config["DB_DATABASE"])
-    cmds = [] # SQL command list
-    cmds.append(string.join([
-        'SELECT to_char(lastdump_date, \'MM/DD/YYYY\') as dbDate, '
-        'public_version '
-        'FROM MGI_dbInfo '
-    ]))
+    dateSql = """
+        SELECT to_char(lastdump_date, 'MM/DD/YYYY') as dbDate, 
+        public_version 
+        FROM MGI_dbInfo 
+    """
 
     #  Excecute queries
-    results = db.sql(cmds, 'auto')
+    results = db.sql(dateSql, 'auto')
     db.useOneConnection(0)
-    dbDateInfo = results[0][0]
+    dbDateInfo = results[0]
 
     return dbDateInfo["dbDate"]
 
