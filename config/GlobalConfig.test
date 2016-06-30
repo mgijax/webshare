@@ -9,19 +9,19 @@ NAME                    MGI 5.11
 ###--
 
 # Python host and directory where standard MGI python products are installed
-PY_HOST                 firien.informatics.jax.org
+PY_HOST                 test.informatics.jax.org
 
 # Host of tomcat servlet container; non-public installs include port # 
-JAVA_HOST               firien.informatics.jax.org
+JAVA_HOST               test.informatics.jax.org
 
 # Host of (or Apache redirection of) fewi pages
-FEWI_HOST               firien.informatics.jax.org
+FEWI_HOST               test.informatics.jax.org
 
 # Host of the sequence retrieval tool
-SEQFETCH_HOST           firien.informatics.jax.org
+SEQFETCH_HOST           test.informatics.jax.org
 
 #Host of the mouse blast tool
-MOUSEBLAST_HOST         firien.informatics.jax.org
+MOUSEBLAST_HOST         test.informatics.jax.org
 
 #Host of the mouse mine site
 MOUSEMINE_HOST          beta.mousemine.org
@@ -125,7 +125,7 @@ GO_GRAPH_URL            http://${PY_HOST}/GOgraphs/
 
 GO_TOOLS_URL            http://${PY_HOST}/gotools/
 
-MGIWS_URL               http://firien.informatics.jax.org:18080/axis2/services/mgiws
+MGIWS_URL               http://test.informatics.jax.org:18080/axis2/services/mgiws
 
 YUI_URL                 http://yui.yahooapis.com/
 
