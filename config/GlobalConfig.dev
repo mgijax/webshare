@@ -62,9 +62,6 @@ ASSEMBLY_VERSION        GRCm38
 # genome assembly version for SNP coordinates
 SNP_ASSEMBLY_VERSION    38
 
-# indicates if the Java WI should do no caching of pages
-JAVAWI_CACHE_ENABLED    0
-
 # integer number of minutes for which we can cache an allele's phenotype data
 # (should be 0 on production to see edits instantly; longer on public to aid
 # performance)

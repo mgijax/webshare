@@ -72,24 +72,6 @@ THEILERBOOK_URL		http://www.emouseatlas.org/Atlas/Theiler_book_download.html
 
 ###--javawi Url's--###
 
-# URL for the 'browse Stage descriptions' link on expression query forms of javawi
-STAGE_INFO_URL		http://www.emouseatlas.org/emap/ema/theiler_stages/StageDefinition/stagedefinition.html
-
-# javawi URL to the graphical view of protein domain structure (insert SwissProt ID)
-GRAPH_SP_URL        	http://www.ebi.ac.uk/interpro/ISpy?ac=@@@@
-
-# javawi URL to the genome browser at UCSC (insert coordinates) for SNP detail page
-SNP_UCSC_BROWSER_URL    http://genome.ucsc.edu/cgi-bin/hgTracks?clade=vertebrate&org=Mouse&db=mm9&position=@@@@
-
-# javawi URL to Ensembl's SNPView resource (append RefSNP accession ID)
-ENSEMBL_SNPVIEW_URL 	http://www.ensembl.org/Mus_musculus/snpview?snp=
-
-# javawi URL to NCBI's MapViewer resource (append RefSNP accession ID)
-NCBI_MAPVIEWER_URL		http://www.ncbi.nlm.nih.gov/mapview/map_search.cgi?taxid=10090&amp;advsrch=off&amp;query=
-
-# link to Allen Brain Atlas (append mgi id in url encoded quotes)
-ALLEN_BRAIN_ATLAS_URL	http://www.brain-map.org/search.do?queryText=
-
 # base URL for NCBI BLAST
 NCBI_BLAST_URL	http://blast.ncbi.nlm.nih.gov/Blast.cgi
 
