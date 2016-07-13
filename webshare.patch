@@ -1,5 +1,5 @@
 diff --git a/getTemplate.cgi b/getTemplate.cgi
-index ff0db33..f90caf1 100755
+index b7ac772..a919664 100755
 --- a/getTemplate.cgi
 +++ b/getTemplate.cgi
 @@ -34,7 +34,7 @@ except:
@@ -8,10 +8,10 @@ index ff0db33..f90caf1 100755
  import string
 -import regex
 +import re
- import pg_db
- db = pg_db      # set up alias to minimize code changes
- 
-@@ -42,7 +42,7 @@ class getTemplateCGI (CGI.CGI):
+ import db
+ db.setAutoTranslate(False)
+ db.setAutoTranslateBE(False)
+@@ -43,7 +43,7 @@ class getTemplateCGI (CGI.CGI):
  
    # CLASS VARIABLES
    pageElements = {} # holds element file -> file content mapping
@@ -20,21 +20,19 @@ index ff0db33..f90caf1 100755
    
  
    def resolve (self,
-@@ -69,10 +69,14 @@ class getTemplateCGI (CGI.CGI):
+@@ -70,10 +70,12 @@ class getTemplateCGI (CGI.CGI):
      if steps == 0:
              raise error, 'Could not resolve parameter.'
      s = getTemplateCGI.pageElements[file]
 -    while getTemplateCGI.re_parm.search (s) != -1:
 -            start, stop = getTemplateCGI.re_parm.regs[0]
 -            parm = getTemplateCGI.re_parm.group(1)
-+
 +    re_match = getTemplateCGI.re_parm.search (s)
 +    while re_match:
 +            start, stop = re_match.span()
 +            parm = re_match.group(1)
              s = s[:start] + self.resolve(parm, steps-1) + s[stop:]
 +            re_match = getTemplateCGI.re_parm.search (s)
-+
      return s
  
    def getDbDate (self):
