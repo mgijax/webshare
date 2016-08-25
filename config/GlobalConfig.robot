@@ -111,9 +111,9 @@ WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FAQ_URL                 http://${PY_HOST}/faq/
 
-FTP_BASE_URL            ftp://ftp.informatics.jax.org/pub/
+FTP_URL            http://www.informatics.jax.org/downloads/
 
-FTP_URL                 ${FTP_BASE_URL}reports/
+PUB_REPORTS_URL                 ${FTP_URL}reports/
 
 PIXELDB_URL             ${WEBSHARE_URL}fetch_pixels.cgi?id=
 

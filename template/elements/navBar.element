@@ -229,24 +229,24 @@
 
 
   <!-- Download Dropmenu Start -->
-  <li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${FTP_BASE_URL}reports/index.html">Download</a>
+  <li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="${FTP_URL}reports/index.html">Download</a>
   <div id="navBarDownload" class="yuimenu">
   <div class="bd">
     <ul class="first-of-type">
-      <li class="yuimenuitem first-of-type"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html">All MGI Reports</a> </li>
+      <li class="yuimenuitem first-of-type"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html">All MGI Reports</a> </li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FEWI_URL}batch">Batch Query</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#marker">Genes &amp; Markers</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#seq">Sequence Data</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#homology">Vertebrate Homology</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#go">Gene Ontology Data</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#strain">Strains &amp; Polymorphisms</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#expression">Gene Expression</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#pheno">Phenotypic Data</a> </li>
-                    <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#cre">Recombinase (cre)</a> </li>              
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#nomen">Nomenclature</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#refs">References</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#clonecoll">Clone Collections</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html#dnamap">DNA Mapping Panels</a> </li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#marker">Genes &amp; Markers</a> </li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#seq">Sequence Data</a> </li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#homology">Vertebrate Homology</a> </li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#go">Gene Ontology Data</a> </li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#strain">Strains &amp; Polymorphisms</a> </li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#expression">Gene Expression</a> </li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#pheno">Phenotypic Data</a> </li>
+                    <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#cre">Recombinase (cre)</a> </li>              
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#nomen">Nomenclature</a> </li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#refs">References</a> </li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#clonecoll">Clone Collections</a> </li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html#dnamap">DNA Mapping Panels</a> </li>
     </ul>
   </div>
   </div>
@@ -270,7 +270,7 @@
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${KOMP_HOME}" 
           id="navBarKomp" onMouseOver="return overlib('Producing and phenotyping knockout mice from the IKMC mutant ES cell line resource.',ANCHOR, 'navBarKomp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">International Mouse Phenotyping Consortium (IMPC)</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://www.nih.gov/science/models/mouse/">Trans-NIH Mouse Initiatives</a></li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_BASE_URL}datasets/index.html">Contributed Data Sets</a></li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}datasets/index.html">Contributed Data Sets</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel">Community Links</a>
         <div id="navBarLinks" class="yuimenu">
           <div class="bd">
@@ -291,7 +291,7 @@
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://www.mousemine.org">MouseMine</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}software.shtml#sql">Direct SQL Account</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${SCHEMA}">Database Schema Browser</a></li>
-              <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FTP_BASE_URL}reports/index.html">All MGI Reports</a></li>
+              <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html">All MGI Reports</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}software.shtml">More</a></li>
             </ul>
           </div>
