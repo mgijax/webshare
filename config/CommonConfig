@@ -70,8 +70,6 @@ VISTA_URL               http://pipeline.lbl.gov/cgi-bin/vistatrack?db=mm7&positi
 # URL to the Theiler book The House Mouse, Atlas of Embryonic Development
 THEILERBOOK_URL		http://www.emouseatlas.org/Atlas/Theiler_book_download.html 
 
-###--javawi Url's--###
-
 # base URL for NCBI BLAST
 NCBI_BLAST_URL	http://blast.ncbi.nlm.nih.gov/Blast.cgi
 

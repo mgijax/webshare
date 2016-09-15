@@ -94,8 +94,6 @@ CAPTCHA_TIMEOUT 5
 ###-- MGI BASE URLs -be aware some server aliases will include the '/www/'
 ###--
 
-JAVAWI_URL              http://${JAVA_HOST}/javawi2/servlet/
-
 WI_URL                  http://${PY_HOST}/wi/
 
 FEWI_URL                http://${FEWI_HOST}/fewi/mgi/
