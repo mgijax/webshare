@@ -36,8 +36,6 @@ import CGI
 import string
 import regex
 import db
-db.setAutoTranslate(False)
-db.setAutoTranslateBE(False)
 
 class getTemplateCGI (CGI.CGI):
 
