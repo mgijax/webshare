@@ -1,17 +1,16 @@
 diff --git a/getTemplate.cgi b/getTemplate.cgi
-index b7ac772..a919664 100755
+index 3f61d78..6d73c6b 100755
 --- a/getTemplate.cgi
 +++ b/getTemplate.cgi
-@@ -34,7 +34,7 @@ except:
+@@ -34,14 +34,14 @@ except:
  
  import CGI
  import string
 -import regex
 +import re
  import db
- db.setAutoTranslate(False)
- db.setAutoTranslateBE(False)
-@@ -43,7 +43,7 @@ class getTemplateCGI (CGI.CGI):
+ 
+ class getTemplateCGI (CGI.CGI):
  
    # CLASS VARIABLES
    pageElements = {} # holds element file -> file content mapping
@@ -20,7 +19,7 @@ index b7ac772..a919664 100755
    
  
    def resolve (self,
-@@ -70,10 +70,12 @@ class getTemplateCGI (CGI.CGI):
+@@ -68,10 +68,12 @@ class getTemplateCGI (CGI.CGI):
      if steps == 0:
              raise error, 'Could not resolve parameter.'
      s = getTemplateCGI.pageElements[file]
