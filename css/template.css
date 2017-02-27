@@ -76,7 +76,7 @@ a.logoFooterAnchor{
     border: 1px #7D95B9 solid;
     padding:2px 1px;
     margin: 5px 4px;
-    height:1.25em;
+    /*height:1.25em;*/
 }
 
 .searchToolButton {
