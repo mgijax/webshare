@@ -201,7 +201,7 @@
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gxd/anatomy/EMAPA:16039"
             onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mouse Developmental Anatomy Browser</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/AMA_form.shtml"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gxd/ma_ontology"
             onMouseOver="return overlib('An extensive ontology of anatomical structures for the postnatal mouse.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Adult Mouse Anatomy Browser</a></li>
         </ul>
