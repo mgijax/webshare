@@ -42,7 +42,7 @@
           <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${FEWI_URL}allele/"
             onMouseOver="return overlib('Search for mutations or QTL based on phenotype, human disease, mutation type, gene, or genome location.',ANCHOR, 'navBarPhenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Phenotypes, Alleles &amp; Diseases Query</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/MP_form.shtml"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/mp_ontology"
             onMouseOver="return overlib('Search for a phenotype term to find relevant mutant genotypes.',ANCHOR, 'navBarPhenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mammalian Phenotype (MP) Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}disease"
@@ -195,7 +195,7 @@
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}disease"
             onMouseOver="return overlib('Browse for a human disease or condition term to find mouse models.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Human Disease (DO) Browser</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}searches/MP_form.shtml"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/mp_ontology"
             onMouseOver="return overlib('Search for a phenotype term to find relevant mutant genotypes.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mammalian Phenotype (MP) Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gxd/anatomy/EMAPA:16039"
