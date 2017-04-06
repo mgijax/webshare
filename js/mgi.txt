@@ -253,6 +253,7 @@ function play (yid, width, height, left, top){
 	// developed with examples from:
 	// https://developers.google.com/youtube/iframe_api_reference
 	var player;
+	$('#myImage').css({'display' : 'none'});
 	player = new YT.Player('player', { 
 		height: height,
 		width: width,
@@ -266,6 +267,7 @@ function play (yid, width, height, left, top){
 				// ads come up
 				if (event.data == 0) {
 					player.destroy();
+					$('#myImage').css({'display' : 'inline'});
 				}
 			}
 		}
