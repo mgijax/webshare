@@ -97,7 +97,7 @@
       <div id="navBarFunction" class="yuimenu">
       <div class="bd">
         <ul class="first-of-type">
-          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/GO_form.shtml"
+          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gene_ontology"
             onMouseOver="return overlib('Browse the Gene Ontology and mouse annotations in MGI.',ANCHOR, 'navBarFunction', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             GO Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}marker/"
@@ -189,7 +189,7 @@
       <div id="navBarVocabularies" class="yuimenu">
       <div class="bd">
         <ul class="first-of-type">
-          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${WI_URL}searches/GO_form.shtml"
+          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gene_ontology"
             onMouseOver="return overlib('Browse the Gene Ontology and mouse annotations in MGI.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             GO Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}disease"
