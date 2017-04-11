@@ -121,7 +121,7 @@
           <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${FEWI_URL}snp"
             onMouseOver="return overlib('Search for SNPs by strain(s), SNP attributes, genomic position, or associated genes.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             SNP Query</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${WI_URL}external/festing/search_form.cgi"
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://${PY_HOST}/inbred_strains"
             onMouseOver="return overlib('Browse the Listing of Inbred Strains of Mice and Rats by M. Festing.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Inbred Strain Characteristics</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGIHOME_URL}genealogy/"
