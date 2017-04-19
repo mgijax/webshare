@@ -266,7 +266,7 @@
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FEWI_URL}glossary">MGI Glossary</a></li>        
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://proto.informatics.jax.org/"> Prototype Tools</a> </li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://phenome.jax.org">Mouse Phenome Database (MPD)</a></li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${WI_URL}external/ko/">Deltagen and Lexicon Knockout Mice</a></li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://${PY_HOST}/knockout_mice/">Deltagen and Lexicon Knockout Mice</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${KOMP_HOME}" 
           id="navBarKomp" onMouseOver="return overlib('Producing and phenotyping knockout mice from the IKMC mutant ES cell line resource.',ANCHOR, 'navBarKomp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">International Mouse Phenotyping Consortium (IMPC)</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="https://dmdd.org.uk/" 
