@@ -41,6 +41,7 @@ PUBLIC_HOST		www.informatics.jax.org
 DB_URL           bhmgidb06ld.jax.org:5432
 DB_SERVER        bhmgidb06ld.jax.org
 DB_DATABASE      redbob
+DB_DATABASE_FE   redbobfe
 DB_USER          mgd_public
 DB_PASSWORD      mgdpub
 SNP_DATABASE     snp

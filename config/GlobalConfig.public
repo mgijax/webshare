@@ -42,6 +42,7 @@ PUBLIC_HOST		www.informatics.jax.org
 DB_SERVER      mgi-pubfedb1.jax.org
 DB_URL         mgi-pubfedb1.jax.org:5432
 DB_DATABASE    pub
+DB_DATABASE    fe
 DB_USER        mgd_public
 DB_PASSWORD    mgdpub
 

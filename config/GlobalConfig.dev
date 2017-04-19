@@ -1,6 +1,7 @@
 ############################################################################
 # Global Config
 ############################################################################
+# I believe this file is defunct -- rohan and cardolan are both toast. - jsb
 
 NAME                    MGI_4.4_Dev
  
@@ -41,6 +42,7 @@ PUBLIC_HOST		www.informatics.jax.org
 DB_URL           rohan.informatics.jax.org:4100
 DB_SERVER        DEV_MGI
 DB_DATABASE      mgd
+DB_DATABASE_FE   fe
 DB_USER          mgd_public
 DB_PASSWORD      mgdpub
 SNP_DATABASE     snp
