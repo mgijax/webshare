@@ -48,6 +48,9 @@
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}disease"
             onMouseOver="return overlib('Browse for a human disease or condition term to find mouse models.',ANCHOR, 'navBarPhenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Human Disease (DO) Browser</a></li>
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/hp_ontology"
+            onMouseOver="return overlib('Search for a human phenotype ontology term to find relevant human diseases.',ANCHOR, 'navBarPhenotypes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+            Human Phenotype (HP) Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}phenotypes.shtml">More</a></li>
         </ul>
       </div>
@@ -204,6 +207,9 @@
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gxd/ma_ontology"
             onMouseOver="return overlib('An extensive ontology of anatomical structures for the postnatal mouse.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Adult Mouse Anatomy Browser</a></li>
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/hp_ontology"
+            onMouseOver="return overlib('Search for a human phenotype ontology term to find relevant human diseases.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+            Human Phenotype (HP) Browser</a></li>
         </ul>
       </div>
       </div>
