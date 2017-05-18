@@ -209,7 +209,7 @@
             Adult Mouse Anatomy Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/hp_ontology"
             onMouseOver="return overlib('Search for a human phenotype ontology term to find relevant human diseases.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            Human Phenotype (HP) Browser</a></li>
+            Human Phenotype (HPO) Browser</a></li>
         </ul>
       </div>
       </div>
