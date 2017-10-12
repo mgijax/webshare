@@ -16,6 +16,14 @@ JS_URL = ${TOPURL}js/
 TEMPLATE_URL = ${TOPURL}template/
 
 [
+name = agr_logo_smallest
+url = ${IMAGES_URL}agr_logo_smallest.png
+width = 694
+height = 342
+alt = AGR Logo
+]
+
+[
 name = black_ball
 url = ${IMAGES_URL}blackball.gif
 width = 14
