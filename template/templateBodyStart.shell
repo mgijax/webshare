@@ -16,16 +16,16 @@
     </span>
   </div>
 
-  <div id="templateSearchTool" style="position:absolute; top:15px; left:50%; margin-left: -178px;">
+  <div id="agr_logo" style="float: right; padding-top: 3px; padding-right: 10px;">
+    <img src="${WEBSHARE_URL}images/agr_logo_smallest.png" style="height:70px">
+  </div>
+
+  <div id="templateSearchTool" style="float:right; top:15px; margin-right: -22px;">
     ${searchToolForm.element}
   </div>
 
   <div style="position:absolute; top:4px; left:150px;">
     ${notice.element}
-  </div>
-
-  <div id="agr_logo" style="float: right; padding-top: 3px; padding-right: 10px;">
-    <img src="${WEBSHARE_URL}images/agr_logo_smallest.png" style="height:55px">
   </div>
 
 </div>
