@@ -16,7 +16,7 @@
     </span>
   </div>
 
-  <div id="agr_logo" style="float: right; padding-top: 3px; padding-right: 10px;">
+  <div id="agr_logo" style="float: right; padding-top: 3px; padding-right: 5px;">
     <img src="${WEBSHARE_URL}images/agr_logo_smallest.png" style="height:70px">
   </div>
 
