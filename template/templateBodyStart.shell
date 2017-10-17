@@ -17,7 +17,7 @@
   </div>
 
   <div id="agr_logo" style="float: right; padding-top: 3px; padding-right: 5px;">
-    <img src="${WEBSHARE_URL}images/agr_logo_smallest.png" style="height:70px">
+    <a href="http://www.alliancegenome.org/" target="_blank"><img src="${WEBSHARE_URL}images/agr_logo_smallest.png" style="height:70px"></a>
   </div>
 
   <div id="templateSearchTool" style="float:right; top:15px; margin-right: -22px;">
