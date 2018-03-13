@@ -35,7 +35,7 @@ except:
 import CGI
 import string
 import regex
-import db
+import urllib2
 
 class getTemplateCGI (CGI.CGI):
 
@@ -74,32 +74,44 @@ class getTemplateCGI (CGI.CGI):
             s = s[:start] + self.resolve(parm, steps-1) + s[stop:]
     return s
 
-  def getDbDate (self):
-    # Purpose: return value of latest db update
-    # Returns: string
-    # Assumes: nothing
-    # Effects: nothing
-    # Throws: db module may throw DB exceptions
-    # pull the MGI:ID and geneSymbol from the database
-
-    db.useOneConnection(1)
-    db.set_sqlUser(config["DB_USER"])
-    db.set_sqlPassword(config["DB_PASSWORD"])
-    db.set_sqlServer(config["DB_SERVER"])
-    db.set_sqlDatabase(config["DB_DATABASE"])
-    dateSql = """
-        SELECT to_char(lastdump_date, 'MM/DD/YYYY') as dbDate, 
-        public_version 
-        FROM MGI_dbInfo 
-    """
-
-    #  Excecute queries
-    results = db.sql(dateSql, 'auto')
-    db.useOneConnection(0)
-    dbDateInfo = results[0]
-
-    return dbDateInfo["dbDate"]
-
+  def getFewiDate (self):
+    # get the database date from the fewi, format: 'dd mmm yyyy'
+      
+    fp = urllib2.urlopen(config['FEWI_URL'] + 'home/database_date')
+    fewiDate = fp.read().strip()
+    fp.close()
+      
+    [ day, month, year ] = fewiDate.lower().strip().split()
+     
+    monthNum = None
+    if 'jan' == month:
+        monthNum = '01'
+    elif 'feb' == month:
+        monthNum = '02'
+    elif 'mar' == month:
+        monthNum = '03'
+    elif 'apr' == month:
+        monthNum = '04'
+    elif 'may' == month:
+        monthNum = '05'
+    elif 'jun' == month:
+        monthNum = '06'
+    elif 'jul' == month:
+        monthNum = '07'
+    elif 'aug' == month:
+        monthNum = '08'
+    elif 'sep' == month:
+        monthNum = '09'
+    elif 'oct' == month:
+        monthNum = '10'
+    elif 'nov' == month:
+        monthNum = '11'
+    elif 'dec' == month:
+        monthNum = '12'
+      
+    if monthNum:
+        return '%s/%s/%s' % (monthNum, day, year)
+    return fewiDate
 
   def main (self):
 
@@ -111,7 +123,7 @@ class getTemplateCGI (CGI.CGI):
     self.parms = self.get_parms()
     
     # gather date of most recent DB load
-    config['dbDate'] = self.getDbDate()
+    config['dbDate'] = self.getFewiDate()
 
     # get the requested template parameter
     if self.parms.has_key('template'):
