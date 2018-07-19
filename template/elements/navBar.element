@@ -121,15 +121,11 @@
       <div id="navBarStrains" class="yuimenu">
       <div class="bd">
         <ul class="first-of-type">
-          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${FEWI_URL}snp"
+          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}strains_SNPs.shtml"
+          	onMouseOver="return overlib('Search for strains by name, synonyms, or attributes.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">Strain Query</a></li>
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}snp"
             onMouseOver="return overlib('Search for SNPs by strain(s), SNP attributes, genomic position, or associated genes.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             SNP Query</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://${PY_HOST}/inbred_strains"
-            onMouseOver="return overlib('Browse the Listing of Inbred Strains of Mice and Rats by M. Festing.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            Inbred Strain Characteristics</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGIHOME_URL}genealogy/"
-            onMouseOver="return overlib('View the genealogy chart of inbred strains.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            Genealogy Chart of Inbred Strains</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}strains_SNPs.shtml">More</a></li>
         </ul>
       </div>
