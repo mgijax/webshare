@@ -26,7 +26,10 @@
             Batch Query</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JBROWSE_URL}"
             onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarGenes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            Mouse Genome Browser</a></li>
+            JBrowse Genome Browser</a></li>
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGV_URL}"
+            onMouseOver="return overlib('Compare genome features of de novo sequenced mouse strains.',ANCHOR, 'navBarGenes', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+            Multiple Genome Viewer (MGV)</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}genes.shtml">More</a></li>
         </ul>
       </div>
@@ -121,15 +124,14 @@
       <div id="navBarStrains" class="yuimenu">
       <div class="bd">
         <ul class="first-of-type">
-          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${FEWI_URL}snp"
+          <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}strains_SNPs.shtml"
+          	onMouseOver="return overlib('Search for strains by name, synonyms, or attributes.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">Strain Query</a></li>
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}snp"
             onMouseOver="return overlib('Search for SNPs by strain(s), SNP attributes, genomic position, or associated genes.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             SNP Query</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://${PY_HOST}/inbred_strains"
-            onMouseOver="return overlib('Browse the Listing of Inbred Strains of Mice and Rats by M. Festing.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            Inbred Strain Characteristics</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGIHOME_URL}genealogy/"
-            onMouseOver="return overlib('View the genealogy chart of inbred strains.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            Genealogy Chart of Inbred Strains</a></li>
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGV_URL}"
+            onMouseOver="return overlib('Compare genome features of de novo sequenced mouse strains.',ANCHOR, 'navBarStrains', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+            Multiple Genome Viewer (MGV)</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}strains_SNPs.shtml">More</a></li>
         </ul>
       </div>
@@ -162,7 +164,7 @@
             BLAST at NCBI</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${JBROWSE_URL}"
             onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            Mouse Genome Browser</a></li>
+            JBrowse Genome Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}batch"
             onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'navBarSequences', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Batch Query</a></li>
@@ -224,13 +226,26 @@
         onMouseOver="return overlib('Access MGI data via InterMine.',ANCHOR, 'navBarMine', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         MouseMine</a></li>
 
-      <li class="yuimenuitem"><a id="navBarJBrowse" class="yuimenuitemlabel" href="${JBROWSE_URL}"
-        onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarJBrowse', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
-        Mouse Genome Browser</a></li>
+      <!-- Vocabularies Submenu -->
+      <li class="yuimenuitem"><a class="yuimenuitemlabel">Mouse Genome Browsers</a>
+      <div id="navBarGenomeBrowsers" class="yuimenu">
+      <div class="bd">
+        <ul class="first-of-type">
+			<li class="yuimenuitem"><a id="navBarJBrowse" class="yuimenuitemlabel" href="${JBROWSE_URL}"
+				onMouseOver="return overlib('Create a graphical display of genome features from regions of the mouse genome.',ANCHOR, 'navBarJBrowse', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+				JBrowse Genome Browser</a></li>
+			<li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGV_URL}"
+				onMouseOver="return overlib('Compare genome features of de novo sequenced mouse strains.',ANCHOR, 'navBarJBrowse', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+				Multiple Genome Viewer (MGV)</a></li>
+        </ul>
+      </div>
+      </div>
+      </li>
     </ul>
   </div>
   </div>
   </li>
+
   <!-- Searches Dropmenu End -->
 
 
