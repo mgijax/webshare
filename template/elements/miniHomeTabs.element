@@ -45,8 +45,8 @@
                 <span id="tab_func">Function</span></a>
           </li>
 
-          <li id="strains_SNPs.shtml">
-            <a href="${HOMEPAGES_URL}strains_SNPs.shtml"
+          <li id="home_strains_SNPs">
+            <a href="${FEWI_URL}home/strain"
                 onmouseover="return overlib('Strains, SNPs &amp; Polymorphisms',ANCHOR, 'tab_snps', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
                 <span id="tab_snps">Strains&nbsp;/&nbsp;SNPs</span></a>
           </li>
