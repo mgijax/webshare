@@ -74,7 +74,7 @@ THEILERBOOK_URL		http://www.emouseatlas.org/Atlas/Theiler_book_download.html
 NCBI_BLAST_URL	http://blast.ncbi.nlm.nih.gov/Blast.cgi
 
 # Multiple Genome Viewer (MGV) 
-MGV_URL					http://proto.informatics.jax.org/prototypes/mgv/
+MGV_URL					http://www.informatics.jax.org/mgv/
 
 ###--------------###
 ###--Komp Uri's--###
@@ -86,3 +86,5 @@ ENTREZGENE_HOME         http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene
 KOMP_HOME               https://www.mousephenotype.org/
 KOMP_NIH                http://www.nih.gov/science/models/mouse/knockout/
 IMSR_HOME               ${IMSRURL}index
+
+
