@@ -82,9 +82,6 @@
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gxd/anatomy/EMAPA:16039"
             onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mouse Developmental Anatomy Browser</a></li>
-          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://www.emouseatlas.org/emap/ema/section_browser/SectionBrowser.html"
-            onMouseOver="return overlib('Search the Edinburgh Mouse Atlas for anatomical terms and query for associated expression data.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            EMAGE Anatomical Section Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}expression.shtml">More</a></li>
         </ul>
       </div>
