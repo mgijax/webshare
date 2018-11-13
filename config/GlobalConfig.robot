@@ -2,7 +2,7 @@
 # Global Config
 ############################################################################
 
-NAME                    MGI 5.11
+NAME                    MGI 6.13
  
 ###--
 ###-- MGI Host Servers
@@ -39,8 +39,8 @@ PUBLIC_HOST		www.informatics.jax.org
 ###-- Database Connectivity
 ###--
 
-DB_SERVER      mgi-botfedb1.jax.org
-DB_URL         mgi-botfedb1.jax.org:5432
+DB_SERVER      bhmgirobdb01lp.jax.org
+DB_URL         bhmgirobdb01lp.jax.org:5432
 DB_DATABASE    pub
 DB_DATABASE_FE fe
 DB_USER        mgd_public
