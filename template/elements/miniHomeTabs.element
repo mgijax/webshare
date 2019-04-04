@@ -57,12 +57,6 @@
             <span id="tab_homo">Homology</span></a>
           </li>
 
-          <li id="pathways.shtml">
-            <a href="${HOMEPAGES_URL}pathways.shtml"
-                onmouseover="return overlib('Biochemical Pathways \(MouseCyc\)',ANCHOR, 'tab_path', ANCHORALIGN, 'UL', 'LL', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
-                <span id="tab_path">Pathways</span></a>
-          </li>
-
           <li id="minitab_Tumor">
             <a href="${MTB_URL}"
                 onmouseover="return overlib('Mouse Tumor Biology',ANCHOR, 'tab_tumors', ANCHORALIGN, 'UR', 'LR', CSSCLASS,  TEXTFONTCLASS, 'tabTipFont', BGCLASS, 'tabTipBoxBG', FGCLASS, 'tabTipBoxFG');" onmouseout="nd();">
