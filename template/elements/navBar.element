@@ -141,11 +141,6 @@
         onMouseOver="return overlib('Find out more about Homology relationships in MGI.',ANCHOR, 'navBarBiochem', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         Homology</a></li>
 
-      <!-- Pathways -->
-      <li class="yuimenuitem"><a id="navBarBiochem" class="yuimenuitemlabel" href="${PATHWAYS_URL}"
-        onMouseOver="return overlib('View mouse genomic data in the context of metabolic cellular  processes such as biosynthesis, degradation, energy production, and detoxification.',ANCHOR, 'navBarBiochem', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
-        Pathways</a></li>
-
       <!-- MTB -->
       <li class="yuimenuitem"><a id="navBarMTB" class="yuimenuitemlabel" href="http://tumor.informatics.jax.org/mtbwi/index.do"
         onMouseOver="return overlib('MTB provides information on the frequency, pathology, and genetics of spontaneous and induced tumors in mice.',ANCHOR, 'navBarMTB', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
