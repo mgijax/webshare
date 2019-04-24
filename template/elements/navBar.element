@@ -138,7 +138,7 @@
 
       <!-- Homology Submenu -->
       <li class="yuimenuitem"><a id="navBarHomology" class="yuimenuitemlabel" href="${HOMEPAGES_URL}homology.shtml"
-        onMouseOver="return overlib('Find out more about Homology relationships in MGI.',ANCHOR, 'navBarBiochem', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+        onMouseOver="return overlib('Find out more about Homology relationships in MGI.',ANCHOR, 'navBarHomology', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         Homology</a></li>
 
       <!-- MTB -->
