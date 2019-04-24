@@ -75,13 +75,16 @@
         <ul class="first-of-type">
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}gxd/"
             onMouseOver="return overlib('Search for detailed gene expression assay results.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            Gene Expression Data Query</a></li>
+            Gene Expression Data Search</a></li>
           <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${FEWI_URL}gxdlit"
             onMouseOver="return overlib('Search for references on gene expression during development.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
-            Gene Expression Literature Query</a></li>
+            Gene Expression Literature Search</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gxd/anatomy/EMAPA:16039"
             onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mouse Developmental Anatomy Browser</a></li>
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}gxd/htexp_index"
+            onMouseOver="return overlib('Search for experiments using sample metadata annotations.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+            RNA-Seq and Microarray Experiment Search</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}expression.shtml">More</a></li>
         </ul>
       </div>
