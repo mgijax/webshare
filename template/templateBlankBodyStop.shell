@@ -3,6 +3,10 @@
 <!-- MGI JavaScript -->
 ${js.element}
 
+<style><!-- needed for formatting of overlib popups on pages using bootstrap -->
+#overDiv table tr td table { background-color: #EFEFEF; }
+</style>
+
 </body>
 </html>
 
