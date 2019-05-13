@@ -3,8 +3,18 @@
 <!-- MGI JavaScript -->
 ${js.element}
 
+<script>
+setTimeout(function() {
+	overlib('Building initial tooltip...',ANCHOR, 'templateBodyInsert', ANCHORALIGN, 'UR', 'UL');
+	setTimeout(function() {
+		nd();
+		}, 500);
+	}, 500);
+</script>
+
 <style><!-- needed for formatting of overlib popups on pages using bootstrap -->
 #overDiv table tr td table { background-color: #EFEFEF; }
+.overlibBGClass tr td table { background-color: #EFEFEF; }
 </style>
 
 </body>
