@@ -45,12 +45,16 @@
 ${js.element}
 
 <script>
-setTimeout(function() {
+// For some pages (like HMDC Home) that don't have a templateBodyInsert element, we don't want to do this as it
+// presents an odd error popup.
+if (document.getElementById('templateBodyInsert') != null) {
+    setTimeout(function() {
 	overlib('Building initial tooltip...',ANCHOR, 'templateBodyInsert', ANCHORALIGN, 'UR', 'UL');
 	setTimeout(function() {
 		nd();
 		}, 500);
 	}, 500);
+}
 </script>
 
 <style><!-- needed for formatting of overlib popups on pages using bootstrap -->
