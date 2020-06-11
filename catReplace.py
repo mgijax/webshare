@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!./python
 
 import sys
 import os
@@ -26,12 +26,12 @@ for arg in sys.argv[1:]:
         fileObject.close()
 
     #for each config parameter, update the shell files
-    for key in config.keys():
+    for key in list(config.keys()):
         searchKey    = "${" + key + "}"
         replaceValue = config[key]
         shellContents = shellContents.replace(searchKey, replaceValue)
 
 
 #return translated string representation of file    
-print shellContents
+print(shellContents)
 

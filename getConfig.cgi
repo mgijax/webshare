@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!./python
 
 # Program: getConfig.cgi
 # Purpose: propagate global config file contents
@@ -31,18 +31,18 @@ import string
 
 class getConfigCGI (CGI.CGI):
 
-	def main (self):
-	
-		print '###################################################################################'
-		print '# This is a machine generated config file, do not make changes here.'
-		print '# Instead make them in either GlobalConfig or CommonConfig in your local webshare. '
-		print '###################################################################################'
-		
-		globalConfig.merge(commonConfig)
+        def main (self):
+        
+                print('###################################################################################')
+                print('# This is a machine generated config file, do not make changes here.')
+                print('# Instead make them in either GlobalConfig or CommonConfig in your local webshare. ')
+                print('###################################################################################')
+                
+                globalConfig.merge(commonConfig)
 
-		for key in globalConfig.keys():
-			print key + '	' + globalConfig[key]
-		
+                for key in list(globalConfig.keys()):
+                        print(key + '   ' + globalConfig[key])
+                
 if __name__ == '__main__':
-	myCgi = getConfigCGI()
-	myCgi.go()
+        myCgi = getConfigCGI()
+        myCgi.go()

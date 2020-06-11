@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!./python
 
 # Program: getTemplate.cgi
 # Purpose: Propagates global template files; is the web-based access point for
@@ -66,7 +66,7 @@ class getTemplateCGI (CGI.CGI):
     #               A       "My ${A} value"
 
     if steps == 0:
-            raise error, 'Could not resolve parameter.'
+            raise error('Could not resolve parameter.')
     s = getTemplateCGI.pageElements[file]
     while getTemplateCGI.re_parm.search (s) != -1:
             start, stop = getTemplateCGI.re_parm.regs[0]
@@ -117,7 +117,7 @@ class getTemplateCGI (CGI.CGI):
     config['dbDate'] = self.getDbDate()
 
     # get the requested template parameter
-    if self.parms.has_key('template'):
+    if 'template' in self.parms:
         requestedTemplate = self.parms['template']
         templateFile = config["INSTALL_PATH"] + "template/" + requestedTemplate + ".shell"
 
@@ -140,23 +140,23 @@ class getTemplateCGI (CGI.CGI):
             getTemplateCGI.pageElements[element] = fileContent
 
     #for each page element, update the shell files
-    for file in getTemplateCGI.pageElements.keys():
+    for file in list(getTemplateCGI.pageElements.keys()):
         searchKey    = "${" + file + "}"
         replaceValue = self.resolve(file)
         shellContents = shellContents.replace(searchKey, replaceValue)
 
     #for each config parameter, update the shell files
-    for key in config.keys():
+    for key in list(config.keys()):
         searchKey    = "${" + key + "}"
         replaceValue = config[key]
         shellContents = shellContents.replace(searchKey, replaceValue)
 
     #return translated string representation of file
     
-    print shellContents
+    print(shellContents)
 
 
 
 if __name__ == '__main__':
         myCgi = getTemplateCGI()
-	myCgi.go()
+        myCgi.go()
