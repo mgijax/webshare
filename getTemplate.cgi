@@ -34,14 +34,14 @@ except:
 
 import CGI
 import string
-import regex
+import re
 import db
 
 class getTemplateCGI (CGI.CGI):
 
   # CLASS VARIABLES
   pageElements = {} # holds element file -> file content mapping
-  re_parm = regex.compile ('\${\([^}]+.element\)}') # to find 'foo.element'
+  re_parm = re.compile ('\${\([^}]+.element\)}') # to find 'foo.element'
   
 
   def resolve (self,
@@ -66,12 +66,14 @@ class getTemplateCGI (CGI.CGI):
     #               A       "My ${A} value"
 
     if steps == 0:
-            raise error('Could not resolve parameter.')
+        raise error('Could not resolve parameter.')
     s = getTemplateCGI.pageElements[file]
-    while getTemplateCGI.re_parm.search (s) != -1:
-            start, stop = getTemplateCGI.re_parm.regs[0]
-            parm = getTemplateCGI.re_parm.group(1)
-            s = s[:start] + self.resolve(parm, steps-1) + s[stop:]
+    while getTemplateCGI.re_parm.search (s) != None:
+        m = getTemplateCGI.re_parm.search (s)    
+        start, stop = m.regs[0]
+        parm = getTemplateCGI.re_parm.group(1)
+        s = s[:start] + self.resolve(parm, steps-1) + s[stop:]
+
     return s
 
   def getDbDate (self):
