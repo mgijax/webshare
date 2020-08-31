@@ -10,6 +10,19 @@
 # or js files.  This is intended for developers to use so they can see their 
 # css changes requiring an Install.  
 
+# bring in options from MGICONFIG
+
+if [ -z "${MGICONFIG}" ]; then
+        MGICONFIG=/usr/local/mgi/live/mgiconfig
+fi
+. ${MGICONFIG}/master.config.sh
+
+echo "Configuring for python at: $PYTHON"
+if [ -h ./python ]; then
+        rm ./python
+fi
+ln -s $PYTHON python
+
 # generate and source GlobalConfig sh file
 
 if [ -z "$LIB_PY_MISC" ]

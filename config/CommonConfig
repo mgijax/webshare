@@ -14,7 +14,7 @@ WEBIMAGEMAP_URL         ${WEBSHARE_URL}components.cgi
 ###--- Common Parameters ---###
 ###-------------------------###
 
-PYTHON                  /usr/local/bin/python
+PYTHON                  /opt/python3.7/bin/python3
 SYBASE                  /opt/sybase/12.5/
 GROUP                   www
 
