@@ -96,7 +96,7 @@ def sendImage(pixPath):
 
         while bufLen > 0:
                 length = length + bufLen
-                sys.stdout.write(buf)
+                sys.stdout.write(str(buf))
                 buf = fp.read(blockSize)
                 bufLen = len(buf)
         fp.close()
