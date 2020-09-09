@@ -46,7 +46,7 @@ def bailout (msg):
 
 # configuration object for webshare
 config = Configuration.get_Configuration ('webshare.config')
-if 'PIXELDB_PATH' not in config:
+if not config.has_key('PIXELDB_PATH'):
         bailout ('PIXELDB_PATH is not specified')
 
 # path to the pixeldb image files
