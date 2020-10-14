@@ -1,4 +1,4 @@
-<form action="${QUICKSEARCH_URL}Search.do" method="get">
+<form action="${FEWI_URL}quicksearch/summary" method="get">
 <table>
 <tr>
 
