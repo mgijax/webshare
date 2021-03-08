@@ -2,26 +2,26 @@
 # Global Config
 ############################################################################
 
-NAME                    MGI 6.13
+NAME                    MGI 6.16
  
 ###--
 ###-- MGI Host Servers
 ###--
 
 # Python host and directory where standard MGI python products are installed
-PY_HOST                 test.informatics.jax.org
+PY_HOST                 mgitest.jax.org
 
 # Host of tomcat servlet container; non-public installs include port # 
-JAVA_HOST               test.informatics.jax.org
+JAVA_HOST               mgitest.jax.org
 
 # Host of (or Apache redirection of) fewi pages
-FEWI_HOST               test.informatics.jax.org
+FEWI_HOST               mgitest.jax.org
 
 # Host of the sequence retrieval tool
-SEQFETCH_HOST           test.informatics.jax.org
+SEQFETCH_HOST           mgitest.jax.org
 
 #Host of the mouse blast tool
-MOUSEBLAST_HOST         test.informatics.jax.org
+MOUSEBLAST_HOST         mgitest.jax.org
 
 #Host of the mouse mine site
 MOUSEMINE_HOST          beta.mousemine.org
@@ -95,33 +95,33 @@ CAPTCHA_TIMEOUT 5
 ###-- MGI BASE URLs -be aware some server aliases will include the '/www/'
 ###--
 
-WI_URL                  http://${PY_HOST}/
+WI_URL                  https://${PY_HOST}/
 
-FEWI_URL                http://${FEWI_HOST}/
+FEWI_URL                https://${FEWI_HOST}/
 
-QUICKSEARCH_URL         http://${PY_HOST}/searchtool/
+QUICKSEARCH_URL         https://${PY_HOST}/searchtool/
 
-MGIHOME_URL             http://${PY_HOST}/mgihome/
+MGIHOME_URL             https://${PY_HOST}/mgihome/
 
-USERHELP_URL            http://${PY_HOST}/userhelp/
+USERHELP_URL            https://${PY_HOST}/userhelp/
 
-USERDOCS_URL            http://${PY_HOST}/userhelp/
+USERDOCS_URL            https://${PY_HOST}/userhelp/
 
-WEBSHARE_URL            http://${PY_HOST}/webshare/
+WEBSHARE_URL            https://${PY_HOST}/webshare/
 
-FAQ_URL                 http://${PY_HOST}/faq/
+FAQ_URL                 https://${PY_HOST}/faq/
 
-FTP_URL            http://test.informatics.jax.org/downloads/
+FTP_URL            		https://mgitest.jax.org/downloads/
 
-PUB_REPORTS_URL                 ${FTP_URL}reports/
+PUB_REPORTS_URL         ${FTP_URL}reports/
 
 PIXELDB_URL             ${WEBSHARE_URL}fetch_pixels.cgi?id=
 
-GO_GRAPH_URL            http://${PY_HOST}/GOgraphs/
+GO_GRAPH_URL            https://${PY_HOST}/GOgraphs/
 
-GO_TOOLS_URL            http://${PY_HOST}/gotools/
+GO_TOOLS_URL            https://${PY_HOST}/gotools/
 
-MGIWS_URL               http://test.informatics.jax.org:18080/axis2/services/mgiws
+MGIWS_URL               https://mgitest.jax.org:18080/axis2/services/mgiws
 
 YUI_URL                 http://yui.yahooapis.com/
 
@@ -131,29 +131,29 @@ YUI_URL                 http://yui.yahooapis.com/
 ###-- fully extended paths to their respective directories
 ###--
 
-HOMEPAGES_URL           http://${PY_HOST}/
+HOMEPAGES_URL           https://${PY_HOST}/
 
-MENUS_URL               http://${PY_HOST}/
+MENUS_URL               https://${PY_HOST}/
 
 ###--
 ###-- MGI FULL URLs 
 ###--
 
-SEQFETCH_URL            http://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
+SEQFETCH_URL            https://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
 
-FRITHBOOK_URL           http://${PY_HOST}/frithbook/
+FRITHBOOK_URL           https://${PY_HOST}/frithbook/
 
-GREENBOOK_URL           http://${PY_HOST}/greenbook/
+GREENBOOK_URL           https://${PY_HOST}/greenbook/
 
-COOKBOOK_URL            http://${PY_HOST}/cookbook/
+COOKBOOK_URL            https://${PY_HOST}/cookbook/
 
-MORSEBOOK_URL           http://${PY_HOST}/morsebook/
+MORSEBOOK_URL           https://${PY_HOST}/morsebook/
 
-SILVER_URL              http://${PY_HOST}/silverbook/
+SILVER_URL              https://${PY_HOST}/silverbook/
 
-WKSILVERS_URL           http://${PY_HOST}/wksilvers/
+WKSILVERS_URL           https://${PY_HOST}/wksilvers/
 
-SCHEMA                  http://www.informatics.jax.org/schema_pg/
+SCHEMA                  https://www.informatics.jax.org/schema_pg/
 
 GBROWSE_URL             http://${GBROWSE_HOST}gb2/gbrowse/mouse38/
 
