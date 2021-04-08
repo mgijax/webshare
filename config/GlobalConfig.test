@@ -111,6 +111,9 @@ WEBSHARE_URL            https://${PY_HOST}/webshare/
 
 FAQ_URL                 https://${PY_HOST}/faq/
 
+# Multiple Genome Viewer (MGV) 
+MGV_URL					http://scrum.informatics.jax.org/mgv/
+
 FTP_URL            		https://mgitest.jax.org/downloads/
 
 PUB_REPORTS_URL         ${FTP_URL}reports/

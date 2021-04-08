@@ -71,9 +71,6 @@ THEILERBOOK_URL		http://www.emouseatlas.org/Atlas/Theiler_book_download.html
 # base URL for NCBI BLAST
 NCBI_BLAST_URL	http://blast.ncbi.nlm.nih.gov/Blast.cgi
 
-# Multiple Genome Viewer (MGV) 
-MGV_URL					http://www.informatics.jax.org/mgv/
-
 ###--------------###
 ###--Komp Uri's--###
 ###--------------###
