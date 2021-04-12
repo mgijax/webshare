@@ -1,4 +1,5 @@
 ############################################################################
+
 # Global Config
 ############################################################################
 
@@ -58,7 +59,7 @@ IS_PRODUCTION           0
 BUILDS_IN_SYNC          1
 
 # genome assembly version for marker coordinates
-ASSEMBLY_VERSION        GRCm38
+ASSEMBLY_VERSION        GRCm39
 
 # genome assembly version for SNP coordinates
 SNP_ASSEMBLY_VERSION    39
