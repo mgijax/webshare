@@ -17,10 +17,10 @@ JAVA_HOST               localhost.jax.org
 FEWI_HOST		localhost.jax.org
 
 # Host of the sequence retrieval tool
-SEQFETCH_HOST           rohan.informatics.jax.org
+SEQFETCH_HOST           www.informatics.jax.org
 
 #Host of the mouse blast tool
-MOUSEBLAST_HOST         rohan.informatics.jax.org
+MOUSEBLAST_HOST         www.informatics.jax.org
 
 #Host of the mouse mine site
 MOUSEMINE_HOST          www.mousemine.org

@@ -18,7 +18,7 @@ JAVA_HOST               cardolan.informatics.jax.org
 FEWI_HOST               cardolan.informatics.jax.org
 
 # Host of the sequence retrieval tool
-SEQFETCH_HOST           cardolan.informatics.jax.org
+SEQFETCH_HOST           www.informatics.jax.org
 
 #Host of the mouse blast tool
 MOUSEBLAST_HOST         cardolan.informatics.jax.org
