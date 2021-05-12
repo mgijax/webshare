@@ -53,9 +53,6 @@ MPD_SNP_URL             http://phenome.jax.org/db/q?rtn=snp/ret01&gohint=1&ureg=
 # The location of the MPD (Mouse Phenome Database)
 MPD_URL                 http://phenome.jax.org/
 
-# URL to RefSNP detail pages at dbSNP
-DBSNP_URL               http://www.ncbi.nlm.nih.gov/SNP/snp_ref.cgi?rs=
-
 # URL to the ontology search page at RGD
 RGD_ONT_URL             http://rgd.mcw.edu/tools/ontology/ont_search.cgi
 
@@ -70,9 +67,6 @@ THEILERBOOK_URL		http://www.emouseatlas.org/Atlas/Theiler_book_download.html
 
 # base URL for NCBI BLAST
 NCBI_BLAST_URL	http://blast.ncbi.nlm.nih.gov/Blast.cgi
-
-# Multiple Genome Viewer (MGV) 
-MGV_URL					http://www.informatics.jax.org/mgv/
 
 ###--------------###
 ###--Komp Uri's--###

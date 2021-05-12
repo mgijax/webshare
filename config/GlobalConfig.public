@@ -57,10 +57,10 @@ IS_PRODUCTION           0
 BUILDS_IN_SYNC          1
 
 # genome assembly version for marker coordinates
-ASSEMBLY_VERSION        GRCm38
+ASSEMBLY_VERSION        GRCm39
 
 # genome assembly version for SNP coordinates
-SNP_ASSEMBLY_VERSION    38
+SNP_ASSEMBLY_VERSION    GRCm38
 
 # integer number of minutes for which we can cache an allele's phenotype data
 # (should be 0 on production to see edits instantly; longer on public to aid
@@ -107,6 +107,9 @@ USERDOCS_URL            http://${PY_HOST}/userhelp/
 WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FAQ_URL                 http://${PY_HOST}/faq/
+
+# Multiple Genome Viewer (MGV) 
+MGV_URL					http://www.informatics.jax.org/mgv/
 
 FTP_URL            http://www.informatics.jax.org/downloads/
 

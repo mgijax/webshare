@@ -17,13 +17,13 @@ JAVA_HOST               redbob.informatics.jax.org
 FEWI_HOST		redbob.informatics.jax.org
 
 # Host of the sequence retrieval tool
-SEQFETCH_HOST           rohan.informatics.jax.org
+SEQFETCH_HOST           www.informatics.jax.org
 
 #Host of the mouse blast tool
 MOUSEBLAST_HOST         rohan.informatics.jax.org
 
 #Host of the mouse mine site
-MOUSEMINE_HOST          www.mousemine.org
+MOUSEMINE_HOST          bhmgimm-dev.jax.org:8080
 
 #Host of the gbrowse tool
 GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
@@ -58,10 +58,10 @@ IS_PRODUCTION           0
 BUILDS_IN_SYNC          1
 
 # genome assembly version for marker coordinates
-ASSEMBLY_VERSION        GRCm38
+ASSEMBLY_VERSION        GRCm39
 
 # genome assembly version for SNP coordinates
-SNP_ASSEMBLY_VERSION    38
+SNP_ASSEMBLY_VERSION    GRCm38
 
 # integer number of minutes for which we can cache an allele's phenotype data
 # (should be 0 on production to see edits instantly; longer on public to aid
@@ -109,6 +109,8 @@ WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FAQ_URL                 http://${PY_HOST}/faq/
 
+# Multiple Genome Viewer (MGV) 
+MGV_URL					http://scrum.informatics.jax.org/mgv/
 
 FTP_URL            http://test.informatics.jax.org/downloads/
 
