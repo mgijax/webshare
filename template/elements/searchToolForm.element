@@ -10,16 +10,16 @@
 
  <td>
    <select id="queryTypeTop" name="queryType" style="background-color: #FFD">
-      <option value="exactPhrase" selected="">keywords, symbols, or IDs (exact phrase)</option>
-      <option value="keywords">keywords, symbols, or IDs</option>
-      <option value="mouseLocation">mouse location</option>
-      <option value="humanLocation">human location</option>
+      <option value="exactPhrase" selected="">Keywords, Symbols, or IDs (exact phrase)</option>
+      <option value="keywords">Keywords, Symbols, or IDs</option>
+      <option value="mouseLocation">Mouse Location</option>
+      <option value="humanLocation">Human Location</option>
     </select>
  </td>
 
  <td>
     <input name="query" id="searchToolTextArea"
-    value=" Keywords, Symbols, IDs, or Location" onFocus="if(this.defaultValue==this.value) this.value='';" size="30">
+    value=" Type your search here" onFocus="if(this.defaultValue==this.value) this.value='';" size="30">
  </td>
 
  <td>
