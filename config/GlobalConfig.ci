@@ -133,7 +133,7 @@ MGIWS_URL               http://cardolan.informatics.jax.org:18080/axis2/services
 
 YUI_URL                 http://yui.yahooapis.com/
 
-MOUSEMINE_URL				http://${MOUSEMINE_HOST}/
+MOUSEMINE_URL				https://${MOUSEMINE_HOST}/
 
 ###--
 ###-- MGI URLs using apache aliases - if you wish to use apache aliases to 
