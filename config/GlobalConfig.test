@@ -24,7 +24,7 @@ SEQFETCH_HOST           mgitest.jax.org
 MOUSEBLAST_HOST         mgitest.jax.org
 
 #Host of the mouse mine site
-MOUSEMINE_HOST          beta.mousemine.org
+MOUSEMINE_HOST          test.mousemine.org
 
 #Host of the gbrowse tool
 GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
