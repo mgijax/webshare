@@ -24,7 +24,7 @@ SEQFETCH_HOST           www.informatics.jax.org
 MOUSEBLAST_HOST         cardolan.informatics.jax.org
 
 #Host of the mouse mine site
-MOUSEMINE_HOST          bhmgimm-dev.jax.org:8080
+MOUSEMINE_HOST          test.mousemine.org
 
 #Host of the gbrowse tool 
 GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
