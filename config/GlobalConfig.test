@@ -99,9 +99,7 @@ WI_URL                  https://${PY_HOST}/
 
 FEWI_URL                https://${FEWI_HOST}/
 
-QUICKSEARCH_URL         https://${PY_HOST}/searchtool/
-
-MGIHOME_URL             https://${PY_HOST}/mgihome/
+MGIHOME_URL             http://${PY_HOST}/mgihome/
 
 USERHELP_URL            https://${PY_HOST}/userhelp/
 

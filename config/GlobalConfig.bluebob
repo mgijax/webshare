@@ -24,7 +24,7 @@ SEQFETCH_HOST           bluebob.informatics.jax.org
 MOUSEBLAST_HOST         bluebob.informatics.jax.org
 
 #Host of the mouse mine site
-MOUSEMINE_HOST          bhmgimm-dev.jax.org:8080
+MOUSEMINE_HOST          test.mousemine.org
 
 #Host of the gbrowse tool
 GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
@@ -100,8 +100,6 @@ WI_URL                  http://${PY_HOST}/
 
 FEWI_URL                http://${FEWI_HOST}/
 
-QUICKSEARCH_URL         http://${PY_HOST}/searchtool/
-
 MGIHOME_URL             http://${PY_HOST}/mgihome/
 
 USERDOCS_URL            http://${PY_HOST}/userdocs/
@@ -157,7 +155,7 @@ MORSEBOOK_URL           http://${PUBLIC_HOST}/morsebook/
 
 SILVER_URL              http://${PUBLIC_HOST}/silverbook/
 
-WKSILVERS_URL           http://${PUBLIC_HOST}/wksilvers/
+WKSILVERS_URL           http://bluebob.informatics.jax.org/wksilvers/
 
 SCHEMA                  http://www.informatics.jax.org/schema_pg/
 

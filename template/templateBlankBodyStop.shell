@@ -13,8 +13,7 @@ setTimeout(function() {
 </script>
 
 <style><!-- needed for formatting of overlib popups on pages using bootstrap -->
-#overDiv table tr td table { background-color: #EFEFEF; }
-.overlibBGClass tr td table { background-color: #EFEFEF; }
+.overlibBGClass table tr td table:last-of-type { background-color: #EFEFEF; }
 </style>
 
 </body>
