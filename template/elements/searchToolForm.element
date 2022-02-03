@@ -1,3 +1,8 @@
+<style>
+.lightYellow { background-color: #ffd; }
+.lightGray { background-color: #dadada; }
+.italic { font-style: italic; }
+</style>
 <form action="${FEWI_URL}quicksearch/summary" method="get">
 <table>
 <tr>
@@ -9,7 +14,7 @@
  </td>
 
  <td>
-   <select id="queryTypeTop" name="queryType" style="background-color: #FFD">
+   <select id="queryTypeTop" name="queryType" class="lightGray">
       <option value="exactPhrase" selected="">Keywords, Symbols, or IDs (exact phrase)</option>
       <option value="keywords">Keywords, Symbols, or IDs</option>
       <option value="mouseLocation">Mouse Location</option>
@@ -18,8 +23,8 @@
  </td>
 
  <td>
-    <input name="query" id="searchToolTextArea"
-    value=" Type your search here" onFocus="if(this.defaultValue==this.value) this.value='';" size="30">
+    <input name="query" id="searchToolTextArea" class="lightYellow italic"
+    value=" Type your search here" onFocus="if(this.defaultValue==this.value) this.value=''; $('#searchToolTextArea').removeClass('italic');" size="30">
  </td>
 
  <td>
