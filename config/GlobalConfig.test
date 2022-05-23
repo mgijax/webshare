@@ -99,7 +99,7 @@ WI_URL                  https://${PY_HOST}/
 
 FEWI_URL                https://${FEWI_HOST}/
 
-MGIHOME_URL             http://${PY_HOST}/mgihome/
+MGIHOME_URL             https://${PY_HOST}/mgihome/
 
 USERHELP_URL            https://${PY_HOST}/userhelp/
 
@@ -124,7 +124,7 @@ GO_TOOLS_URL            https://${PY_HOST}/gotools/
 
 MGIWS_URL               https://mgitest.jax.org:18080/axis2/services/mgiws
 
-YUI_URL                 http://yui.yahooapis.com/
+YUI_URL                 https://yui-s.yahooapis.com/
 
 ###--
 ###-- MGI URLs using apache aliases - if you wish to use apache aliases to 
@@ -156,9 +156,9 @@ WKSILVERS_URL           https://${PY_HOST}/wksilvers/
 
 SCHEMA                  https://www.informatics.jax.org/schema_pg/
 
-GBROWSE_URL             http://${GBROWSE_HOST}gb2/gbrowse/mouse38/
+GBROWSE_URL             https://${GBROWSE_HOST}gb2/gbrowse/mouse38/
 
-GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gb2/gbrowse_img/mouse38/
+GBROWSE_THUMB_URL       https://${GBROWSE_HOST}gb2/gbrowse_img/mouse38/
 
 JBROWSE_URL             http://${JBROWSE_HOST}?data=data/mouse
 
