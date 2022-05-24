@@ -94,36 +94,36 @@ CAPTCHA_TIMEOUT 5
 ###-- MGI BASE URLs -be aware some server aliases will include the '/www/'
 ###--
 
-WI_URL                  http://${PY_HOST}/
+WI_URL                  https://${PY_HOST}/
 
-FEWI_URL                http://${FEWI_HOST}/
+FEWI_URL                https://${FEWI_HOST}/
 
-MGIHOME_URL             http://${PY_HOST}/mgihome/
+MGIHOME_URL             https://${PY_HOST}/mgihome/
 
-USERHELP_URL            http://${PY_HOST}/userhelp/
+USERHELP_URL            https://${PY_HOST}/userhelp/
 
-USERDOCS_URL            http://${PY_HOST}/userhelp/
+USERDOCS_URL            https://${PY_HOST}/userhelp/
 
-WEBSHARE_URL            http://${PY_HOST}/webshare/
+WEBSHARE_URL            https://${PY_HOST}/webshare/
 
-FAQ_URL                 http://${PY_HOST}/faq/
+FAQ_URL                 https://${PY_HOST}/faq/
 
 # Multiple Genome Viewer (MGV) 
-MGV_URL					http://www.informatics.jax.org/mgv/
+MGV_URL					https://www.informatics.jax.org/mgv/
 
-FTP_URL            http://www.informatics.jax.org/downloads/
+FTP_URL            https://www.informatics.jax.org/downloads/
 
 PUB_REPORTS_URL                 ${FTP_URL}reports/
 
 PIXELDB_URL             ${WEBSHARE_URL}fetch_pixels.cgi?id=
 
-GO_GRAPH_URL            http://${PY_HOST}/GOgraphs/
+GO_GRAPH_URL            https://${PY_HOST}/GOgraphs/
 
-GO_TOOLS_URL            http://${PY_HOST}/gotools/
+GO_TOOLS_URL            https://${PY_HOST}/gotools/
 
 MGIWS_URL               http://services.informatics.jax.org/mgiws
 
-YUI_URL                 http://yui.yahooapis.com/
+YUI_URL                 https://yui-s.yahooapis.com/
 
 ###--
 ###-- MGI URLs using apache aliases - if you wish to use apache aliases to 
@@ -131,33 +131,33 @@ YUI_URL                 http://yui.yahooapis.com/
 ###-- fully extended paths to their respective directories
 ###--
 
-HOMEPAGES_URL           http://${PY_HOST}/
+HOMEPAGES_URL           https://${PY_HOST}/
 
-MENUS_URL               http://${PY_HOST}/
+MENUS_URL               https://${PY_HOST}/
 
 ###--
 ###-- MGI FULL URLs 
 ###--
 
-SEQFETCH_URL            http://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
+SEQFETCH_URL            https://${SEQFETCH_HOST}/seqfetch/tofasta.cgi?
 
-FRITHBOOK_URL           http://${PY_HOST}/frithbook/
+FRITHBOOK_URL           https://${PY_HOST}/frithbook/
 
-GREENBOOK_URL           http://${PY_HOST}/greenbook/
+GREENBOOK_URL           https://${PY_HOST}/greenbook/
 
-COOKBOOK_URL            http://${PY_HOST}/cookbook/
+COOKBOOK_URL            https://${PY_HOST}/cookbook/
 
-MORSEBOOK_URL           http://${PY_HOST}/morsebook/
+MORSEBOOK_URL           https://${PY_HOST}/morsebook/
 
-SILVER_URL              http://${PY_HOST}/silverbook/
+SILVER_URL              https://${PY_HOST}/silverbook/
 
-WKSILVERS_URL           http://${PY_HOST}/wksilvers/
+WKSILVERS_URL           https://${PY_HOST}/wksilvers/
 
-SCHEMA                  http://${PY_HOST}/schema_pg/
+SCHEMA                  https://${PY_HOST}/schema_pg/
 
-GBROWSE_URL             http://${GBROWSE_HOST}gb2/gbrowse/mouse38/
+GBROWSE_URL             https://${GBROWSE_HOST}gb2/gbrowse/mouse38/
 
-GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gb2/gbrowse_img/mouse38/
+GBROWSE_THUMB_URL       https://${GBROWSE_HOST}gb2/gbrowse_img/mouse38/
 
 JBROWSE_URL             http://${JBROWSE_HOST}?data=data/mouse
 
