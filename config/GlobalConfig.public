@@ -121,7 +121,7 @@ GO_GRAPH_URL            https://${PY_HOST}/GOgraphs/
 
 GO_TOOLS_URL            https://${PY_HOST}/gotools/
 
-MGIWS_URL               http://services.informatics.jax.org/mgiws
+MGIWS_URL               https://services.informatics.jax.org/mgiws
 
 YUI_URL                 https://yui-s.yahooapis.com/
 
