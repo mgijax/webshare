@@ -285,8 +285,6 @@
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://${PY_HOST}/knockout_mice/">Deltagen and Lexicon Knockout Mice</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${KOMP_HOME}" 
           id="navBarKomp" onMouseOver="return overlib('Producing and phenotyping knockout mice from the IKMC mutant ES cell line resource.',ANCHOR, 'navBarKomp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">International Mouse Phenotyping Consortium (IMPC)</a></li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="https://www.sanger.ac.uk/collaboration/deciphering-mechanisms-developmental-disorders-dmdd/" 
-          id="navBarDmdd" onMouseOver="return overlib('High-resolution images and detailed data about morphological abnormalities in embryos resulting from gene knockouts.',ANCHOR, 'navBarDmdd', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">Deciphering the Mechanisms of Developmental Disorders (DMDD)</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}datasets/index.html">Contributed Data Sets</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel">Community Links</a>
         <div id="navBarLinks" class="yuimenu">
