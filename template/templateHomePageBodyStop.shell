@@ -4,7 +4,7 @@
  <td colspan="3"><HR noshade="noshade"/ color="#d0e0f0" width="100%">
   <center style="font-size:10px;">
   <span style="float: left;">Contributing Projects:</span> <br>
-    Mouse Genome Database&nbsp;(MGD), Gene Expression Database&nbsp;(GXD), Mouse Models of Human Cancer database (MMHCdb) (formerly Mouse Tumor Biology&nbsp;(MTB), Gene&nbsp;Ontology&nbsp;(GO)
+    Mouse Genome Database&nbsp;(MGD), Gene Expression Database&nbsp;(GXD), Mouse Models of Human Cancer database (MMHCdb) (formerly Mouse Tumor Biology&nbsp;(MTB)), Gene&nbsp;Ontology&nbsp;(GO)
   </center>
  </td>
 </tr>
@@ -16,7 +16,7 @@
   <A HREF="${MGIHOME_URL}other/mgi_funding.shtml">
       Funding Information</A> <BR>
   <A HREF="${MGIHOME_URL}other/copyright.shtml">
-      Warranty Disclaimer &amp; Copyright Notice</A> <BR>
+      Warranty Disclaimer, Copyright, and Privacy Statement</A> <BR>
     Send questions and comments to
   <A HREF="${MGIHOME_URL}support/mgi_inbox.shtml">
       User Support</A>.
