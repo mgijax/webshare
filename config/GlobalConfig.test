@@ -9,19 +9,19 @@ NAME                    MGI 6.16
 ###--
 
 # Python host and directory where standard MGI python products are installed
-PY_HOST                 test.informatics
+PY_HOST                 test.informatics.jax.org
 
 # Host of tomcat servlet container; non-public installs include port # 
-JAVA_HOST               test.informatics
+JAVA_HOST               test.informatics.jax.org
 
 # Host of (or Apache redirection of) fewi pages
-FEWI_HOST               test.informatics
+FEWI_HOST               test.informatics.jax.org
 
 # Host of the sequence retrieval tool
-SEQFETCH_HOST           test.informatics
+SEQFETCH_HOST           test.informatics.jax.org
 
 #Host of the mouse blast tool
-MOUSEBLAST_HOST         test.informatics
+MOUSEBLAST_HOST         test.informatics.jax.org
 
 #Host of the mouse mine site
 MOUSEMINE_HOST          test.mousemine.org
@@ -110,9 +110,9 @@ WEBSHARE_URL            https://${PY_HOST}/webshare/
 FAQ_URL                 https://${PY_HOST}/faq/
 
 # Multiple Genome Viewer (MGV) 
-MGV_URL				https://test.informatics/mgv/
+MGV_URL				https://test.informatics.jax.org/mgv/
 
-FTP_URL            		https://test.informatics/downloads/
+FTP_URL            		https://test.informatics.jax.org/downloads/
 
 PUB_REPORTS_URL         ${FTP_URL}reports/
 
@@ -122,7 +122,7 @@ GO_GRAPH_URL            https://${PY_HOST}/GOgraphs/
 
 GO_TOOLS_URL            https://${PY_HOST}/gotools/
 
-MGIWS_URL               https://test.informatics:18080/axis2/services/mgiws
+MGIWS_URL               https://test.informatics.jax.org:18080/axis2/services/mgiws
 
 YUI_URL                 https://yui-s.yahooapis.com/
 
