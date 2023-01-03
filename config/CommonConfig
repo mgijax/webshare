@@ -66,7 +66,7 @@ VISTA_URL               http://pipeline.lbl.gov/cgi-bin/vistatrack?db=mm7&positi
 THEILERBOOK_URL		http://www.emouseatlas.org/Atlas/Theiler_book_download.html 
 
 # base URL for NCBI BLAST
-NCBI_BLAST_URL	http://blast.ncbi.nlm.nih.gov/Blast.cgi
+NCBI_BLAST_URL	https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
 ###--------------###
 ###--Komp Uri's--###
