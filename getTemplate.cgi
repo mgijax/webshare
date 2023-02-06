@@ -141,6 +141,11 @@ class getTemplateCGI (CGI.CGI):
             file.close()
             getTemplateCGI.pageElements[element] = fileContent
 
+    # empty google analytics element if this isn't a public install
+    if (config["ADD_GA4_TAG"] != "Yes"):
+        getTemplateCGI.pageElements["GA4.element"] = ""
+
+
     #for each page element, update the shell files
     for file in list(getTemplateCGI.pageElements.keys()):
         searchKey    = "${" + file + "}"
