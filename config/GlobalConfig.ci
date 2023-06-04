@@ -2,38 +2,40 @@
 # Global Config
 ############################################################################
 
-NAME                    MGI 5.11
+NAME                    MGI 6.08
  
 ###--
 ###-- MGI Host Servers
 ###--
 
 # Python host and directory where standard MGI python products are installed
-PY_HOST                 cardolan.informatics.jax.org
+PY_HOST                 scrum.informatics.jax.org
 
 # Host of tomcat servlet container; non-public installs include port # 
-JAVA_HOST               cardolan.informatics.jax.org
+JAVA_HOST               scrum.informatics.jax.org
 
-# Host of the jboss servlet container
-FEWI_HOST               cardolan.informatics.jax.org
+# Host of (or Apache redirection of) fewi pages
+FEWI_HOST               scrum.informatics.jax.org
 
 # Host of the sequence retrieval tool
-SEQFETCH_HOST           www.informatics.jax.org
+SEQFETCH_HOST           scrum.informatics.jax.org
 
 #Host of the mouse blast tool
-MOUSEBLAST_HOST         cardolan.informatics.jax.org
+MOUSEBLAST_HOST         scrum.informatics.jax.org
 
 #Host of the mouse mine site
-MOUSEMINE_HOST          test.mousemine.org
+MOUSEMINE_HOST          beta.mousemine.org
 
-#Host of the gbrowse tool 
+#Host of the gbrowse tool
 GBROWSE_HOST            gbrowse.informatics.jax.org/cgi-bin/
 
 #Host of the jbrowse tool
 JBROWSE_HOST            jbrowse.informatics.jax.org/
 
 #Host of the Public Installation
-PUBLIC_HOST     www.informatics.jax.org
+PUBLIC_HOST		www.informatics.jax.org
+
+MGV_URL					http://scrum.informatics.jax.org/mgv/
 
 ###--
 ###-- Database Connectivity
@@ -41,17 +43,10 @@ PUBLIC_HOST     www.informatics.jax.org
 
 DB_SERVER      mgi-testdb4.jax.org
 DB_URL         mgi-testdb4.jax.org:5432
-DB_DATABASE    pub_stable
-DB_DATABASE_FE fe_stable
+DB_DATABASE    pub_dev
+DB_DATABASE_FE fe_dev
 DB_USER        mgd_public
 DB_PASSWORD    mgdpub
-
-#DB_SERVER      cardolan
-#DB_URL         cardolan.informatics.jax.org:5432
-#DB_DATABASE    pub_stable
-#DB_USER        mgd_public
-#DB_PASSWORD    mgdpub
-
 
 ###--
 ###-- Global Flags & Strings
@@ -61,13 +56,13 @@ DB_PASSWORD    mgdpub
 IS_PRODUCTION           0
 
 # are SNP and marker coordinates drawn from the same genome assembly? (0/1)
-BUILDS_IN_SYNC         1 
+BUILDS_IN_SYNC          1
 
 # genome assembly version for marker coordinates
 ASSEMBLY_VERSION        GRCm39
 
 # genome assembly version for SNP coordinates
-SNP_ASSEMBLY_VERSION    GRCm39
+SNP_ASSEMBLY_VERSION    GRCm38
 
 # integer number of minutes for which we can cache an allele's phenotype data
 # (should be 0 on production to see edits instantly; longer on public to aid
@@ -106,6 +101,8 @@ WI_URL                  http://${PY_HOST}/
 
 FEWI_URL                http://${FEWI_HOST}/
 
+QUICKSEARCH_URL         http://${PY_HOST}/searchtool/
+
 MGIHOME_URL             http://${PY_HOST}/mgihome/
 
 USERHELP_URL            http://${PY_HOST}/userhelp/
@@ -116,24 +113,19 @@ WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FAQ_URL                 http://${PY_HOST}/faq/
 
-# Multiple Genome Viewer (MGV) 
-MGV_URL					http://scrum.informatics.jax.org/mgv/
+FTP_URL            	http://test.informatics.jax.org/downloads/
 
-FTP_URL            http://www.informatics.jax.org/downloads/
+PUB_REPORTS_URL         ${FTP_URL}reports/
 
-PUB_REPORTS_URL                 ${FTP_URL}reports/
-
-PIXELDB_URL            http://www.informatics.jax.org/webshare/fetch_pixels.cgi?id=
+PIXELDB_URL             ${WEBSHARE_URL}fetch_pixels.cgi?id=
 
 GO_GRAPH_URL            http://${PY_HOST}/GOgraphs/
 
 GO_TOOLS_URL            http://${PY_HOST}/gotools/
 
-MGIWS_URL               http://cardolan.informatics.jax.org:18080/axis2/services/mgiws
+MGIWS_URL               http://scrumdogdev.informatics.jax.org:18080/axis2/services/mgiws
 
 YUI_URL                 http://yui.yahooapis.com/
-
-MOUSEMINE_URL				https://${MOUSEMINE_HOST}/
 
 ###--
 ###-- MGI URLs using apache aliases - if you wish to use apache aliases to 
@@ -169,13 +161,16 @@ GBROWSE_URL             http://${GBROWSE_HOST}gb2/gbrowse/mouse38/
 
 GBROWSE_THUMB_URL       http://${GBROWSE_HOST}gb2/gbrowse_img/mouse38/
 
-JBROWSE_URL             http://${JBROWSE_HOST}?data=data/GRCm39
+JBROWSE_URL             http://${JBROWSE_HOST}?data=data/mouse
 
 #IMSRURL                 http://cardolan.informatics.jax.org:48080/imsrwi/imsrwi/
 IMSRURL                 http://www.findmice.org/
 
 MTB_URL                 http://tumor.informatics.jax.org/mtbwi/index.do
 
+MOUSEMINE_URL           http://bhmgimm-dev:8080/
+
+# URL to MTB's submission interface for pathology images
 MTB_PATHOLOGY_URL       http://tumor.informatics.jax.org/mtbpathwi/index.do
 
 ###--

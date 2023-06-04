@@ -1,4 +1,4 @@
-INSTALL_PATH /usr/local/mgi/jenkins/.jenkins/workspace/webshare-dev/
+INSTALL_PATH /usr/local/mgi/live/webshare/
 
 RCDFILE_PATH ${INSTALL_PATH}images.rcd
 
@@ -9,6 +9,3 @@ COMMON_CONFIG ${INSTALL_PATH}config/CommonConfig
 LIBDIRS /usr/local/mgi/live/lib/python/
 
 PIXELDB_PATH /data/pixeldb/
-
-ADD_GA4_TAG No
-
