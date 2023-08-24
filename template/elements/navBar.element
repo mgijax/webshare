@@ -145,7 +145,7 @@
         Homology</a></li>
 
       <!-- MTB -->
-      <li class="yuimenuitem"><a id="navBarMTB" class="yuimenuitemlabel" href="http://tumor.informatics.jax.org/mtbwi/index.do"
+      <li class="yuimenuitem"><a id="navBarMTB" class="yuimenuitemlabel" href="https://tumor.informatics.jax.org/mtbwi/index.do"
         onMouseOver="return overlib('MTB provides information on the frequency, pathology, and genetics of spontaneous and induced tumors in mice.',ANCHOR, 'navBarMTB', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         Tumors</a></li>
 
@@ -217,7 +217,7 @@
         onMouseOver="return overlib('Input a list of gene IDs or symbols  and retrieve other database IDs and gene attributes (e.g. phenotypes, GO).',ANCHOR, 'navBarBatch', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         Batch Query</a></li>
 
-      <li class="yuimenuitem"><a id="navBarMine" class="yuimenuitemlabel" href="http://www.mousemine.org"
+      <li class="yuimenuitem"><a id="navBarMine" class="yuimenuitemlabel" href="https://www.mousemine.org"
         onMouseOver="return overlib('Access MGI data via InterMine.',ANCHOR, 'navBarMine', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         MouseMine</a></li>
 
@@ -281,7 +281,7 @@
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}nomen/index.shtml">Nomenclature Home Page</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FEWI_URL}glossary">MGI Glossary</a></li>        
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://proto.informatics.jax.org/"> Prototype Tools</a> </li>
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://phenome.jax.org">Mouse Phenome Database (MPD)</a></li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="https://phenome.jax.org">Mouse Phenome Database (MPD)</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://${PY_HOST}/knockout_mice/">Deltagen and Lexicon Knockout Mice</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${KOMP_HOME}" 
           id="navBarKomp" onMouseOver="return overlib('Producing and phenotyping knockout mice from the IKMC mutant ES cell line resource.',ANCHOR, 'navBarKomp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">International Mouse Phenotyping Consortium (IMPC)</a></li>
@@ -292,7 +292,7 @@
             <ul class="first-of-type">
               <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/mouse_facts4.shtml">Mouse Resources & Model Organism Links</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/phenoallele_commun_resource.shtml">Phenotypes &amp; Mutants Community Resources</a></li>
-              <li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://www.oxfordjournals.org/nar/database/a/" id="navBarNAR" onMouseOver="return overlib('An index of over 1500 biological databases compiled by the journal of Nucleic Acids Research. Includes links for other model organisms and species, diseases, DNA, RNA, and protein resources.',ANCHOR, 'navBarNAR', ANCHORALIGN, 'UR', 'UL');" onMouseOut="nd();">Nucleic Acids Research (Journal) Database Summary</a></li>
+              <li class="yuimenuitem"><a class="yuimenuitemlabel" href="https://www.oxfordjournals.org/nar/database/a/" id="navBarNAR" onMouseOver="return overlib('An index of over 1500 biological databases compiled by the journal of Nucleic Acids Research. Includes links for other model organisms and species, diseases, DNA, RNA, and protein resources.',ANCHOR, 'navBarNAR', ANCHORALIGN, 'UR', 'UL');" onMouseOut="nd();">Nucleic Acids Research (Journal) Database Summary</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/mouse_facts1.shtml">Mouse Facts</a></li>
             </ul>
           </div>
@@ -303,7 +303,7 @@
           <div class="bd">
             <ul class="first-of-type">
               <li class="yuimenuitem first-of-type"><a class="yuimenuitemlabel" href="${MGIHOME_URL}other/link_instructions.shtml">Creating Web Links to MGI</a></li>
-              <li class="yuimenuitem"><a class="yuimenuitemlabel" href="http://www.mousemine.org">MouseMine</a></li>
+              <li class="yuimenuitem"><a class="yuimenuitemlabel" href="https://www.mousemine.org">MouseMine</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${HOMEPAGES_URL}software.shtml#sql">Direct SQL Account</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${SCHEMA}">Database Schema Browser</a></li>
               <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FTP_URL}reports/index.html">All MGI Reports</a></li>

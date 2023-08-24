@@ -9,7 +9,7 @@
 # For the sake of consistency, all names comprised of more than one word
 #   should have words separated by an underscore.
 
-TOPURL = http://www.informatics.jax.org/webshare/
+TOPURL = https://www.informatics.jax.org/webshare/
 IMAGES_URL = ${TOPURL}images/
 CSS_URL = ${TOPURL}css/
 JS_URL = ${TOPURL}js/

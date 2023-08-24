@@ -27,7 +27,7 @@
     ${NAME}
   </td>
   <td WIDTH="33%" ALIGN=right style="font-size:9px;">
-    <A HREF="http://www.jax.org/" border=0 style="background-color: transparent">
+    <A HREF="https://www.jax.org/" border=0 style="background-color: transparent">
     <IMG SRC="${WEBSHARE_URL}images/jax_logo_small.png" BORDER=0 ALT="The Jackson Laboratory"></A>
  </td>
 </tr>
