@@ -10,6 +10,7 @@
     Mouse Genome Informatics
   </div>
   <div id="AGRLogo" style="float:right; padding-top: 5px; padding-right: 5px">
+    <a href="https://globalbiodata.org/" target="_blank"><img src="${WEBSHARE_URL}images/gcbr_logo.png" style="height:65px"></a>
     <a href="https://www.alliancegenome.org/" target="_blank"><img src="${WEBSHARE_URL}images/agr_logo_smallest.png" style="height:70px"></a>
   </div>
 
