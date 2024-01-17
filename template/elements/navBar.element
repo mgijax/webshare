@@ -280,7 +280,6 @@
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MENUS_URL}resources.shtml#res_books">Online Books</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${MGIHOME_URL}nomen/index.shtml">Nomenclature Home Page</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FEWI_URL}glossary">MGI Glossary</a></li>        
-      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://proto.informatics.jax.org/"> Prototype Tools</a> </li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="https://phenome.jax.org">Mouse Phenome Database (MPD)</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://${PY_HOST}/knockout_mice/">Deltagen and Lexicon Knockout Mice</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${KOMP_HOME}" 
