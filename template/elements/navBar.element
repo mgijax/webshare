@@ -185,7 +185,7 @@
       </li>
 
       <!-- Vocabularies Submenu -->
-      <li class="yuimenuitem"><a class="yuimenuitemlabel">Vocabularies</a>
+      <li class="yuimenuitem"><a class="yuimenuitemlabel">Ontologies</a>
       <div id="navBarVocabularies" class="yuimenu">
       <div class="bd">
         <ul class="first-of-type">
