@@ -62,7 +62,7 @@ BUILDS_IN_SYNC          1
 ASSEMBLY_VERSION        GRCm39
 
 # genome assembly version for SNP coordinates
-SNP_ASSEMBLY_VERSION    GRCm38
+SNP_ASSEMBLY_VERSION    GRCm39
 
 # integer number of minutes for which we can cache an allele's phenotype data
 # (should be 0 on production to see edits instantly; longer on public to aid
@@ -113,7 +113,7 @@ WEBSHARE_URL            http://${PY_HOST}/webshare/
 
 FAQ_URL                 http://${PY_HOST}/faq/
 
-FTP_URL            	http://test.informatics.jax.org/downloads/
+FTP_URL            	http://bhmgiapp14ld.jax.org/usrlocalmgi/live/reports_db/index.shtml
 
 PUB_REPORTS_URL         ${FTP_URL}reports/
 
