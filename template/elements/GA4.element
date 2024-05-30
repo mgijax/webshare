@@ -2,10 +2,15 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D61GHC97X"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8D61GHC97X');
+  var c = document.cookie.split('; ').filter(c => c.startsWith('mgi_user_consent='))[0]
+  if (!c || c === "mgi_user_consent=analytics") {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8D61GHC97X');
+      console.log("GA4 ok")
+  } else {
+      console.log("GA4 blocked")
+  }
 </script>
 

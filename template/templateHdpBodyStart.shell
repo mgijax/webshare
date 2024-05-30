@@ -1,4 +1,9 @@
 <!--===================== Body Start ===========================-->
+
+<!-- needed by the gdpr compliance popup -->
+<script type="text/javascript" src="${WEBSHARE_URL}js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="${WEBSHARE_URL}js/jquery-ui-1.11.4.js"></script>
+
 </head>
 <body id="body" class="yui-skin-sam">
 

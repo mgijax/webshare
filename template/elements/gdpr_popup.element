@@ -1,0 +1,249 @@
+<style>
+.ccb-panel {
+    overflow: hidden;
+    font-family: Helvetica,Calibri,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    -webkit-transition: bottom 1s;
+    transition: bottom 1s;
+    position: fixed;
+    bottom: -105px;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.ccb-panel.show {
+    bottom: 0 !important;
+}
+
+.ccb-pannel.prop{
+    bottom: -80px;
+}
+
+.ccb-tag {
+    margin-left: 5%;
+    background: #002255;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    width: 32px;
+    height: 14px;
+    padding-left: 6px;
+    padding-bottom: 2px;
+}
+
+.ccb-tag:hover {
+    cursor: pointer;
+}
+
+.ccb-panel svg[name="uparrow"] {
+    display: block;
+}
+.ccb-panel svg[name="downarrow"] {
+    display: none;
+}
+.ccb-panel.show svg[name="uparrow"] {
+    display: none;
+}
+.ccb-panel.show svg[name="downarrow"] {
+    display: block;
+    position: relative;
+    top: -2px;
+}
+
+.ccb-body{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #deeeff;
+    color: #002255;
+    padding: 1em 1.8em; 
+    box-shadow: 0 0px 16px rgba(0, 0, 0, .15);
+}
+
+.ccb-panel.show .ccb-body{
+    box-shadow: 0 0px 16px rgba(0, 0, 0, .15);
+}
+.ccb-body > .message{
+    height: 72px;
+    max-width: 50%;
+    overflow: scroll;
+}
+.ccb-panel .checkbox-inline{
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.ccb-panel .checkbox-inline:last-child{
+    padding-right: 0;
+}
+.ccb-panel .checkbox-inline.disabled, fieldset[disabled] {
+    cursor: not-allowed;
+}
+.ccb-panel .checkbox-inline + .checkbox-inline {
+    margin-top: 0;
+    margin-left: 10px; 
+}
+
+.ccb-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: justify;
+    align-content: space-between
+}
+
+.ccb-button {
+    margin: 0 10px 0 0;
+    -webkit-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+.ccb-button:last-child {
+    margin: 0;
+}
+
+.ccb-button:hover {
+    cursor: pointer;
+}
+
+.ccb-button.allow{
+    background: #002255;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.ccb-button.allow:hover{
+    background: green;
+}
+
+
+@media print {
+    .ccb-panel {
+        display: none
+    }
+}
+
+</style>
+
+<div id="ccBanner" class="ccb-panel" >
+    <div class="ccb-tag">
+
+    <!-- up arrow -->
+    <svg name="uparrow" mlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-424-56-56 280-280 280 280-56 56-224-223-224 223Z"/></svg>
+
+    <!-- down arrow -->
+    <svg name="downarrow" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-345 240-585l56-56 184 183 184-183 56 56-240 240Z"/></svg>
+
+    </div>
+    <div class="ccb-body" role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent">
+        <!--googleoff: all-->
+        <div class="message">
+            This site uses cookies.
+            Some cookies are essential for site operations and others help us analyze use and utility of our web site. 
+            Please refer to our
+            <a class="cc-link" href="/mgihome/other/copyright.shtml" 
+               role="button" tabindex="0" rel="noopener noreferrer nofollow" target="_blank">privacy policy</a>
+            for more information.
+        </div>
+        <form>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="essential" value="essential" checked="" disabled="">Essential</label>
+            <label class="checkbox-inline">
+                <input id="Analytics" type="checkbox" name="analytics" value="analytics" checked="">Analytics</label>
+        </form>
+        <div class="ccb-options">
+            <a class="ccb-button deny" aria-label="deny cookies" role="button" tabindex="0">Close</a>
+            <a class="ccb-button allow " aria-label="allow cookies" role="button" tabindex="0">Save preferences</a>
+        </div>
+        <!--googleon: all-->
+    </div>
+</div>
+
+<script>
+(function () {
+    const cookieName = "mgi_user_consent"
+    const banner = document.getElementById('ccBanner')
+    const tag = banner.querySelector('.ccb-tag')
+    const closeButton = banner.querySelector('.ccb-button.deny')
+    const saveButton = banner.querySelector('.ccb-button.allow')
+    const cbEssential = banner.querySelector('input[name="essential"]')
+    const cbAnalytics = banner.querySelector('input[name="analytics"]')
+
+    function showBanner () {
+        initCookieBannerCheckboxes()
+        banner.classList.add('show');
+    }
+
+    function hideBanner () {
+        banner.classList.remove('show');
+    }
+
+    function toggleBanner () {
+        if (banner.classList.contains('show')){
+            hideBanner()
+        } else {
+            showBanner()
+        }
+    }
+
+    function parseCookies () {
+        const c = document.cookie
+        const cs = c.split(';').map(x => x.trim()).filter(x=>x).reduce((a,v) => {
+            cc = v.split('=')   
+            a[cc[0]] = cc[1]
+            return a
+        }, {})
+        return cs
+    }
+
+    function getPrefs() {
+        return parseCookies()[cookieName]
+    }
+
+    function savePrefs() {
+        const val = cbAnalytics.checked ? cbAnalytics.value : cbEssential.value;
+        const sixMonthsInMs = 183 * 24 * 60 * 60 * 1000
+        const expires = new Date(Date.now() + sixMonthsInMs)
+        const expiresUtc = expires.toUTCString()
+        const prefsCookie = cookieName + "=" + val + ';expires=' + expiresUtc + ';path=/';
+        document.cookie = prefsCookie
+    }
+
+    function initCookieBannerCheckboxes() {
+        cbEssential.checked = true
+        cbAnalytics.checked = (!getPrefs() || getPrefs() === "analytics")
+    }
+
+    function saveAndClose () {
+        savePrefs()
+        hideBanner()
+    }
+
+    tag.addEventListener('click', toggleBanner)
+    closeButton.addEventListener('click', hideBanner)
+    saveButton.addEventListener('click', saveAndClose)
+
+    if (! getPrefs()) {
+        showBanner()
+    }
+}());
+
+</script>

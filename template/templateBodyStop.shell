@@ -61,6 +61,8 @@ if (document.getElementById('templateBodyInsert') != null) {
 .overlibBGClass table tr td table:last-of-type { background-color: #EFEFEF; }
 </style>
 
+${gdpr_popup.element}
+
 </body>
 </html>
 

@@ -56,3 +56,5 @@ setTimeout(function() {
 #overDiv table tr td table { background-color: #EFEFEF; }
 .overlibBGClass tr td table { background-color: #EFEFEF; }
 </style>
+
+ ${gdpr_popup.element}
