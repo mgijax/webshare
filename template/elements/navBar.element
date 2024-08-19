@@ -284,6 +284,7 @@
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="http://${PY_HOST}/knockout_mice/">Deltagen and Lexicon Knockout Mice</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${KOMP_HOME}" 
           id="navBarKomp" onMouseOver="return overlib('Producing and phenotyping knockout mice from the IKMC mutant ES cell line resource.',ANCHOR, 'navBarKomp', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">International Mouse Phenotyping Consortium (IMPC)</a></li>
+      <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="https://www.jax.org/mgi-coronavirus-info">Mouse Resources For COVID-19 Research</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel" href="${FTP_URL}datasets/index.html">Contributed Data Sets</a></li>
       <li class="yuimenuitem"> <a class="yuimenuitemlabel">Community Links</a>
         <div id="navBarLinks" class="yuimenu">
