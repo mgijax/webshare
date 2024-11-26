@@ -27,8 +27,37 @@ ln -s $PYTHON python
 
 if [ -z "$LIB_PY_MISC" ]
 then
-   LIB_PY_MISC=/usr/local/mgi/live/lib/python
+	LIB_PY_MISC=/usr/local/mgi/live/lib/python
 	export LIB_PY_MISC
+fi
+
+if [ "`uname -n | cut -d'.' -f1`" == "bhmgipub01lt" ] 
+then
+	rm -rf images.rcd webshare.config
+	cp images.rcd.defaults images.rcd
+	cp webshare.config.defaults webshare.config
+	cd config
+	rm -rf GlobalConfig
+	ln -s GlobalConfig.test GlobalConfig
+	cd ..
+elif [ "`uname -n | cut -d'.' -f1`" == "bhmgipub01lp" ] 
+then
+	rm -rf images.rcd webshare.config
+	cp images.rcd.defaults images.rcd
+	cp webshare.config.defaults.pub webshare.config
+	cd config
+	rm -rf GlobalConfig GlobalConfig.old
+	ACTIVE_PUB=/usr/local/mgi/jenkins_admin/bin/getActivePublic
+	export ACTIVE_PUB
+	if [ "${ACTIVE_PUB}" == "pub1" ]
+	then
+		ln -s GlobalConfig.pub1 GlobalConfig
+		ln -s GlobalConfig.pub2 GlobalConfig.old
+	else
+		ln -s GlobalConfig.pub2 GlobalConfig
+		ln -s GlobalConfig.pub1 GlobalConfig.old
+	fi
+	cd ..
 fi
 
 $LIB_PY_MISC/Configuration.py config/GlobalConfig sh > .Configuration.sh
