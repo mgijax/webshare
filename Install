@@ -49,11 +49,14 @@ then
 	rm -rf GlobalConfig GlobalConfig.old
 	ACTIVE_PUB=`/usr/local/mgi/jenkins_admin/bin/getActivePublic`
 	export ACTIVE_PUB
+	echo 'ACTIVE_PUB', $ACTIVE_PUB
 	if [ "${ACTIVE_PUB}" == "pub1" ]
 	then
+		echo 'if found', $ACTIVE_PUB
 		ln -s GlobalConfig.pub1 GlobalConfig
 		ln -s GlobalConfig.pub2 GlobalConfig.old
 	else
+		echo 'else', $ACTIVE_PUB
 		ln -s GlobalConfig.pub2 GlobalConfig
 		ln -s GlobalConfig.pub1 GlobalConfig.old
 	fi
