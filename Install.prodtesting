@@ -35,15 +35,6 @@ if [ "`uname -n | cut -d'.' -f1`" == "bhmgipub01lt" ]
 then
 	rm -rf images.rcd webshare.config
 	cp images.rcd.defaults images.rcd
-	cp webshare.config.defaults webshare.config
-	cd config
-	rm -rf GlobalConfig
-	ln -s GlobalConfig.test GlobalConfig
-	cd ..
-elif [ "`uname -n | cut -d'.' -f1`" == "bhmgipub01lp" ] 
-then
-	rm -rf images.rcd webshare.config
-	cp images.rcd.defaults images.rcd
 	cp webshare.config.defaults.pub webshare.config
 	cd config
 	rm -rf GlobalConfig GlobalConfig.old
