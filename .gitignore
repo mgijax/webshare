@@ -1,7 +1,5 @@
 images.rcd
 webshare.config
 config/GlobalConfig
-config/GlobalConfig.pub1
-config/GlobalConfig.pub2
 python
 .Configuration.sh

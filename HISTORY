@@ -1,0 +1,12 @@
+TAG: webshare-6-0-24-4
+TAG: webshare-6-0-24-3
+DATE: 12/04/2024
+STAFF: lec
+CHANGES:
+wts2-1487/e4g-84/Install: fixes for MGI_Install
+        modified:   .gitignore
+        modified:   Install
+        new file:   config/GlobalConfig.pub1
+        new file:   config/GlobalConfig.pub2
+        new file:   HISTORY
+
