@@ -2,7 +2,7 @@
 # Global Config
 ############################################################################
 
-NAME                    MGI 6.08
+NAME                    MGI 6.25
  
 ###--
 ###-- MGI Host Servers
@@ -44,7 +44,7 @@ MGV_URL					http://scrum.informatics.jax.org/mgv/
 DB_SERVER      mgi-testdb4.jax.org
 DB_URL         mgi-testdb4.jax.org:5432
 DB_DATABASE    pub_dev
-DB_DATABASE_FE fe_dev
+DB_DATABASE_FE fe
 DB_USER        mgd_public
 DB_PASSWORD    mgdpub
 
