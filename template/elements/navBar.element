@@ -205,7 +205,7 @@
             onMouseOver="return overlib('An extensive ontology of anatomical structures for the postnatal mouse.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Adult Mouse Anatomy Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/cell_ontology/CL:0000000"
-            onMouseOver="return overlib('Search or browse for cell types; includes links to associated expression results, HT Experiments and Recombinase Alleles.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+            onMouseOver="return overlib('Search or browse for cell type terms, with links to associated expression results.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Cell Ontology (CL) Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/hp_ontology"
             onMouseOver="return overlib('Search for a human phenotype ontology term to find relevant human diseases.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
