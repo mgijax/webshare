@@ -82,6 +82,9 @@
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gxd/anatomy/EMAPA:16039"
             onMouseOver="return overlib('Search or browse for anatomical structures; includes links to associated expression results.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Mouse Developmental Anatomy Browser</a></li>
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/cell_ontology/CL:0000000"
+            onMouseOver="return overlib('Search or browse for cell types; includes links to associated expression results.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+            Cell Ontology (CL) Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}gxd/htexp_index"
             onMouseOver="return overlib('Search for experiments using sample metadata annotations.',ANCHOR, 'navBarExpression', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             RNA-Seq and Microarray Experiment Search</a></li>
@@ -204,6 +207,9 @@
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/gxd/ma_ontology"
             onMouseOver="return overlib('An extensive ontology of anatomical structures for the postnatal mouse.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Adult Mouse Anatomy Browser</a></li>
+          <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/cell_ontology/CL:0000000"
+            onMouseOver="return overlib('Search or browse for cell types; includes links to associated expression results.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
+            Cell Ontology (CL) Browser</a></li>
           <li class="yuimenuitem"><a class="yuimenuitemlabel" href="${FEWI_URL}vocab/hp_ontology"
             onMouseOver="return overlib('Search for a human phenotype ontology term to find relevant human diseases.',ANCHOR, 'navBarVocabularies', ANCHORALIGN, 'UR', 'UL');"  onMouseOut="nd();">
             Human Phenotype (HPO) Browser</a></li>
