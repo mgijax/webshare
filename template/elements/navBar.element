@@ -149,7 +149,7 @@
 
       <!-- MTB -->
       <li class="yuimenuitem"><a id="navBarMTB" class="yuimenuitemlabel" href="https://tumor.informatics.jax.org/mtbwi/index.do"
-        onMouseOver="return overlib('MTB provides information on the frequency, pathology, and genetics of spontaneous and induced tumors in mice.',ANCHOR, 'navBarMTB', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
+        onMouseOver="return overlib('MMHCdb provides information on the frequency, pathology, and genetics of spontaneous and induced tumors in mice.',ANCHOR, 'navBarMTB', ANCHORALIGN, 1.0,0.5,0,0.5);"  onMouseOut="nd();">
         Tumors</a></li>
 
       <!-- Sequence Submenu -->
