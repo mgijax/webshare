@@ -5,6 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 ${GA4.element}
+${GA4_test.element}
 
 <!-- Combo-handled YUI JS files: -->
 <script type="text/javascript" src="${WEBSHARE_URL}js/yui-2.8.custom.min.js"></script>

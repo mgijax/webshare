@@ -1,5 +1,5 @@
 
-<!-- Google tag (gtag.js) -->
+<!-- Public Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D61GHC97X"></script>
 <script>
   var c = document.cookie.split('; ').filter(c => c.startsWith('mgi_user_consent='))[0]

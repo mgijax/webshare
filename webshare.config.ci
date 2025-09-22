@@ -12,3 +12,4 @@ PIXELDB_PATH /data/pixeldb/
 
 ADD_GA4_TAG No
 
+ADD_GA4_TEST_TAG No

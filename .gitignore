@@ -3,3 +3,9 @@ webshare.config
 config/GlobalConfig
 python
 .Configuration.sh
+css/homepages_template01.css
+css/mgi_template01.css
+js/homepages_template01.js
+js/mgi.js
+js/mgi_template01.js
+
