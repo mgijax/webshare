@@ -4,10 +4,6 @@
 
 GLOSSARY_URL            ${FEWI_URL}glossary
 
-JAXRH_URL               http://www.jax.org/resources/documents/cmdata/rhmap/%sdata.html
-
-TUTORIAL_URL            http://www.informatics.jax.org/tutorials/
-
 WEBIMAGEMAP_URL         ${WEBSHARE_URL}components.cgi
 
 ###-------------------------###
@@ -21,61 +17,19 @@ GROUP                   www
 ###--- External Urls ---###
 ###---------------------###
 
-# URL to Entrez where we find human homologs
-ENTREZ_URL              http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=
+MMRRC_KO_URL               https://www.mmrrc.org/catalog/StrainCatalogSearchForm.jsp?gene_search=Gene/Allele+Symbol&symName=contains&LowerCaseSymbol=%s&numName==&MmrrcId=&SourceCollection=%s&InitialMaintenanceLevel=Both&Status=AVD&Status=Importation&Status=Accepted&pageSize=25&jboEventVo=StrainCatalogMasterView&jboEvent=Search
 
-# URL to NCBI's Entrez for Genbank sequence IDs
-GB_URL                  http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=
-
-MMRRC_KO_URL               http://www.mmrrc.org/catalog/StrainCatalogSearchForm.jsp?gene_search=Gene/Allele+Symbol&symName=contains&LowerCaseSymbol=%s&numName==&MmrrcId=&SourceCollection=%s&InitialMaintenanceLevel=Both&Status=AVD&Status=Importation&Status=Accepted&pageSize=25&jboEventVo=StrainCatalogMasterView&jboEvent=Search
-
-JAX_KO_URL              http://jaxmice.jax.org/strain/%s.html
-
-JAX_KO_SEARCH           http://jaxmice.jax.org/jaxmice-cgi/jaxmicedb.cgi?objtype=pricequery&objopr=query&istore=&aop=contains&sname=&gop=begins&gsym=%s&sop=begins&ssym=&sregistry=&dest=N&stype=0&mdl=0&button=Search+Database
-
-LOCUSLINK_URL           http://www.ncbi.nlm.nih.gov/LocusLink/LocRpt.cgi?l=
-
-RGD_URL                 http://rgd.mcw.edu/tools/genes/genes_view.cgi?id=
-
-# link to home page of dbSNP
-DBSNP_HOME              http://www.ncbi.nlm.nih.gov/projects/SNP/
-
-# link to build statistics for current dbSNP build
-DBSNP_STATS             http://www.ncbi.nlm.nih.gov/SNP/snp_summary.cgi?view+summary=view+summary&build_id=128
-
-# the URL for linking to an homology class page at Homologene (append Homologene ID)
-HOMOLOGENE_URL          http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=homologene&dopt=HomoloGene&list_uids=
-
-# URL to RefSNP detail pages at MPD
-MPD_SNP_URL             http://phenome.jax.org/db/q?rtn=snp/ret01&gohint=1&ureg=
+JAX_KO_URL              https://jaxmice.jax.org/strain/%s.html
 
 # The location of the MPD (Mouse Phenome Database)
-MPD_URL                 http://phenome.jax.org/
-
-# URL to the ontology search page at RGD
-RGD_ONT_URL             http://rgd.mcw.edu/tools/ontology/ont_search.cgi
+MPD_URL                 https://phenome.jax.org/
 
 # URL to the TreeFam database
-GENETREE_URL            http://useast.ensembl.org/Mus_musculus/Gene/Compara_Tree?db=core;g=
-
-# URL to the VISTA genome browser (fill in chrom, start & stop coord)
-VISTA_URL               http://pipeline.lbl.gov/cgi-bin/vistatrack?db=mm7&position=
-
-# URL to the Theiler book The House Mouse, Atlas of Embryonic Development
-THEILERBOOK_URL		http://www.emouseatlas.org/Atlas/Theiler_book_download.html 
+GENETREE_URL            https://useast.ensembl.org/Mus_musculus/Gene/Compara_Tree?db=core;g=
 
 # base URL for NCBI BLAST
 NCBI_BLAST_URL	https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
-###--------------###
-###--Komp Uri's--###
-###--------------###
-
-GENBANK_HOME            http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=Nucleotide
-ENSEMBL_HOME            http://www.ensembl.org/Mus_musculus/textview
-ENTREZGENE_HOME         http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene
-KOMP_HOME               https://www.mousephenotype.org/
-KOMP_NIH                http://www.nih.gov/science/models/mouse/knockout/
 IMSR_HOME               ${IMSRURL}index
 
 
