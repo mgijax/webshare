@@ -143,11 +143,11 @@ class getTemplateCGI (CGI.CGI):
 
     # empty public google analytics element if this isn't a public install
     if (config["ADD_GA4_TAG"] != "Yes"):
-        getTemplateCGI.pageElements["GA4.element"] = ""
+        getTemplateCGI.pageElements["GA4.element"] = "<script>function gtag(){}</script>"
 
     # empty test google analytics element if this isn't a test install
     if (config["ADD_GA4_TEST_TAG"] != "Yes"):
-        getTemplateCGI.pageElements["GA4_test.element"] = ""
+        getTemplateCGI.pageElements["GA4_test.element"] = "<script>function gtag(){}</script>"
 
     #for each page element, update the shell files
     for file in list(getTemplateCGI.pageElements.keys()):
