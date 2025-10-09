@@ -1,16 +1,21 @@
 
-<!-- Public Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8D61GHC97X"></script>
+<!-- Load GA4 library first, always define dataLayer early -->
 <script>
-  var c = document.cookie.split('; ').filter(c => c.startsWith('mgi_user_consent='))[0]
-  if (!c || c === "mgi_user_consent=analytics") {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-8D61GHC97X');
-      console.log("GA4 ok")
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  // Always register the JS timestamp
+  gtag('js', new Date());
+
+  // Check for consent before sending configuration or any events
+  var consent = document.cookie.split('; ').find(c => c.startsWith('mgi_user_consent='));
+  if (!consent || consent === 'mgi_user_consent=analytics') {
+      gtag('config', '@@@@');
+      console.log("GA4 initialized with analytics consent");
   } else {
-      console.log("GA4 blocked")
+      console.log("GA4 not configured due to consent");
   }
 </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=@@@@"></script>
 
