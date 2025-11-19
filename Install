@@ -35,7 +35,7 @@ if [ "`uname -n | cut -d'.' -f1`" == "bhmgipub01lt" ]
 then
 	rm -rf images.rcd webshare.config
 	cp images.rcd.defaults images.rcd
-	cp webshare.config.defaults webshare.config
+	cp webshare.config.defaults.test webshare.config
 	cd config
 	rm -rf GlobalConfig
 	ln -s GlobalConfig.test GlobalConfig

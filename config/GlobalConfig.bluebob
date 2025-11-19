@@ -41,8 +41,8 @@ PUBLIC_HOST		www.informatics.jax.org
 
 DB_URL           bhmgidb06ld.jax.org:5432
 DB_SERVER        bhmgidb06ld.jax.org
-DB_DATABASE      bluebob
-DB_DATABASE_FE   bluebobfe
+DB_DATABASE      jer_pub
+DB_DATABASE_FE   jer_fe
 DB_USER          mgd_public
 DB_PASSWORD      mgdpub
 SNP_DATABASE     snp
@@ -111,7 +111,7 @@ WEBSHARE_URL            http://${PY_HOST}/webshare/
 FAQ_URL                 http://${PY_HOST}/faq/
 
 # Multiple Genome Viewer (MGV) 
-MGV_URL					http://scrum.informatics.jax.org/mgv/
+MGV_URL					http://${PY_HOST}/mgv/
 
 FTP_URL            http://test.informatics.jax.org/downloads/
 

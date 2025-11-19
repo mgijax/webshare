@@ -41,7 +41,7 @@ class getTemplateCGI (CGI.CGI):
 
   # CLASS VARIABLES
   pageElements = {} # holds element file -> file content mapping
-  re_parm = re.compile ('\${\([^}]+.element\)}') # to find 'foo.element'
+  re_parm = re.compile (r'\${\([^}]+.element\)}') # to find 'foo.element'
   
 
   def resolve (self,
@@ -141,13 +141,11 @@ class getTemplateCGI (CGI.CGI):
             file.close()
             getTemplateCGI.pageElements[element] = fileContent
 
-    # empty public google analytics element if this isn't a public install
-    if (not config.has_key("ADD_GA4_TAG") or config["ADD_GA4_TAG"] != "Yes"):
-        getTemplateCGI.pageElements["GA4.element"] = ""
-
-    # empty test google analytics element if this isn't a test install
-    if (not config.has_key("ADD_GA4_TEST_TAG") or config["ADD_GA4_TEST_TAG"] != "Yes"):
-        getTemplateCGI.pageElements["GA4_test.element"] = ""
+   #
+    if config.has_key("GA4_KEY") and config["GA4_KEY"]:
+        getTemplateCGI.pageElements["GA4.element"] = getTemplateCGI.pageElements["GA4.element"].replace("@@@@", config["GA4_KEY"])
+    else:
+        getTemplateCGI.pageElements["GA4.element"] = "<script>function gtag(){}</script>"
 
     #for each page element, update the shell files
     for file in list(getTemplateCGI.pageElements.keys()):
