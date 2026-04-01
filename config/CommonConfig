@@ -10,7 +10,7 @@ WEBIMAGEMAP_URL         ${WEBSHARE_URL}components.cgi
 ###--- Common Parameters ---###
 ###-------------------------###
 
-PYTHON                  /opt/python3.12/bin/python3
+PYTHON                  /opt/python3.14/bin/python3
 GROUP                   www
 
 ###---------------------###
