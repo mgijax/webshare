@@ -12,14 +12,14 @@
 
 <tr>
  <td width="33%" style="font-size:9px;">
-  <A HREF="${MGIHOME_URL}other/citation.shtml">
+  <A HREF="${MGIHOME_URL}other/citation.shtml" target="_blank">
       Citing These Resources</A> <BR>
-  <A HREF="${MGIHOME_URL}other/mgi_funding.shtml">
+  <A HREF="${MGIHOME_URL}other/mgi_funding.shtml" target="_blank">
       Funding Information</A> <BR>
-  <A HREF="${MGIHOME_URL}other/copyright.shtml">
+  <A HREF="${MGIHOME_URL}other/copyright.shtml" target="_blank">
       Warranty Disclaimer, Privacy Notice, Licensing, & Copyright</A> <BR>
     Send questions and comments to
-  <A HREF="${MGIHOME_URL}support/mgi_inbox.shtml">
+  <A HREF="${MGIHOME_URL}support/mgi_inbox.shtml" target="_blank">
       User Support</A>.
  </td>
  <td WIDTH="34%" ALIGN=center style="font-size:9px;">
